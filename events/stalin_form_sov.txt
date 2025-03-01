@@ -1,0 +1,234 @@
+add_namespace = stalin_form_sov
+country_event = {
+	id = stalin_form_sov.1
+	title = stalin_form_sov.1.t
+	desc = stalin_form_sov.1.desc
+	picture = GFX_report_event_RUS_stalin
+	is_triggered_only = yes
+	trigger = {
+		has_completed_focus = RUS_military_marxism
+		has_character = RUS_iosif_stalin
+	}
+	option = {
+		ai_chance = {
+			base = 0
+		}
+		name = stalin_form_sov.1.a
+		custom_effect_tooltip = stalin_form_sov.1.a_tt
+		hidden_effect = {
+			country_event = {
+				id = stalin_form_sov.2
+				days = 7
+			}
+		}
+	}
+	option = {
+		ai_chance = {
+			base = 100
+		}
+		name = stalin_form_sov.1.b
+		custom_effect_tooltip = stalin_form_sov.1.b_tt
+	}
+}
+
+country_event = {
+	id = stalin_form_sov.2
+	title = stalin_form_sov.2.t
+	desc = stalin_form_sov.2.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_RUS_zinovyev
+	option = {
+		name = stalin_form_sov.2.a
+		custom_effect_tooltip = stalin_form_sov.2.a_tt
+		hidden_effect = {
+			country_event = {
+				id = stalin_form_sov.3
+				days = 7
+			}
+		}
+	}
+	option = {
+		name = stalin_form_sov.2.b
+		custom_effect_tooltip = stalin_form_sov.2.b_tt
+	}
+}
+
+country_event = {
+	id = stalin_form_sov.3
+	title = stalin_form_sov.3.t
+	desc = stalin_form_sov.3.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_RUS_stalin_and_zinovyev
+	option = {
+		name = stalin_form_sov.3.a
+		country_event = {
+			id = stalin_form_sov.4
+		}
+	}
+}
+
+country_event = {
+	id = stalin_form_sov.4
+	title = stalin_form_sov.4.t
+	desc = stalin_form_sov.4.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_RUS_stalin_and_zinovyev
+	option = {
+		name = stalin_form_sov.4.a
+		custom_effect_tooltip = stalin_form_sov.4.a_tt
+		hidden_effect = {
+			country_event = {
+				id = stalin_form_sov.5
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = {
+	id = stalin_form_sov.5
+	title = stalin_form_sov.5.t
+	desc = stalin_form_sov.5.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_RUS_stalin_and_sverdlov
+	immediate = {
+		set_country_flag = RUS_stalin_has_defeated_zinoviev
+	}
+	option = {
+		name = stalin_form_sov.5.a
+		custom_effect_tooltip = stalin_form_sov.5.a_tt
+		hidden_effect = {
+			set_politics = {
+				ruling_party = totalist
+				elections_allowed = no
+			}
+		}
+	}
+	option = {
+		name = stalin_form_sov.5.b
+		add_country_leader_role = {
+			character = RUS_iosif_stalin
+			country_leader = {
+				desc = RUS_iosif_stalin_leader_desc
+				ideology = totalist_subtype
+			}
+			promote_leader = yes
+		}
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		}
+		complete_national_focus = RUS_Reverse_the_October_Revolution
+		set_cosmetic_tag = RUS_sov
+		hidden_effect = {
+			retire_character = RUS_grigory_zinovyev
+			set_party_name = {
+				ideology = totalist
+				long_name = RUS_totalist_party_sov_long
+				name = RUS_totalist_party_sov
+			}
+		}
+	}
+}
+
+country_event = {
+	id = stalin_form_sov.6
+	title = stalin_form_sov.6.t
+	desc = stalin_form_sov.6.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_RUS_country_flag_decide
+	option = {
+		name = stalin_form_sov.6.a
+	}
+	option = {
+		name = stalin_form_sov.6.b
+		hidden_effect = {
+			set_cosmetic_tag = RUS_sov_2
+		}
+	}
+	option = {
+		name = stalin_form_sov.6.c
+		hidden_effect = {
+			set_cosmetic_tag = RUS_sov_3
+		}
+	}
+	option = {
+		name = stalin_form_sov.6.d
+		hidden_effect = {
+			set_cosmetic_tag = RUS_sov_4
+		}
+	}
+}
+
+country_event = {
+	id = stalin_form_sov.7
+	title = stalin_form_sov.7.t
+	desc = stalin_form_sov.7.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_RUS_stalin
+
+	immediate = {
+		set_variable = {
+			stalin_autocracy = 0
+		}
+		set_variable = {
+			stalin_democracy = 0
+		}
+	}
+	option = {
+		name = stalin_form_sov.7.a
+		add_to_variable = {
+			stalin_autocracy = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = stalin_form_sov.8
+				days = 3
+			}
+		}
+	}
+	option = {
+		name = stalin_form_sov.7.b
+		add_to_variable = {
+			stalin_democracy = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = stalin_form_sov.8
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = stalin_form_sov.8
+	title = stalin_form_sov.8.t
+	desc = stalin_form_sov.8.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_RUS_duma
+	option = {
+		name = stalin_form_sov.8.a
+		add_to_variable = {
+			stalin_autocracy = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = stalin_form_sov.9
+				days = 3
+			}
+		}
+	}
+	option = {
+		name = stalin_form_sov.8.b
+		add_to_variable = {
+			stalin_democracy = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = stalin_form_sov.9
+				days = 3
+			}
+		}
+	}
+}

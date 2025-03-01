@@ -1,0 +1,50 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_report_event_RUS_stalin_and_zinovyev"
+		texturefile = "gfx/GFX_report_event_RUS_stalin_and_zinovyev.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_RUS_stalin_and_sverdlov"
+		texturefile = "gfx/GFX_report_event_RUS_stalin_and_sverdlov.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_RUS_country_flag_decide"
+		texturefile = "gfx/GFX_report_event_RUS_country_flag_decide.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_RUS_iosif_stalin_civilian_large"
+		texturefile = "gfx/GFX_portrait_RUS_iosif_stalin_civilian_large.png"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_found_communist_international"
+		texturefile = "gfx/GFX_focus_RUS_found_communist_international.png"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_help_allys_industry"
+		texturefile = "gfx/GFX_focus_RUS_help_allys_industry.png"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_found_sov_union"
+		texturefile = "gfx/GFX_focus_RUS_found_sov_union.png"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_stalin_hearts_of_iron"
+		texturefile = "gfx/GFX_focus_RUS_stalin_hearts_of_iron.png"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_stay_strong"
+		texturefile = "gfx/GFX_focus_RUS_stay_strong.png"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_remove_dust_and_filth"
+		texturefile = "gfx/GFX_focus_RUS_remove_dust_and_filth.png"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_red_october_never_fade"
+		texturefile = "gfx/GFX_focus_RUS_red_october_never_fade.png"
+	}
+	spriteType = {
+		name = "GFX_soviet_socialist_republic_icon"
+		textureFile = "gfx/GFX_soviet_socialist_republic_icon.png"
+	}
+}
