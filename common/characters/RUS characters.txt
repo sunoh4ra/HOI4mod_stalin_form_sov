@@ -2,6 +2,14 @@ characters = {
 	#######################
 	### Country Leaders ###
 	#######################
+	RUS_supreme_soviet = {
+		name = RUS_supreme_soviet
+		portraits = {
+			civilian = {
+				large = GFX_portrait_RUS_supreme_soviet
+			}
+		}
+	}
 	RUS_yakov_sverdlov = {
 		name = RUS_yakov_sverdlov
 		portraits = {

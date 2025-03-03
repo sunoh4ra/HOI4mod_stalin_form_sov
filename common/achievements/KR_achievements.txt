@@ -82,10 +82,12 @@ unique_id = kr_achievements
 				tooltip = achievement_gatekeeper_tooltip
 				685 = {
 					is_owned_by = ROOT
-				}				# Panama Canal
+				}
+				# Panama Canal
 				336 = {
 					is_owned_by = ROOT
-				}				# Singapore
+				}
+				# Singapore
 			}
 		}
 		else = {
@@ -282,10 +284,12 @@ AUS_indivisibiliter_ac_inseparabiliter_achievement = {
 				tooltip = indivisibiliter_ac_inseparabiliter_achievement_tooltip
 				107 = {
 					is_owned_by_ROOT_or_ally = yes
-				}				# Belgrade
+				}
+				# Belgrade
 				46 = {
 					is_owned_by_ROOT_or_ally = yes
-				}				# Muntenia
+				}
+				# Muntenia
 			}
 			has_global_flag = second_weltkrieg_has_started
 			custom_trigger_tooltip = {
@@ -687,7 +691,8 @@ CA_dont_steppe_achievement = {
 			tag = ETS
 			hidden_trigger = {
 				tag = SIK
-			}			#Tag switch
+			}
+			#Tag switch
 		}
 	}
 	happened = {
@@ -789,7 +794,8 @@ CHINA_LKMT_march_of_the_volunteers_achievement = {
 		OR = {
 			hidden_trigger = {
 				tag = LEP
-			}			#Tag switch
+			}
+			#Tag switch
 			tag = CHI
 		}
 	}
@@ -820,7 +826,8 @@ CHINA_LKMT_revolutionary_export_economy_achievement = {
 		OR = {
 			hidden_trigger = {
 				tag = LEP
-			}			#Tag switch
+			}
+			#Tag switch
 			tag = CHI
 		}
 	}
@@ -848,7 +855,8 @@ CHINA_QIE_raise_your_banners_achievement = {
 			tag = QIE
 			hidden_trigger = {
 				tag = SHX
-			}			#Tag switch
+			}
+			#Tag switch
 		}
 	}
 	happened = {
@@ -1125,7 +1133,8 @@ CHINA_source_of_the_nation_achievement = {
 				tooltip = source_of_the_nation_achievement_tooltip
 				capital_scope = {
 					state = 799
-				}				# Guanzhong (Xi'an)
+				}
+				# Guanzhong (Xi'an)
 			}
 			has_country_flag = china_is_potential_government
 			has_war = no
@@ -1229,7 +1238,8 @@ EST_trees_speak_finno_ugric_achievement = {
 		OR = {
 			hidden_trigger = {
 				tag = BAT
-			}			#Tag switch
+			}
+			#Tag switch
 			tag = EST
 		}
 	}
@@ -1263,7 +1273,8 @@ ETS_yarkando_achievement = {
 		OR = {
 			hidden_trigger = {
 				tag = SIK
-			}			#Tag switch
+			}
+			#Tag switch
 			tag = ETS
 		}
 	}
@@ -1364,7 +1375,8 @@ FRA_syndicalist_bias_achievement = {
 				tooltip = syndicalist_bias_achievement_tooltip
 				28 = {
 					is_owned_and_controlled_by = ROOT
-				}				# Alcase-Lorraine
+				}
+				# Alcase-Lorraine
 			}
 		}
 		else = {
@@ -1396,7 +1408,8 @@ GBR_just_a_very_long_holiday_achievement = {
 				tooltip = just_a_very_long_holiday_achievement_tooltip
 				CAN = {
 					has_country_flag = CAN_returned_king
-				}				# UK restored
+				}
+				# UK restored
 				all_of_scopes = {
 					# Great Britain is owned and controlled
 					array = global.britain_states_array
@@ -1430,27 +1443,32 @@ GER_another_place_in_the_sun_achievement = {
 					owner = {
 						is_ally_with = ROOT
 					}
-				}				#Havana
+				}
+				#Havana
 				318 = {
 					owner = {
 						is_ally_with = ROOT
 					}
-				}				#Haiti
+				}
+				#Haiti
 				319 = {
 					owner = {
 						is_ally_with = ROOT
 					}
-				}				#Santo Domingo
+				}
+				#Santo Domingo
 				686 = {
 					owner = {
 						is_ally_with = ROOT
 					}
-				}				#Puerto Rico
+				}
+				#Puerto Rico
 				691 = {
 					owner = {
 						is_ally_with = ROOT
 					}
-				}				#Trinidad
+				}
+				#Trinidad
 				all_of_scopes = {
 					array = global.deutsch_west_indies_achievement_states
 					owner = {
@@ -1517,12 +1535,14 @@ GER_name_of_the_game_achievement = {
 			tag = GER			#Disable for RSA or any tag switch
 			RUS = {
 				is_faction_leader = no
-			}			# RUS lost
+			}
+			# RUS lost
 			INT = {
 				NOT = {
 					has_war_with = GER
 				}
-			}			# Either the 3I is dead, or Peace with Honour
+			}
+			# Either the 3I is dead, or Peace with Honour
 		}
 		else = {
 			custom_trigger_tooltip = {
@@ -1553,12 +1573,14 @@ GER_only_mostly_dead_achievement = {
 				has_global_flag = second_weltkrieg_has_started				# 2WK has started
 				RUS = {
 					is_faction_leader = no
-				}				# RUS lost
+				}
+				# RUS lost
 				INT = {
 					NOT = {
 						has_war_with = GER
 					}
-				}				# Either the 3I is dead, or Peace with Honour
+				}
+				# Either the 3I is dead, or Peace with Honour
 			}
 		}
 		else = {
@@ -2329,7 +2351,8 @@ LAT_triumph_of_the_partisan_republic_achievement = {
 		OR = {
 			hidden_trigger = {
 				tag = BAT
-			}			#Tag switch
+			}
+			#Tag switch
 			tag = LAT
 		}
 	}
@@ -2506,7 +2529,8 @@ MIT_bear_trap_achievement = {
 				}
 				NOT = {
 					tag = RSA
-				}				#Disable for tag switch
+				}
+				#Disable for tag switch
 			}
 		}
 		else = {
@@ -2936,25 +2960,32 @@ ROM_fourth_rome_achievement = {
 			has_completed_focus = ROM_renew_pride
 			76 = {
 				is_core_of = ROM
-			}			# Cluj
+			}
+			# Cluj
 			82 = {
 				is_core_of = ROM
-			}			# Banat
+			}
+			# Banat
 			83 = {
 				is_core_of = ROM
-			}			# Partium
+			}
+			# Partium
 			84 = {
 				is_core_of = ROM
-			}			# Transylvania
+			}
+			# Transylvania
 			789 = {
 				is_core_of = ROM
-			}			# Szeklerland
+			}
+			# Szeklerland
 			77 = {
 				is_core_of = ROM
-			}			# Silistria
+			}
+			# Silistria
 			772 = {
 				is_core_of = ROM
-			}			# Dobrudja
+			}
+			# Dobrudja
 		}
 		else = {
 			custom_trigger_tooltip = {
@@ -2993,13 +3024,16 @@ RUS_from_siberia_with_love_achievement = {
 			tag = FER
 			hidden_trigger = {
 				tag = RUS
-			}			#Tag switch
+			}
+			#Tag switch
 			hidden_trigger = {
 				tag = FNG
-			}			#Tag switch
+			}
+			#Tag switch
 			hidden_trigger = {
 				tag = JAP
-			}			#Tag switch
+			}
+			#Tag switch
 		}
 	}
 	happened = {
@@ -3055,33 +3089,42 @@ RUS_see_nick_that_wasnt_so_hard_achievement_achievement = {
 				# POL starting territory
 				10 = {
 					is_owned_by_ROOT_or_ally = yes
-				}				# Warsaw
+				}
+				# Warsaw
 				87 = {
 					is_owned_by_ROOT_or_ally = yes
-				}				# Kalisz
+				}
+				# Kalisz
 				90 = {
 					is_owned_by_ROOT_or_ally = yes
-				}				# Kielce
+				}
+				# Kielce
 				98 = {
 					is_owned_by_ROOT_or_ally = yes
-				}				# Plock
+				}
+				# Plock
 				1088 = {
 					is_owned_by_ROOT_or_ally = yes
-				}				# Chelm
+				}
+				# Chelm
 				# GEO starting territory
 				231 = {
 					is_owned_by_ROOT_or_ally = yes
-				}				# Georgia
+				}
+				# Georgia
 				1080 = {
 					is_owned_by_ROOT_or_ally = yes
-				}				# Abkhazia
+				}
+				# Abkhazia
 				# AZR starting territory
 				229 = {
 					is_owned_by_ROOT_or_ally = yes
-				}				# Azerbaijan
+				}
+				# Azerbaijan
 				998 = {
 					is_owned_by_ROOT_or_ally = yes
-				}				# Highland Karabagh
+				}
+				# Highland Karabagh
 			}
 		}
 		else = {
@@ -3147,7 +3190,8 @@ RUS_what_a_childish_fantasy_achievement = {
 			tag = RUS
 			hidden_trigger = {
 				tag = BAT
-			}			#Tag switch
+			}
+			#Tag switch
 		}
 	}
 	happened = {
@@ -3161,7 +3205,7 @@ RUS_what_a_childish_fantasy_achievement = {
 				tooltip = what_a_childish_fantasy_achievement_tooltip
 				OR = {
 					has_cosmetic_tag = LAT_SOV
-					has_cosmetic_tag = RUS_SOV
+					has_cosmetic_tag = RUS_sov_union
 				}
 			}
 		}
@@ -3191,7 +3235,8 @@ RUS_whatever_happened_to_the_popular_front_achievement = {
 						NOT = {
 							is_on_continent = europe
 						}
-					}					#== NFA or capitulation antics
+					}
+					#== NFA or capitulation antics
 				}
 			}
 		}
@@ -3204,34 +3249,44 @@ RUS_you_and_what_army_achievement = {
 			tag = RSA
 			hidden_trigger = {
 				tag = RUS
-			}			#Tag switch
+			}
+			#Tag switch
 			hidden_trigger = {
 				tag = GER
-			}			#Tag switch
+			}
+			#Tag switch
 			hidden_trigger = {
 				tag = AZR
-			}			#Tag switch
+			}
+			#Tag switch
 			hidden_trigger = {
 				tag = BAT
-			}			#Tag switch
+			}
+			#Tag switch
 			hidden_trigger = {
 				tag = BLR
-			}			#Tag switch
+			}
+			#Tag switch
 			hidden_trigger = {
 				tag = FIN
-			}			#Tag switch
+			}
+			#Tag switch
 			hidden_trigger = {
 				tag = LIT
-			}			#Tag switch
+			}
+			#Tag switch
 			hidden_trigger = {
 				tag = GEO
-			}			#Tag switch
+			}
+			#Tag switch
 			hidden_trigger = {
 				tag = POL
-			}			#Tag switch
+			}
+			#Tag switch
 			hidden_trigger = {
 				tag = UKR
-			}			#Tag switch
+			}
+			#Tag switch
 		}
 	}
 	happened = {
@@ -3405,7 +3460,8 @@ SYR_arab_awakening_achievement = {
 			tag = IRQ
 			hidden_trigger = {
 				tag = EGY
-			}			#Tag switch
+			}
+			#Tag switch
 		}
 	}
 	happened = {
@@ -3614,7 +3670,8 @@ UKR_one_and_a_half_hetmen_achievement = {
 				tooltip = one_and_a_half_hetmen_achievement_tooltip
 				UKR = {
 					has_country_flag = one_and_a_half_hetmen_achievement_condition
-				}				# gov't-VDR negotiation succeeded; assigned by ukraine_negotiations.26
+				}
+				# gov't-VDR negotiation succeeded; assigned by ukraine_negotiations.26
 			}
 		}
 		else = {
@@ -3704,7 +3761,8 @@ USA_barracks_socialism_achievement = {
 			tag = CSA
 			hidden_trigger = {
 				tag = USA
-			}			#Tag switch
+			}
+			#Tag switch
 		}
 	}
 	happened = {
@@ -3760,7 +3818,8 @@ USA_crowned_republic_achievement = {
 			tag = TEX
 			hidden_trigger = {
 				tag = USA
-			}			#Tag switch
+			}
+			#Tag switch
 		}
 	}
 	happened = {
@@ -3791,7 +3850,8 @@ USA_from_sea_to_shining_sea_achievement = {
 			tag = PSA
 			hidden_trigger = {
 				tag = USA
-			}			#Tag switch
+			}
+			#Tag switch
 		}
 	}
 	happened = {
@@ -3822,10 +3882,12 @@ USA_guns_of_the_patriots_achievement = {
 			tag = NEE
 			hidden_trigger = {
 				tag = USA
-			}			#Tag switch
+			}
+			#Tag switch
 			hidden_trigger = {
 				tag = CAN
-			}			#Tag switch
+			}
+			#Tag switch
 		}
 	}
 	happened = {
@@ -3952,7 +4014,8 @@ USA_permanent_american_revolution_achievement = {
 			tag = CSA
 			hidden_trigger = {
 				tag = USA
-			}			#Tag switch
+			}
+			#Tag switch
 		}
 	}
 	happened = {
@@ -4008,10 +4071,12 @@ USA_sons_of_liberty_achievement = {
 			tag = NEE
 			hidden_trigger = {
 				tag = USA
-			}			#Tag switch
+			}
+			#Tag switch
 			hidden_trigger = {
 				tag = CAN
-			}			#Tag switch
+			}
+			#Tag switch
 		}
 	}
 	happened = {
@@ -4054,6 +4119,60 @@ USA_worlds_least_radical_country_achievement = {
 			custom_trigger_tooltip = {
 				tooltip = worlds_least_radical_country_achievement_tooltip
 				has_country_flag = worlds_least_radical_country_achievement_condition				# got the SPA/AFP debuff from the conference, assigned by ustates.114
+			}
+		}
+		else = {
+			custom_trigger_tooltip = {
+				tooltip = achievements_disabled
+				always = no
+			}
+		}
+	}
+}
+
+RUS_you_looks_angry_achievement = {
+	possible = {
+		tag = RUS
+	}
+	happened = {
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = disallow_achievements_flag
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = you_looks_angry
+				has_country_flag = RUS_stalin_has_defeated_zinoviev
+			}
+		}
+		else = {
+			custom_trigger_tooltip = {
+				tooltip = achievements_disabled
+				always = no
+			}
+		}
+	}
+}
+
+RUS_sov_world_revolution_succeed_achievement = {
+	possible = {
+		tag = RUS
+	}
+	happened = {
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = disallow_achievements_flag
+				}
+			}
+			tag = RUS
+			has_socialist_government = yes
+			custom_trigger_tooltip = {
+				tooltip = sov_world_revolution_succeed
+				every_country = {
+					has_socialist_government = yes
+				}
 			}
 		}
 		else = {

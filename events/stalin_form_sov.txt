@@ -166,19 +166,18 @@ country_event = {
 	desc = stalin_form_sov.7.desc
 	is_triggered_only = yes
 	picture = GFX_report_event_RUS_stalin
-
 	immediate = {
 		set_variable = {
-			stalin_autocracy = 0
+			RUS.stalin_autocracy = 0
 		}
 		set_variable = {
-			stalin_democracy = 0
+			RUS.stalin_democracy = 0
 		}
 	}
 	option = {
 		name = stalin_form_sov.7.a
 		add_to_variable = {
-			stalin_autocracy = 1
+			RUS.stalin_autocracy = 1
 		}
 		hidden_effect = {
 			country_event = {
@@ -190,7 +189,7 @@ country_event = {
 	option = {
 		name = stalin_form_sov.7.b
 		add_to_variable = {
-			stalin_democracy = 1
+			RUS.stalin_democracy = 1
 		}
 		hidden_effect = {
 			country_event = {
@@ -210,7 +209,7 @@ country_event = {
 	option = {
 		name = stalin_form_sov.8.a
 		add_to_variable = {
-			stalin_autocracy = 1
+			RUS.stalin_autocracy = 1
 		}
 		hidden_effect = {
 			country_event = {
@@ -222,13 +221,129 @@ country_event = {
 	option = {
 		name = stalin_form_sov.8.b
 		add_to_variable = {
-			stalin_democracy = 1
+			RUS.stalin_democracy = 1
 		}
 		hidden_effect = {
 			country_event = {
 				id = stalin_form_sov.9
 				days = 3
 			}
+		}
+	}
+}
+
+country_event = {
+	id = stalin_form_sov.9
+	title = stalin_form_sov.9.t
+	desc = stalin_form_sov.9.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_RUS_duma
+	option = {
+		name = stalin_form_sov.9.a
+		add_to_variable = {
+			RUS.stalin_autocracy = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = stalin_form_sov.10
+				days = 3
+			}
+		}
+	}
+	option = {
+		name = stalin_form_sov.9.b
+		add_to_variable = {
+			RUS.stalin_democracy = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = stalin_form_sov.10
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = stalin_form_sov.10
+	title = stalin_form_sov.10.t
+	desc = stalin_form_sov.10.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_RUS_duma
+	option = {
+		name = stalin_form_sov.10.a
+		add_to_variable = {
+			RUS.stalin_autocracy = 1
+		}
+		if = {
+			limit = {
+				check_variable = {
+					RUS.stalin_autocracy > 1
+				}
+			}
+			country_event = {
+				id = stalin_form_sov.11
+			}
+		}
+		else = {
+			country_event = {
+				id = stalin_form_sov.12
+			}
+		}
+	}
+	option = {
+		name = stalin_form_sov.10.b
+		add_to_variable = {
+			RUS.stalin_democracy = 1
+		}
+		if = {
+			limit = {
+				check_variable = {
+					RUS.stalin_democracy > 2
+				}
+			}
+			country_event = {
+				id = stalin_form_sov.12
+			}
+		}
+		else = {
+			country_event = {
+				id = stalin_form_sov.11
+			}
+		}
+	}
+}
+
+country_event = {
+	id = stalin_form_sov.11
+	title = stalin_form_sov.11.t
+	desc = stalin_form_sov.11.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_RUS_duma
+	option = {
+		name = stalin_form_sov.11.a
+		clear_variable = RUS.stalin_autocracy
+		clear_variable = RUS.stalin_democracy
+		complete_national_focus = RUS_soviets_future
+		hidden_effect = {
+			set_country_flag = RUS_future_is_determined_1
+		}
+	}
+}
+
+country_event = {
+	id = stalin_form_sov.12
+	title = stalin_form_sov.12.t
+	desc = stalin_form_sov.12.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_RUS_duma
+	option = {
+		name = stalin_form_sov.12.a
+		clear_variable = RUS.stalin_autocracy
+		clear_variable = RUS.stalin_democracy
+		complete_national_focus = RUS_soviets_future
+		hidden_effect = {
+			set_country_flag = RUS_future_is_determined_2
 		}
 	}
 }

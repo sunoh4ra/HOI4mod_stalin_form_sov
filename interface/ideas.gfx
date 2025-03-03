@@ -6,16 +6,16 @@ spriteTypes = {
 	}
 	# stalin form sov
 	spriteType = {
-		name = "GFX_idea_soviet_republic_industry"
-		texturefile = "gfx/interface/ideas/GFX_idea_soviet_republic_industry.dds"
+		name = "GFX_idea_RUS_soviet_republic_industry_idea"
+		texturefile = "gfx/interface/ideas/RUS_soviet_republic_industry_idea.png"
 	}
 	spriteType = {
-		name = "GFX_idea_remove_dust_and_filth"
-		texturefile = "gfx/interface/ideas/GFX_idea_remove_dust_and_filth.dds"
+		name = "GFX_idea_RUS_remove_dust_and_filth_idea"
+		texturefile = "gfx/interface/ideas/RUS_remove_dust_and_filth_idea.png"
 	}
 	spriteType = {
-		name = "GFX_idea_plan_ahead"
-		texturefile = "gfx/interface/ideas/GFX_idea_plan_ahead.dds"
+		name = "GFX_idea_RUS_plan_ahead_idea"
+		texturefile = "gfx/interface/ideas/RUS_plan_ahead_idea.png"
 	}
 	### new tfv nat spirit icons
 	spriteType = {

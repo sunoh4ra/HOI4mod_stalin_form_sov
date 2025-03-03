@@ -34341,6 +34341,7 @@ focus_tree = {
 				country_exists = GER
 			}
 			has_war = no
+			has_completed_focus = RUS_found_sov_union
 		}
 		allow_branch = {
 			has_country_flag = RUS_stalin_has_defeated_zinoviev
@@ -34354,9 +34355,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RUS_communism_constitution
+		id = RUS_soviets_future
 		icon = GFX_goal_syndicalist_lenin
-		cost = 5
+		cost = 20
 		relative_position_id = RUS_red_october_never_fade
 		x = 0
 		y = 1
@@ -34366,9 +34367,107 @@ focus_tree = {
 		select_effect = {
 			country_event = stalin_form_sov.7
 		}
-		completion_reward = { 
-			custom_effect_tooltip = RUS_communism_constitution_tt
+		completion_reward = {
+			custom_effect_tooltip = RUS_soviets_future_tt_1
 			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = RUS_soviets_future_tt_2
+		}
+	}
+	focus = {
+		id = RUS_the_supreme_soviet
+		icon = GFX_focus_RUS_the_supreme_soviet
+		cost = 5
+		relative_position_id = RUS_soviets_future
+		x = -1
+		y = 1
+		available = {
+			has_country_flag = RUS_future_is_determined_2
+		}
+		mutually_exclusive = {
+			focus = RUS_unite_under_stalin
+		}
+		prerequisite = {
+			focus = RUS_soviets_future
+		}
+		completion_reward = {
+			# RUS_supreme_soviet = {
+			add_country_leader_role = {
+				country_leader = {
+					desc = RUS_supreme_soviet.desc
+					ideology = totalist_subtype
+					traits = {
+						strong_party_discipline
+					}
+				}
+				promote_leader = yes
+			}
+			# }
+			# RUS_iosif_stalin = {
+			add_advisor_role = {
+				character = RUS_iosif_stalin
+				advisor = {
+					slot = second_in_command
+					idea_token = RUS_iosif_stalin_advisor
+					desc = RUS_iosif_stalin_leader_desc
+					traits = {
+						RUS_hearts_of_iron_2
+					}
+					cost = 150
+					can_be_fired = no
+				}
+				activate = yes
+			}
+			# }
+		}
+	}
+	focus = {
+		id = RUS_unite_under_stalin
+		icon = GFX_focus_RUS_unite_under_stalin
+		cost = 5
+		relative_position_id = RUS_soviets_future
+		x = 1
+		y = 1
+		available = {
+			has_country_flag = RUS_future_is_determined_1
+		}
+		mutually_exclusive = {
+			focus = RUS_the_supreme_soviet
+		}
+		prerequisite = {
+			focus = RUS_soviets_future
+		}
+		completion_reward = {
+			add_country_leader_trait = RUS_father_of_nations
+		}
+	}
+	focus = {
+		id = RUS_sov_world_revolution
+		icon = GFX_focus_RUS_sov_world_revolution
+		cost = 5
+		relative_position_id = RUS_soviets_future
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = RUS_the_supreme_soviet
+			focus = RUS_unite_under_stalin
+		}
+		completion_reward = {
+			custom_effect_tooltip = RUS_sov_world_revolution_tt
+			custom_effect_tooltip = tooltip_white_line
+			every_country = {
+				limit = {
+					NOT = {
+						OR = {
+							has_government = totalist
+							has_government = syndicalist
+							has_government = radical_socialist
+						}
+					}
+				}
+				declare_war_on = {
+					target = PREV
+				}
+			}
 		}
 	}
 	focus = {

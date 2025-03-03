@@ -6371,7 +6371,6 @@ ideas = {
 			on_add = {
 				log = "[GetDateText]: [Root.GetName]: add idea RUS_Plan_ahead_idea"
 			}
-			picture = GFX_idea_plan_ahead
 			modifier = {
 				training_time_army_factor = -0.1
 				production_speed_arms_factory_factor = 0.15
@@ -6381,7 +6380,6 @@ ideas = {
 			on_add = {
 				log = "[GetDateText]: [Root.GetName]: add idea RUS_remove_dust_and_filth_idea"
 			}
-			picture = GFX_idea_remove_dust_and_filth
 			modifier = {
 				social_democrat_drift = -0.05
 				social_liberal_drift = -0.05
@@ -6393,7 +6391,6 @@ ideas = {
 			on_add = {
 				log = "[GetDateText]: [Root.GetName]: add idea RUS_soviet_republic_industry_idea"
 			}
-			picture = GFX_idea_soviet_republic_industry
 			modifier = {
 				production_speed_industrial_complex_factor = 0.25
 				production_speed_infrastructure_factor = 0.25

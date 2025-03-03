@@ -47,4 +47,20 @@ spriteTypes = {
 		name = "GFX_soviet_socialist_republic_icon"
 		textureFile = "gfx/GFX_soviet_socialist_republic_icon.png"
 	}
+	spriteType = {
+		name = "GFX_focus_RUS_the_supreme_soviet"
+		textureFile = "gfx/GFX_focus_RUS_the_supreme_soviet.png"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_unite_under_stalin"
+		textureFile = "gfx/GFX_focus_RUS_unite_under_stalin.png"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_sov_world_revolution"
+		textureFile = "gfx/GFX_focus_RUS_sov_world_revolution.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_RUS_supreme_soviet"
+		textureFile = "gfx/GFX_portrait_RUS_supreme_soviet.png"
+	}
 }
