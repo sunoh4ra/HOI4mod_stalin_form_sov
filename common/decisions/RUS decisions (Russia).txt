@@ -17671,6 +17671,57 @@ RUS_russian_sphere_decisions = {
 }
 
 RUS_Spreading_the_Revolution_decisions = {
+	RUS_annex_into_soviet_union = {
+		icon = GFX_decision_generic_flags
+		available = {
+		}
+		visible = {
+			OR = {
+				NOT = {
+					country_exists = GER
+				}
+				has_war = no
+			}
+			FROM = {
+				has_autonomy_state = soviet_socialist_republic
+				controls_all_owned_states = yes
+			}
+			has_cosmetic_tag = RUS_sov_union
+		}
+		target_array = RUS_SSTR_tags
+		target_root_trigger = {
+			has_completed_focus = RUS_found_sov_union
+		}
+		target_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				has_autonomy_state = soviet_socialist_republic
+			}
+		}
+		fire_only_once = yes
+		cost = 20
+		days_remove = 30
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_annex_into_soviet_union target: [From.GetName]"
+			FROM = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							is_claimed_by = PREV
+							is_core_of = PREV
+						}
+					}
+					add_core_of = RUS
+				}
+			}
+			ROOT = {
+				annex_country = {
+					target = FROM
+					transfer_troops = yes
+				}
+			}
+		}
+	}
 	RUS_add_to_soviet_republic = {
 		icon = GFX_decision_generic_flags
 		available = {

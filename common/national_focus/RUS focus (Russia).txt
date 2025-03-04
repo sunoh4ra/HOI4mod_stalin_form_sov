@@ -34390,19 +34390,18 @@ focus_tree = {
 			focus = RUS_soviets_future
 		}
 		completion_reward = {
-			# RUS_supreme_soviet = {
-			add_country_leader_role = {
-				country_leader = {
-					desc = RUS_supreme_soviet.desc
-					ideology = totalist_subtype
-					traits = {
-						strong_party_discipline
+			RUS_supreme_soviet = {
+				add_country_leader_role = {
+					country_leader = {
+						desc = RUS_supreme_soviet.desc
+						ideology = totalist_subtype
+						traits = {
+							strong_party_discipline
+						}
 					}
+					promote_leader = yes
 				}
-				promote_leader = yes
 			}
-			# }
-			# RUS_iosif_stalin = {
 			add_advisor_role = {
 				character = RUS_iosif_stalin
 				advisor = {
@@ -34417,7 +34416,6 @@ focus_tree = {
 				}
 				activate = yes
 			}
-			# }
 		}
 	}
 	focus = {
@@ -34441,8 +34439,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RUS_sov_world_revolution
-		icon = GFX_focus_RUS_sov_world_revolution
+		id = RUS_sov_to_the_world_revolution
+		icon = GFX_focus_RUS_sov_to_the_world_revolution
 		cost = 5
 		relative_position_id = RUS_soviets_future
 		x = 0
@@ -34452,22 +34450,54 @@ focus_tree = {
 			focus = RUS_unite_under_stalin
 		}
 		completion_reward = {
-			custom_effect_tooltip = RUS_sov_world_revolution_tt
+			custom_effect_tooltip = RUS_sov_to_the_world_revolution_tt
 			custom_effect_tooltip = tooltip_white_line
 			every_country = {
 				limit = {
 					NOT = {
-						OR = {
-							has_government = totalist
-							has_government = syndicalist
-							has_government = radical_socialist
-						}
+						has_socialist_government = yes
 					}
 				}
-				declare_war_on = {
-					target = PREV
+				RUS = {
+					declare_war_on = {
+						target = PREV
+					}
 				}
 			}
+		}
+	}
+	focus = {
+		id = RUS_sov_world_revoluted
+		icon = GFX_focus_RUS_sov_world_revoluted
+		cost = 5
+		relative_position_id = RUS_the_supreme_soviet
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = RUS_the_supreme_soviet
+		}
+		prerequisite = {
+			focus = RUS_sov_to_the_world_revolution
+		}
+		completion_reward = {
+			custom_effect_tooltip = RUS_sov_world_revoluted_tt
+		}
+	}
+	focus = {
+		id = RUS_socialist_big_family
+		icon = GFX_focus_RUS_socialist_big_family
+		cost = 5
+		relative_position_id = RUS_unite_under_stalin
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = RUS_unite_under_stalin
+		}
+		prerequisite = {
+			focus = RUS_sov_to_the_world_revolution
+		}
+		completion_reward = {
+			custom_effect_tooltip = RUS_socialist_big_family_tt
 		}
 	}
 	focus = {

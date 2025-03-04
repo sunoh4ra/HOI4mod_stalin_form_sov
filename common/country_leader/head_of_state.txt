@@ -2284,14 +2284,14 @@ leader_traits = {
 		stability_factor = 0.1
 		war_support_factor = 0.05
 		political_power_factor = 0.05
-		army_org_factor = 0.06
-		army_attack_against_major_factor = 0.05
+		army_org_factor = 0.05
+		army_defence_against_major_factor = 0.05
 	}
 	RUS_father_of_nations = {
 		random = no
 		stability_weekly = 0.001
 		compliance_gain = 0.05
-		justify_war_goal_when_in_major_war_time = -0.5
+		army_attack_against_major_factor = 0.1
 		conscription = 0.02
 	}
 	strong_party_discipline = {

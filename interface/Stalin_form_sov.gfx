@@ -56,8 +56,8 @@ spriteTypes = {
 		textureFile = "gfx/GFX_focus_RUS_unite_under_stalin.png"
 	}
 	spriteType = {
-		name = "GFX_focus_RUS_sov_world_revolution"
-		textureFile = "gfx/GFX_focus_RUS_sov_world_revolution.png"
+		name = "GFX_focus_RUS_sov_to_the_world_revolution"
+		textureFile = "gfx/GFX_focus_RUS_sov_to_the_world_revolution.png"
 	}
 	spriteType = {
 		name = "GFX_portrait_RUS_supreme_soviet"

@@ -91,9 +91,6 @@ country_event = {
 	desc = stalin_form_sov.5.desc
 	is_triggered_only = yes
 	picture = GFX_report_event_RUS_stalin_and_sverdlov
-	immediate = {
-		set_country_flag = RUS_stalin_has_defeated_zinoviev
-	}
 	option = {
 		name = stalin_form_sov.5.a
 		custom_effect_tooltip = stalin_form_sov.5.a_tt
@@ -102,6 +99,7 @@ country_event = {
 				ruling_party = totalist
 				elections_allowed = no
 			}
+			set_country_flag = RUS_stalin_has_defeated_zinoviev
 		}
 	}
 	option = {
@@ -127,6 +125,7 @@ country_event = {
 				long_name = RUS_totalist_party_sov_long
 				name = RUS_totalist_party_sov
 			}
+			set_country_flag = RUS_stalin_has_defeated_zinoviev
 		}
 	}
 }

@@ -4170,8 +4170,10 @@ RUS_sov_world_revolution_succeed_achievement = {
 			has_socialist_government = yes
 			custom_trigger_tooltip = {
 				tooltip = sov_world_revolution_succeed
-				every_country = {
-					has_socialist_government = yes
+				NOT = {
+					any_other_country = {
+						has_socialist_government = no
+					}
 				}
 			}
 		}
