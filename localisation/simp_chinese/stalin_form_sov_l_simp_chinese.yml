@@ -30,7 +30,9 @@
   BAT_soviet: "波罗的苏维埃社会主义共和国"
   BAT_soviet_DEF: "波罗的苏维埃社会主义共和国"
   RUS_add_to_soviet_republic: "邀请[FROM.GetNameDef]成为我们的苏维埃加盟共和国"
+  RUS_add_to_soviet_republic_extend: "邀请[FROM.GetNameDef]成为我们的苏维埃加盟共和国"
   RUS_annex_into_soviet_union: "将[FROM.GetNameDef]整合进苏维埃社会主义共和国联盟"
+  RUS_annex_into_soviet_union_extend: "将[FROM.GetNameDef]整合进苏维埃社会主义共和国联盟"
 
   stalin_form_sov.1.t: "秘密联盟"
   stalin_form_sov.1.desc: "在季诺维也夫准备将布尔什维克党并入全俄劳联的过程中，党内的一些核心领导人开始对这一计划产生强烈反感。斯维尔德洛夫意识到，季诺维也夫的野心不仅会削弱布尔什维克党的独立性，还会给党内的分裂带来难以修复的伤口。\n\n与此同时，约瑟夫·斯大林，作为曾经党的强有力的领导人之一，显然并不愿意让季诺维也夫这种政治操控彻底葬送布尔什维克。虽然现在斯大林于党内的地位已大不如前，但他与军队的紧密联系开始为他提供更为强大的支持。自从布尔什维克掌握政权以来，斯大林始终在军队中占据着重要的角色，虽然在第一次俄国革命失败后军队瓦解，斯大林也流亡海外，但他在第二次革命成功后如闪电般归来，很快又重新进入了军队的高级领导层，随后展现出了自己强大的控制力。实际上，现在的俄罗斯军队已经被流亡的布尔什维克将领所主导，因此尽管党内的权力斗争激烈，斯大林在军队中的影响力却始终未曾削弱，这为他提供了至关重要的政治后盾。\n\n随着斯大林在一次私下会面中向斯维尔德洛夫抛出橄榄枝，二人在党内秘密结盟，共同商讨如何挫败季诺维也夫的计划也许已经提上了日程……"
@@ -116,7 +118,7 @@
 
   RUS_what_a_childish_fantasy: "多么幼稚的幻想！"
   RUS_what_a_childish_fantasy_desc: "有人曾说这是一个幼稚的幻想，但我们实现了不可能的事情：我们又一次在俄罗斯实现了社会主义，我们在与社会革命党投机分子和全俄劳联不同派系的一系列斗争中脱颖而出，重新逆转了十月革命，我们抵挡住了条顿威胁，击灭了德帝国主义。如今大局已定，是时候实现二十年前的理想了！"
-  RUS_what_a_childish_fantasy_tt: "我们将可以在占领地区建立苏维埃加盟共和国，最终成立§o苏维埃社会主义共和国联盟§!。\n解锁决议：£GFX_decision_icon_small §Y成立苏维埃加盟共和国§!"
+  RUS_what_a_childish_fantasy_tt: "我们将可以在占领地区建立苏维埃加盟共和国，最终成立§o苏维埃社会主义共和国联盟§!。\n解锁决议：£GFX_decision_icon_small §Y邀请成为加盟共和国§!。"
 
   RUS_found_communist_international: "建立共产国际"
   RUS_found_communist_international_desc: "我们的西方朋友无论是政治模式还是工业模式都与我们有很大的区别，和他们的友好交流是必要的，但将自己全盘托付是愚蠢的。我们需要建立一个自己主导的阵营，让所有的盟国都可以从中受益。"
@@ -179,11 +181,20 @@
   RUS_the_supreme_soviet: "成立最高苏维埃"
   RUS_the_supreme_soviet.desc: ""
   RUS_supreme_soviet: "最高苏维埃"
+  RUS_supreme_soviet.desc: "作为苏联的最高立法机关，最高苏维埃不仅是国家治理的核心机构，也在很大程度上体现了国家的政治走向。它由两个院组成：联盟院（Soviet of the Union）和民族院（Soviet of Nationalities），理论上代表着工人、农民、士兵以及各加盟共和国的利益。\n\n在改革派的设想中，最高苏维埃应该成为真正的立法机构，赋予各级代表大会更大的决策权，使政府更具透明度，减少党的直接干预。他们主张建立独立的宪法法院，赋予法律更高的权威性，以防止行政机关的过度干预。\n\n然而，在保守派看来，最高苏维埃的首要任务是维护党的领导地位，确保国家的统一和稳定。尽管代表大会定期召开，但最终的决策仍需服从党的指导，任何可能导致权力分散的改革都必须被遏制。他们提议通过新宪法，进一步强化党的领导，使最高苏维埃的职能更加集中于执行党的政策，而非独立立法。\n\n最高苏维埃究竟会成为真正的立法机关，还是最终沦为党的执行工具？这一切都取决于未来。"
   strong_party_discipline: "党纪严明"
 
   RUS_unite_under_stalin: "团结在斯大林同志的旗帜下"
   RUS_unite_under_stalin.desc: ""
   RUS_father_of_nations: "各民族的慈父"
+
+  RUS_extend_our_union: "扩张我们的联盟"
+  RUS_extend_our_union.desc: ""
+  RUS_extend_our_union_tt: "我们将能够对我们阵营中的其他欧洲社会主义国家执行£GFX_decision_icon_small §Y邀请成为加盟共和国§!和£GFX_decision_icon_small §Y整合至苏维埃社会主义共和国联盟§!决议。" 
+
+  RUS_socialist_big_family: "社会主义大家庭"
+  RUS_socialist_big_family.desc: ""
+  RUS_socialist_big_family_tt: "我们将进一步整合阵营内所有社会主义国家的工业和经济"
 
   RUS_sov_to_the_world_revolution: "必见赤旗扬五洲"
   RUS_sov_to_the_world_revolution.desc: ""

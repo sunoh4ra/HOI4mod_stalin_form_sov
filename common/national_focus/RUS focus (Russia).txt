@@ -34390,17 +34390,16 @@ focus_tree = {
 			focus = RUS_soviets_future
 		}
 		completion_reward = {
-			RUS_supreme_soviet = {
-				add_country_leader_role = {
-					country_leader = {
-						desc = RUS_supreme_soviet.desc
-						ideology = totalist_subtype
-						traits = {
-							strong_party_discipline
-						}
+			add_country_leader_role = {
+				character = RUS_supreme_soviet
+				country_leader = {
+					desc = RUS_supreme_soviet.desc
+					ideology = totalist_subtype
+					traits = {
+						strong_party_discipline
 					}
-					promote_leader = yes
 				}
+				promote_leader = yes
 			}
 			add_advisor_role = {
 				character = RUS_iosif_stalin
@@ -34439,15 +34438,58 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = RUS_extend_our_union
+		icon = GFX_focus_RUS_extend_our_union
+		cost = 5
+		relative_position_id = RUS_the_supreme_soviet
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RUS_the_supreme_soviet
+		}
+		completion_reward = {
+			custom_effect_tooltip = RUS_extend_our_union_tt
+			every_possible_country = {
+				limit = {
+					OR = {
+						var:original_tag = {
+							is_in_europe = yes
+						}
+					}
+					NOT = {
+						has_autonomy_state = soviet_socialist_republic
+					}
+				}
+				add_to_array = {
+					ROOT.RUS_SSTR_tags = THIS
+				}
+			}
+		}
+	}
+	focus = {
+		id = RUS_socialist_big_family
+		icon = GFX_focus_RUS_socialist_big_family
+		cost = 5
+		relative_position_id = RUS_unite_under_stalin
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RUS_unite_under_stalin
+		}
+		completion_reward = {
+			custom_effect_tooltip = RUS_socialist_big_family_tt
+		}
+	}
+	focus = {
 		id = RUS_sov_to_the_world_revolution
 		icon = GFX_focus_RUS_sov_to_the_world_revolution
 		cost = 5
 		relative_position_id = RUS_soviets_future
 		x = 0
-		y = 2
+		y = 3
 		prerequisite = {
-			focus = RUS_the_supreme_soviet
-			focus = RUS_unite_under_stalin
+			focus = RUS_extend_our_union
+			focus = RUS_socialist_big_family
 		}
 		completion_reward = {
 			custom_effect_tooltip = RUS_sov_to_the_world_revolution_tt
@@ -34464,40 +34506,6 @@ focus_tree = {
 					}
 				}
 			}
-		}
-	}
-	focus = {
-		id = RUS_sov_world_revoluted
-		icon = GFX_focus_RUS_sov_world_revoluted
-		cost = 5
-		relative_position_id = RUS_the_supreme_soviet
-		x = 0
-		y = 2
-		prerequisite = {
-			focus = RUS_the_supreme_soviet
-		}
-		prerequisite = {
-			focus = RUS_sov_to_the_world_revolution
-		}
-		completion_reward = {
-			custom_effect_tooltip = RUS_sov_world_revoluted_tt
-		}
-	}
-	focus = {
-		id = RUS_socialist_big_family
-		icon = GFX_focus_RUS_socialist_big_family
-		cost = 5
-		relative_position_id = RUS_unite_under_stalin
-		x = 0
-		y = 2
-		prerequisite = {
-			focus = RUS_unite_under_stalin
-		}
-		prerequisite = {
-			focus = RUS_sov_to_the_world_revolution
-		}
-		completion_reward = {
-			custom_effect_tooltip = RUS_socialist_big_family_tt
 		}
 	}
 	focus = {

@@ -2687,6 +2687,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_portrait_RUS_iosif_stalin_civilian_large
+				small = GFX_portrait_RUS_iosif_stalin_civilian_small
 			}
 			army = {
 				large = GFX_portrait_RUS_iosif_stalin_army_large

@@ -17756,7 +17756,10 @@ RUS_Spreading_the_Revolution_decisions = {
 		}
 		target_trigger = {
 			FROM = {
-				is_subject_of = ROOT
+				OR = {
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
 				has_socialist_government = yes
 			}
 		}

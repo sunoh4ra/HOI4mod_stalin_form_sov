@@ -16,6 +16,10 @@ spriteTypes = {
 		texturefile = "gfx/GFX_portrait_RUS_iosif_stalin_civilian_large.png"
 	}
 	spriteType = {
+		name = "GFX_portrait_RUS_iosif_stalin_civilian_small"
+		texturefile = "gfx/GFX_portrait_RUS_iosif_stalin_civilian_small.png"
+	}
+	spriteType = {
 		name = "GFX_focus_RUS_found_communist_international"
 		texturefile = "gfx/GFX_focus_RUS_found_communist_international.png"
 	}
@@ -56,11 +60,19 @@ spriteTypes = {
 		textureFile = "gfx/GFX_focus_RUS_unite_under_stalin.png"
 	}
 	spriteType = {
-		name = "GFX_focus_RUS_sov_to_the_world_revolution"
-		textureFile = "gfx/GFX_focus_RUS_sov_to_the_world_revolution.png"
-	}
-	spriteType = {
 		name = "GFX_portrait_RUS_supreme_soviet"
 		textureFile = "gfx/GFX_portrait_RUS_supreme_soviet.png"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_extend_our_union"
+		textureFile = "gfx/GFX_focus_RUS_extend_our_union.png"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_socialist_big_family"
+		textureFile = "gfx/GFX_focus_RUS_socialist_big_family.png"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_sov_to_the_world_revolution"
+		textureFile = "gfx/GFX_focus_RUS_sov_to_the_world_revolution.png"
 	}
 }

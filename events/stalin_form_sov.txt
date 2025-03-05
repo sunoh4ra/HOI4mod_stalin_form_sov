@@ -63,6 +63,7 @@ country_event = {
 		name = stalin_form_sov.3.a
 		country_event = {
 			id = stalin_form_sov.4
+			days = 1
 		}
 	}
 }
