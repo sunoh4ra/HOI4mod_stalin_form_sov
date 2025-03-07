@@ -34510,7 +34510,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_what_a_childish_fantasy
-		icon = GFX_goal_LAT_soviet_union
+		icon = GFX_focus_RUS_what_a_childish_fantasy
 		cost = 6
 		relative_position_id = RUS_vision_for_union
 		x = 6
@@ -34594,12 +34594,20 @@ focus_tree = {
 			focus = RUS_what_a_childish_fantasy
 		}
 		completion_reward = {
+			custom_effect_tooltip = RUS_help_allys_industry_tt
+			custom_effect_tooltip = tooltip_white_line
 			every_subject_country = {
+				limit = {
+					has_autonomy_state = soviet_socialist_republic
+				}
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
 				}
-				add_ideas = RUS_soviet_republic_industry_idea
+				add_timed_idea = {
+					idea = RUS_soviet_republic_industry_idea
+					days = 365
+				}
 			}
 		}
 	}

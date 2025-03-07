@@ -17734,6 +17734,7 @@ RUS_Spreading_the_Revolution_decisions = {
 						}
 					}
 				}
+				has_completed_focus = RUS_extend_our_union
 			}
 		}
 		visible = {
@@ -17778,6 +17779,23 @@ RUS_Spreading_the_Revolution_decisions = {
 					}
 				}
 				soviet_socialist_republic_tag = "[FROM.GetTag]_soviet"
+			}
+			FROM = {
+				if = {
+					limit = {
+						ROOT = {
+							has_completed_focus = RUS_help_allys_industry
+						}
+						NOT = {
+							has_idea = RUS_soviet_republic_industry_idea
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+					add_ideas = RUS_soviet_republic_industry_idea
+				}
 			}
 		}
 	}
