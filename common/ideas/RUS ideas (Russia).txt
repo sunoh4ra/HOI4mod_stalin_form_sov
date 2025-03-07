@@ -50,105 +50,111 @@ ideas = {
 		### German Economic Influence ###
 		RUS_german_economic_influence_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_german_economic_influence_1"
+				log = "[GetLogRoot]: add idea RUS_german_economic_influence_1"
 				set_variable = {
 					RUS_german_economic_influence = 1
 				}
 			}
 			on_remove = {
-				log = "[GetDateText]: [Root.GetName]: remove idea RUS_german_economic_influence_1"
+				log = "[GetLogRoot]: remove idea RUS_german_economic_influence_1"
 				clear_variable = RUS_german_economic_influence
 			}
 			name = RUS_german_economic_influence
 			picture = GRE_german_ownership
+			modifier = {
+				war_support_factor = -0.01
+				research_speed_factor = 0.01
+			}
 			targeted_modifier = {
 				tag = GER
-				extra_trade_to_target_factor = -0.1
+				trade_cost_for_target_factor = -0.1
+				cic_to_target_factor = 0.03
 			}
 		}
 		RUS_german_economic_influence_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_german_economic_influence_2"
+				log = "[GetLogRoot]: add idea RUS_german_economic_influence_2"
 				set_variable = {
 					RUS_german_economic_influence = 2
 				}
 			}
 			on_remove = {
-				log = "[GetDateText]: [Root.GetName]: remove idea RUS_german_economic_influence_2"
+				log = "[GetLogRoot]: remove idea RUS_german_economic_influence_2"
 				clear_variable = RUS_german_economic_influence
 			}
 			name = RUS_german_economic_influence
 			picture = GRE_german_ownership
 			modifier = {
-				production_speed_buildings_factor = 0.02
+				war_support_factor = -0.02
 				research_speed_factor = 0.02
 			}
 			targeted_modifier = {
 				tag = GER
 				trade_cost_for_target_factor = -0.2
+				cic_to_target_factor = 0.06
 			}
 		}
 		RUS_german_economic_influence_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_german_economic_influence_3"
+				log = "[GetLogRoot]: add idea RUS_german_economic_influence_3"
 				set_variable = {
 					RUS_german_economic_influence = 3
 				}
 			}
 			on_remove = {
-				log = "[GetDateText]: [Root.GetName]: remove idea RUS_german_economic_influence_3"
+				log = "[GetLogRoot]: remove idea RUS_german_economic_influence_3"
 				clear_variable = RUS_german_economic_influence
 			}
 			name = RUS_german_economic_influence
 			picture = GRE_german_ownership
 			modifier = {
-				production_speed_buildings_factor = 0.03
+				war_support_factor = -0.03
 				research_speed_factor = 0.03
 			}
 			targeted_modifier = {
 				tag = GER
 				trade_cost_for_target_factor = -0.3
-				cic_to_target_factor = 0.05
+				cic_to_target_factor = 0.09
 			}
 		}
 		RUS_german_economic_influence_4 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_german_economic_influence_4"
+				log = "[GetLogRoot]: add idea RUS_german_economic_influence_4"
 				set_variable = {
 					RUS_german_economic_influence = 4
 				}
 			}
 			on_remove = {
-				log = "[GetDateText]: [Root.GetName]: remove idea RUS_german_economic_influence_4"
+				log = "[GetLogRoot]: remove idea RUS_german_economic_influence_4"
 				clear_variable = RUS_german_economic_influence
 			}
 			name = RUS_german_economic_influence
 			picture = GRE_german_ownership
 			modifier = {
-				production_speed_buildings_factor = 0.04
+				war_support_factor = -0.04
 				research_speed_factor = 0.04
 			}
 			targeted_modifier = {
 				tag = GER
 				trade_cost_for_target_factor = -0.4
-				cic_to_target_factor = 0.1
+				cic_to_target_factor = 0.12
 			}
 		}
 		RUS_german_economic_influence_5 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_german_economic_influence_5"
+				log = "[GetLogRoot]: add idea RUS_german_economic_influence_5"
 				set_variable = {
 					RUS_german_economic_influence = 5
 				}
 			}
 			on_remove = {
-				log = "[GetDateText]: [Root.GetName]: remove idea RUS_german_economic_influence_5"
+				log = "[GetLogRoot]: remove idea RUS_german_economic_influence_5"
 				clear_variable = RUS_german_economic_influence
 			}
 			name = RUS_german_economic_influence
 			picture = GRE_german_ownership
 			modifier = {
-				production_speed_buildings_factor = 0.05
+				war_support_factor = -0.05
 				research_speed_factor = 0.05
 				min_export = 0.05
 			}
@@ -160,127 +166,127 @@ ideas = {
 		}
 		RUS_german_economic_influence_6 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_german_economic_influence_6"
+				log = "[GetLogRoot]: add idea RUS_german_economic_influence_6"
 				set_variable = {
 					RUS_german_economic_influence = 6
 				}
 			}
 			on_remove = {
-				log = "[GetDateText]: [Root.GetName]: remove idea RUS_german_economic_influence_6"
+				log = "[GetLogRoot]: remove idea RUS_german_economic_influence_6"
 				clear_variable = RUS_german_economic_influence
 			}
 			name = RUS_german_economic_influence
 			picture = GRE_german_ownership
 			modifier = {
-				production_speed_buildings_factor = 0.06
+				war_support_factor = -0.06
 				research_speed_factor = 0.06
 				min_export = 0.1
 			}
 			targeted_modifier = {
 				tag = GER
 				trade_cost_for_target_factor = -0.6
-				cic_to_target_factor = 0.2
+				cic_to_target_factor = 0.18
 			}
 		}
 		RUS_german_economic_influence_7 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_german_economic_influence_7"
+				log = "[GetLogRoot]: add idea RUS_german_economic_influence_7"
 				set_variable = {
 					RUS_german_economic_influence = 7
 				}
 			}
 			on_remove = {
-				log = "[GetDateText]: [Root.GetName]: remove idea RUS_german_economic_influence_7"
+				log = "[GetLogRoot]: remove idea RUS_german_economic_influence_7"
 				clear_variable = RUS_german_economic_influence
 			}
 			name = RUS_german_economic_influence
 			picture = GRE_german_ownership
 			modifier = {
-				production_speed_buildings_factor = 0.07
+				war_support_factor = -0.07
 				research_speed_factor = 0.07
 				min_export = 0.2
 			}
 			targeted_modifier = {
 				tag = GER
 				trade_cost_for_target_factor = -0.7
-				cic_to_target_factor = 0.25
+				cic_to_target_factor = 0.21
 			}
 		}
 		RUS_german_economic_influence_8 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_german_economic_influence_8"
+				log = "[GetLogRoot]: add idea RUS_german_economic_influence_8"
 				set_variable = {
 					RUS_german_economic_influence = 8
 				}
 			}
 			on_remove = {
-				log = "[GetDateText]: [Root.GetName]: remove idea RUS_german_economic_influence_8"
+				log = "[GetLogRoot]: remove idea RUS_german_economic_influence_8"
 				clear_variable = RUS_german_economic_influence
 			}
 			name = RUS_german_economic_influence
 			picture = GRE_german_ownership
 			modifier = {
-				production_speed_buildings_factor = 0.08
+				war_support_factor = -0.08
 				research_speed_factor = 0.08
 				min_export = 0.3
 			}
 			targeted_modifier = {
 				tag = GER
 				trade_cost_for_target_factor = -0.8
-				cic_to_target_factor = 0.3
+				cic_to_target_factor = 0.24
 			}
 		}
 		RUS_german_economic_influence_9 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_german_economic_influence_9"
+				log = "[GetLogRoot]: add idea RUS_german_economic_influence_9"
 				set_variable = {
 					RUS_german_economic_influence = 9
 				}
 			}
 			on_remove = {
-				log = "[GetDateText]: [Root.GetName]: remove idea RUS_german_economic_influence_9"
+				log = "[GetLogRoot]: remove idea RUS_german_economic_influence_9"
 				clear_variable = RUS_german_economic_influence
 			}
 			name = RUS_german_economic_influence
 			picture = GRE_german_ownership
 			modifier = {
-				production_speed_buildings_factor = 0.09
+				war_support_factor = -0.09
 				research_speed_factor = 0.09
 				min_export = 0.4
 			}
 			targeted_modifier = {
 				tag = GER
 				trade_cost_for_target_factor = -0.9
-				cic_to_target_factor = 0.35
+				cic_to_target_factor = 0.27
 			}
 		}
 		RUS_german_economic_influence_10 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_german_economic_influence_10"
+				log = "[GetLogRoot]: add idea RUS_german_economic_influence_10"
 				set_variable = {
 					RUS_german_economic_influence = 10
 				}
 			}
 			on_remove = {
-				log = "[GetDateText]: [Root.GetName]: remove idea RUS_german_economic_influence_10"
+				log = "[GetLogRoot]: remove idea RUS_german_economic_influence_10"
 				clear_variable = RUS_german_economic_influence
 			}
 			name = RUS_german_economic_influence
 			picture = GRE_german_ownership
 			modifier = {
-				production_speed_buildings_factor = 0.1
+				war_support_factor = -0.1
 				research_speed_factor = 0.1
 				min_export = 0.5
 			}
 			targeted_modifier = {
 				tag = GER
 				trade_cost_for_target_factor = -1
-				cic_to_target_factor = 0.4
+				cic_to_target_factor = 0.3
 			}
 		}
 		RUS_economic_fallout = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_economic_fallout"
+				log = "[GetLogRoot]: add idea RUS_economic_fallout"
 			}
 			name = RUS_economic_fallout
 			picture = usa_great_depression
@@ -293,7 +299,7 @@ ideas = {
 		}
 		RUS_brain_drain = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_brain_drain"
+				log = "[GetLogRoot]: add idea RUS_brain_drain"
 			}
 			picture = KTG_Technological_Backwater
 			modifier = {
@@ -307,7 +313,7 @@ ideas = {
 		}
 		RUS_mitteleuropa_sanctions = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_mitteleuropa_sanctions"
+				log = "[GetLogRoot]: add idea RUS_mitteleuropa_sanctions"
 			}
 			picture = RUS_mitteleuropa_embargo
 			modifier = {
@@ -318,7 +324,7 @@ ideas = {
 		}
 		RUS_GER_paper_shortage = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_GER_paper_shortage"
+				log = "[GetLogRoot]: add idea RUS_GER_paper_shortage"
 			}
 			picture = HNN_hopes_dashed
 			modifier = {
@@ -327,7 +333,7 @@ ideas = {
 		}
 		RUS_GER_export_boom = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_GER_export_boom"
+				log = "[GetLogRoot]: add idea RUS_GER_export_boom"
 			}
 			picture = LIB_ger_bailout
 			modifier = {
@@ -337,7 +343,7 @@ ideas = {
 		}
 		RUS_GER_trade_war_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_GER_trade_war_1"
+				log = "[GetLogRoot]: add idea RUS_GER_trade_war_1"
 			}
 			picture = HOL_black_monday_recovery
 			modifier = {
@@ -347,7 +353,7 @@ ideas = {
 		}
 		RUS_GER_trade_war_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_GER_trade_war_2"
+				log = "[GetLogRoot]: add idea RUS_GER_trade_war_2"
 			}
 			picture = HOL_black_monday
 			modifier = {
@@ -358,7 +364,7 @@ ideas = {
 		}
 		RUS_increased_interest = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_increased_interest"
+				log = "[GetLogRoot]: add idea RUS_increased_interest"
 			}
 			picture = HOL_high_debt
 			modifier = {
@@ -369,7 +375,7 @@ ideas = {
 		### Anger - Savinkov ###
 		RUS_military_anger = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_military_anger"
+				log = "[GetLogRoot]: add idea RUS_military_anger"
 				add_dynamic_modifier = {
 					modifier = RUS_military_anger_modifier
 				}
@@ -396,7 +402,7 @@ ideas = {
 		}
 		RUS_popular_anger = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_popular_anger"
+				log = "[GetLogRoot]: add idea RUS_popular_anger"
 				add_dynamic_modifier = {
 					modifier = RUS_popular_anger_modifier
 				}
@@ -425,7 +431,7 @@ ideas = {
 		### Anger - Republic ###
 		RUS_military_anger_dem = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_military_anger_dem"
+				log = "[GetLogRoot]: add idea RUS_military_anger_dem"
 				add_dynamic_modifier = {
 					modifier = RUS_military_anger_dem_modifier
 				}
@@ -451,7 +457,7 @@ ideas = {
 		}
 		RUS_right_anger = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_right_anger"
+				log = "[GetLogRoot]: add idea RUS_right_anger"
 				add_dynamic_modifier = {
 					modifier = RUS_right_anger_modifier
 				}
@@ -477,7 +483,7 @@ ideas = {
 		}
 		RUS_left_anger = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_left_anger"
+				log = "[GetLogRoot]: add idea RUS_left_anger"
 				add_dynamic_modifier = {
 					modifier = RUS_left_anger_modifier
 				}
@@ -505,7 +511,7 @@ ideas = {
 		### Black Monday ###
 		RUS_black_monday_6 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_black_monday_6"
+				log = "[GetLogRoot]: add idea RUS_black_monday_6"
 			}
 			name = RUS_black_monday
 			picture = HOL_black_monday
@@ -517,7 +523,7 @@ ideas = {
 		}
 		RUS_black_monday_5 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_black_monday_5"
+				log = "[GetLogRoot]: add idea RUS_black_monday_5"
 			}
 			name = RUS_black_monday
 			picture = HOL_black_monday
@@ -529,7 +535,7 @@ ideas = {
 		}
 		RUS_black_monday_4 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_black_monday_4"
+				log = "[GetLogRoot]: add idea RUS_black_monday_4"
 			}
 			name = RUS_black_monday
 			picture = HOL_black_monday
@@ -541,7 +547,7 @@ ideas = {
 		}
 		RUS_black_monday_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_black_monday_3"
+				log = "[GetLogRoot]: add idea RUS_black_monday_3"
 			}
 			name = RUS_black_monday
 			picture = HOL_black_monday_recovery
@@ -553,7 +559,7 @@ ideas = {
 		}
 		RUS_black_monday_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_black_monday_2"
+				log = "[GetLogRoot]: add idea RUS_black_monday_2"
 			}
 			name = RUS_black_monday
 			picture = HOL_black_monday_recovery
@@ -565,7 +571,7 @@ ideas = {
 		}
 		RUS_black_monday_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_black_monday_1"
+				log = "[GetLogRoot]: add idea RUS_black_monday_1"
 			}
 			name = RUS_black_monday
 			picture = HOL_black_monday_recovery
@@ -581,7 +587,7 @@ ideas = {
 		### Savinkov ideas ###
 		RUS_entrenched_opposition = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_entrenched_opposition"
+				log = "[GetLogRoot]: add idea RUS_entrenched_opposition"
 			}
 			picture = generic_democratic_opposition
 			modifier = {
@@ -590,7 +596,7 @@ ideas = {
 		}
 		RUS_death_throes_of_the_republic = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_death_throes_of_the_republic"
+				log = "[GetLogRoot]: add idea RUS_death_throes_of_the_republic"
 			}
 			picture = SPR_political_violence
 			modifier = {
@@ -599,7 +605,7 @@ ideas = {
 		}
 		RUS_army_commissars_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_army_commissars_idea"
+				log = "[GetLogRoot]: add idea RUS_army_commissars_idea"
 			}
 			picture = advisors_russia_alt
 			modifier = {
@@ -610,7 +616,7 @@ ideas = {
 		}
 		RUS_army_commissars_idea_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_army_commissars_idea_2"
+				log = "[GetLogRoot]: add idea RUS_army_commissars_idea_2"
 			}
 			picture = advisors_russia_alt
 			name = RUS_army_commissars_idea
@@ -622,7 +628,7 @@ ideas = {
 		}
 		RUS_army_commissars_idea_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_army_commissars_idea_3"
+				log = "[GetLogRoot]: add idea RUS_army_commissars_idea_3"
 			}
 			picture = advisors_russia_alt
 			name = RUS_army_commissars_idea
@@ -634,7 +640,7 @@ ideas = {
 		}
 		RUS_state_guard_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_state_guard_1"
+				log = "[GetLogRoot]: add idea RUS_state_guard_1"
 			}
 			picture = RUS_svobodniks
 			name = RUS_state_guard
@@ -645,7 +651,7 @@ ideas = {
 		}
 		RUS_state_guard_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_state_guard_2"
+				log = "[GetLogRoot]: add idea RUS_state_guard_2"
 			}
 			picture = RUS_svobodniks
 			name = RUS_state_guard
@@ -658,7 +664,7 @@ ideas = {
 		}
 		RUS_russian_cause_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_russian_cause_idea"
+				log = "[GetLogRoot]: add idea RUS_russian_cause_idea"
 			}
 			picture = RUS_the_russian_cause
 			modifier = {
@@ -670,7 +676,7 @@ ideas = {
 		}
 		RUS_russian_cause_idea_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_russian_cause_idea_2"
+				log = "[GetLogRoot]: add idea RUS_russian_cause_idea_2"
 			}
 			picture = RUS_the_russian_cause
 			modifier = {
@@ -686,7 +692,7 @@ ideas = {
 		}
 		RUS_centralise_federal_system = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_centralise_federal_system"
+				log = "[GetLogRoot]: add idea RUS_centralise_federal_system"
 			}
 			picture = HNN_hopes_dashed
 			modifier = {
@@ -707,7 +713,7 @@ ideas = {
 		}
 		RUS_centralise_federal_system_soccon = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_centralise_federal_system_soccon"
+				log = "[GetLogRoot]: add idea RUS_centralise_federal_system_soccon"
 			}
 			picture = HNN_hopes_dashed
 			name = RUS_centralise_federal_system
@@ -722,7 +728,7 @@ ideas = {
 		}
 		RUS_artels = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_artels"
+				log = "[GetLogRoot]: add idea RUS_artels"
 			}
 			picture = generic_fascist_workers
 			modifier = {
@@ -732,7 +738,7 @@ ideas = {
 		}
 		RUS_artels_chamber = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_artels_chamber"
+				log = "[GetLogRoot]: add idea RUS_artels_chamber"
 			}
 			picture = generic_fascist_workers
 			modifier = {
@@ -743,32 +749,30 @@ ideas = {
 		}
 		RUS_artels_chamber_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_artels_chamber_2"
+				log = "[GetLogRoot]: add idea RUS_artels_chamber_2"
 			}
 			name = RUS_artels_chamber
 			picture = generic_fascist_workers
 			modifier = {
-				stability_factor = 0.1
 				production_speed_buildings_factor = 0.15
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.2
 				power_balance_weekly = -0.005
 				production_factory_max_efficiency_factor = -0.1
 			}
 		}
 		RUS_izotovites = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_izotovites"
+				log = "[GetLogRoot]: add idea RUS_izotovites"
 			}
 			picture = HOL_labor_camps
 			modifier = {
 				political_power_gain = -0.05
-				production_speed_buildings_factor = 0.075
-				local_resources_factor = 0.05
+				local_resources_factor = 0.075
 			}
 		}
 		RUS_supreme_economic_council = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_supreme_economic_council"
+				log = "[GetLogRoot]: add idea RUS_supreme_economic_council"
 			}
 			picture = SOV_fourth_five_year_plan
 			modifier = {
@@ -783,7 +787,7 @@ ideas = {
 		}
 		RUS_supreme_economic_council_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_supreme_economic_council_2"
+				log = "[GetLogRoot]: add idea RUS_supreme_economic_council_2"
 			}
 			name = RUS_supreme_economic_council
 			picture = SOV_fourth_five_year_plan
@@ -801,7 +805,7 @@ ideas = {
 		RUS_supreme_economic_council_3 = {
 			#Teleological Industrial Planning
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_supreme_economic_council_3"
+				log = "[GetLogRoot]: add idea RUS_supreme_economic_council_3"
 			}
 			name = RUS_supreme_economic_council
 			picture = SOV_fourth_five_year_plan
@@ -821,7 +825,7 @@ ideas = {
 		RUS_supreme_economic_council_4 = {
 			#Weakened version of #2
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_supreme_economic_council_4"
+				log = "[GetLogRoot]: add idea RUS_supreme_economic_council_4"
 			}
 			name = RUS_supreme_economic_council
 			picture = SOV_fourth_five_year_plan
@@ -839,7 +843,7 @@ ideas = {
 		RUS_supreme_economic_council_5 = {
 			#if has 3-4, replace it with 5 in Planification of Society
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_supreme_economic_council_5"
+				log = "[GetLogRoot]: add idea RUS_supreme_economic_council_5"
 			}
 			name = RUS_supreme_economic_council
 			picture = SOV_fourth_five_year_plan
@@ -860,7 +864,7 @@ ideas = {
 		}
 		RUS_expansion_of_VES_bureaucracy = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_expansion_of_VES_bureaucracy"
+				log = "[GetLogRoot]: add idea RUS_expansion_of_VES_bureaucracy"
 			}
 			picture = generic_crippled_industry
 			modifier = {
@@ -870,7 +874,7 @@ ideas = {
 		RUS_new_russian_culture_1 = {
 			#Technical education
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_new_russian_culture_1"
+				log = "[GetLogRoot]: add idea RUS_new_russian_culture_1"
 			}
 			picture = SOV_fascist_womens_movement
 			modifier = {
@@ -880,7 +884,7 @@ ideas = {
 		RUS_new_russian_culture_2 = {
 			#Cultural education
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_new_russian_culture_2"
+				log = "[GetLogRoot]: add idea RUS_new_russian_culture_2"
 			}
 			picture = SOV_the_true_tsars
 			modifier = {
@@ -890,7 +894,7 @@ ideas = {
 		RUS_new_russian_culture_3 = {
 			#Technical + spiritual revolution
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_new_russian_culture_3"
+				log = "[GetLogRoot]: add idea RUS_new_russian_culture_3"
 			}
 			picture = SOV_fascist_womens_movement
 			name = RUS_new_russian_culture_idea
@@ -903,7 +907,7 @@ ideas = {
 		RUS_new_russian_culture_4 = {
 			#Technical + faith
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_new_russian_culture_4"
+				log = "[GetLogRoot]: add idea RUS_new_russian_culture_4"
 			}
 			picture = SOV_fascist_womens_movement
 			name = RUS_new_russian_culture_idea
@@ -916,7 +920,7 @@ ideas = {
 		RUS_new_russian_culture_5 = {
 			#Cultural + spiritual revolution
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_new_russian_culture_5"
+				log = "[GetLogRoot]: add idea RUS_new_russian_culture_5"
 			}
 			picture = SOV_the_true_tsars
 			name = RUS_new_russian_culture_idea
@@ -929,7 +933,7 @@ ideas = {
 		RUS_new_russian_culture_6 = {
 			#Cultural + faith
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_new_russian_culture_6"
+				log = "[GetLogRoot]: add idea RUS_new_russian_culture_6"
 			}
 			picture = SOV_the_true_tsars
 			name = RUS_new_russian_culture_idea
@@ -941,7 +945,7 @@ ideas = {
 		RUS_new_russian_culture_7 = {
 			#Technical + spiritual revolution + catechism
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_new_russian_culture_7"
+				log = "[GetLogRoot]: add idea RUS_new_russian_culture_7"
 			}
 			picture = SOV_fascist_womens_movement
 			name = RUS_new_russian_culture_idea
@@ -954,7 +958,7 @@ ideas = {
 		RUS_new_russian_culture_8 = {
 			#Technical + faith + catechism
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_new_russian_culture_8"
+				log = "[GetLogRoot]: add idea RUS_new_russian_culture_8"
 			}
 			picture = SOV_fascist_womens_movement
 			name = RUS_new_russian_culture_idea
@@ -967,7 +971,7 @@ ideas = {
 		RUS_new_russian_culture_9 = {
 			#Cultural + spiritual revolution + catechism
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_new_russian_culture_9"
+				log = "[GetLogRoot]: add idea RUS_new_russian_culture_9"
 			}
 			picture = SOV_the_true_tsars
 			name = RUS_new_russian_culture_idea
@@ -980,7 +984,7 @@ ideas = {
 		RUS_new_russian_culture_10 = {
 			#Cultural + faith + catechism
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_new_russian_culture_10"
+				log = "[GetLogRoot]: add idea RUS_new_russian_culture_10"
 			}
 			picture = SOV_the_true_tsars
 			name = RUS_new_russian_culture_idea
@@ -991,7 +995,7 @@ ideas = {
 		}
 		RUS_eurasian_autarky = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_eurasian_autarky"
+				log = "[GetLogRoot]: add idea RUS_eurasian_autarky"
 			}
 			picture = tur_etatism_bonus
 			modifier = {
@@ -1003,7 +1007,7 @@ ideas = {
 		}
 		RUS_eurasian_autarky_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_eurasian_autarky_2"
+				log = "[GetLogRoot]: add idea RUS_eurasian_autarky_2"
 			}
 			picture = tur_etatism_bonus
 			name = RUS_eurasian_autarky
@@ -1017,7 +1021,7 @@ ideas = {
 		}
 		RUS_national_solidarism_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_national_solidarism_idea"
+				log = "[GetLogRoot]: add idea RUS_national_solidarism_idea"
 			}
 			picture = SOV_transformation_of_nature
 			modifier = {
@@ -1027,7 +1031,7 @@ ideas = {
 		}
 		RUS_solidarist_economy = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_solidarist_economy"
+				log = "[GetLogRoot]: add idea RUS_solidarist_economy"
 			}
 			picture = SOV_transformation_of_nature
 			modifier = {
@@ -1040,7 +1044,7 @@ ideas = {
 		}
 		RUS_solidarist_economy_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_solidarist_economy_2"
+				log = "[GetLogRoot]: add idea RUS_solidarist_economy_2"
 			}
 			name = RUS_solidarist_economy
 			picture = SOV_transformation_of_nature
@@ -1054,7 +1058,7 @@ ideas = {
 		}
 		RUS_purged_universities = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_purged_universities"
+				log = "[GetLogRoot]: add idea RUS_purged_universities"
 			}
 			picture = generic_research_reduction
 			modifier = {
@@ -1063,7 +1067,7 @@ ideas = {
 		}
 		RUS_cossack_resistance = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_cossack_resistance"
+				log = "[GetLogRoot]: add idea RUS_cossack_resistance"
 			}
 			picture = UKR_mace
 			modifier = {
@@ -1073,7 +1077,7 @@ ideas = {
 		}
 		RUS_VRBO = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_VRBO"
+				log = "[GetLogRoot]: add idea RUS_VRBO"
 			}
 			picture = SPR_anti_fascist_crusade
 			modifier = {
@@ -1085,7 +1089,7 @@ ideas = {
 		}
 		RUS_VRBO_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_VRBO_2"
+				log = "[GetLogRoot]: add idea RUS_VRBO_2"
 			}
 			picture = SPR_anti_fascist_crusade
 			name = RUS_VRBO
@@ -1098,7 +1102,7 @@ ideas = {
 		}
 		RUS_VRBO_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_VRBO_3"
+				log = "[GetLogRoot]: add idea RUS_VRBO_3"
 			}
 			picture = SPR_anti_fascist_crusade
 			name = RUS_VRBO
@@ -1111,7 +1115,7 @@ ideas = {
 		}
 		RUS_sumerki_program = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_sumerki_program"
+				log = "[GetLogRoot]: add idea RUS_sumerki_program"
 			}
 			picture = CZE_Uranium_Mining			#SOV_atomic_bomb_project
 			modifier = {
@@ -1128,7 +1132,7 @@ ideas = {
 		### Misc Ideas ###
 		RUS_military_chaos = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_military_chaos"
+				log = "[GetLogRoot]: add idea RUS_military_chaos"
 			}
 			picture = generic_neglected_military
 			modifier = {
@@ -1140,7 +1144,7 @@ ideas = {
 		}
 		RUS_military_purges = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_military_purges"
+				log = "[GetLogRoot]: add idea RUS_military_purges"
 			}
 			picture = generic_purge
 			modifier = {
@@ -1150,7 +1154,7 @@ ideas = {
 		}
 		RUS_military_purges_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_military_purges_2"
+				log = "[GetLogRoot]: add idea RUS_military_purges_2"
 			}
 			picture = generic_purge
 			name = RUS_military_purges
@@ -1163,7 +1167,7 @@ ideas = {
 		}
 		RUS_army_reshuffle = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_army_reshuffle"
+				log = "[GetLogRoot]: add idea RUS_army_reshuffle"
 			}
 			picture = chi_incompetent_officers
 			modifier = {
@@ -1173,14 +1177,14 @@ ideas = {
 		}
 		RUS_ruskapa = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_ruskapa"
+				log = "[GetLogRoot]: add idea RUS_ruskapa"
 				add_offsite_building = {
 					type = dockyard
 					level = 2
 				}
 			}
 			on_remove = {
-				log = "[GetDateText]: [Root.GetName]: remove idea RUS_ruskapa"
+				log = "[GetLogRoot]: remove idea RUS_ruskapa"
 				add_offsite_building = {
 					type = dockyard
 					level = 2
@@ -1211,7 +1215,7 @@ ideas = {
 		RUS_cold_war = {
 			#Removed by `on_war_relation_added`
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_cold_war"
+				log = "[GetLogRoot]: add idea RUS_cold_war"
 			}
 			picture = generic_neutrality_drift_bonus
 			allowed = {
@@ -1230,7 +1234,7 @@ ideas = {
 		RUS_cold_war_2 = {
 			#Removed by `on_war_relation_added`
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_cold_war_2"
+				log = "[GetLogRoot]: add idea RUS_cold_war_2"
 			}
 			name = RUS_cold_war
 			picture = generic_neutrality_drift_bonus
@@ -1249,7 +1253,7 @@ ideas = {
 		RUS_patriotic_war_2 = {
 			#Added for UKR hard mode option
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_patriotic_war_2"
+				log = "[GetLogRoot]: add idea RUS_patriotic_war_2"
 			}
 			picture = death_men
 			allowed = {
@@ -1273,7 +1277,7 @@ ideas = {
 			#Added if Germany refuses peace deal, AI only, removed by `on_peace`
 			name = RUS_patriotic_war_2
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_patriotic_war_3"
+				log = "[GetLogRoot]: add idea RUS_patriotic_war_3"
 			}
 			picture = death_men
 			allowed = {
@@ -1293,7 +1297,7 @@ ideas = {
 		RUS_treaty_of_moscow = {
 			#treaty of moscow
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_treaty_of_moscow"
+				log = "[GetLogRoot]: add idea RUS_treaty_of_moscow"
 			}
 			picture = ger_mefo_bills_payment
 			allowed = {
@@ -1327,7 +1331,7 @@ ideas = {
 			#treaty of moscow SWR
 			name = RUS_treaty_of_moscow
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_treaty_of_moscow_2"
+				log = "[GetLogRoot]: add idea RUS_treaty_of_moscow_2"
 			}
 			picture = ger_mefo_bills_payment
 			allowed = {
@@ -1360,7 +1364,7 @@ ideas = {
 		### Crisis ideas ###
 		RUS_kazakh_unrest = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_kazakh_unrest"
+				log = "[GetLogRoot]: add idea RUS_kazakh_unrest"
 			}
 			picture = PER_unruly_tribes
 			modifier = {
@@ -1388,7 +1392,7 @@ ideas = {
 		}
 		FIN_war_for_survival = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea FIN_war_for_survival"
+				log = "[GetLogRoot]: add idea FIN_war_for_survival"
 			}
 			picture = ast_volunteer_defence_corps
 			available = {
@@ -1402,7 +1406,7 @@ ideas = {
 		}
 		RUS_FIN_neutrality = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_FIN_neutrality"
+				log = "[GetLogRoot]: add idea RUS_FIN_neutrality"
 			}
 			picture = advisors_russia
 			cancel = {
@@ -1419,7 +1423,7 @@ ideas = {
 		}
 		RUS_mongolian_war_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_mongolian_war_idea"
+				log = "[GetLogRoot]: add idea RUS_mongolian_war_idea"
 			}
 			picture = ast_volunteer_defence_corps
 			available = {
@@ -1433,7 +1437,7 @@ ideas = {
 		}
 		RUS_antigerman_sabotage = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_antigerman_sabotage"
+				log = "[GetLogRoot]: add idea RUS_antigerman_sabotage"
 			}
 			picture = SPR_political_violence
 			available = {
@@ -1446,7 +1450,7 @@ ideas = {
 		}
 		RUS_UKR_illegitimate_republic = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_UKR_illegitimate_republic"
+				log = "[GetLogRoot]: add idea RUS_UKR_illegitimate_republic"
 			}
 			picture = Recruitment_Crisis
 			available = {
@@ -1460,7 +1464,7 @@ ideas = {
 		}
 		RUS_UKR_borotbyst_sabotage_large = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_UKR_borotbyst_sabotage_large"
+				log = "[GetLogRoot]: add idea RUS_UKR_borotbyst_sabotage_large"
 			}
 			picture = POL_disjointed_industry
 			available = {
@@ -1475,7 +1479,7 @@ ideas = {
 		RUS_UKR_borotbyst_sabotage_medium = {
 			name = RUS_UKR_borotbyst_sabotage_large
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_UKR_borotbyst_sabotage_medium"
+				log = "[GetLogRoot]: add idea RUS_UKR_borotbyst_sabotage_medium"
 			}
 			picture = POL_disjointed_industry
 			available = {
@@ -1490,27 +1494,29 @@ ideas = {
 		### Democratic ideas ###
 		RUS_post-savinkov_economy = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_post-savinkov_economy"
+				log = "[GetLogRoot]: add idea RUS_post-savinkov_economy"
 			}
 			picture = POL_disjointed_industry
 			modifier = {
-				industrial_capacity_factory = -0.15
+				industrial_capacity_factory = -0.2
+				production_speed_buildings_factor = -0.2
 				stability_factor = -0.1
 			}
 		}
 		RUS_post-soc_economy = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_post-soc_economy"
+				log = "[GetLogRoot]: add idea RUS_post-soc_economy"
 			}
 			picture = POL_disjointed_industry
 			modifier = {
-				industrial_capacity_factory = -0.15
+				industrial_capacity_factory = -0.2
+				production_speed_buildings_factor = -0.2
 				stability_factor = -0.1
 			}
 		}
 		RUS_republic_under_watch = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_republic_under_watch"
+				log = "[GetLogRoot]: add idea RUS_republic_under_watch"
 			}
 			picture = advisors_russia_alt
 			modifier = {
@@ -1522,7 +1528,7 @@ ideas = {
 		}
 		RUS_republic_under_watch_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_republic_under_watch_2"
+				log = "[GetLogRoot]: add idea RUS_republic_under_watch_2"
 			}
 			picture = advisors_russia_alt
 			name = RUS_republic_under_watch
@@ -1535,7 +1541,7 @@ ideas = {
 		}
 		RUS_republic_under_watch_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_republic_under_watch_3"
+				log = "[GetLogRoot]: add idea RUS_republic_under_watch_3"
 			}
 			picture = advisors_russia_alt
 			name = RUS_republic_under_watch
@@ -1547,7 +1553,7 @@ ideas = {
 		}
 		RUS_guarantor_of_stability = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_guarantor_of_stability"
+				log = "[GetLogRoot]: add idea RUS_guarantor_of_stability"
 			}
 			picture = advisors_russia_alt
 			modifier = {
@@ -1561,7 +1567,7 @@ ideas = {
 		}
 		RUS_guarantor_of_stability_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_guarantor_of_stability_2"
+				log = "[GetLogRoot]: add idea RUS_guarantor_of_stability_2"
 			}
 			picture = advisors_russia_alt
 			name = RUS_guarantor_of_stability
@@ -1578,7 +1584,7 @@ ideas = {
 		}
 		RUS_extra_military_budget = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_extra_military_budget"
+				log = "[GetLogRoot]: add idea RUS_extra_military_budget"
 			}
 			picture = RUS_training_barracks
 			equipment_bonus = {
@@ -1611,7 +1617,7 @@ ideas = {
 		RUS_national_defence_preparation_law = {
 			#Removed by `on_war_relation_added`
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_national_defence_preparation_law"
+				log = "[GetLogRoot]: add idea RUS_national_defence_preparation_law"
 			}
 			picture = RUS_training_barracks
 			modifier = {
@@ -1622,7 +1628,7 @@ ideas = {
 		}
 		RUS_embers_of_democracy = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_embers_of_democracy"
+				log = "[GetLogRoot]: add idea RUS_embers_of_democracy"
 			}
 			picture = generic_democratic_drift_bonus
 			modifier = {
@@ -1632,7 +1638,7 @@ ideas = {
 		}
 		RUS_weak_democracy = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_weak_democracy"
+				log = "[GetLogRoot]: add idea RUS_weak_democracy"
 			}
 			picture = generic_democratic_drift_bonus
 			modifier = {
@@ -1642,7 +1648,7 @@ ideas = {
 		}
 		RUS_unstable_democracy = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_unstable_democracy"
+				log = "[GetLogRoot]: add idea RUS_unstable_democracy"
 			}
 			picture = generic_democratic_drift_bonus
 			modifier = {
@@ -1652,7 +1658,7 @@ ideas = {
 		}
 		RUS_strenghtening_democracy = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_strenghtening_democracy"
+				log = "[GetLogRoot]: add idea RUS_strenghtening_democracy"
 			}
 			picture = generic_political_support
 			modifier = {
@@ -1662,7 +1668,7 @@ ideas = {
 		}
 		RUS_strong_democracy = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_strong_democracy"
+				log = "[GetLogRoot]: add idea RUS_strong_democracy"
 			}
 			picture = generic_political_support
 			modifier = {
@@ -1672,7 +1678,7 @@ ideas = {
 		}
 		RUS_genuine_democracy = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_genuine_democracy"
+				log = "[GetLogRoot]: add idea RUS_genuine_democracy"
 			}
 			picture = SPR_torchbearers_of_tomorrow
 			modifier = {
@@ -1683,7 +1689,7 @@ ideas = {
 		}
 		RUS_guided_democracy = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_guided_democracy"
+				log = "[GetLogRoot]: add idea RUS_guided_democracy"
 			}
 			picture = generic_scales
 			modifier = {
@@ -1694,7 +1700,7 @@ ideas = {
 		}
 		RUS_rule_by_decree = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_rule_by_decree"
+				log = "[GetLogRoot]: add idea RUS_rule_by_decree"
 			}
 			picture = generic_monarchist_uprising
 			modifier = {
@@ -1705,7 +1711,7 @@ ideas = {
 		}
 		RUS_understaffed_security = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_understaffed_security"
+				log = "[GetLogRoot]: add idea RUS_understaffed_security"
 			}
 			picture = Recruitment_Crisis
 			modifier = {
@@ -1716,17 +1722,17 @@ ideas = {
 		}
 		RUS_influx_of_capital = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_influx_of_capital"
+				log = "[GetLogRoot]: add idea RUS_influx_of_capital"
 			}
 			picture = generic_loans
 			modifier = {
 				political_power_gain = 0.5
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.05
 			}
 		}
 		RUS_narodovolets_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_narodovolets_idea"
+				log = "[GetLogRoot]: add idea RUS_narodovolets_idea"
 			}
 			picture = RUS_narodovolets
 			modifier = {
@@ -1736,7 +1742,7 @@ ideas = {
 		}
 		RUS_narodovolets_idea_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_narodovolets_idea_2"
+				log = "[GetLogRoot]: add idea RUS_narodovolets_idea_2"
 			}
 			picture = RUS_narodovolets
 			name = RUS_narodovolets_idea
@@ -1749,7 +1755,7 @@ ideas = {
 		}
 		RUS_republican_guard = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_republican_guard"
+				log = "[GetLogRoot]: add idea RUS_republican_guard"
 			}
 			picture = RUS_republican_guard
 			modifier = {
@@ -1759,7 +1765,7 @@ ideas = {
 		}
 		RUS_republican_guard_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_republican_guard_2"
+				log = "[GetLogRoot]: add idea RUS_republican_guard_2"
 			}
 			picture = RUS_republican_guard
 			name = RUS_republican_guard
@@ -1771,7 +1777,7 @@ ideas = {
 		}
 		RUS_peasant_republic = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_peasant_republic"
+				log = "[GetLogRoot]: add idea RUS_peasant_republic"
 			}
 			picture = RUS_land_reforms
 			modifier = {
@@ -1783,7 +1789,7 @@ ideas = {
 		}
 		RUS_february_empire = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_february_empire"
+				log = "[GetLogRoot]: add idea RUS_february_empire"
 			}
 			picture = SOV_crowning_jewel_of_russia
 			modifier = {
@@ -1795,7 +1801,7 @@ ideas = {
 		}
 		RUS_pensions = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_pensions"
+				log = "[GetLogRoot]: add idea RUS_pensions"
 			}
 			picture = HOL_welfare_state
 			modifier = {
@@ -1806,7 +1812,7 @@ ideas = {
 		}
 		RUS_welfare_system = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_welfare_system"
+				log = "[GetLogRoot]: add idea RUS_welfare_system"
 			}
 			picture = HOL_welfare_state
 			modifier = {
@@ -1819,7 +1825,7 @@ ideas = {
 		}
 		RUS_welfare_system_full = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_welfare_system_full"
+				log = "[GetLogRoot]: add idea RUS_welfare_system_full"
 			}
 			name = RUS_welfare_system
 			picture = HOL_welfare_state
@@ -1835,7 +1841,7 @@ ideas = {
 		}
 		RUS_rebuilding_better = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_rebuilding_better"
+				log = "[GetLogRoot]: add idea RUS_rebuilding_better"
 			}
 			picture = FRA_liberte_egalite_solidarite
 			modifier = {
@@ -1846,7 +1852,7 @@ ideas = {
 		}
 		RUS_torch_for_all_world = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_torch_for_all_world"
+				log = "[GetLogRoot]: add idea RUS_torch_for_all_world"
 			}
 			picture = SPR_torchbearers_of_tomorrow
 			modifier = {
@@ -1857,7 +1863,7 @@ ideas = {
 		}
 		RUS_arsenal_of_sanity = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_arsenal_of_sanity"
+				log = "[GetLogRoot]: add idea RUS_arsenal_of_sanity"
 			}
 			picture = triumphant_will
 			modifier = {
@@ -1870,7 +1876,7 @@ ideas = {
 		}
 		RUS_strike_season = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_strike_season"
+				log = "[GetLogRoot]: add idea RUS_strike_season"
 			}
 			picture = RUS_sgir_strike
 			modifier = {
@@ -1882,7 +1888,7 @@ ideas = {
 		}
 		RUS_new_russian_capitalism_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_new_russian_capitalism_idea"
+				log = "[GetLogRoot]: add idea RUS_new_russian_capitalism_idea"
 			}
 			picture = MON_russian_help_icon
 			modifier = {
@@ -1893,7 +1899,7 @@ ideas = {
 		}
 		RUS_new_russian_capitalism_idea_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_new_russian_capitalism_idea_2"
+				log = "[GetLogRoot]: add idea RUS_new_russian_capitalism_idea_2"
 			}
 			picture = MON_russian_help_icon
 			name = RUS_new_russian_capitalism_idea
@@ -1905,7 +1911,7 @@ ideas = {
 		}
 		RUS_state_export = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_state_export"
+				log = "[GetLogRoot]: add idea RUS_state_export"
 			}
 			picture = can_wartime_prices_and_trade_board
 			cancel = {
@@ -1922,7 +1928,7 @@ ideas = {
 		}
 		RUS_state_economic_committee = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_state_economic_committee"
+				log = "[GetLogRoot]: add idea RUS_state_economic_committee"
 			}
 			picture = tur_etatism
 			modifier = {
@@ -1936,7 +1942,7 @@ ideas = {
 		}
 		RUS_state_economic_committee_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_state_economic_committee_2"
+				log = "[GetLogRoot]: add idea RUS_state_economic_committee_2"
 			}
 			picture = tur_etatism
 			name = RUS_state_economic_committee
@@ -1952,7 +1958,7 @@ ideas = {
 		}
 		RUS_state_economic_committee_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_state_economic_committee_3"
+				log = "[GetLogRoot]: add idea RUS_state_economic_committee_3"
 			}
 			picture = tur_etatism
 			name = RUS_state_economic_committee
@@ -1968,7 +1974,7 @@ ideas = {
 		}
 		RUS_state_economic_committee_4 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_state_economic_committee_4"
+				log = "[GetLogRoot]: add idea RUS_state_economic_committee_4"
 			}
 			picture = tur_etatism
 			name = RUS_state_economic_committee_solonevich
@@ -1984,7 +1990,7 @@ ideas = {
 		}
 		RUS_state_economic_committee_5 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_state_economic_committee_5"
+				log = "[GetLogRoot]: add idea RUS_state_economic_committee_5"
 			}
 			picture = tur_etatism
 			modifier = {
@@ -1999,7 +2005,7 @@ ideas = {
 		}
 		RUS_republican_constitutional_clubs_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_republican_constitutional_clubs_idea"
+				log = "[GetLogRoot]: add idea RUS_republican_constitutional_clubs_idea"
 			}
 			picture = generic_lightbulb
 			name = RUS_republican_constitutional_clubs
@@ -2010,7 +2016,7 @@ ideas = {
 		}
 		RUS_liberal_intelligentsia = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_liberal_intelligentsia"
+				log = "[GetLogRoot]: add idea RUS_liberal_intelligentsia"
 			}
 			picture = generic_lightbulb
 			modifier = {
@@ -2022,7 +2028,7 @@ ideas = {
 		}
 		RUS_liberal_intelligentsia_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_liberal_intelligentsia_2"
+				log = "[GetLogRoot]: add idea RUS_liberal_intelligentsia_2"
 			}
 			picture = generic_lightbulb
 			name = RUS_liberal_intelligentsia
@@ -2037,7 +2043,7 @@ ideas = {
 		}
 		RUS_liberal_intelligentsia_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_liberal_intelligentsia_3"
+				log = "[GetLogRoot]: add idea RUS_liberal_intelligentsia_3"
 			}
 			picture = generic_lightbulb
 			name = RUS_liberal_intelligentsia
@@ -2051,7 +2057,7 @@ ideas = {
 		}
 		RUS_nationalist_curriculum = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_nationalist_curriculum"
+				log = "[GetLogRoot]: add idea RUS_nationalist_curriculum"
 			}
 			picture = SOV_crowning_jewel_of_russia
 			modifier = {
@@ -2060,7 +2066,7 @@ ideas = {
 		}
 		RUS_nationalist_curriculum_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_nationalist_curriculum_2"
+				log = "[GetLogRoot]: add idea RUS_nationalist_curriculum_2"
 			}
 			picture = SOV_crowning_jewel_of_russia
 			name = RUS_nationalist_curriculum
@@ -2071,7 +2077,7 @@ ideas = {
 		}
 		RUS_nationalist_curriculum_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_nationalist_curriculum_3"
+				log = "[GetLogRoot]: add idea RUS_nationalist_curriculum_3"
 			}
 			picture = SOV_crowning_jewel_of_russia
 			name = RUS_nationalist_curriculum
@@ -2082,7 +2088,7 @@ ideas = {
 		}
 		RUS_nationalist_marches = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_nationalist_marches"
+				log = "[GetLogRoot]: add idea RUS_nationalist_marches"
 			}
 			picture = prc_the_long_march
 			cancel = {
@@ -2096,7 +2102,7 @@ ideas = {
 		}
 		RUS_strict_anti_socialist_laws = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_strict_anti_socialist_laws"
+				log = "[GetLogRoot]: add idea RUS_strict_anti_socialist_laws"
 			}
 			picture = ARG_anti_soviet			#generic_communism_banned
 			cancel = {
@@ -2112,7 +2118,7 @@ ideas = {
 		}
 		RUS_deadlocked_duma = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_deadlocked_duma"
+				log = "[GetLogRoot]: add idea RUS_deadlocked_duma"
 			}
 			picture = HNN_hopes_dashed
 			cancel = {
@@ -2127,7 +2133,7 @@ ideas = {
 		}
 		RUS_separation_of_powers = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_separation_of_powers"
+				log = "[GetLogRoot]: add idea RUS_separation_of_powers"
 			}
 			picture = generic_constitutional_guarantees
 			cancel = {
@@ -2141,7 +2147,7 @@ ideas = {
 		}
 		RUS_powerful_executive = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_powerful_executive"
+				log = "[GetLogRoot]: add idea RUS_powerful_executive"
 			}
 			picture = government
 			cancel = {
@@ -2155,7 +2161,7 @@ ideas = {
 		}
 		RUS_powerful_executive_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_powerful_executive_2"
+				log = "[GetLogRoot]: add idea RUS_powerful_executive_2"
 			}
 			picture = government
 			name = RUS_powerful_executive
@@ -2170,7 +2176,7 @@ ideas = {
 		}
 		RUS_working_peasant_programme = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_working_peasant_programme"
+				log = "[GetLogRoot]: add idea RUS_working_peasant_programme"
 			}
 			picture = FIN_socialist_welfare
 			cancel = {
@@ -2184,7 +2190,7 @@ ideas = {
 		}
 		RUS_win_back_peasants_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_win_back_peasants_idea"
+				log = "[GetLogRoot]: add idea RUS_win_back_peasants_idea"
 			}
 			picture = LIT_invested_in_farms
 			cancel = {
@@ -2198,7 +2204,7 @@ ideas = {
 		}
 		RUS_literary_clubs = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_literary_clubs"
+				log = "[GetLogRoot]: add idea RUS_literary_clubs"
 			}
 			picture = FRA_communard_spirit
 			cancel = {
@@ -2212,7 +2218,7 @@ ideas = {
 		}
 		RUS_democratic_education_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_democratic_education_idea"
+				log = "[GetLogRoot]: add idea RUS_democratic_education_idea"
 			}
 			picture = generic_research_increase
 			cancel = {
@@ -2226,7 +2232,7 @@ ideas = {
 		RUS_democratic_foundation = {
 			#normal combination
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_democratic_foundation"
+				log = "[GetLogRoot]: add idea RUS_democratic_foundation"
 			}
 			picture = FRA_communard_spirit
 			cancel = {
@@ -2243,7 +2249,7 @@ ideas = {
 		RUS_democratic_foundation_2 = {
 			#RDP modification
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_democratic_foundation_2"
+				log = "[GetLogRoot]: add idea RUS_democratic_foundation_2"
 			}
 			picture = FRA_communard_spirit
 			name = RUS_democratic_foundation
@@ -2260,7 +2266,7 @@ ideas = {
 		}
 		RUS_fighting_democracy_campaign = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_fighting_democracy_campaign"
+				log = "[GetLogRoot]: add idea RUS_fighting_democracy_campaign"
 			}
 			picture = SPR_anti_fascist_crusade
 			cancel = {
@@ -2279,7 +2285,7 @@ ideas = {
 		}
 		RUS_russian_civil_society_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_russian_civil_society_1"
+				log = "[GetLogRoot]: add idea RUS_russian_civil_society_1"
 			}
 			picture = generic_constitutional_guarantees
 			name = RUS_russian_civil_society
@@ -2295,7 +2301,7 @@ ideas = {
 		}
 		RUS_russian_civil_society_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_russian_civil_society_2"
+				log = "[GetLogRoot]: add idea RUS_russian_civil_society_2"
 			}
 			picture = generic_constitutional_guarantees
 			name = RUS_russian_civil_society
@@ -2313,7 +2319,7 @@ ideas = {
 		}
 		RUS_russian_civil_society_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_russian_civil_society_3"
+				log = "[GetLogRoot]: add idea RUS_russian_civil_society_3"
 			}
 			picture = generic_constitutional_guarantees
 			name = RUS_russian_civil_society
@@ -2332,7 +2338,7 @@ ideas = {
 		}
 		RUS_russian_civil_society_4 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_russian_civil_society_4"
+				log = "[GetLogRoot]: add idea RUS_russian_civil_society_4"
 			}
 			picture = generic_constitutional_guarantees
 			name = RUS_russian_civil_society
@@ -2351,7 +2357,7 @@ ideas = {
 		}
 		RUS_democratic_artels = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_democratic_artels"
+				log = "[GetLogRoot]: add idea RUS_democratic_artels"
 			}
 			picture = generic_fascist_workers
 			cancel = {
@@ -2365,7 +2371,7 @@ ideas = {
 		}
 		RUS_vsodes = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_vsodes"
+				log = "[GetLogRoot]: add idea RUS_vsodes"
 			}
 			picture = generic_syndicalist_worker
 			cancel = {
@@ -2378,7 +2384,7 @@ ideas = {
 		}
 		RUS_vsodes_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_vsodes_2"
+				log = "[GetLogRoot]: add idea RUS_vsodes_2"
 			}
 			picture = generic_syndicalist_worker
 			name = RUS_vsodes
@@ -2395,7 +2401,7 @@ ideas = {
 		}
 		RUS_civil_militia = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_civil_militia"
+				log = "[GetLogRoot]: add idea RUS_civil_militia"
 			}
 			picture = generic_infantry_bonus
 			cancel = {
@@ -2410,7 +2416,7 @@ ideas = {
 		}
 		RUS_tomsky_versus_titov = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_tomsky_versus_titov"
+				log = "[GetLogRoot]: add idea RUS_tomsky_versus_titov"
 			}
 			picture = KTG_Industrial_Crisis_Factories
 			cancel = {
@@ -2425,7 +2431,7 @@ ideas = {
 		}
 		RUS_tomsky_versus_titov_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_tomsky_versus_titov_2"
+				log = "[GetLogRoot]: add idea RUS_tomsky_versus_titov_2"
 			}
 			name = RUS_tomsky_versus_titov
 			picture = KTG_Industrial_Crisis_Factories
@@ -2441,7 +2447,7 @@ ideas = {
 		}
 		RUS_labour_peace = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_labour_peace"
+				log = "[GetLogRoot]: add idea RUS_labour_peace"
 			}
 			picture = por_iberian_workers_united
 			cancel = {
@@ -2455,7 +2461,7 @@ ideas = {
 		}
 		RUS_iron_fisted_ministry = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_iron_fisted_ministry"
+				log = "[GetLogRoot]: add idea RUS_iron_fisted_ministry"
 			}
 			picture = generic_fascism_drift_2
 			cancel = {
@@ -2470,7 +2476,7 @@ ideas = {
 		}
 		RUS_iron_fisted_ministry_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_iron_fisted_ministry_2"
+				log = "[GetLogRoot]: add idea RUS_iron_fisted_ministry_2"
 			}
 			picture = generic_fascism_drift_2
 			name = RUS_iron_fisted_ministry
@@ -2488,7 +2494,7 @@ ideas = {
 		}
 		RUS_iron_fisted_ministry_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_iron_fisted_ministry_3"
+				log = "[GetLogRoot]: add idea RUS_iron_fisted_ministry_3"
 			}
 			picture = generic_fascism_drift_2
 			name = RUS_iron_fisted_ministry
@@ -2507,7 +2513,7 @@ ideas = {
 		}
 		RUS_iron_fisted_ministry_4 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_iron_fisted_ministry_4"
+				log = "[GetLogRoot]: add idea RUS_iron_fisted_ministry_4"
 			}
 			picture = generic_fascism_drift_2
 			cancel = {
@@ -2554,7 +2560,7 @@ ideas = {
 		}
 		RUS_party_versus_president = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_party_versus_president"
+				log = "[GetLogRoot]: add idea RUS_party_versus_president"
 			}
 			picture = generic_broken_champagne
 			modifier = {
@@ -2563,7 +2569,7 @@ ideas = {
 		}
 		RUS_party_versus_president_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_party_versus_president_2"
+				log = "[GetLogRoot]: add idea RUS_party_versus_president_2"
 			}
 			picture = generic_broken_champagne
 			name = RUS_party_versus_president
@@ -2573,7 +2579,7 @@ ideas = {
 		}
 		RUS_party_versus_president_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_party_versus_president_3"
+				log = "[GetLogRoot]: add idea RUS_party_versus_president_3"
 			}
 			picture = generic_broken_champagne
 			name = RUS_party_versus_president
@@ -2583,7 +2589,7 @@ ideas = {
 		}
 		RUS_party_versus_president_4 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_party_versus_president_4"
+				log = "[GetLogRoot]: add idea RUS_party_versus_president_4"
 			}
 			picture = generic_broken_champagne
 			name = RUS_party_versus_president
@@ -2593,7 +2599,7 @@ ideas = {
 		}
 		RUS_party_versus_president_5 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_party_versus_president_5"
+				log = "[GetLogRoot]: add idea RUS_party_versus_president_5"
 			}
 			picture = generic_broken_champagne
 			name = RUS_party_versus_president
@@ -2603,7 +2609,7 @@ ideas = {
 		}
 		RUS_stabs_captain_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_stabs_captain_idea"
+				log = "[GetLogRoot]: add idea RUS_stabs_captain_idea"
 			}
 			picture = generic_volunteer_expedition_bonus
 			modifier = {
@@ -2613,7 +2619,7 @@ ideas = {
 		}
 		RUS_arise_muscovites = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_arise_muscovites"
+				log = "[GetLogRoot]: add idea RUS_arise_muscovites"
 			}
 			picture = SOV_fascist_womens_movement
 			modifier = {
@@ -2623,7 +2629,7 @@ ideas = {
 		}
 		RUS_arise_muscovites_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_arise_muscovites_2"
+				log = "[GetLogRoot]: add idea RUS_arise_muscovites_2"
 			}
 			picture = SOV_fascist_womens_movement
 			name = RUS_arise_muscovites
@@ -2635,7 +2641,7 @@ ideas = {
 		}
 		RUS_establishment_opposition = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_establishment_opposition"
+				log = "[GetLogRoot]: add idea RUS_establishment_opposition"
 			}
 			picture = SWE_hungershield
 			modifier = {
@@ -2645,7 +2651,7 @@ ideas = {
 		}
 		RUS_ruralism = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_ruralism"
+				log = "[GetLogRoot]: add idea RUS_ruralism"
 			}
 			picture = SWE_hungershield
 			modifier = {
@@ -2656,7 +2662,7 @@ ideas = {
 		}
 		RUS_ruralism_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_ruralism_2"
+				log = "[GetLogRoot]: add idea RUS_ruralism_2"
 			}
 			picture = SWE_hungershield
 			name = RUS_ruralism
@@ -2668,7 +2674,7 @@ ideas = {
 		}
 		RUS_ruralism_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_ruralism_3"
+				log = "[GetLogRoot]: add idea RUS_ruralism_3"
 			}
 			picture = SWE_hungershield
 			name = RUS_ruralism
@@ -2680,7 +2686,7 @@ ideas = {
 		}
 		RUS_advisory_duma = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_advisory_duma"
+				log = "[GetLogRoot]: add idea RUS_advisory_duma"
 			}
 			picture = DEI_abandoned_ethical_policy
 			modifier = {
@@ -2693,7 +2699,7 @@ ideas = {
 		}
 		RUS_protection_decree = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_protection_decree"
+				log = "[GetLogRoot]: add idea RUS_protection_decree"
 			}
 			picture = SWI_spirit_of_helvetia_defensive_war
 			modifier = {
@@ -2704,7 +2710,7 @@ ideas = {
 		}
 		RUS_protection_decree_soclib = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_protection_decree"
+				log = "[GetLogRoot]: add idea RUS_protection_decree"
 			}
 			picture = SWI_spirit_of_helvetia_defensive_war
 			name = RUS_protection_decree
@@ -2716,7 +2722,7 @@ ideas = {
 		}
 		RUS_protection_decree_marlib = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_protection_decree"
+				log = "[GetLogRoot]: add idea RUS_protection_decree"
 			}
 			picture = SWI_spirit_of_helvetia_defensive_war
 			name = RUS_protection_decree
@@ -2729,7 +2735,7 @@ ideas = {
 		#Monarchy ideas
 		RUS_imperial_popularity_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_imperial_popularity_1"
+				log = "[GetLogRoot]: add idea RUS_imperial_popularity_1"
 			}
 			picture = SOV_romanov_tsars
 			modifier = {
@@ -2738,7 +2744,7 @@ ideas = {
 		}
 		RUS_imperial_popularity_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_imperial_popularity_2"
+				log = "[GetLogRoot]: add idea RUS_imperial_popularity_2"
 			}
 			picture = SOV_romanov_tsars
 			modifier = {
@@ -2747,7 +2753,7 @@ ideas = {
 		}
 		RUS_imperial_popularity_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_imperial_popularity_3"
+				log = "[GetLogRoot]: add idea RUS_imperial_popularity_3"
 			}
 			picture = SOV_romanov_tsars
 			modifier = {
@@ -2757,7 +2763,7 @@ ideas = {
 		}
 		RUS_imperial_popularity_4 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_imperial_popularity_4"
+				log = "[GetLogRoot]: add idea RUS_imperial_popularity_4"
 			}
 			picture = SOV_romanov_tsars
 			modifier = {
@@ -2767,7 +2773,7 @@ ideas = {
 		}
 		RUS_imperial_popularity_5 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_imperial_popularity_5"
+				log = "[GetLogRoot]: add idea RUS_imperial_popularity_5"
 			}
 			picture = SOV_romanov_tsars
 			modifier = {
@@ -2777,7 +2783,7 @@ ideas = {
 		}
 		RUS_council_of_industrialists = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_council_of_industrialists"
+				log = "[GetLogRoot]: add idea RUS_council_of_industrialists"
 			}
 			picture = state_economy
 			modifier = {
@@ -2790,7 +2796,7 @@ ideas = {
 		}
 		RUS_council_of_industrialists_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_council_of_industrialists_2"
+				log = "[GetLogRoot]: add idea RUS_council_of_industrialists_2"
 			}
 			name = RUS_council_of_industrialists
 			picture = state_economy
@@ -2806,7 +2812,7 @@ ideas = {
 		RUS_council_of_industrialists_3 = {
 			#Wrangel eco
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_council_of_industrialists_3"
+				log = "[GetLogRoot]: add idea RUS_council_of_industrialists_3"
 			}
 			name = RUS_council_of_industrialists
 			picture = state_economy
@@ -2822,7 +2828,7 @@ ideas = {
 		}
 		RUS_council_of_industrialists_4 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_council_of_industrialists_4"
+				log = "[GetLogRoot]: add idea RUS_council_of_industrialists_4"
 			}
 			name = RUS_council_of_industrialists
 			picture = state_economy
@@ -2837,7 +2843,7 @@ ideas = {
 		}
 		RUS_garrison_state_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_garrison_state_idea"
+				log = "[GetLogRoot]: add idea RUS_garrison_state_idea"
 			}
 			picture = RUS_yunarmiya
 			modifier = {
@@ -2848,19 +2854,22 @@ ideas = {
 		}
 		RUS_imperial_patriotism = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_imperial_patriotism"
+				log = "[GetLogRoot]: add idea RUS_imperial_patriotism"
 			}
 			picture = SOV_crowning_jewel_of_russia
 			modifier = {
 				army_attack_factor = 0.05
-				army_morale_factor = 0.05
+				army_morale_factor = 0.1
 				weekly_casualties_war_support = 0.004
-				conscription_factor = 0.05
+				conscription_factor = 0.1
+			}
+			cancel = {
+				has_war = no
 			}
 		}
 		RUS_wrangel_dictatorship = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_wrangel_dictatorship"
+				log = "[GetLogRoot]: add idea RUS_wrangel_dictatorship"
 			}
 			picture = RUS_yunarmiya
 			modifier = {
@@ -2872,7 +2881,7 @@ ideas = {
 		}
 		RUS_wrangel_dictatorship_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_wrangel_dictatorship_2"
+				log = "[GetLogRoot]: add idea RUS_wrangel_dictatorship_2"
 			}
 			picture = RUS_yunarmiya
 			modifier = {
@@ -2887,7 +2896,7 @@ ideas = {
 		## Soc Rus Ideas ##
 		RUS_workers_control = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_workers_control"
+				log = "[GetLogRoot]: add idea RUS_workers_control"
 			}
 			name = RUS_workers_control
 			picture = generic_syndicalist_worker
@@ -2899,7 +2908,7 @@ ideas = {
 		}
 		RUS_workers_control_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_workers_control_2"
+				log = "[GetLogRoot]: add idea RUS_workers_control_2"
 			}
 			name = RUS_workers_control
 			picture = generic_syndicalist_worker
@@ -2909,7 +2918,7 @@ ideas = {
 		}
 		RUS_workers_control_3_spiridonist = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_workers_control_3_spiridonist"
+				log = "[GetLogRoot]: add idea RUS_workers_control_3_spiridonist"
 			}
 			picture = generic_syndicalist_worker
 			modifier = {
@@ -2919,7 +2928,7 @@ ideas = {
 		}
 		RUS_workers_control_3_maximalist = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_workers_control_3_maximalist"
+				log = "[GetLogRoot]: add idea RUS_workers_control_3_maximalist"
 			}
 			picture = generic_syndicalist_worker
 			modifier = {
@@ -2930,7 +2939,7 @@ ideas = {
 		}
 		RUS_white_army_red_baron = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_white_army_red_baron"
+				log = "[GetLogRoot]: add idea RUS_white_army_red_baron"
 			}
 			picture = PER_untrained_officer
 			modifier = {
@@ -2942,7 +2951,7 @@ ideas = {
 		}
 		RUS_lack_of_officers = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_lack_of_officers"
+				log = "[GetLogRoot]: add idea RUS_lack_of_officers"
 			}
 			picture = PER_untrained_officer
 			modifier = {
@@ -2954,7 +2963,7 @@ ideas = {
 		}
 		RUS_lack_of_officers_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_lack_of_officers_2"
+				log = "[GetLogRoot]: add idea RUS_lack_of_officers_2"
 			}
 			name = RUS_lack_of_officers
 			picture = PER_untrained_officer
@@ -2967,7 +2976,7 @@ ideas = {
 		}
 		RUS_lack_of_officers_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_lack_of_officers_3"
+				log = "[GetLogRoot]: add idea RUS_lack_of_officers_3"
 			}
 			name = RUS_lack_of_officers
 			picture = PER_untrained_officer
@@ -2979,7 +2988,7 @@ ideas = {
 		}
 		RUS_soc_war_preparation_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_soc_war_preparation_1"
+				log = "[GetLogRoot]: add idea RUS_soc_war_preparation_1"
 			}
 			picture = ARG_rapid_militarization
 			name = RUS_soc_war_preparation
@@ -2992,7 +3001,7 @@ ideas = {
 		}
 		RUS_soc_war_preparation_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_soc_war_preparation_2"
+				log = "[GetLogRoot]: add idea RUS_soc_war_preparation_2"
 			}
 			picture = ARG_rapid_militarization
 			name = RUS_soc_war_preparation
@@ -3005,7 +3014,7 @@ ideas = {
 		}
 		RUS_soc_war_preparation_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_soc_war_preparation_3"
+				log = "[GetLogRoot]: add idea RUS_soc_war_preparation_3"
 			}
 			picture = ARG_rapid_militarization
 			name = RUS_soc_war_preparation
@@ -3018,7 +3027,7 @@ ideas = {
 		}
 		RUS_anti_socialist_resistance_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_anti_socialist_resistance_1"
+				log = "[GetLogRoot]: add idea RUS_anti_socialist_resistance_1"
 			}
 			name = RUS_anti_socialist_resistance_lingering
 			picture = ARG_anti_soviet
@@ -3030,7 +3039,7 @@ ideas = {
 		}
 		RUS_anti_socialist_resistance_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_anti_socialist_resistance_2"
+				log = "[GetLogRoot]: add idea RUS_anti_socialist_resistance_2"
 			}
 			name = RUS_anti_socialist_resistance
 			picture = ARG_anti_soviet
@@ -3042,7 +3051,7 @@ ideas = {
 		}
 		RUS_anti_socialist_resistance_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_anti_socialist_resistance_3"
+				log = "[GetLogRoot]: add idea RUS_anti_socialist_resistance_3"
 			}
 			name = RUS_anti_socialist_resistance
 			picture = ARG_anti_soviet
@@ -3054,7 +3063,7 @@ ideas = {
 		}
 		RUS_anti_socialist_resistance_4 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_anti_socialist_resistance_4"
+				log = "[GetLogRoot]: add idea RUS_anti_socialist_resistance_4"
 			}
 			name = RUS_anti_socialist_resistance
 			picture = ARG_anti_soviet
@@ -3066,7 +3075,7 @@ ideas = {
 		}
 		RUS_anti_socialist_resistance_5 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_anti_socialist_resistance_5"
+				log = "[GetLogRoot]: add idea RUS_anti_socialist_resistance_5"
 			}
 			name = RUS_anti_socialist_resistance
 			picture = ARG_anti_soviet
@@ -3078,7 +3087,7 @@ ideas = {
 		}
 		RUS_anti_socialist_resistance_6 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_anti_socialist_resistance_6"
+				log = "[GetLogRoot]: add idea RUS_anti_socialist_resistance_6"
 			}
 			name = RUS_anti_socialist_resistance
 			picture = ARG_anti_soviet
@@ -3090,7 +3099,7 @@ ideas = {
 		}
 		RUS_white_sabotage_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_white_sabotage_1"
+				log = "[GetLogRoot]: add idea RUS_white_sabotage_1"
 			}
 			name = RUS_white_sabotage_idea
 			picture = SOV_opiate_of_the_masses
@@ -3105,7 +3114,7 @@ ideas = {
 		}
 		RUS_white_sabotage_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_white_sabotage_2"
+				log = "[GetLogRoot]: add idea RUS_white_sabotage_2"
 			}
 			name = RUS_white_sabotage_idea
 			picture = SOV_opiate_of_the_masses
@@ -3120,7 +3129,7 @@ ideas = {
 		}
 		RUS_white_sabotage_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_white_sabotage_3"
+				log = "[GetLogRoot]: add idea RUS_white_sabotage_3"
 			}
 			name = RUS_white_sabotage_idea
 			picture = SOV_opiate_of_the_masses
@@ -3136,7 +3145,7 @@ ideas = {
 		}
 		RUS_white_sabotage_4 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_white_sabotage_4"
+				log = "[GetLogRoot]: add idea RUS_white_sabotage_4"
 			}
 			name = RUS_white_sabotage_idea
 			picture = SOV_opiate_of_the_masses
@@ -3152,7 +3161,7 @@ ideas = {
 		}
 		RUS_white_sabotage_5 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_white_sabotage_5"
+				log = "[GetLogRoot]: add idea RUS_white_sabotage_5"
 			}
 			name = RUS_white_sabotage_idea
 			picture = SOV_opiate_of_the_masses
@@ -3167,7 +3176,7 @@ ideas = {
 		}
 		RUS_soc_strike = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_soc_strike"
+				log = "[GetLogRoot]: add idea RUS_soc_strike"
 			}
 			picture = RUS_sgir_strike
 			modifier = {
@@ -3178,7 +3187,7 @@ ideas = {
 		}
 		RUS_reeducation_camps = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_reeducation_camps"
+				log = "[GetLogRoot]: add idea RUS_reeducation_camps"
 			}
 			picture = generic_prisoner			#HOL_labor_camps
 			modifier = {
@@ -3189,7 +3198,7 @@ ideas = {
 		}
 		RUS_reeducation_camps_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_reeducation_camps_2"
+				log = "[GetLogRoot]: add idea RUS_reeducation_camps_2"
 			}
 			picture = HOL_labor_camps
 			name = RUS_reeducation_camps
@@ -3201,7 +3210,7 @@ ideas = {
 		}
 		RUS_vgpu_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_vgpu_idea"
+				log = "[GetLogRoot]: add idea RUS_vgpu_idea"
 			}
 			name = RUS_vgpu_idea
 			picture = generic_secret_police
@@ -3214,7 +3223,7 @@ ideas = {
 		RUS_vgpu_idea_2 = {
 			#Base version + authsoc finisher
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_vgpu_idea_2"
+				log = "[GetLogRoot]: add idea RUS_vgpu_idea_2"
 			}
 			name = RUS_vgpu_idea
 			picture = generic_secret_police
@@ -3229,7 +3238,7 @@ ideas = {
 		RUS_vgpu_idea_3 = {
 			#Base version + Spider-web
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_vgpu_idea_3"
+				log = "[GetLogRoot]: add idea RUS_vgpu_idea_3"
 			}
 			name = RUS_vgpu_idea
 			picture = generic_secret_police
@@ -3243,7 +3252,7 @@ ideas = {
 		RUS_vgpu_idea_4 = {
 			#Base version + Spider-web + authsoc finisher
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_vgpu_idea_4"
+				log = "[GetLogRoot]: add idea RUS_vgpu_idea_4"
 			}
 			name = RUS_vgpu_idea
 			picture = generic_secret_police
@@ -3258,7 +3267,7 @@ ideas = {
 		}
 		RUS_vgpu_idea_lar = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_vgpu_idea_lar"
+				log = "[GetLogRoot]: add idea RUS_vgpu_idea_lar"
 			}
 			name = RUS_vgpu_idea
 			picture = generic_secret_police
@@ -3272,7 +3281,7 @@ ideas = {
 		RUS_vgpu_idea_lar_2 = {
 			#Base version + authsoc finisher
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_vgpu_idea_lar_2"
+				log = "[GetLogRoot]: add idea RUS_vgpu_idea_lar_2"
 			}
 			name = RUS_vgpu_idea
 			picture = generic_secret_police
@@ -3288,7 +3297,7 @@ ideas = {
 		RUS_vgpu_idea_lar_3 = {
 			#Base version + Spider-web
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_vgpu_idea_lar_3"
+				log = "[GetLogRoot]: add idea RUS_vgpu_idea_lar_3"
 			}
 			name = RUS_vgpu_idea
 			picture = generic_secret_police
@@ -3303,7 +3312,7 @@ ideas = {
 		RUS_vgpu_idea_lar_4 = {
 			#Base version + Spider-web + authsoc finisher
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_vgpu_idea_lar_4"
+				log = "[GetLogRoot]: add idea RUS_vgpu_idea_lar_4"
 			}
 			name = RUS_vgpu_idea
 			picture = generic_secret_police
@@ -3319,7 +3328,7 @@ ideas = {
 		}
 		RUS_vst_party_unity_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_vst_party_unity_idea"
+				log = "[GetLogRoot]: add idea RUS_vst_party_unity_idea"
 				add_dynamic_modifier = {
 					modifier = RUS_vst_party_unity_modifier
 				}
@@ -3347,7 +3356,7 @@ ideas = {
 		RUS_vst_party_streamlined_idea = {
 			#VST equivalent of RUS_guided_democracy
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_vst_party_streamlined_idea"
+				log = "[GetLogRoot]: add idea RUS_vst_party_streamlined_idea"
 				set_variable = {
 					RUS.coalition_stability = 0.5
 				}
@@ -3361,7 +3370,7 @@ ideas = {
 		}
 		RUS_vst_party_factionalism_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_vst_party_factionalism_idea"
+				log = "[GetLogRoot]: add idea RUS_vst_party_factionalism_idea"
 				add_dynamic_modifier = {
 					modifier = RUS_vst_party_factionalism_modifier
 				}
@@ -3385,7 +3394,7 @@ ideas = {
 		}
 		RUS_NEP = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_NEP"
+				log = "[GetLogRoot]: add idea RUS_NEP"
 			}
 			picture = generic_syndicalist_worker
 			modifier = {
@@ -3397,7 +3406,7 @@ ideas = {
 		}
 		RUS_NEP_SDS = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_NEP_SDS"
+				log = "[GetLogRoot]: add idea RUS_NEP_SDS"
 			}
 			picture = generic_syndicalist_worker
 			modifier = {
@@ -3410,7 +3419,7 @@ ideas = {
 		}
 		RUS_NEP_SDS_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_NEP_SDS_2"
+				log = "[GetLogRoot]: add idea RUS_NEP_SDS_2"
 			}
 			picture = generic_syndicalist_worker
 			name = RUS_NEP_SDS
@@ -3424,7 +3433,7 @@ ideas = {
 		}
 		RUS_fedplan = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_fedplan"
+				log = "[GetLogRoot]: add idea RUS_fedplan"
 			}
 			picture = TUS_syndie_economy
 			modifier = {
@@ -3438,7 +3447,7 @@ ideas = {
 		}
 		RUS_fedplan_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_fedplan_2"
+				log = "[GetLogRoot]: add idea RUS_fedplan_2"
 			}
 			picture = TUS_syndie_economy
 			name = RUS_fedplan
@@ -3453,7 +3462,7 @@ ideas = {
 		}
 		RUS_economic_planning = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_economic_planning"
+				log = "[GetLogRoot]: add idea RUS_economic_planning"
 			}
 			picture = state_economy
 			modifier = {
@@ -3467,7 +3476,7 @@ ideas = {
 		}
 		RUS_economic_planning_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_economic_planning_2"
+				log = "[GetLogRoot]: add idea RUS_economic_planning_2"
 			}
 			name = RUS_economic_planning
 			picture = state_economy
@@ -3483,7 +3492,7 @@ ideas = {
 		}
 		RUS_congress_of_unions = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_congress_of_unions"
+				log = "[GetLogRoot]: add idea RUS_congress_of_unions"
 			}
 			name = RUS_congress_of_unions
 			picture = NOR_syndicalist_industry_idea
@@ -3494,7 +3503,7 @@ ideas = {
 		}
 		RUS_congress_of_unions_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_congress_of_unions_2"
+				log = "[GetLogRoot]: add idea RUS_congress_of_unions_2"
 			}
 			name = RUS_congress_of_unions
 			picture = NOR_syndicalist_industry_idea
@@ -3507,7 +3516,7 @@ ideas = {
 		}
 		RUS_congress_of_unions_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_congress_of_unions_3"
+				log = "[GetLogRoot]: add idea RUS_congress_of_unions_3"
 			}
 			name = RUS_congress_of_unions
 			picture = NOR_syndicalist_industry_idea
@@ -3520,7 +3529,7 @@ ideas = {
 		}
 		RUS_towards_post_scarity = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_towards_post_scarity"
+				log = "[GetLogRoot]: add idea RUS_towards_post_scarity"
 			}
 			picture = socialist_science_focus
 			modifier = {
@@ -3532,7 +3541,7 @@ ideas = {
 		}
 		RUS_towards_devolved_state = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_towards_devolved_state"
+				log = "[GetLogRoot]: add idea RUS_towards_devolved_state"
 			}
 			picture = SPR_anarchist_society
 			modifier = {
@@ -3544,7 +3553,7 @@ ideas = {
 		}
 		RUS_socialism_in_practice = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_socialism_in_practice"
+				log = "[GetLogRoot]: add idea RUS_socialism_in_practice"
 			}
 			picture = UK_economy_syn_idea
 			modifier = {
@@ -3557,7 +3566,7 @@ ideas = {
 		}
 		RUS_legacy_of_narodism = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_legacy_of_narodism"
+				log = "[GetLogRoot]: add idea RUS_legacy_of_narodism"
 			}
 			picture = generic_agrarian_reform
 			modifier = {
@@ -3567,7 +3576,7 @@ ideas = {
 		}
 		RUS_urbanisation_drive = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_urbanisation_drive"
+				log = "[GetLogRoot]: add idea RUS_urbanisation_drive"
 			}
 			picture = ARG_economic_reactivation
 			modifier = {
@@ -3577,7 +3586,7 @@ ideas = {
 		}
 		RUS_subjugation_of_nature = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_subjugation_of_nature"
+				log = "[GetLogRoot]: add idea RUS_subjugation_of_nature"
 			}
 			picture = SOV_transformation_of_nature
 			modifier = {
@@ -3588,7 +3597,7 @@ ideas = {
 		}
 		RUS_menshevik_ideals = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_menshevik_ideals"
+				log = "[GetLogRoot]: add idea RUS_menshevik_ideals"
 			}
 			picture = ARG_women_in_industry
 			modifier = {
@@ -3599,7 +3608,7 @@ ideas = {
 		}
 		RUS_menshevik_ideals_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_menshevik_ideals_2"
+				log = "[GetLogRoot]: add idea RUS_menshevik_ideals_2"
 			}
 			picture = ARG_women_in_industry
 			name = RUS_menshevik_ideals
@@ -3613,7 +3622,7 @@ ideas = {
 		}
 		RUS_proper_socialist_demoracy_pre = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_proper_socialist_demoracy_pre"
+				log = "[GetLogRoot]: add idea RUS_proper_socialist_demoracy_pre"
 			}
 			picture = SOV_transformation_of_nature
 			modifier = {
@@ -3628,7 +3637,7 @@ ideas = {
 		}
 		RUS_proper_socialist_demoracy = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_proper_socialist_demoracy"
+				log = "[GetLogRoot]: add idea RUS_proper_socialist_demoracy"
 			}
 			picture = SOV_transformation_of_nature
 			modifier = {
@@ -3642,7 +3651,7 @@ ideas = {
 		}
 		RUS_machism_idea_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_machism_idea_1"
+				log = "[GetLogRoot]: add idea RUS_machism_idea_1"
 			}
 			picture = SOV_opiate_of_the_masses
 			modifier = {
@@ -3657,7 +3666,7 @@ ideas = {
 		RUS_machism_idea_2 = {
 			#Free science
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_machism_idea_2"
+				log = "[GetLogRoot]: add idea RUS_machism_idea_2"
 			}
 			name = RUS_no_gods_only_progress
 			picture = FIN_socialist_welfare
@@ -3674,7 +3683,7 @@ ideas = {
 		RUS_machism_idea_3 = {
 			#Ideologised science
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_machism_idea_3"
+				log = "[GetLogRoot]: add idea RUS_machism_idea_3"
 			}
 			name = RUS_no_gods_only_progress
 			picture = FIN_socialist_welfare
@@ -3690,7 +3699,7 @@ ideas = {
 		RUS_machism_idea_4 = {
 			#Free science updated
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_machism_idea_4"
+				log = "[GetLogRoot]: add idea RUS_machism_idea_4"
 			}
 			name = RUS_no_gods_only_progress
 			picture = FIN_socialist_welfare
@@ -3708,7 +3717,7 @@ ideas = {
 		RUS_machism_idea_5 = {
 			#Ideologised science updated
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_machism_idea_5"
+				log = "[GetLogRoot]: add idea RUS_machism_idea_5"
 			}
 			name = RUS_no_gods_only_progress
 			picture = FIN_socialist_welfare
@@ -3725,7 +3734,7 @@ ideas = {
 		}
 		RUS_financing_the_healthcare = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_financing_the_healthcare"
+				log = "[GetLogRoot]: add idea RUS_financing_the_healthcare"
 			}
 			picture = generic_loans
 			modifier = {
@@ -3738,7 +3747,7 @@ ideas = {
 		}
 		RUS_healthcare_for_all = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_healthcare_for_all"
+				log = "[GetLogRoot]: add idea RUS_healthcare_for_all"
 			}
 			picture = ARG_social_welfare_fund_ns
 			modifier = {
@@ -3748,7 +3757,7 @@ ideas = {
 		}
 		RUS_pacification_of_countryside = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_pacification_of_countryside"
+				log = "[GetLogRoot]: add idea RUS_pacification_of_countryside"
 			}
 			picture = POL_the_peasants_strike
 			modifier = {
@@ -3760,7 +3769,7 @@ ideas = {
 		RUS_proletarian_transition_1 = {
 			#RUS_dictatorship_proletariat
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_proletarian_transition_1"
+				log = "[GetLogRoot]: add idea RUS_proletarian_transition_1"
 			}
 			name = RUS_proletarian_transition
 			picture = NORDIC_industry_communist
@@ -3772,7 +3781,7 @@ ideas = {
 		RUS_proletarian_transition_2 = {
 			#RUS_dictatorship_proletariat + RUS_law_on_unions
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_proletarian_transition_2"
+				log = "[GetLogRoot]: add idea RUS_proletarian_transition_2"
 			}
 			name = RUS_proletarian_transition
 			picture = NORDIC_industry_communist
@@ -3785,7 +3794,7 @@ ideas = {
 		RUS_technocratic_syndicalism_1 = {
 			#RUS_dictatorship_proletariat + RUS_law_on_unions + RUS_technocratic_syndicalism
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_technocratic_syndicalism_1"
+				log = "[GetLogRoot]: add idea RUS_technocratic_syndicalism_1"
 			}
 			name = RUS_technocratic_syndicalism_idea
 			picture = NORDIC_industry_communist
@@ -3798,7 +3807,7 @@ ideas = {
 		RUS_technocratic_syndicalism_2 = {
 			#RUS_democratic_dictatorship + RUS_law_on_unions + RUS_technocratic_syndicalism
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_technocratic_syndicalism_2"
+				log = "[GetLogRoot]: add idea RUS_technocratic_syndicalism_2"
 			}
 			name = RUS_technocratic_syndicalism_idea
 			picture = NORDIC_industry_communist
@@ -3812,7 +3821,7 @@ ideas = {
 		RUS_democratic_dictatorship_1 = {
 			#RUS_democratic_dictatorship
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_democratic_dictatorship_1"
+				log = "[GetLogRoot]: add idea RUS_democratic_dictatorship_1"
 			}
 			name = RUS_democratic_dictatorship_idea
 			picture = SOV_soviet_hegemony
@@ -3824,7 +3833,7 @@ ideas = {
 		RUS_democratic_dictatorship_2 = {
 			#RUS_democratic_dictatorship + RUS_law_on_unions
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_democratic_dictatorship_2"
+				log = "[GetLogRoot]: add idea RUS_democratic_dictatorship_2"
 			}
 			name = RUS_democratic_dictatorship_idea
 			picture = SOV_soviet_hegemony
@@ -3837,7 +3846,7 @@ ideas = {
 		RUS_to_protect_democracy_1 = {
 			#RUS_dictatorship_proletariat + RUS_law_on_unions + RUS_preserve_revolution_within
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_to_protect_democracy_1"
+				log = "[GetLogRoot]: add idea RUS_to_protect_democracy_1"
 			}
 			name = RUS_to_protect_democracy
 			picture = SOV_soviet_hegemony
@@ -3852,7 +3861,7 @@ ideas = {
 		RUS_to_protect_democracy_2 = {
 			#RUS_democratic_dictatorship + RUS_law_on_unions + RUS_preserve_revolution_within
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_to_protect_democracy_2"
+				log = "[GetLogRoot]: add idea RUS_to_protect_democracy_2"
 			}
 			name = RUS_to_protect_democracy
 			picture = SOV_soviet_hegemony
@@ -3867,7 +3876,7 @@ ideas = {
 		RUS_zinovyev_constitution_1 = {
 			#RUS_dictatorship_proletariat + RUS_law_on_unions + RUS_preserve_revolution_within + RUS_zinovyev_constitution
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_zinovyev_constitution_1"
+				log = "[GetLogRoot]: add idea RUS_zinovyev_constitution_1"
 			}
 			name = RUS_to_protect_democracy
 			picture = SOV_soviet_hegemony
@@ -3882,7 +3891,7 @@ ideas = {
 		RUS_zinovyev_constitution_2 = {
 			#RUS_democratic_dictatorship + RUS_law_on_unions + RUS_preserve_revolution_within + RUS_zinovyev_constitution
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_zinovyev_constitution_2"
+				log = "[GetLogRoot]: add idea RUS_zinovyev_constitution_2"
 			}
 			name = RUS_to_protect_democracy
 			picture = SOV_soviet_hegemony
@@ -3896,7 +3905,7 @@ ideas = {
 		}
 		RUS_totalism_idea_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_totalism_idea_1"
+				log = "[GetLogRoot]: add idea RUS_totalism_idea_1"
 			}
 			name = RUS_totalism_idea
 			picture = generic_totalist_revolution
@@ -3909,7 +3918,7 @@ ideas = {
 		}
 		RUS_totalism_idea_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_totalism_idea_2"
+				log = "[GetLogRoot]: add idea RUS_totalism_idea_2"
 			}
 			name = RUS_totalism_idea
 			picture = generic_totalist_revolution
@@ -3922,7 +3931,7 @@ ideas = {
 		}
 		RUS_unions_fury = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_unions_fury"
+				log = "[GetLogRoot]: add idea RUS_unions_fury"
 			}
 			picture = RUS_sgir_strike
 			modifier = {
@@ -3935,7 +3944,7 @@ ideas = {
 		}
 		RUS_subdued_unions = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_subdued_unions"
+				log = "[GetLogRoot]: add idea RUS_subdued_unions"
 			}
 			picture = HOL_banned_unions
 			modifier = {
@@ -3945,7 +3954,7 @@ ideas = {
 		}
 		RUS_centralised_unions = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_centralised_unions"
+				log = "[GetLogRoot]: add idea RUS_centralised_unions"
 			}
 			picture = tur_etatism
 			modifier = {
@@ -3955,7 +3964,7 @@ ideas = {
 		}
 		RUS_soc_rebuilding = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_soc_rebuilding"
+				log = "[GetLogRoot]: add idea RUS_soc_rebuilding"
 			}
 			picture = ARG_invest_in_roads
 			modifier = {
@@ -3967,7 +3976,7 @@ ideas = {
 		}
 		RUS_INT_industrialisation = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_INT_industrialisation"
+				log = "[GetLogRoot]: add idea RUS_INT_industrialisation"
 			}
 			picture = generic_desertion
 			modifier = {
@@ -3979,7 +3988,7 @@ ideas = {
 		}
 		RUS_saviour_of_revolution = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_saviour_of_revolution"
+				log = "[GetLogRoot]: add idea RUS_saviour_of_revolution"
 			}
 			picture = FRA_phalanstere
 			modifier = {
@@ -3993,7 +4002,7 @@ ideas = {
 		}
 		RUS_soc_economic_area = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_soc_economic_area"
+				log = "[GetLogRoot]: add idea RUS_soc_economic_area"
 			}
 			picture = ARG_construction_guilds
 			modifier = {
@@ -4004,7 +4013,7 @@ ideas = {
 		}
 		RUS_centralised_union_government = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_centralised_union_government"
+				log = "[GetLogRoot]: add idea RUS_centralised_union_government"
 			}
 			picture = tur_etatism_bonus
 			modifier = {
@@ -4015,7 +4024,7 @@ ideas = {
 		}
 		RUS_centralised_union_government_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_centralised_union_government_2"
+				log = "[GetLogRoot]: add idea RUS_centralised_union_government_2"
 			}
 			picture = tur_etatism_bonus
 			name = RUS_centralised_union_government
@@ -4028,7 +4037,7 @@ ideas = {
 		}
 		RUS_centralised_union_government_puppet = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_centralised_union_government_puppet"
+				log = "[GetLogRoot]: add idea RUS_centralised_union_government_puppet"
 			}
 			picture = tur_etatism_bonus
 			name = RUS_centralised_union_government
@@ -4043,7 +4052,7 @@ ideas = {
 		}
 		RUS_peoples_cossack_corps = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_peoples_cossack_corps"
+				log = "[GetLogRoot]: add idea RUS_peoples_cossack_corps"
 			}
 			picture = MON_scourge_of_the_steppes
 			modifier = {
@@ -4054,7 +4063,7 @@ ideas = {
 		}
 		RUS_pavlov_rebellion = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_pavlov_rebellion"
+				log = "[GetLogRoot]: add idea RUS_pavlov_rebellion"
 			}
 			name = RUS_pavlov_rebellion
 			picture = RUS_don_revolt
@@ -4069,17 +4078,19 @@ ideas = {
 							modifier = RUS_pavlov_rebels
 						}
 					}
-					force_disable_resistance = RUS
-					cancel_resistance = yes
 					remove_dynamic_modifier = {
 						modifier = RUS_pavlov_rebels
+					}
+					force_enable_resistance = {
+						occupier = RUS
+						clear = yes
 					}
 				}
 			}
 		}
 		RUS_world_revolution = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_world_revolution"
+				log = "[GetLogRoot]: add idea RUS_world_revolution"
 			}
 			picture = FOP_revolutionary_army
 			modifier = {
@@ -4088,7 +4099,7 @@ ideas = {
 		}
 		RUS_world_revolution_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_world_revolution_2"
+				log = "[GetLogRoot]: add idea RUS_world_revolution_2"
 			}
 			name = RUS_world_revolution
 			picture = FOP_revolutionary_army
@@ -4099,14 +4110,14 @@ ideas = {
 		## SR Specific Ideas ##
 		RUS_parliamentarian_faith_0 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_parliamentarian_faith_0"
+				log = "[GetLogRoot]: add idea RUS_parliamentarian_faith_0"
 			}
 			picture = gre_agricultural_communes
 		}
 		RUS_parliamentarian_faith_1 = {
 			name = RUS_parliamentarian_faith_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_parliamentarian_faith_1"
+				log = "[GetLogRoot]: add idea RUS_parliamentarian_faith_1"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4116,7 +4127,7 @@ ideas = {
 		RUS_parliamentarian_faith_2 = {
 			name = RUS_parliamentarian_faith_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_parliamentarian_faith_2"
+				log = "[GetLogRoot]: add idea RUS_parliamentarian_faith_2"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4127,7 +4138,7 @@ ideas = {
 		RUS_parliamentarian_faith_3 = {
 			name = RUS_parliamentarian_faith_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_parliamentarian_faith_3"
+				log = "[GetLogRoot]: add idea RUS_parliamentarian_faith_3"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4138,7 +4149,7 @@ ideas = {
 		RUS_parliamentarian_faith_4 = {
 			name = RUS_parliamentarian_faith_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_parliamentarian_faith_4"
+				log = "[GetLogRoot]: add idea RUS_parliamentarian_faith_4"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4150,7 +4161,7 @@ ideas = {
 		RUS_parliamentarian_faith_5 = {
 			name = RUS_parliamentarian_faith_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_parliamentarian_faith_5"
+				log = "[GetLogRoot]: add idea RUS_parliamentarian_faith_5"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4162,7 +4173,7 @@ ideas = {
 		RUS_parliamentarian_faith_6 = {
 			name = RUS_parliamentarian_faith_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_parliamentarian_faith_6"
+				log = "[GetLogRoot]: add idea RUS_parliamentarian_faith_6"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4175,7 +4186,7 @@ ideas = {
 		RUS_parliamentarian_faith_7 = {
 			name = RUS_parliamentarian_faith_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_parliamentarian_faith_7"
+				log = "[GetLogRoot]: add idea RUS_parliamentarian_faith_7"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4189,7 +4200,7 @@ ideas = {
 		RUS_parliamentarian_faith_8 = {
 			name = RUS_parliamentarian_faith_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_parliamentarian_faith_8"
+				log = "[GetLogRoot]: add idea RUS_parliamentarian_faith_8"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4204,7 +4215,7 @@ ideas = {
 		RUS_parliamentarian_faith_9 = {
 			name = RUS_parliamentarian_faith_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_parliamentarian_faith_9"
+				log = "[GetLogRoot]: add idea RUS_parliamentarian_faith_9"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4220,7 +4231,7 @@ ideas = {
 		RUS_parliamentarian_faith_10 = {
 			name = RUS_parliamentarian_faith_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_parliamentarian_faith_10"
+				log = "[GetLogRoot]: add idea RUS_parliamentarian_faith_10"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4236,7 +4247,7 @@ ideas = {
 		}
 		RUS_maximalist_influence_0 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_maximalist_influence_0"
+				log = "[GetLogRoot]: add idea RUS_maximalist_influence_0"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4245,7 +4256,7 @@ ideas = {
 		RUS_maximalist_influence_1 = {
 			name = RUS_maximalist_influence_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_maximalist_influence_1"
+				log = "[GetLogRoot]: add idea RUS_maximalist_influence_1"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4255,7 +4266,7 @@ ideas = {
 		RUS_maximalist_influence_2 = {
 			name = RUS_maximalist_influence_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_maximalist_influence_2"
+				log = "[GetLogRoot]: add idea RUS_maximalist_influence_2"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4266,7 +4277,7 @@ ideas = {
 		RUS_maximalist_influence_3 = {
 			name = RUS_maximalist_influence_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_maximalist_influence_3"
+				log = "[GetLogRoot]: add idea RUS_maximalist_influence_3"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4277,7 +4288,7 @@ ideas = {
 		RUS_maximalist_influence_4 = {
 			name = RUS_maximalist_influence_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_maximalist_influence_4"
+				log = "[GetLogRoot]: add idea RUS_maximalist_influence_4"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4289,7 +4300,7 @@ ideas = {
 		RUS_maximalist_influence_5 = {
 			name = RUS_maximalist_influence_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_maximalist_influence_5"
+				log = "[GetLogRoot]: add idea RUS_maximalist_influence_5"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4301,7 +4312,7 @@ ideas = {
 		RUS_maximalist_influence_6 = {
 			name = RUS_maximalist_influence_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_maximalist_influence_6"
+				log = "[GetLogRoot]: add idea RUS_maximalist_influence_6"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4314,7 +4325,7 @@ ideas = {
 		RUS_maximalist_influence_7 = {
 			name = RUS_maximalist_influence_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_maximalist_influence_7"
+				log = "[GetLogRoot]: add idea RUS_maximalist_influence_7"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4328,7 +4339,7 @@ ideas = {
 		RUS_maximalist_influence_8 = {
 			name = RUS_maximalist_influence_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_maximalist_influence_8"
+				log = "[GetLogRoot]: add idea RUS_maximalist_influence_8"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4342,7 +4353,7 @@ ideas = {
 		RUS_maximalist_influence_9 = {
 			name = RUS_maximalist_influence_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_maximalist_influence_9"
+				log = "[GetLogRoot]: add idea RUS_maximalist_influence_9"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4357,7 +4368,7 @@ ideas = {
 		RUS_maximalist_influence_10 = {
 			name = RUS_maximalist_influence_0
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_maximalist_influence_10"
+				log = "[GetLogRoot]: add idea RUS_maximalist_influence_10"
 			}
 			picture = gre_agricultural_communes
 			modifier = {
@@ -4372,7 +4383,7 @@ ideas = {
 		}
 		RUS_dignity_of_labour = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_dignity_of_labour"
+				log = "[GetLogRoot]: add idea RUS_dignity_of_labour"
 			}
 			picture = UK_economy_syn_idea
 			modifier = {
@@ -4382,7 +4393,7 @@ ideas = {
 		}
 		RUS_dignity_of_labour_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_dignity_of_labour_2"
+				log = "[GetLogRoot]: add idea RUS_dignity_of_labour_2"
 			}
 			picture = UK_economy_syn_idea
 			name = RUS_dignity_of_labour
@@ -4393,7 +4404,7 @@ ideas = {
 		}
 		RUS_peasant_worker_unity = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_peasant_worker_unity"
+				log = "[GetLogRoot]: add idea RUS_peasant_worker_unity"
 			}
 			picture = FIN_socialist_welfare
 			modifier = {
@@ -4404,7 +4415,7 @@ ideas = {
 		}
 		RUS_concordance_with_the_church = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_concordance_with_the_church"
+				log = "[GetLogRoot]: add idea RUS_concordance_with_the_church"
 			}
 			picture = YUG_orthodox_church_support
 			modifier = {
@@ -4415,7 +4426,7 @@ ideas = {
 		RUS_concordance_with_the_church_alt = {
 			name = RUS_concordance_with_the_church
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_concordance_with_the_church_alt"
+				log = "[GetLogRoot]: add idea RUS_concordance_with_the_church_alt"
 			}
 			picture = YUG_orthodox_church_support
 			modifier = {
@@ -4424,7 +4435,7 @@ ideas = {
 		}
 		RUS_peasant_collectives_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_peasant_collectives_idea"
+				log = "[GetLogRoot]: add idea RUS_peasant_collectives_idea"
 			}
 			picture = RUS_land_reforms
 			modifier = {
@@ -4434,7 +4445,7 @@ ideas = {
 		}
 		RUS_sacred_war = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_sacred_war"
+				log = "[GetLogRoot]: add idea RUS_sacred_war"
 			}
 			picture = chi_war_of_resistance3
 			targeted_modifier = {
@@ -4445,7 +4456,7 @@ ideas = {
 		RUS_democratic_bloc_1 = {
 			#VST-Right
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_democratic_bloc_1"
+				log = "[GetLogRoot]: add idea RUS_democratic_bloc_1"
 			}
 			picture = generic_political_support
 			modifier = {
@@ -4455,7 +4466,7 @@ ideas = {
 		RUS_democratic_bloc_2 = {
 			#Levitsky
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_democratic_bloc_2"
+				log = "[GetLogRoot]: add idea RUS_democratic_bloc_2"
 			}
 			name = RUS_democratic_bloc_1
 			picture = generic_political_support
@@ -4466,7 +4477,7 @@ ideas = {
 		RUS_democratic_bloc_3 = {
 			#VST-Right + SDS
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_democratic_bloc_3"
+				log = "[GetLogRoot]: add idea RUS_democratic_bloc_3"
 				country_event = {
 					id = socrus.172
 					days = 75
@@ -4482,7 +4493,7 @@ ideas = {
 		RUS_democratic_bloc_4 = {
 			#Levitsky + SDS
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_democratic_bloc_4"
+				log = "[GetLogRoot]: add idea RUS_democratic_bloc_4"
 				country_event = {
 					id = socrus.172
 					days = 75
@@ -4498,7 +4509,7 @@ ideas = {
 		RUS_democratic_bloc_5 = {
 			#VST-Right + SDS + Anarchists
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_democratic_bloc_5"
+				log = "[GetLogRoot]: add idea RUS_democratic_bloc_5"
 				country_event = {
 					id = socrus.172
 					days = 75
@@ -4516,7 +4527,7 @@ ideas = {
 		RUS_democratic_bloc_6 = {
 			#Levitsky + SDS + Anarchists
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_democratic_bloc_6"
+				log = "[GetLogRoot]: add idea RUS_democratic_bloc_6"
 				country_event = {
 					id = socrus.172
 					days = 75
@@ -4534,7 +4545,7 @@ ideas = {
 		RUS_democratic_bloc_7 = {
 			#VST-Right + Anarchists
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_democratic_bloc_7"
+				log = "[GetLogRoot]: add idea RUS_democratic_bloc_7"
 			}
 			name = RUS_democratic_bloc_1
 			picture = generic_political_support
@@ -4547,7 +4558,7 @@ ideas = {
 		RUS_democratic_bloc_8 = {
 			#Levitsky + Anarchists
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_democratic_bloc_8"
+				log = "[GetLogRoot]: add idea RUS_democratic_bloc_8"
 			}
 			name = RUS_democratic_bloc_1
 			picture = generic_political_support
@@ -4560,7 +4571,7 @@ ideas = {
 		RUS_democratic_bloc_9 = {
 			#SDS
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_democratic_bloc_9"
+				log = "[GetLogRoot]: add idea RUS_democratic_bloc_9"
 				country_event = {
 					id = socrus.172
 					days = 75
@@ -4575,7 +4586,7 @@ ideas = {
 		RUS_democratic_bloc_10 = {
 			#SDS + Anarchists
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_democratic_bloc_10"
+				log = "[GetLogRoot]: add idea RUS_democratic_bloc_10"
 				country_event = {
 					id = socrus.172
 					days = 75
@@ -4592,7 +4603,7 @@ ideas = {
 		RUS_democratic_bloc_11 = {
 			#Anarchists
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_democratic_bloc_11"
+				log = "[GetLogRoot]: add idea RUS_democratic_bloc_11"
 			}
 			name = RUS_democratic_bloc_1
 			picture = generic_political_support
@@ -4603,7 +4614,7 @@ ideas = {
 		}
 		RUS_new_security_apparatus = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_new_security_apparatus"
+				log = "[GetLogRoot]: add idea RUS_new_security_apparatus"
 			}
 			picture = citizen_militia_2
 			modifier = {
@@ -4613,7 +4624,7 @@ ideas = {
 		}
 		RUS_socialist_education = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_socialist_education"
+				log = "[GetLogRoot]: add idea RUS_socialist_education"
 			}
 			picture = generic_research_increase
 			on_remove = {
@@ -4626,7 +4637,7 @@ ideas = {
 		}
 		RUS_socialist_education_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_socialist_education_2"
+				log = "[GetLogRoot]: add idea RUS_socialist_education_2"
 			}
 			name = RUS_socialist_education
 			picture = generic_research_increase
@@ -4636,7 +4647,7 @@ ideas = {
 		}
 		RUS_postwar_factionalism = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_postwar_factionalism"
+				log = "[GetLogRoot]: add idea RUS_postwar_factionalism"
 			}
 			picture = generic_destruction
 			modifier = {
@@ -4648,7 +4659,7 @@ ideas = {
 		RUS_postwar_factionalism_2 = {
 			name = RUS_postwar_factionalism
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_postwar_factionalism_2"
+				log = "[GetLogRoot]: add idea RUS_postwar_factionalism_2"
 			}
 			picture = generic_destruction
 			modifier = {
@@ -4660,7 +4671,7 @@ ideas = {
 		RUS_postwar_factionalism_3 = {
 			name = RUS_postwar_factionalism
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_postwar_factionalism_3"
+				log = "[GetLogRoot]: add idea RUS_postwar_factionalism_3"
 			}
 			picture = generic_destruction
 			modifier = {
@@ -4671,7 +4682,7 @@ ideas = {
 		}
 		RUS_revolutionary_vigilance = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_revolutionary_vigilance"
+				log = "[GetLogRoot]: add idea RUS_revolutionary_vigilance"
 			}
 			picture = NOR_secret_police
 			modifier = {
@@ -4682,7 +4693,7 @@ ideas = {
 		RUS_revolutionary_vigilance_2 = {
 			name = RUS_revolutionary_vigilance
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_revolutionary_vigilance_2"
+				log = "[GetLogRoot]: add idea RUS_revolutionary_vigilance_2"
 			}
 			picture = NOR_secret_police
 			modifier = {
@@ -4693,7 +4704,7 @@ ideas = {
 		RUS_UKR_shock_plan = {
 			name = RUS_western_march
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_UKR_shock_plan"
+				log = "[GetLogRoot]: add idea RUS_UKR_shock_plan"
 			}
 			picture = generic_armor
 			modifier = {
@@ -4710,7 +4721,7 @@ ideas = {
 			#
 			name = RUS_western_march
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_UKR_fire_plan"
+				log = "[GetLogRoot]: add idea RUS_UKR_fire_plan"
 			}
 			picture = generic_artillery_regiments
 			modifier = {
@@ -4726,7 +4737,7 @@ ideas = {
 		RUS_BLR_shock_plan = {
 			name = RUS_western_march
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_BLR_shock_plan"
+				log = "[GetLogRoot]: add idea RUS_BLR_shock_plan"
 			}
 			picture = generic_armor
 			modifier = {
@@ -4742,7 +4753,7 @@ ideas = {
 		RUS_BLR_fire_plan = {
 			name = RUS_western_march
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_BLR_fire_plan"
+				log = "[GetLogRoot]: add idea RUS_BLR_fire_plan"
 			}
 			picture = generic_artillery_regiments
 			modifier = {
@@ -4758,7 +4769,7 @@ ideas = {
 		RUS_BAT_shock_plan = {
 			name = RUS_western_march
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_BAT_shock_plan"
+				log = "[GetLogRoot]: add idea RUS_BAT_shock_plan"
 			}
 			picture = generic_armor
 			modifier = {
@@ -4774,7 +4785,7 @@ ideas = {
 		RUS_BAT_fire_plan = {
 			name = RUS_western_march
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_BAT_fire_plan"
+				log = "[GetLogRoot]: add idea RUS_BAT_fire_plan"
 			}
 			picture = generic_artillery_regiments
 			modifier = {
@@ -4791,7 +4802,7 @@ ideas = {
 		RUS_GER_shock_plan = {
 			name = RUS_western_march
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_GER_shock_plan"
+				log = "[GetLogRoot]: add idea RUS_GER_shock_plan"
 			}
 			picture = generic_armor
 			modifier = {
@@ -4835,7 +4846,7 @@ ideas = {
 		RUS_GER_fire_plan = {
 			name = RUS_western_march
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_GER_fire_plan"
+				log = "[GetLogRoot]: add idea RUS_GER_fire_plan"
 			}
 			picture = generic_artillery_regiments
 			modifier = {
@@ -4879,7 +4890,7 @@ ideas = {
 		RUS_failed_plan = {
 			name = RUS_western_march
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_failed_plan"
+				log = "[GetLogRoot]: add idea RUS_failed_plan"
 			}
 			picture = SPR_anti_fascist_crusade
 			modifier = {
@@ -4889,7 +4900,7 @@ ideas = {
 		RUS_long_war = {
 			#Removed by `on_peace`
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_long_war"
+				log = "[GetLogRoot]: add idea RUS_long_war"
 			}
 			picture = generic_syndicalist_manpower
 			modifier = {
@@ -4907,7 +4918,7 @@ ideas = {
 		RUS_total_war = {
 			#Removed by `on_peace`
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_total_war"
+				log = "[GetLogRoot]: add idea RUS_total_war"
 			}
 			picture = generic_syndicalist_manpower
 			modifier = {
@@ -4920,7 +4931,7 @@ ideas = {
 		### Great Patriotic War Ideas
 		RUS_order_267_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_order_267_idea"
+				log = "[GetLogRoot]: add idea RUS_order_267_idea"
 			}
 			picture = death_men
 			modifier = {
@@ -4932,7 +4943,7 @@ ideas = {
 		### Other ideas ###
 		RUS_baltic_accord_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_baltic_accord_idea"
+				log = "[GetLogRoot]: add idea RUS_baltic_accord_idea"
 			}
 			picture = BALTIC_forest_brothers
 			modifier = {
@@ -4944,7 +4955,7 @@ ideas = {
 		}
 		RUS_baltic_accord_idea_RUS = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_baltic_accord_idea_RUS"
+				log = "[GetLogRoot]: add idea RUS_baltic_accord_idea_RUS"
 			}
 			name = RUS_baltic_accord_idea
 			picture = BALTIC_forest_brothers
@@ -4956,7 +4967,7 @@ ideas = {
 		}
 		RUS_anti_partisan_guard = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_anti_partisan_guard"
+				log = "[GetLogRoot]: add idea RUS_anti_partisan_guard"
 			}
 			picture = MEX_politicised_army
 			modifier = {
@@ -4970,7 +4981,7 @@ ideas = {
 		}
 		RUS_UKR_resistance = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_UKR_resistance"
+				log = "[GetLogRoot]: add idea RUS_UKR_resistance"
 			}
 			picture = UKR_mace
 			modifier = {
@@ -4982,7 +4993,7 @@ ideas = {
 		}
 		RUS_UKR_opposition = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_UKR_opposition"
+				log = "[GetLogRoot]: add idea RUS_UKR_opposition"
 			}
 			picture = UKR_immortal_will_of_the_ukrainian_nation_spirit
 			modifier = {
@@ -4993,7 +5004,7 @@ ideas = {
 		}
 		RUS_SER_aid = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_SER_aid"
+				log = "[GetLogRoot]: add idea RUS_SER_aid"
 			}
 			picture = advisors_russia
 			cancel = {
@@ -5011,7 +5022,7 @@ ideas = {
 		}
 		RUS_SER_aid_RUS = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_SER_aid_RUS"
+				log = "[GetLogRoot]: add idea RUS_SER_aid_RUS"
 			}
 			picture = advisors_serbia
 			cancel = {
@@ -5023,7 +5034,7 @@ ideas = {
 		}
 		RUS_PER_aid = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_PER_aid"
+				log = "[GetLogRoot]: add idea RUS_PER_aid"
 			}
 			picture = advisors_russia
 			cancel = {
@@ -5040,7 +5051,7 @@ ideas = {
 		}
 		RUS_army_limits = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_army_limits"
+				log = "[GetLogRoot]: add idea RUS_army_limits"
 			}
 			name = RUS_army_limits
 			picture = generic_desertion
@@ -5056,7 +5067,7 @@ ideas = {
 		RUS_INT_deal = {
 			#Internationale spirit
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_INT_deal"
+				log = "[GetLogRoot]: add idea RUS_INT_deal"
 			}
 			picture = ARG_resource_extration_focus
 			modifier = {
@@ -5071,7 +5082,7 @@ ideas = {
 		RUS_INT_deal_2 = {
 			#Russia spirit
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_INT_deal_2"
+				log = "[GetLogRoot]: add idea RUS_INT_deal_2"
 			}
 			name = RUS_INT_deal
 			picture = advisors_france
@@ -5087,7 +5098,7 @@ ideas = {
 		RUS_INT_deal_3 = {
 			#Russia spirit
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_INT_deal_3"
+				log = "[GetLogRoot]: add idea RUS_INT_deal_3"
 			}
 			name = RUS_INT_deal
 			picture = advisors_france
@@ -5103,7 +5114,7 @@ ideas = {
 		RUS_america_attache = {
 			#American Ice March
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_america_attache"
+				log = "[GetLogRoot]: add idea RUS_america_attache"
 			}
 			picture = USA_revolt
 			modifier = {
@@ -5119,7 +5130,7 @@ ideas = {
 		}
 		RUS_renewed_american_trade = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_renewed_american_trade"
+				log = "[GetLogRoot]: add idea RUS_renewed_american_trade"
 			}
 			picture = generic_economic_increase
 			modifier = {
@@ -5135,7 +5146,7 @@ ideas = {
 		}
 		RUS_renewed_american_trade2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_renewed_american_trade2"
+				log = "[GetLogRoot]: add idea RUS_renewed_american_trade2"
 			}
 			picture = generic_economic_increase
 			name = RUS_renewed_american_trade
@@ -5153,7 +5164,7 @@ ideas = {
 		RUS_chinese_military_mission_idea = {
 			#Removed by `on_war_relation_added`
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_chinese_military_mission_idea"
+				log = "[GetLogRoot]: add idea RUS_chinese_military_mission_idea"
 			}
 			picture = advisors_russia
 			allowed = {
@@ -5174,7 +5185,7 @@ ideas = {
 		}
 		RUS_china_trade_deal = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_china_trade_deal"
+				log = "[GetLogRoot]: add idea RUS_china_trade_deal"
 			}
 			picture = can_wartime_prices_and_trade_board
 			allowed = {
@@ -5195,7 +5206,7 @@ ideas = {
 		}
 		RUS_china_trade_deal_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_china_trade_deal_2"
+				log = "[GetLogRoot]: add idea RUS_china_trade_deal_2"
 			}
 			name = RUS_china_trade_deal
 			picture = can_wartime_prices_and_trade_board
@@ -5220,7 +5231,7 @@ ideas = {
 		RUS_military_production_idea_1 = {
 			#Initial
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_military_production_idea_1"
+				log = "[GetLogRoot]: add idea RUS_military_production_idea_1"
 			}
 			name = RUS_military_production_idea
 			picture = SOV_third_five_year_plan_military
@@ -5232,7 +5243,7 @@ ideas = {
 		RUS_military_production_idea_2 = {
 			#GOST
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_military_production_idea_2"
+				log = "[GetLogRoot]: add idea RUS_military_production_idea_2"
 			}
 			name = RUS_military_production_idea
 			picture = SOV_third_five_year_plan_military
@@ -5254,7 +5265,7 @@ ideas = {
 		RUS_military_production_idea_3 = {
 			#GOST + GAU
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_military_production_idea_3"
+				log = "[GetLogRoot]: add idea RUS_military_production_idea_3"
 			}
 			name = RUS_military_production_idea
 			picture = SOV_third_five_year_plan_military
@@ -5290,7 +5301,7 @@ ideas = {
 		RUS_military_production_idea_4 = {
 			#GOST + Mechanization
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_military_production_idea_4"
+				log = "[GetLogRoot]: add idea RUS_military_production_idea_4"
 			}
 			name = RUS_military_production_idea
 			picture = SOV_third_five_year_plan_military
@@ -5324,7 +5335,7 @@ ideas = {
 		}
 		RUS_anti_internationale_pact = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_anti_internationale_pact"
+				log = "[GetLogRoot]: add idea RUS_anti_internationale_pact"
 			}
 			name = RUS_anti_internationale_pact
 			picture = NOR_anti_communist_sentiment
@@ -5351,7 +5362,7 @@ ideas = {
 		##Army plans##
 		RUS_stavka_reform = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_stavka_reform"
+				log = "[GetLogRoot]: add idea RUS_stavka_reform"
 			}
 			on_remove = {
 				add_ideas = RUS_golovin_reform_1
@@ -5365,7 +5376,7 @@ ideas = {
 		RUS_golovin_reform_1 = {
 			#Stavka
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_golovin_reform_1"
+				log = "[GetLogRoot]: add idea RUS_golovin_reform_1"
 			}
 			picture = RUS_planning_school
 			name = RUS_russian_army_idea
@@ -5376,7 +5387,7 @@ ideas = {
 		RUS_golovin_reform_2 = {
 			#Stavka + Auftragstaktik
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_golovin_reform_2"
+				log = "[GetLogRoot]: add idea RUS_golovin_reform_2"
 			}
 			picture = RUS_planning_school
 			name = RUS_russian_army_idea
@@ -5389,7 +5400,7 @@ ideas = {
 		RUS_golovin_reform_3 = {
 			#Stavka + Yunkers
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_golovin_reform_3"
+				log = "[GetLogRoot]: add idea RUS_golovin_reform_3"
 			}
 			picture = RUS_planning_school
 			name = RUS_russian_army_idea
@@ -5403,7 +5414,7 @@ ideas = {
 		RUS_golovin_reform_4 = {
 			#Stavka + Yunkers + Auftragstaktik
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_golovin_reform_4"
+				log = "[GetLogRoot]: add idea RUS_golovin_reform_4"
 			}
 			picture = RUS_planning_school
 			name = RUS_russian_army_idea
@@ -5419,7 +5430,7 @@ ideas = {
 		RUS_golovin_reform_5 = {
 			#Stavka + Yunkers + Auftragstaktik + Unity
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_golovin_reform_5"
+				log = "[GetLogRoot]: add idea RUS_golovin_reform_5"
 			}
 			picture = RUS_planning_school
 			name = RUS_russian_army_idea
@@ -5437,7 +5448,7 @@ ideas = {
 		RUS_golovin_reform_6 = {
 			#Stavka + Yunkers + Auftragstaktik + Unity + Destruction
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_golovin_reform_6"
+				log = "[GetLogRoot]: add idea RUS_golovin_reform_6"
 			}
 			picture = RUS_planning_school
 			name = RUS_russian_army_idea
@@ -5459,7 +5470,7 @@ ideas = {
 		RUS_denikin_doctrine_1 = {
 			#New Cavalry
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_denikin_doctrine_1"
+				log = "[GetLogRoot]: add idea RUS_denikin_doctrine_1"
 			}
 			picture = RUS_general_school
 			name = RUS_russian_army_denikin
@@ -5472,7 +5483,7 @@ ideas = {
 		RUS_denikin_doctrine_2 = {
 			#New Guards Units
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_denikin_doctrine_2"
+				log = "[GetLogRoot]: add idea RUS_denikin_doctrine_2"
 			}
 			picture = RUS_general_school
 			name = RUS_russian_army_denikin
@@ -5485,7 +5496,7 @@ ideas = {
 		RUS_denikin_doctrine_3 = {
 			#New Guards Units + New Cavalry
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_denikin_doctrine_3"
+				log = "[GetLogRoot]: add idea RUS_denikin_doctrine_3"
 			}
 			picture = RUS_general_school
 			name = RUS_russian_army_denikin
@@ -5501,7 +5512,7 @@ ideas = {
 		RUS_denikin_doctrine_4 = {
 			#New Cavalry + Heroism
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_denikin_doctrine_4"
+				log = "[GetLogRoot]: add idea RUS_denikin_doctrine_4"
 			}
 			picture = RUS_general_school
 			name = RUS_russian_army_denikin
@@ -5519,7 +5530,7 @@ ideas = {
 		RUS_denikin_doctrine_5 = {
 			#New Cavalry + Heroism + Patriotism
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_denikin_doctrine_5"
+				log = "[GetLogRoot]: add idea RUS_denikin_doctrine_5"
 			}
 			picture = RUS_general_school
 			name = RUS_russian_army_denikin
@@ -5540,7 +5551,7 @@ ideas = {
 		RUS_denikin_doctrine_6 = {
 			#New Cavalry + Heroism + Patriotism + Steel
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_denikin_doctrine_6"
+				log = "[GetLogRoot]: add idea RUS_denikin_doctrine_6"
 			}
 			picture = RUS_general_school
 			name = RUS_russian_army_denikin
@@ -5563,7 +5574,7 @@ ideas = {
 		RUS_vasilevsky_doctrine_1 = {
 			#Heirs of Stavka
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_vasilevsky_doctrine_1"
+				log = "[GetLogRoot]: add idea RUS_vasilevsky_doctrine_1"
 			}
 			picture = RUS_general_school
 			name = RUS_russian_army_eser
@@ -5576,7 +5587,7 @@ ideas = {
 		RUS_vasilevsky_doctrine_2 = {
 			#Heirs + Praporshciks
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_vasilevsky_doctrine_2"
+				log = "[GetLogRoot]: add idea RUS_vasilevsky_doctrine_2"
 			}
 			picture = RUS_general_school
 			name = RUS_russian_army_eser
@@ -5591,7 +5602,7 @@ ideas = {
 		RUS_vasilevsky_doctrine_3 = {
 			#Heirs + Praporshciks + Blood
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_vasilevsky_doctrine_3"
+				log = "[GetLogRoot]: add idea RUS_vasilevsky_doctrine_3"
 			}
 			picture = RUS_general_school
 			name = RUS_russian_army_eser
@@ -5608,7 +5619,7 @@ ideas = {
 		RUS_vasilevsky_doctrine_4 = {
 			#Heirs + Praporshciks + Blood + People's Army
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_vasilevsky_doctrine_4"
+				log = "[GetLogRoot]: add idea RUS_vasilevsky_doctrine_4"
 			}
 			picture = RUS_general_school
 			name = RUS_russian_army_eser
@@ -5628,7 +5639,7 @@ ideas = {
 		RUS_frunze_doctrine_1 = {
 			#Veterans of the Civil War
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_frunze_doctrine_1"
+				log = "[GetLogRoot]: add idea RUS_frunze_doctrine_1"
 			}
 			picture = FOP_revolutionary_army
 			name = RUS_russian_army_soc
@@ -5641,7 +5652,7 @@ ideas = {
 		RUS_frunze_doctrine_2 = {
 			#Veterans + Guard
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_frunze_doctrine_2"
+				log = "[GetLogRoot]: add idea RUS_frunze_doctrine_2"
 			}
 			picture = FOP_revolutionary_army
 			name = RUS_russian_army_soc
@@ -5656,7 +5667,7 @@ ideas = {
 		RUS_frunze_doctrine_3 = {
 			#Veterans + Guard + Basis
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_frunze_doctrine_3"
+				log = "[GetLogRoot]: add idea RUS_frunze_doctrine_3"
 			}
 			picture = FOP_revolutionary_army
 			name = RUS_russian_army_soc
@@ -5673,7 +5684,7 @@ ideas = {
 		RUS_frunze_doctrine_4 = {
 			#Veterans + Guard + Basis + Sword
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_frunze_doctrine_4"
+				log = "[GetLogRoot]: add idea RUS_frunze_doctrine_4"
 			}
 			picture = FOP_revolutionary_army
 			name = RUS_russian_army_soc
@@ -5691,7 +5702,7 @@ ideas = {
 		}
 		RUS_commissars_communist_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_commissars_communist_1"
+				log = "[GetLogRoot]: add idea RUS_commissars_communist_1"
 			}
 			picture = generic_communist_army
 			modifier = {
@@ -5701,7 +5712,7 @@ ideas = {
 		}
 		RUS_commissars_communist_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_commissars_communist_2"
+				log = "[GetLogRoot]: add idea RUS_commissars_communist_2"
 			}
 			picture = generic_communist_army
 			name = RUS_commissars_communist_1
@@ -5709,12 +5720,12 @@ ideas = {
 				political_power_factor = 0.1
 				army_morale_factor = 0.1
 				totalist_drift = 0.02
-				weekly_casualties_war_support = 0.01
+				weekly_casualties_war_support = 0.001
 			}
 		}
 		RUS_death_by_thousand_cuts = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_death_by_thousand_cuts"
+				log = "[GetLogRoot]: add idea RUS_death_by_thousand_cuts"
 			}
 			picture = HOL_unionized_military
 			modifier = {
@@ -5728,7 +5739,7 @@ ideas = {
 		}
 		RUS_diplo_socialist_influence = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_diplo_socialist_influence"
+				log = "[GetLogRoot]: add idea RUS_diplo_socialist_influence"
 			}
 			picture = SOV_soviet_hegemony
 			modifier = {
@@ -5740,7 +5751,7 @@ ideas = {
 		RUS_military_restrictions = {
 			#initial
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_military_restrictions"
+				log = "[GetLogRoot]: add idea RUS_military_restrictions"
 				set_country_flag = cannot_have_conscription
 				set_country_flag = cannot_build_armor
 			}
@@ -5759,7 +5770,7 @@ ideas = {
 		### Espionage ideas ###
 		RUS_okhrana_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_okhrana_1"
+				log = "[GetLogRoot]: add idea RUS_okhrana_1"
 			}
 			name = RUS_okhrana
 			picture = RUS_okhrannoye_otdeleniye
@@ -5770,7 +5781,7 @@ ideas = {
 		}
 		RUS_okhrana_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_okhrana_2"
+				log = "[GetLogRoot]: add idea RUS_okhrana_2"
 			}
 			name = RUS_okhrana
 			picture = RUS_okhrannoye_otdeleniye
@@ -5782,7 +5793,7 @@ ideas = {
 		}
 		RUS_okhrana_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_okhrana_3"
+				log = "[GetLogRoot]: add idea RUS_okhrana_3"
 			}
 			name = RUS_okhrana_smersh
 			picture = RUS_okhrannoye_otdeleniye
@@ -5796,7 +5807,7 @@ ideas = {
 		}
 		RUS_okhrana_non_lar_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_okhrana_non_lar_1"
+				log = "[GetLogRoot]: add idea RUS_okhrana_non_lar_1"
 			}
 			name = RUS_okhrana
 			picture = RUS_okhrannoye_otdeleniye
@@ -5810,7 +5821,7 @@ ideas = {
 		}
 		RUS_okhrana_non_lar_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_okhrana_non_lar_2"
+				log = "[GetLogRoot]: add idea RUS_okhrana_non_lar_2"
 			}
 			name = RUS_okhrana
 			picture = RUS_okhrannoye_otdeleniye
@@ -5825,7 +5836,7 @@ ideas = {
 		}
 		RUS_okhrana_non_lar_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_okhrana_non_lar_3"
+				log = "[GetLogRoot]: add idea RUS_okhrana_non_lar_3"
 			}
 			name = RUS_okhrana_smersh
 			picture = RUS_okhrannoye_otdeleniye
@@ -5842,7 +5853,7 @@ ideas = {
 		}
 		RUS_deception = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_deception"
+				log = "[GetLogRoot]: add idea RUS_deception"
 			}
 			picture = NOR_oslo_analyser_idea
 			modifier = {
@@ -5854,44 +5865,12 @@ ideas = {
 		### Air Force ideas ###
 		RUS_state_aviation_bureau_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_state_aviation_bureau_1"
+				log = "[GetLogRoot]: add idea RUS_state_aviation_bureau_1"
 			}
 			name = RUS_state_aviation_bureau_idea
 			picture = man_five_year_plan_air
 			equipment_bonus = {
-				small_plane_airframe = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				cv_small_plane_airframe = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				small_plane_cas_airframe = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				cv_small_plane_cas_airframe = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				cv_small_plane_naval_bomber_airframe = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				small_plane_naval_bomber_airframe = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				medium_plane_airframe = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				medium_plane_fighter_airframe = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				large_plane_airframe = {
+				mio_cat_eq_all_aircraft = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
@@ -5899,44 +5878,12 @@ ideas = {
 		}
 		RUS_state_aviation_bureau_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_state_aviation_bureau_2"
+				log = "[GetLogRoot]: add idea RUS_state_aviation_bureau_2"
 			}
 			name = RUS_state_aviation_bureau_idea
 			picture = man_five_year_plan_air
 			equipment_bonus = {
-				small_plane_airframe = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				cv_small_plane_airframe = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				small_plane_cas_airframe = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				cv_small_plane_cas_airframe = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				cv_small_plane_naval_bomber_airframe = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				small_plane_naval_bomber_airframe = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				medium_plane_airframe = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				medium_plane_fighter_airframe = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				large_plane_airframe = {
+				mio_cat_eq_all_aircraft = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -5944,7 +5891,7 @@ ideas = {
 		}
 		RUS_night_witches_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_night_witches_idea"
+				log = "[GetLogRoot]: add idea RUS_night_witches_idea"
 			}
 			picture = air_war_plans_division_focus
 			modifier = {
@@ -5954,7 +5901,7 @@ ideas = {
 		}
 		RUS_terror_bomber_school = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_terror_bomber_school"
+				log = "[GetLogRoot]: add idea RUS_terror_bomber_school"
 			}
 			picture = combined_bomber_offensive
 			modifier = {
@@ -5965,7 +5912,7 @@ ideas = {
 		}
 		RUS_army_of_air_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_army_of_air_1"
+				log = "[GetLogRoot]: add idea RUS_army_of_air_1"
 			}
 			picture = SWE_land_air_warfare
 			name = RUS_army_of_air_idea
@@ -5976,7 +5923,7 @@ ideas = {
 		}
 		RUS_army_of_air_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_army_of_air_2"
+				log = "[GetLogRoot]: add idea RUS_army_of_air_2"
 			}
 			picture = SWE_land_air_warfare
 			name = RUS_army_of_air_idea
@@ -5989,7 +5936,7 @@ ideas = {
 		}
 		RUS_army_of_air_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_army_of_air_3"
+				log = "[GetLogRoot]: add idea RUS_army_of_air_3"
 			}
 			picture = SWE_land_air_warfare
 			name = RUS_army_of_air_idea
@@ -6003,7 +5950,7 @@ ideas = {
 		}
 		RUS_strategic_dimension_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_strategic_dimension_1"
+				log = "[GetLogRoot]: add idea RUS_strategic_dimension_1"
 			}
 			picture = SWE_marauder_bombers
 			name = RUS_strategic_dimension_idea
@@ -6017,7 +5964,7 @@ ideas = {
 		}
 		RUS_strategic_dimension_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_strategic_dimension_2"
+				log = "[GetLogRoot]: add idea RUS_strategic_dimension_2"
 			}
 			picture = SWE_marauder_bombers
 			name = RUS_strategic_dimension_idea
@@ -6033,7 +5980,7 @@ ideas = {
 		}
 		RUS_strategic_dimension_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_strategic_dimension_3"
+				log = "[GetLogRoot]: add idea RUS_strategic_dimension_3"
 			}
 			picture = SWE_marauder_bombers
 			name = RUS_strategic_dimension_idea
@@ -6053,7 +6000,7 @@ ideas = {
 		### Navy ideas ###
 		RUS_attack_submarine_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_attack_submarine_idea"
+				log = "[GetLogRoot]: add idea RUS_attack_submarine_idea"
 			}
 			picture = generic_navy_submarines
 			modifier = {
@@ -6063,7 +6010,7 @@ ideas = {
 		}
 		RUS_coastal_support = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_coastal_support"
+				log = "[GetLogRoot]: add idea RUS_coastal_support"
 			}
 			picture = SWE_coastal_support
 			modifier = {
@@ -6074,7 +6021,7 @@ ideas = {
 		}
 		RUS_blue_seas_fleet = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_blue_seas_fleet"
+				log = "[GetLogRoot]: add idea RUS_blue_seas_fleet"
 			}
 			picture = generic_coastal_defense_ships2
 			modifier = {
@@ -6089,7 +6036,7 @@ ideas = {
 		}
 		RUS_invade_britain = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_invade_britain"
+				log = "[GetLogRoot]: add idea RUS_invade_britain"
 			}
 			picture = generic_naval_invasion
 			modifier = {
@@ -6104,7 +6051,7 @@ ideas = {
 		}
 		RUS_invade_japan = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_invade_japan"
+				log = "[GetLogRoot]: add idea RUS_invade_japan"
 			}
 			picture = generic_japanese_conflict
 			modifier = {
@@ -6119,7 +6066,7 @@ ideas = {
 		}
 		RUS_naval_rearmament = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_naval_rearmament"
+				log = "[GetLogRoot]: add idea RUS_naval_rearmament"
 			}
 			picture = AUS_streamline_cruiser_production_idea
 			modifier = {
@@ -6153,7 +6100,7 @@ ideas = {
 		### Russian faction ideas ###
 		RUS_moscow_eco_treaty_RUS = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_moscow_eco_treaty_RUS"
+				log = "[GetLogRoot]: add idea RUS_moscow_eco_treaty_RUS"
 			}
 			picture = RUS_united_gov
 			modifier = {
@@ -6163,7 +6110,7 @@ ideas = {
 		}
 		RUS_moscow_eco_treaty_member = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_moscow_eco_treaty_member"
+				log = "[GetLogRoot]: add idea RUS_moscow_eco_treaty_member"
 			}
 			picture = RUS_united_gov
 			modifier = {
@@ -6177,7 +6124,7 @@ ideas = {
 		}
 		RUS_MA_mech_plan = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_MA_mech_plan"
+				log = "[GetLogRoot]: add idea RUS_MA_mech_plan"
 			}
 			name = RUS_MA_plan
 			picture = state_economy
@@ -6205,7 +6152,7 @@ ideas = {
 		}
 		RUS_MA_navy_plan = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_MA_navy_plan"
+				log = "[GetLogRoot]: add idea RUS_MA_navy_plan"
 			}
 			name = RUS_MA_plan
 			picture = state_economy
@@ -6241,7 +6188,7 @@ ideas = {
 		}
 		RUS_MA_air_plan = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_MA_air_plan"
+				log = "[GetLogRoot]: add idea RUS_MA_air_plan"
 			}
 			name = RUS_MA_plan
 			picture = state_economy
@@ -6254,19 +6201,7 @@ ideas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-				small_plane_cas_airframe = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				small_plane_naval_bomber_airframe = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
 				medium_plane_airframe = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				medium_plane_fighter_airframe = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -6281,7 +6216,7 @@ ideas = {
 		}
 		RUS_MA_infra_plan = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_MA_infra_plan"
+				log = "[GetLogRoot]: add idea RUS_MA_infra_plan"
 			}
 			name = RUS_MA_plan
 			picture = state_economy
@@ -6315,7 +6250,7 @@ ideas = {
 		}
 		RUS_MA_autarky_plan = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_MA_autarky_plan"
+				log = "[GetLogRoot]: add idea RUS_MA_autarky_plan"
 			}
 			name = RUS_MA_plan
 			picture = state_economy
@@ -6346,7 +6281,7 @@ ideas = {
 		# stalin form sov
 		RUS_Fate_of_the_syndicalists_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_Fate_of_the_syndicalists_idea"
+				log = "[GetLogRoot]: add idea RUS_Fate_of_the_syndicalists_idea"
 			}
 			picture = FRA_communard_spirit
 			modifier = {
@@ -6359,7 +6294,7 @@ ideas = {
 		}
 		RUS_syndicalists_has_been_integrated_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_syndicalists_has_been_integrated_idea"
+				log = "[GetLogRoot]: add idea RUS_syndicalists_has_been_integrated_idea"
 			}
 			picture = FRA_communard_spirit
 			modifier = {
@@ -6369,7 +6304,7 @@ ideas = {
 		}
 		RUS_plan_ahead_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_Plan_ahead_idea"
+				log = "[GetLogRoot]: add idea RUS_plan_ahead_idea"
 			}
 			modifier = {
 				training_time_army_factor = -0.1
@@ -6378,7 +6313,7 @@ ideas = {
 		}
 		RUS_remove_dust_and_filth_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_remove_dust_and_filth_idea"
+				log = "[GetLogRoot]: add idea RUS_remove_dust_and_filth_idea"
 			}
 			modifier = {
 				social_democrat_drift = -0.05
@@ -6389,7 +6324,7 @@ ideas = {
 		}
 		RUS_soviet_republic_industry_idea = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_soviet_republic_industry_idea"
+				log = "[GetLogRoot]: add idea RUS_soviet_republic_industry_idea"
 			}
 			modifier = {
 				production_speed_industrial_complex_factor = 0.25
@@ -6402,7 +6337,7 @@ ideas = {
 		RUS_surrender_limit_idea = {
 			#this is so RUS doesn't cap before Scripted Peace, removed by `on_peace`
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_surrender_limit_idea"
+				log = "[GetLogRoot]: add idea RUS_surrender_limit_idea"
 			}
 			modifier = {
 				surrender_limit = 0.1
@@ -6412,7 +6347,7 @@ ideas = {
 		RUS_obukhov_army_xp = {
 			#Hidden idea for giving incremental Army XP from Obukhov
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_obukhov_army_xp"
+				log = "[GetLogRoot]: add idea RUS_obukhov_army_xp"
 			}
 			modifier = {
 				experience_gain_army = 0.2
@@ -6421,7 +6356,7 @@ ideas = {
 		RUS_obukhov_army_xp_2 = {
 			#Hidden idea for giving incremental Army XP from Obukhov
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_obukhov_army_xp_2"
+				log = "[GetLogRoot]: add idea RUS_obukhov_army_xp_2"
 			}
 			modifier = {
 				experience_gain_army = 0.3
@@ -6430,7 +6365,7 @@ ideas = {
 		RUS_bz_navy_xp = {
 			#Hidden idea for giving incremental Navy XP from BZ
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_bz_navy_xp"
+				log = "[GetLogRoot]: add idea RUS_bz_navy_xp"
 			}
 			modifier = {
 				experience_gain_navy = 0.2
@@ -6439,7 +6374,7 @@ ideas = {
 		RUS_bz_navy_xp_2 = {
 			#Hidden idea for giving incremental Navy XP from BZ
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_bz_navy_xp_2"
+				log = "[GetLogRoot]: add idea RUS_bz_navy_xp_2"
 			}
 			modifier = {
 				experience_gain_navy = 0.3
@@ -6448,7 +6383,7 @@ ideas = {
 		RUS_osoavia_air_xp = {
 			#Hidden idea for giving incremental Air XP from osoavia
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_osoavia_air_xp"
+				log = "[GetLogRoot]: add idea RUS_osoavia_air_xp"
 			}
 			modifier = {
 				experience_gain_air = 0.2
@@ -6457,7 +6392,7 @@ ideas = {
 		RUS_osoavia_air_xp_2 = {
 			#Hidden idea for giving incremental Air XP from osoavia
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_osoavia_air_xp_2"
+				log = "[GetLogRoot]: add idea RUS_osoavia_air_xp_2"
 			}
 			modifier = {
 				experience_gain_air = 0.3
@@ -6465,7 +6400,7 @@ ideas = {
 		}
 		RUS_obukhov_political_interference = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_obukhov_political_interference"
+				log = "[GetLogRoot]: add idea RUS_obukhov_political_interference"
 			}
 			modifier = {
 				experience_gain_army_factor = -0.35
@@ -6474,7 +6409,7 @@ ideas = {
 		}
 		RUS_obukhov_private_assistance = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_obukhov_private_assistance"
+				log = "[GetLogRoot]: add idea RUS_obukhov_private_assistance"
 			}
 			modifier = {
 				experience_gain_army_factor = -0.35
@@ -6482,7 +6417,7 @@ ideas = {
 		}
 		RUS_osoavia_political_interference = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_osoavia_political_interference"
+				log = "[GetLogRoot]: add idea RUS_osoavia_political_interference"
 			}
 			modifier = {
 				experience_gain_air_factor = -0.35
@@ -6490,7 +6425,7 @@ ideas = {
 		}
 		RUS_osoavia_private_assistance = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_osoavia_private_assistance"
+				log = "[GetLogRoot]: add idea RUS_osoavia_private_assistance"
 			}
 			modifier = {
 				experience_gain_air_factor = -0.35
@@ -6499,7 +6434,7 @@ ideas = {
 		RUS_bz_political_interference_totalist = {
 			name = RUS_bz_political_interference
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_bz_political_interference_totalist"
+				log = "[GetLogRoot]: add idea RUS_bz_political_interference_totalist"
 			}
 			modifier = {
 				experience_gain_navy_factor = -0.35
@@ -6509,7 +6444,7 @@ ideas = {
 		RUS_bz_political_interference_syndicalist = {
 			name = RUS_bz_political_interference
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_bz_political_interference_syndicalist"
+				log = "[GetLogRoot]: add idea RUS_bz_political_interference_syndicalist"
 			}
 			modifier = {
 				experience_gain_navy_factor = -0.35
@@ -6519,7 +6454,7 @@ ideas = {
 		RUS_bz_political_interference_market_liberal = {
 			name = RUS_bz_political_interference
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_bz_political_interference_market_liberal"
+				log = "[GetLogRoot]: add idea RUS_bz_political_interference_market_liberal"
 			}
 			modifier = {
 				experience_gain_navy_factor = -0.35
@@ -6529,7 +6464,7 @@ ideas = {
 		RUS_bz_political_interference_social_liberal = {
 			name = RUS_bz_political_interference
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_bz_political_interference_social_liberal"
+				log = "[GetLogRoot]: add idea RUS_bz_political_interference_social_liberal"
 			}
 			modifier = {
 				experience_gain_navy_factor = -0.35
@@ -6539,7 +6474,7 @@ ideas = {
 		RUS_bz_political_interference_social_democrat = {
 			name = RUS_bz_political_interference
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_bz_political_interference_social_democrat"
+				log = "[GetLogRoot]: add idea RUS_bz_political_interference_social_democrat"
 			}
 			modifier = {
 				experience_gain_navy_factor = -0.35
@@ -6549,7 +6484,7 @@ ideas = {
 		RUS_bz_political_interference_national_populist = {
 			name = RUS_bz_political_interference
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_bz_political_interference_national_populist"
+				log = "[GetLogRoot]: add idea RUS_bz_political_interference_national_populist"
 			}
 			modifier = {
 				experience_gain_navy_factor = -0.35
@@ -6559,7 +6494,7 @@ ideas = {
 		RUS_bz_political_interference_paternal_autocrat = {
 			name = RUS_bz_political_interference
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_bz_political_interference_paternal_autocrat"
+				log = "[GetLogRoot]: add idea RUS_bz_political_interference_paternal_autocrat"
 			}
 			modifier = {
 				experience_gain_navy_factor = -0.35
@@ -6569,7 +6504,7 @@ ideas = {
 		RUS_bz_political_interference_radical_socialist = {
 			name = RUS_bz_political_interference
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_bz_political_interference_radical_socialist"
+				log = "[GetLogRoot]: add idea RUS_bz_political_interference_radical_socialist"
 			}
 			modifier = {
 				experience_gain_navy_factor = -0.35
@@ -6579,7 +6514,7 @@ ideas = {
 		RUS_bz_political_interference_social_conservative = {
 			name = RUS_bz_political_interference
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_bz_political_interference_social_conservative"
+				log = "[GetLogRoot]: add idea RUS_bz_political_interference_social_conservative"
 			}
 			modifier = {
 				experience_gain_navy_factor = -0.35
@@ -6589,7 +6524,7 @@ ideas = {
 		RUS_bz_political_interference_authoritarian_democrat = {
 			name = RUS_bz_political_interference
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_bz_political_interference_authoritarian_democrat"
+				log = "[GetLogRoot]: add idea RUS_bz_political_interference_authoritarian_democrat"
 			}
 			modifier = {
 				experience_gain_navy_factor = -0.35
@@ -6598,7 +6533,7 @@ ideas = {
 		}
 		RUS_bz_private_assistance = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_bz_private_assistance"
+				log = "[GetLogRoot]: add idea RUS_bz_private_assistance"
 			}
 			modifier = {
 				experience_gain_navy_factor = -0.35
@@ -6606,7 +6541,7 @@ ideas = {
 		}
 		RUS_amo_cic_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_amo_cic_1"
+				log = "[GetLogRoot]: add idea RUS_amo_cic_1"
 			}
 			modifier = {
 				cic_construction_boost_factor = 2
@@ -6614,7 +6549,7 @@ ideas = {
 		}
 		RUS_amo_cic_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_amo_cic_2"
+				log = "[GetLogRoot]: add idea RUS_amo_cic_2"
 			}
 			modifier = {
 				cic_construction_boost_factor = 2
@@ -6623,7 +6558,7 @@ ideas = {
 		### MIO ideas ### (moved from visible ones to here)
 		RUS_tsagi_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_tsagi_1"
+				log = "[GetLogRoot]: add idea RUS_tsagi_1"
 			}
 			name = RUS_tsagi_rockets
 			picture = GFX_idea_tsagi
@@ -6636,7 +6571,7 @@ ideas = {
 		}
 		RUS_tsagi_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_tsagi_2"
+				log = "[GetLogRoot]: add idea RUS_tsagi_2"
 			}
 			name = RUS_tsagi_rockets
 			picture = GFX_idea_tsagi
@@ -6650,7 +6585,7 @@ ideas = {
 		}
 		RUS_tsagi_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_tsagi_3"
+				log = "[GetLogRoot]: add idea RUS_tsagi_3"
 			}
 			name = RUS_tsagi_rockets
 			picture = GFX_idea_tsagi
@@ -6665,7 +6600,7 @@ ideas = {
 		}
 		RUS_tsagi_4 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_tsagi_4"
+				log = "[GetLogRoot]: add idea RUS_tsagi_4"
 			}
 			name = RUS_tsagi_rockets
 			picture = GFX_idea_tsagi
@@ -6678,7 +6613,7 @@ ideas = {
 		}
 		RUS_tsagi_5 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea RUS_tsagi_5"
+				log = "[GetLogRoot]: add idea RUS_tsagi_5"
 			}
 			name = RUS_tsagi_rockets
 			picture = GFX_idea_tsagi
@@ -6692,7 +6627,7 @@ ideas = {
 		}
 		dalzavod_mio_upgrade_1 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea dalzavod_mio_upgrade_1"
+				log = "[GetLogRoot]: add idea dalzavod_mio_upgrade_1"
 			}
 			name = dalzavod
 			picture = generic_naval_manufacturer_2
@@ -6702,7 +6637,7 @@ ideas = {
 		}
 		dalzavod_mio_upgrade_2 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea dalzavod_mio_upgrade_2"
+				log = "[GetLogRoot]: add idea dalzavod_mio_upgrade_2"
 			}
 			name = dalzavod
 			picture = generic_naval_manufacturer_2
@@ -6713,7 +6648,7 @@ ideas = {
 		}
 		dalzavod_mio_upgrade_3 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea dalzavod_mio_upgrade_3"
+				log = "[GetLogRoot]: add idea dalzavod_mio_upgrade_3"
 			}
 			name = dalzavod
 			picture = generic_naval_manufacturer_2
@@ -6725,7 +6660,7 @@ ideas = {
 		}
 		dalzavod_mio_upgrade_4 = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea dalzavod_mio_upgrade_4"
+				log = "[GetLogRoot]: add idea dalzavod_mio_upgrade_4"
 			}
 			name = dalzavod
 			picture = generic_naval_manufacturer_2
@@ -6744,7 +6679,7 @@ ideas = {
 	industrial_concern = {
 		vostokneft = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea vostokneft"
+				log = "[GetLogRoot]: add idea vostokneft"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -6790,7 +6725,7 @@ ideas = {
 		}
 		vostokneft_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea vostokneft_improved"
+				log = "[GetLogRoot]: add idea vostokneft_improved"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -6821,7 +6756,7 @@ ideas = {
 		}
 		ird = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea ird"
+				log = "[GetLogRoot]: add idea ird"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -6856,7 +6791,7 @@ ideas = {
 		}
 		treugolnik = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea treugolnik"
+				log = "[GetLogRoot]: add idea treugolnik"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -6913,7 +6848,7 @@ ideas = {
 		}
 		opz = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea opz"
+				log = "[GetLogRoot]: add idea opz"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -6937,7 +6872,7 @@ ideas = {
 		}
 		rbz = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea rbz"
+				log = "[GetLogRoot]: add idea rbz"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -6961,7 +6896,7 @@ ideas = {
 		}
 		ppi = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea ppi"
+				log = "[GetLogRoot]: add idea ppi"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -6987,7 +6922,7 @@ ideas = {
 		}
 		mps = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea mps"
+				log = "[GetLogRoot]: add idea mps"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7027,7 +6962,7 @@ ideas = {
 		}
 		robtit = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea robtit"
+				log = "[GetLogRoot]: add idea robtit"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7065,7 +7000,7 @@ ideas = {
 		}
 		tak = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea tak"
+				log = "[GetLogRoot]: add idea tak"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7092,7 +7027,7 @@ ideas = {
 		designer = yes
 		toz = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea toz"
+				log = "[GetLogRoot]: add idea toz"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7115,7 +7050,7 @@ ideas = {
 		}
 		toz_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea toz_improved"
+				log = "[GetLogRoot]: add idea toz_improved"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7136,7 +7071,7 @@ ideas = {
 		}
 		vpoz = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea vpoz"
+				log = "[GetLogRoot]: add idea vpoz"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7160,7 +7095,7 @@ ideas = {
 		}
 		imz = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea imz"
+				log = "[GetLogRoot]: add idea imz"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7183,7 +7118,7 @@ ideas = {
 		}
 		imz_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea imz_improved"
+				log = "[GetLogRoot]: add idea imz_improved"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7204,7 +7139,7 @@ ideas = {
 		}
 		soz = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea soz"
+				log = "[GetLogRoot]: add idea soz"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7229,7 +7164,7 @@ ideas = {
 		}
 		soz_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea soz_improved"
+				log = "[GetLogRoot]: add idea soz_improved"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7252,7 +7187,7 @@ ideas = {
 		}
 		obukhov = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea obukhov"
+				log = "[GetLogRoot]: add idea obukhov"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7276,7 +7211,7 @@ ideas = {
 		}
 		bmz = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea bmz"
+				log = "[GetLogRoot]: add idea bmz"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7300,7 +7235,7 @@ ideas = {
 		}
 		moz = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea moz"
+				log = "[GetLogRoot]: add idea moz"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7324,7 +7259,7 @@ ideas = {
 		}
 		amo = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea amo"
+				log = "[GetLogRoot]: add idea amo"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7353,7 +7288,7 @@ ideas = {
 		}
 		amo_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea amo_improved"
+				log = "[GetLogRoot]: add idea amo_improved"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7380,7 +7315,7 @@ ideas = {
 		}
 		naz = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea naz"
+				log = "[GetLogRoot]: add idea naz"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7409,7 +7344,7 @@ ideas = {
 		}
 		naz_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea naz_improved"
+				log = "[GetLogRoot]: add idea naz_improved"
 			}
 			picture = naz
 			allowed = {
@@ -7438,7 +7373,7 @@ ideas = {
 		}
 		laz = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea laz"
+				log = "[GetLogRoot]: add idea laz"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7467,7 +7402,7 @@ ideas = {
 		}
 		laz_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea laz_improved"
+				log = "[GetLogRoot]: add idea laz_improved"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7498,7 +7433,7 @@ ideas = {
 		designer = yes
 		sormovo = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea sormovo"
+				log = "[GetLogRoot]: add idea sormovo"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7516,7 +7451,7 @@ ideas = {
 				sormovo_RUS
 			}
 			research_bonus = {
-				armor = 0.1
+				armor = 0.15
 			}
 			modifier = {
 				custom_modifier_tooltip = RUS_sormovo_designer_tooltip
@@ -7527,7 +7462,7 @@ ideas = {
 		}
 		sormovo_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea sormovo_improved"
+				log = "[GetLogRoot]: add idea sormovo_improved"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7543,7 +7478,7 @@ ideas = {
 				sormovo_improved_RUS
 			}
 			research_bonus = {
-				armor = 0.1
+				armor = 0.15
 			}
 			modifier = {
 				custom_modifier_tooltip = RUS_sormovo_designer_tooltip
@@ -7554,7 +7489,7 @@ ideas = {
 		}
 		mmz = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea mmz"
+				log = "[GetLogRoot]: add idea mmz"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7567,7 +7502,7 @@ ideas = {
 				mmz_RUS
 			}
 			research_bonus = {
-				armor = 0.1
+				armor = 0.15
 			}
 			modifier = {
 				custom_modifier_tooltip = RUS_mmz_designer_tooltip
@@ -7578,7 +7513,7 @@ ideas = {
 		}
 		putilovets = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea putilovets"
+				log = "[GetLogRoot]: add idea putilovets"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7596,7 +7531,7 @@ ideas = {
 				putilovets_RUS
 			}
 			research_bonus = {
-				armor = 0.1
+				armor = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -7604,7 +7539,7 @@ ideas = {
 		}
 		putilovets_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea putilovets_improved"
+				log = "[GetLogRoot]: add idea putilovets_improved"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7620,7 +7555,7 @@ ideas = {
 				putilovets_improved_RUS
 			}
 			research_bonus = {
-				armor = 0.1
+				armor = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -7628,7 +7563,7 @@ ideas = {
 		}
 		okmo_kr = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea okmo_kr"
+				log = "[GetLogRoot]: add idea okmo_kr"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7648,7 +7583,7 @@ ideas = {
 		}
 		tstz = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea tstz"
+				log = "[GetLogRoot]: add idea tstz"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7664,7 +7599,7 @@ ideas = {
 				tstz_RUS
 			}
 			research_bonus = {
-				armor = 0.05
+				armor = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -7672,7 +7607,7 @@ ideas = {
 		}
 		uztm = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea uztm"
+				log = "[GetLogRoot]: add idea uztm"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7688,7 +7623,7 @@ ideas = {
 				uztm_RUS
 			}
 			research_bonus = {
-				armor = 0.05
+				armor = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -7696,7 +7631,7 @@ ideas = {
 		}
 		chtz = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea chtz"
+				log = "[GetLogRoot]: add idea chtz"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7715,7 +7650,7 @@ ideas = {
 				chtz_RUS
 			}
 			research_bonus = {
-				armor = 0.05
+				armor = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -7723,7 +7658,7 @@ ideas = {
 		}
 		chtz_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea chtz_improved"
+				log = "[GetLogRoot]: add idea chtz_improved"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7740,7 +7675,7 @@ ideas = {
 				chtz_improved_RUS
 			}
 			research_bonus = {
-				armor = 0.05
+				armor = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -7748,7 +7683,7 @@ ideas = {
 		}
 		khmz = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea khmz"
+				log = "[GetLogRoot]: add idea khmz"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7765,7 +7700,7 @@ ideas = {
 				khmz_RUS
 			}
 			research_bonus = {
-				armor = 0.1
+				armor = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -7777,7 +7712,7 @@ ideas = {
 		designer = yes
 		bz = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea bz"
+				log = "[GetLogRoot]: add idea bz"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7795,7 +7730,7 @@ ideas = {
 				bz_RUS
 			}
 			research_bonus = {
-				naval_equipment = 0.1
+				naval_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -7803,7 +7738,7 @@ ideas = {
 		}
 		bz_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea bz_improved"
+				log = "[GetLogRoot]: add idea bz_improved"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7819,7 +7754,7 @@ ideas = {
 				bz_improved_RUS
 			}
 			research_bonus = {
-				naval_equipment = 0.1
+				naval_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -7827,7 +7762,7 @@ ideas = {
 		}
 		av = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea av"
+				log = "[GetLogRoot]: add idea av"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7845,7 +7780,7 @@ ideas = {
 				av_RUS
 			}
 			research_bonus = {
-				naval_equipment = 0.1
+				naval_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -7853,7 +7788,7 @@ ideas = {
 		}
 		av_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea av_improved"
+				log = "[GetLogRoot]: add idea av_improved"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7869,7 +7804,7 @@ ideas = {
 				av_improved_RUS
 			}
 			research_bonus = {
-				naval_equipment = 0.1
+				naval_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -7877,7 +7812,7 @@ ideas = {
 		}
 		as = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea as"
+				log = "[GetLogRoot]: add idea as"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7895,7 +7830,7 @@ ideas = {
 				as_RUS
 			}
 			research_bonus = {
-				naval_equipment = 0.05
+				naval_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -7903,7 +7838,7 @@ ideas = {
 		}
 		as_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea as_improved"
+				log = "[GetLogRoot]: add idea as_improved"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -7919,7 +7854,7 @@ ideas = {
 				as_improved_RUS
 			}
 			research_bonus = {
-				naval_equipment = 0.1
+				naval_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -7927,9 +7862,8 @@ ideas = {
 		}
 		dalzavod = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea dalzavod"
+				log = "[GetLogRoot]: add idea dalzavod"
 			}
-			picture = generic_naval_manufacturer_2
 			allowed = {
 				is_russian_tag = yes
 			}
@@ -7952,7 +7886,7 @@ ideas = {
 				naval_accidents_chance = -0.15
 			}
 			research_bonus = {
-				naval_equipment = 0.05
+				naval_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -7960,9 +7894,9 @@ ideas = {
 		}
 		dalzavod_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea dalzavod_improved"
+				log = "[GetLogRoot]: add idea dalzavod_improved"
 			}
-			picture = generic_naval_manufacturer_2
+			picture = dalzavod
 			allowed = {
 				is_russian_tag = yes
 			}
@@ -7983,7 +7917,7 @@ ideas = {
 				naval_accidents_chance = -0.15
 			}
 			research_bonus = {
-				naval_equipment = 0.05
+				naval_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -7991,7 +7925,7 @@ ideas = {
 		}
 		nikosud = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea nikosud"
+				log = "[GetLogRoot]: add idea nikosud"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -8007,6 +7941,9 @@ ideas = {
 			traits = {
 				nikosud_RUS
 			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
 			ai_will_do = {
 				base = 1
 			}
@@ -8017,7 +7954,7 @@ ideas = {
 		designer = yes
 		osoavia = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea osoavia"
+				log = "[GetLogRoot]: add idea osoavia"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -8037,7 +7974,7 @@ ideas = {
 				osoavia_RUS
 			}
 			research_bonus = {
-				air_equipment = 0.1
+				air_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -8045,7 +7982,7 @@ ideas = {
 		}
 		osoavia_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea osoavia_improved"
+				log = "[GetLogRoot]: add idea osoavia_improved"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -8063,7 +8000,7 @@ ideas = {
 				osoavia_improved_RUS
 			}
 			research_bonus = {
-				air_equipment = 0.1
+				air_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -8071,7 +8008,7 @@ ideas = {
 		}
 		duks = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea duks"
+				log = "[GetLogRoot]: add idea duks"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -8089,7 +8026,7 @@ ideas = {
 				duks_RUS
 			}
 			research_bonus = {
-				air_equipment = 0.1
+				air_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -8097,7 +8034,7 @@ ideas = {
 		}
 		duks_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea duks_improved"
+				log = "[GetLogRoot]: add idea duks_improved"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -8113,7 +8050,7 @@ ideas = {
 				duks_improved_RUS
 			}
 			research_bonus = {
-				air_equipment = 0.1
+				air_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -8121,7 +8058,7 @@ ideas = {
 		}
 		tsagi = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea tsagi"
+				log = "[GetLogRoot]: add idea tsagi"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -8147,7 +8084,7 @@ ideas = {
 		}
 		tsagi_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea tsagi_improved"
+				log = "[GetLogRoot]: add idea tsagi_improved"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -8171,7 +8108,7 @@ ideas = {
 		}
 		gamayun = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea gamayun"
+				log = "[GetLogRoot]: add idea gamayun"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -8189,7 +8126,7 @@ ideas = {
 				gamayun_RUS
 			}
 			research_bonus = {
-				air_equipment = 0.1
+				air_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -8197,7 +8134,7 @@ ideas = {
 		}
 		gamayun_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea gamayun_improved"
+				log = "[GetLogRoot]: add idea gamayun_improved"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -8213,7 +8150,7 @@ ideas = {
 				gamayun_improved_RUS
 			}
 			research_bonus = {
-				air_equipment = 0.1
+				air_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -8221,7 +8158,7 @@ ideas = {
 		}
 		skorost = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea skorost"
+				log = "[GetLogRoot]: add idea skorost"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -8239,7 +8176,7 @@ ideas = {
 				skorost_RUS
 			}
 			research_bonus = {
-				air_equipment = 0.1
+				air_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -8247,7 +8184,7 @@ ideas = {
 		}
 		skorost_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea skorost_improved"
+				log = "[GetLogRoot]: add idea skorost_improved"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -8263,7 +8200,7 @@ ideas = {
 				skorost_improved_RUS
 			}
 			research_bonus = {
-				air_equipment = 0.1
+				air_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -8271,7 +8208,7 @@ ideas = {
 		}
 		sokol = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea sokol"
+				log = "[GetLogRoot]: add idea sokol"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -8284,7 +8221,7 @@ ideas = {
 				sokol_RUS
 			}
 			research_bonus = {
-				air_equipment = 0.05
+				air_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -8292,7 +8229,7 @@ ideas = {
 		}
 		seversky = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea seversky"
+				log = "[GetLogRoot]: add idea seversky"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -8310,7 +8247,7 @@ ideas = {
 				seversky_RUS
 			}
 			research_bonus = {
-				air_equipment = 0.1
+				air_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -8318,7 +8255,7 @@ ideas = {
 		}
 		seversky_improved = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea seversky_improved"
+				log = "[GetLogRoot]: add idea seversky_improved"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -8334,7 +8271,7 @@ ideas = {
 				seversky_improved_RUS
 			}
 			research_bonus = {
-				air_equipment = 0.1
+				air_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -8342,7 +8279,7 @@ ideas = {
 		}
 		sikorsky = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea sikorsky"
+				log = "[GetLogRoot]: add idea sikorsky"
 			}
 			allowed = {
 				is_russian_tag = yes
@@ -8355,7 +8292,7 @@ ideas = {
 				sikorsky_RUS
 			}
 			research_bonus = {
-				air_equipment = 0.1
+				air_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1
@@ -8363,7 +8300,7 @@ ideas = {
 		}
 		anatra_rus = {
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea anatra_rus"
+				log = "[GetLogRoot]: add idea anatra_rus"
 			}
 			picture = anatra
 			allowed = {
@@ -8379,6 +8316,9 @@ ideas = {
 			#Odessa
 			traits = {
 				anatra_company_RUS
+			}
+			research_bonus = {
+				air_equipment = 0.15
 			}
 			ai_will_do = {
 				base = 1

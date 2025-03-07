@@ -82,13 +82,13 @@ RUS_voskhod_decisions = {
 			}
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_increase_funding"
+			log = "[GetLogRoot]: Decision cancel RUS_increase_funding"
 			hidden_effect = {
 				add_political_power = 40
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_increase_funding"
+			log = "[GetLogRoot]: Decision remove RUS_increase_funding"
 			add_to_variable = {
 				RUS_voskhod_cap = 50000
 			}
@@ -132,10 +132,10 @@ RUS_voskhod_decisions = {
 			}
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_utilise_army"
+			log = "[GetLogRoot]: Decision cancel RUS_utilise_army"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_utilise_army"
+			log = "[GetLogRoot]: Decision remove RUS_utilise_army"
 			add_to_variable = {
 				RUS_voskhod_cap = 80000
 			}
@@ -182,7 +182,7 @@ RUS_voskhod_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_RASOLKO"
+			log = "[GetLogRoot]: Decision complete RUS_RASOLKO"
 			hidden_effect = {
 				add_popularity = {
 					ideology = national_populist
@@ -191,7 +191,7 @@ RUS_voskhod_decisions = {
 			}
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_RASOLKO"
+			log = "[GetLogRoot]: Decision cancel RUS_RASOLKO"
 			hidden_effect = {
 				add_popularity = {
 					ideology = national_populist
@@ -200,7 +200,7 @@ RUS_voskhod_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_RASOLKO"
+			log = "[GetLogRoot]: Decision remove RUS_RASOLKO"
 			add_to_variable = {
 				RUS_voskhod_cap = 100000
 			}
@@ -279,7 +279,7 @@ RUS_voskhod_decisions = {
 		}
 		#Taymyr
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_norilsk_mining_and_metallurgy target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_norilsk_mining_and_metallurgy"
 			hidden_effect = {
 				add_manpower = -50000
 			}
@@ -294,7 +294,7 @@ RUS_voskhod_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_norilsk_mining_and_metallurgy target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_norilsk_mining_and_metallurgy"
 			subtract_from_variable = {
 				RUS_voskhod_current_mp = 50000
 			}
@@ -355,7 +355,7 @@ RUS_voskhod_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_far_north_construction_trust target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_far_north_construction_trust"
 			hidden_effect = {
 				add_manpower = -80000
 			}
@@ -370,7 +370,7 @@ RUS_voskhod_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_far_north_construction_trust target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_far_north_construction_trust"
 			subtract_from_variable = {
 				RUS_voskhod_current_mp = 80000
 			}
@@ -461,7 +461,7 @@ RUS_voskhod_decisions = {
 		}
 		#Yekaterinburg
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_ural_wagon_factory target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_ural_wagon_factory"
 			hidden_effect = {
 				add_manpower = -100000
 			}
@@ -476,7 +476,7 @@ RUS_voskhod_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_ural_wagon_factory target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_ural_wagon_factory"
 			subtract_from_variable = {
 				RUS_voskhod_current_mp = 100000
 			}
@@ -537,7 +537,7 @@ RUS_voskhod_decisions = {
 		}
 		#Magadan
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_magadan_gold_mining target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_magadan_gold_mining"
 			hidden_effect = {
 				add_manpower = -80000
 			}
@@ -557,7 +557,7 @@ RUS_voskhod_decisions = {
 			#Magadan
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_magadan_gold_mining target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_magadan_gold_mining"
 			subtract_from_variable = {
 				RUS_voskhod_current_mp = 80000
 			}
@@ -617,7 +617,7 @@ RUS_voskhod_decisions = {
 		}
 		#Okhotsk
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_permsk_shipbuilding_plant target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_permsk_shipbuilding_plant"
 			hidden_effect = {
 				add_manpower = -80000
 			}
@@ -637,7 +637,7 @@ RUS_voskhod_decisions = {
 			#Permsk-na-Amure
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_permsk_shipbuilding_plant target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_permsk_shipbuilding_plant"
 			subtract_from_variable = {
 				RUS_voskhod_current_mp = 80000
 			}
@@ -702,7 +702,7 @@ RUS_voskhod_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_belomorkanal target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_belomorkanal"
 			hidden_effect = {
 				add_manpower = -100000
 			}
@@ -717,7 +717,7 @@ RUS_voskhod_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_belomorkanal target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_belomorkanal"
 			subtract_from_variable = {
 				RUS_voskhod_current_mp = 100000
 			}
@@ -780,7 +780,7 @@ RUS_voskhod_decisions = {
 		}
 		#Tver
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_moscow_volga_canal target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_moscow_volga_canal"
 			hidden_effect = {
 				add_manpower = -80000
 			}
@@ -795,7 +795,7 @@ RUS_voskhod_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_moscow_volga_canal target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_moscow_volga_canal"
 			subtract_from_variable = {
 				RUS_voskhod_current_mp = 80000
 			}
@@ -852,7 +852,7 @@ RUS_voskhod_decisions = {
 		}
 		#Pechenga
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_pechenganikel_mining_works target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_pechenganikel_mining_works"
 			hidden_effect = {
 				add_manpower = -50000
 			}
@@ -867,7 +867,7 @@ RUS_voskhod_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_pechenganikel_mining_works target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_pechenganikel_mining_works"
 			subtract_from_variable = {
 				RUS_voskhod_current_mp = 50000
 			}
@@ -927,7 +927,7 @@ RUS_voskhod_decisions = {
 		}
 		#Ust-Sysolsk
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_vorkuta_mining_centre target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_vorkuta_mining_centre"
 			hidden_effect = {
 				add_manpower = -50000
 			}
@@ -947,7 +947,7 @@ RUS_voskhod_decisions = {
 			#Rudnik
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_vorkuta_mining_centre target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_vorkuta_mining_centre"
 			subtract_from_variable = {
 				RUS_voskhod_current_mp = 50000
 			}
@@ -1016,7 +1016,7 @@ RUS_voskhod_decisions = {
 		}
 		#Karaganda
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_artel_gigant target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_artel_gigant"
 			hidden_effect = {
 				add_manpower = -80000
 			}
@@ -1031,7 +1031,7 @@ RUS_voskhod_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_artel_gigant target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_artel_gigant"
 			subtract_from_variable = {
 				RUS_voskhod_current_mp = 80000
 			}
@@ -1092,7 +1092,7 @@ RUS_voskhod_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_siberian_township_programme target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_siberian_township_programme"
 			hidden_effect = {
 				add_manpower = -100000
 			}
@@ -1107,7 +1107,7 @@ RUS_voskhod_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_siberian_township_programme target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_siberian_township_programme"
 			subtract_from_variable = {
 				RUS_voskhod_current_mp = 100000
 			}
@@ -1195,7 +1195,7 @@ RUS_voskhod_decisions = {
 		}
 		#Vladikavkaz
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_vladikavkaz_steel target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_vladikavkaz_steel"
 			hidden_effect = {
 				add_manpower = -50000
 			}
@@ -1210,7 +1210,7 @@ RUS_voskhod_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_vladikavkaz_steel target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_vladikavkaz_steel"
 			subtract_from_variable = {
 				RUS_voskhod_current_mp = 50000
 			}
@@ -1273,7 +1273,7 @@ RUS_voskhod_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_end_the_programme"
+			log = "[GetLogRoot]: Decision complete RUS_end_the_programme"
 			custom_effect_tooltip = RUS_voskhod_immed_stop
 			RUS_disable_voskhod = yes
 			hidden_effect = {
@@ -1338,14 +1338,14 @@ RUS_savinkov_eco_cat = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_eurasia_canal target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_eurasia_canal"
 			hidden_effect = {
 				add_manpower = -100000
 				add_political_power = -100
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_eurasia_canal target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_eurasia_canal"
 			787 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -1437,14 +1437,14 @@ RUS_savinkov_eco_cat = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_transcaspian_canal target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_transcaspian_canal"
 			hidden_effect = {
 				add_manpower = -100000
 				add_political_power = -100
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_transcaspian_canal target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_transcaspian_canal"
 			861 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -1518,13 +1518,13 @@ RUS_savinkov_eco_cat = {
 			has_completed_focus = RUS_establish_the_VES
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Industrial_Regions target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Industrial_Regions"
 			add_to_variable = {
 				RUS_Industrial_Regions_Available = -1
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_Industrial_Regions target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_Industrial_Regions"
 			FROM = {
 				set_state_flag = RUS_Industrial_Region_Set
 				if = {
@@ -1605,7 +1605,7 @@ RUS_savinkov_eco_cat = {
 			base = 20
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_eurasian_resources target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_eurasian_resources"
 			FROM = {
 				set_state_flag = RUS_stole_resources_flag
 				owner = {
@@ -1618,7 +1618,7 @@ RUS_savinkov_eco_cat = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_eurasian_resources target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_eurasian_resources"
 		}
 	}
 }
@@ -1665,14 +1665,14 @@ RUS_economy_decisions = {
 		}
 		fixed_random_seed = no
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_court_foreign_capital"
+			log = "[GetLogRoot]: Decision complete RUS_court_foreign_capital"
 			set_temp_variable = {
 				RUS_power_change = -10
 			}
 			RUS_change_projection = yes
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_court_foreign_capital"
+			log = "[GetLogRoot]: Decision remove RUS_court_foreign_capital"
 			random_list = {
 				10 = {
 					add_one_random_civilian_factory = yes
@@ -1733,10 +1733,10 @@ RUS_economy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_improve_roads_in_central_russia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_improve_roads_in_central_russia"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_improve_roads_in_central_russia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_improve_roads_in_central_russia"
 			205 = {
 				add_building_construction = {
 					type = infrastructure
@@ -1811,10 +1811,10 @@ RUS_economy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_improve_roads_in_northern_russia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_improve_roads_in_northern_russia"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_improve_roads_in_northern_russia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_improve_roads_in_northern_russia"
 			214 = {
 				add_building_construction = {
 					type = infrastructure
@@ -1882,10 +1882,10 @@ RUS_economy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_improve_roads_in_the_volga_basin target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_improve_roads_in_the_volga_basin"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_improve_roads_in_the_volga_basin target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_improve_roads_in_the_volga_basin"
 			218 = {
 				add_building_construction = {
 					type = infrastructure
@@ -1958,7 +1958,7 @@ RUS_economy_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_central_asia_railroads target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_central_asia_railroads"
 			build_railway = {
 				level = 1
 				start_province = 7874
@@ -1988,7 +1988,7 @@ RUS_economy_decisions = {
 			RUS_decrease_black_monday = yes
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_central_asia_railroads target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision cancel RUS_central_asia_railroads"
 			add_political_power = RUS_ic_cost_low
 		}
 	}
@@ -2035,10 +2035,10 @@ RUS_economy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_magnitogorsk target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_magnitogorsk"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_magnitogorsk target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_magnitogorsk"
 			582 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -2097,10 +2097,10 @@ RUS_economy_decisions = {
 		}
 		#Orsk
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_second_baku target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_second_baku"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_second_baku target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_second_baku"
 			if = {
 				limit = {
 					has_idea = vostokneft_improved
@@ -2159,10 +2159,10 @@ RUS_economy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_modernisation_of_AMO target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_modernisation_of_AMO"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_modernisation_of_AMO target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_modernisation_of_AMO"
 			219 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -2237,10 +2237,10 @@ RUS_economy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_izhevsk_mechanical_plant target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_izhevsk_mechanical_plant"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_izhevsk_mechanical_plant target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_izhevsk_mechanical_plant"
 			399 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -2313,10 +2313,10 @@ RUS_economy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_tula_arms_factory target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_tula_arms_factory"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_tula_arms_factory target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_tula_arms_factory"
 			223 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -2391,10 +2391,10 @@ RUS_economy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_create_tankograd target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_create_tankograd"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_create_tankograd target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_create_tankograd"
 			572 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -2467,10 +2467,10 @@ RUS_economy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_convert_civilian_aviation_industry target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_convert_civilian_aviation_industry"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_convert_civilian_aviation_industry target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_convert_civilian_aviation_industry"
 			219 = {
 				add_extra_state_shared_building_slots = 1
 				remove_building = {
@@ -2585,10 +2585,10 @@ RUS_economy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_tsaritsyn_tractor_plant target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_tsaritsyn_tractor_plant"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_tsaritsyn_tractor_plant target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_tsaritsyn_tractor_plant"
 			217 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -2657,10 +2657,10 @@ RUS_economy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_chelyabinsk_tractor_plant target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_chelyabinsk_tractor_plant"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_chelyabinsk_tractor_plant target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_chelyabinsk_tractor_plant"
 			572 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -2732,10 +2732,10 @@ RUS_economy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_kursk_tractor_plant target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_kursk_tractor_plant"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_kursk_tractor_plant target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_kursk_tractor_plant"
 			220 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -2787,10 +2787,10 @@ RUS_economy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_rostselmash target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_rostselmash"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_rostselmash target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_rostselmash"
 			218 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -2842,10 +2842,10 @@ RUS_economy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_stavropol_hydroelectric_dam target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_stavropol_hydroelectric_dam"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_stavropol_hydroelectric_dam target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_stavropol_hydroelectric_dam"
 			add_tech_bonus = {
 				name = RUS_industrialise_eastern_europe
 				bonus = 1
@@ -2919,10 +2919,10 @@ RUS_economy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_lipetsk_metallurgical_plant target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_lipetsk_metallurgical_plant"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_lipetsk_metallurgical_plant target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_lipetsk_metallurgical_plant"
 			258 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -2977,10 +2977,10 @@ RUS_economy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_uralmash target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_uralmash"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_uralmash target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_uralmash"
 			653 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -3048,10 +3048,10 @@ RUS_economy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_motovilikha_plants target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_motovilikha_plants"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_motovilikha_plants target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_motovilikha_plants"
 			398 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -3104,10 +3104,10 @@ RUS_economy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_admiralty_dockyards target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_admiralty_dockyards"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_admiralty_dockyards target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_admiralty_dockyards"
 			137 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -3168,10 +3168,10 @@ RUS_economy_decisions = {
 		}
 		#Yekaterinburg
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_kamensky_uralsky target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_kamensky_uralsky"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_kamensky_uralsky target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_kamensky_uralsky"
 			653 = {
 				add_resource = {
 					type = steel
@@ -3229,10 +3229,10 @@ RUS_economy_decisions = {
 		}
 		#Chechnya
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_grozny_oil target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_grozny_oil"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_grozny_oil target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_grozny_oil"
 			if = {
 				limit = {
 					has_idea = vostokneft_improved
@@ -3302,10 +3302,10 @@ RUS_economy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_arctic_mines target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_arctic_mines"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_arctic_mines target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_arctic_mines"
 			213 = {
 				add_resource = {
 					type = steel
@@ -3365,10 +3365,10 @@ RUS_economy_decisions = {
 		}
 		#Vladikavkaz
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_tyrnyauz_tungsten target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_tyrnyauz_tungsten"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_tyrnyauz_tungsten target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_tyrnyauz_tungsten"
 			233 = {
 				add_resource = {
 					type = tungsten
@@ -3423,10 +3423,10 @@ RUS_economy_decisions = {
 		}
 		#Kazan
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_romanshkino_oil target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_romanshkino_oil"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_romanshkino_oil target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_romanshkino_oil"
 			if = {
 				limit = {
 					has_idea = vostokneft_improved
@@ -3484,10 +3484,10 @@ RUS_economy_decisions = {
 		cost = 25
 		state_target = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Rural_Development target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Rural_Development"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_Rural_Development target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_Rural_Development"
 			RUS_rural_development_effects = yes
 			custom_effect_tooltip = tooltip_white_line
 			add_to_variable = {
@@ -3570,10 +3570,10 @@ RUS_siberian_industrialisation = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_northern_route target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_northern_route"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_northern_route target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_northern_route"
 			set_country_flag = RUS_northern_route_completed
 			add_stability = 0.03
 			build_railway = {
@@ -3620,10 +3620,10 @@ RUS_siberian_industrialisation = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_upgrade_the_railroad_chelyabinsk target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_upgrade_the_railroad_chelyabinsk"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_upgrade_the_railroad_chelyabinsk target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_upgrade_the_railroad_chelyabinsk"
 			set_country_flag = RUS_upgrade_the_railroad_chelyabinsk_completed
 			add_stability = 0.03
 			build_railway = {
@@ -3670,10 +3670,10 @@ RUS_siberian_industrialisation = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_upgrade_the_railroad_krasnoyarsk target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_upgrade_the_railroad_krasnoyarsk"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_upgrade_the_railroad_krasnoyarsk target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_upgrade_the_railroad_krasnoyarsk"
 			set_country_flag = RUS_upgrade_the_railroad_krasnoyarsk_completed
 			add_stability = 0.03
 			build_railway = {
@@ -3730,10 +3730,10 @@ RUS_siberian_industrialisation = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_upgrade_the_railroad_vladivostok target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_upgrade_the_railroad_vladivostok"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_upgrade_the_railroad_vladivostok target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_upgrade_the_railroad_vladivostok"
 			set_country_flag = RUS_upgrade_the_railroad_vladivostok_completed
 			add_stability = 0.03
 			effect_tooltip = {
@@ -3802,10 +3802,10 @@ RUS_siberian_industrialisation = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_kuznetsk_basin target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_kuznetsk_basin"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_kuznetsk_basin target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_kuznetsk_basin"
 			569 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -3864,10 +3864,10 @@ RUS_siberian_industrialisation = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_bodaybo_gold_mines target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_bodaybo_gold_mines"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_bodaybo_gold_mines target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_bodaybo_gold_mines"
 			565 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -3917,10 +3917,10 @@ RUS_siberian_industrialisation = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_far_eastern_fishing_industry target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_far_eastern_fishing_industry"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_far_eastern_fishing_industry target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_far_eastern_fishing_industry"
 			set_country_flag = RUS_completed_far_eastern_fishing_industry
 			409 = {
 				add_extra_state_shared_building_slots = 1
@@ -3986,10 +3986,10 @@ RUS_siberian_industrialisation = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_krasnoyarskpromstroy target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_krasnoyarskpromstroy"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_krasnoyarskpromstroy target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_krasnoyarskpromstroy"
 			568 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -4044,10 +4044,10 @@ RUS_siberian_industrialisation = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_dalnremmash target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_dalnremmash"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_dalnremmash target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_dalnremmash"
 			409 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -4103,10 +4103,10 @@ RUS_central_asian_industrialisation = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_rudny_altay target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_rudny_altay"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_rudny_altay target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_rudny_altay"
 			add_resource = {
 				type = steel
 				amount = 42
@@ -4158,10 +4158,10 @@ RUS_central_asian_industrialisation = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_tekeli_metallurgical_combine target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_tekeli_metallurgical_combine"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_tekeli_metallurgical_combine target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_tekeli_metallurgical_combine"
 			589 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -4224,10 +4224,10 @@ RUS_central_asian_industrialisation = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_emba_oil_area target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_emba_oil_area"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_emba_oil_area target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_emba_oil_area"
 			if = {
 				limit = {
 					has_idea = vostokneft_improved
@@ -4290,10 +4290,10 @@ RUS_central_asian_industrialisation = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_verny_cotton_industry target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_verny_cotton_industry"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_verny_cotton_industry target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_verny_cotton_industry"
 			589 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -4358,7 +4358,7 @@ RUS_trade_decisions = {
 			factor = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_amtorg_trade target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_amtorg_trade"
 			hidden_effect = {
 				add_political_power = -40
 			}
@@ -4368,7 +4368,7 @@ RUS_trade_decisions = {
 			RUS_change_projection = yes
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_amtorg_trade target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_amtorg_trade"
 			FROM = {
 				country_event = rusfor.113
 			}
@@ -4441,7 +4441,7 @@ RUS_trade_decisions = {
 			factor = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_arkos_trade target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_arkos_trade"
 			hidden_effect = {
 				add_political_power = -20
 			}
@@ -4451,7 +4451,7 @@ RUS_trade_decisions = {
 			RUS_change_projection = yes
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_arkos_trade target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_arkos_trade"
 			FROM = {
 				country_event = rusfor.113
 			}
@@ -4520,7 +4520,7 @@ RUS_trade_decisions = {
 			factor = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_ruskapa_trade target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_ruskapa_trade"
 			hidden_effect = {
 				add_political_power = -20
 			}
@@ -4530,7 +4530,7 @@ RUS_trade_decisions = {
 			RUS_change_projection = yes
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_ruskapa_trade target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_ruskapa_trade"
 			FROM = {
 				country_event = rusfor.113
 			}
@@ -4600,7 +4600,7 @@ RUS_trade_decisions = {
 			factor = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_ratk_trade target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_ratk_trade"
 			hidden_effect = {
 				add_political_power = -40
 			}
@@ -4610,7 +4610,7 @@ RUS_trade_decisions = {
 			RUS_change_projection = yes
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_ratk_trade target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_ratk_trade"
 			FROM = {
 				country_event = rusfor.113
 			}
@@ -4672,7 +4672,7 @@ RUS_trade_decisions = {
 			factor = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_avsentorg_trade target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_avsentorg_trade"
 			hidden_effect = {
 				add_political_power = -20
 			}
@@ -4682,7 +4682,7 @@ RUS_trade_decisions = {
 			RUS_change_projection = yes
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_avsentorg_trade target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_avsentorg_trade"
 			FROM = {
 				country_event = rusfor.113
 			}
@@ -4767,7 +4767,7 @@ RUS_trade_decisions = {
 			factor = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_rusmedtorg_trade target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_rusmedtorg_trade"
 			hidden_effect = {
 				add_political_power = -20
 			}
@@ -4777,7 +4777,7 @@ RUS_trade_decisions = {
 			RUS_change_projection = yes
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_rusmedtorg_trade target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_rusmedtorg_trade"
 			FROM = {
 				country_event = rusfor.113
 			}
@@ -4829,7 +4829,7 @@ RUS_stavka_cat_decisions = {
 			high_command_cost_factor = -0.33
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_form_state_defence_committee"
+			log = "[GetLogRoot]: Decision complete RUS_form_state_defence_committee"
 			set_temp_variable = {
 				RUS_anger_change = -2
 			}
@@ -4860,11 +4860,11 @@ RUS_stavka_cat_decisions = {
 		is_good = no
 		days_mission_timeout = 365
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_oncoming_war"
+			log = "[GetLogRoot]: Decision complete RUS_oncoming_war"
 			add_political_power = 50
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_oncoming_war"
+			log = "[GetLogRoot]: Decision timeout RUS_oncoming_war"
 			set_temp_variable = {
 				RUS_anger_change = 5
 			}
@@ -4911,8 +4911,7 @@ RUS_stavka_cat_decisions = {
 		is_good = no
 		days_mission_timeout = 120
 		complete_effect = {
-			###LETS GO
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_take_kiev"
+			log = "[GetLogRoot]: Decision complete RUS_take_kiev"
 			RUS_remove_western_march_ideas = yes
 			country_event = {
 				id = russia.445
@@ -4920,8 +4919,7 @@ RUS_stavka_cat_decisions = {
 			set_country_flag = RUS_taken_kiev_before
 		}
 		timeout_effect = {
-			###Bad End
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_take_kiev"
+			log = "[GetLogRoot]: Decision timeout RUS_take_kiev"
 			set_temp_variable = {
 				RUS_anger_change = 1
 			}
@@ -4957,8 +4955,7 @@ RUS_stavka_cat_decisions = {
 		is_good = no
 		days_mission_timeout = 120
 		complete_effect = {
-			###LETS GO
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_take_minsk"
+			log = "[GetLogRoot]: Decision complete RUS_take_minsk"
 			RUS_remove_western_march_ideas = yes
 			country_event = {
 				id = russia.445
@@ -4966,8 +4963,7 @@ RUS_stavka_cat_decisions = {
 			set_country_flag = RUS_taken_minsk_before
 		}
 		timeout_effect = {
-			###Bad End
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_take_minsk"
+			log = "[GetLogRoot]: Decision timeout RUS_take_minsk"
 			set_temp_variable = {
 				RUS_anger_change = 1
 			}
@@ -5003,8 +4999,7 @@ RUS_stavka_cat_decisions = {
 		is_good = no
 		days_mission_timeout = 120
 		complete_effect = {
-			###LETS GO
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_take_riga"
+			log = "[GetLogRoot]: Decision complete RUS_take_riga"
 			RUS_remove_western_march_ideas = yes
 			country_event = {
 				id = russia.445
@@ -5012,8 +5007,7 @@ RUS_stavka_cat_decisions = {
 			set_country_flag = RUS_taken_riga_before
 		}
 		timeout_effect = {
-			###Bad End
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_take_riga"
+			log = "[GetLogRoot]: Decision timeout RUS_take_riga"
 			set_temp_variable = {
 				RUS_anger_change = 1
 			}
@@ -5046,12 +5040,16 @@ RUS_stavka_cat_decisions = {
 			}
 			#Berlin
 		}
+		cancel_trigger = {
+			GER = {
+				exists = no
+			}
+		}
 		selectable_mission = no
 		is_good = no
 		days_mission_timeout = 220
 		complete_effect = {
-			###LETS GO
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_the_rush_for_berlin"
+			log = "[GetLogRoot]: Decision complete RUS_the_rush_for_berlin"
 			add_political_power = 100
 			add_stability = 0.1
 			clr_country_flag = RUS_taken_kiev_before
@@ -5059,8 +5057,7 @@ RUS_stavka_cat_decisions = {
 			clr_country_flag = RUS_taken_kiev_before
 		}
 		timeout_effect = {
-			###Bad End
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_the_rush_for_berlin"
+			log = "[GetLogRoot]: Decision timeout RUS_the_rush_for_berlin"
 			set_temp_variable = {
 				RUS_anger_change = 1
 			}
@@ -5131,7 +5128,7 @@ RUS_stavka_cat_decisions = {
 			}
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_army_focus_demand"
+			log = "[GetLogRoot]: Decision timeout RUS_army_focus_demand"
 			add_stability = -0.04
 			var:army_chief = {
 				unit_leader_event = russia.31
@@ -5139,7 +5136,7 @@ RUS_stavka_cat_decisions = {
 			event_option_tooltip = russia.31.a
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_army_focus_demand"
+			log = "[GetLogRoot]: Decision complete RUS_army_focus_demand"
 			add_political_power = 30
 			if = {
 				limit = {
@@ -5179,7 +5176,7 @@ RUS_stavka_cat_decisions = {
 			}
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_navy_focus_demand"
+			log = "[GetLogRoot]: Decision timeout RUS_navy_focus_demand"
 			add_stability = -0.01
 			RUS_aleksandr_kolchak = {
 				unit_leader_event = russia.33
@@ -5187,7 +5184,7 @@ RUS_stavka_cat_decisions = {
 			event_option_tooltip = russia.33.a
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_navy_focus_demand"
+			log = "[GetLogRoot]: Decision complete RUS_navy_focus_demand"
 			add_political_power = 20
 			if = {
 				limit = {
@@ -5233,18 +5230,18 @@ RUS_stavka_cat_decisions = {
 			}
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_military_demands"
+			log = "[GetLogRoot]: Decision timeout RUS_military_demands"
 			set_temp_variable = {
 				RUS_anger_change = 1
 			}
 			RUS_change_military_anger = yes
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_military_demands"
+			log = "[GetLogRoot]: Decision complete RUS_military_demands"
 			add_political_power = 60
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_military_demands"
+			log = "[GetLogRoot]: Decision cancel RUS_military_demands"
 		}
 	}
 	RUS_sannikov_land_quest = {
@@ -5276,7 +5273,7 @@ RUS_stavka_cat_decisions = {
 			factor = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_sannikov_land_quest target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_sannikov_land_quest"
 			country_event = rusfla.67
 		}
 	}
@@ -5311,7 +5308,7 @@ RUS_stavka_cat_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_ideological_officer_curriculum"
+			log = "[GetLogRoot]: Decision complete RUS_ideological_officer_curriculum"
 			set_temp_variable = {
 				RUS_anger_change = 1
 			}
@@ -5319,7 +5316,7 @@ RUS_stavka_cat_decisions = {
 			set_country_flag = RUS_selected_military_decision
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_ideological_officer_curriculum"
+			log = "[GetLogRoot]: Decision remove RUS_ideological_officer_curriculum"
 			country_event = demrus.18
 			add_popularity = {
 				ideology = paternal_autocrat
@@ -5370,7 +5367,7 @@ RUS_stavka_cat_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_promote_young_blood"
+			log = "[GetLogRoot]: Decision complete RUS_promote_young_blood"
 			set_temp_variable = {
 				RUS_anger_change = 1
 			}
@@ -5378,7 +5375,7 @@ RUS_stavka_cat_decisions = {
 			set_country_flag = RUS_selected_military_decision
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_promote_young_blood"
+			log = "[GetLogRoot]: Decision remove RUS_promote_young_blood"
 			clr_country_flag = RUS_selected_military_decision
 			add_popularity = {
 				ideology = paternal_autocrat
@@ -5439,7 +5436,7 @@ RUS_stavka_cat_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_sideline_monarchists"
+			log = "[GetLogRoot]: Decision complete RUS_sideline_monarchists"
 			set_temp_variable = {
 				RUS_anger_change = 1
 			}
@@ -5447,7 +5444,7 @@ RUS_stavka_cat_decisions = {
 			set_country_flag = RUS_selected_military_decision
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_sideline_monarchists"
+			log = "[GetLogRoot]: Decision remove RUS_sideline_monarchists"
 			add_popularity = {
 				ideology = paternal_autocrat
 				popularity = -0.05
@@ -5516,7 +5513,7 @@ RUS_stavka_cat_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_remove_denikin"
+			log = "[GetLogRoot]: Decision complete RUS_remove_denikin"
 			if = {
 				limit = {
 					has_idea = RUS_republic_under_watch
@@ -5563,7 +5560,7 @@ RUS_stavka_cat_decisions = {
 			factor = 50
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_appoint_loyalist_commander"
+			log = "[GetLogRoot]: Decision complete RUS_appoint_loyalist_commander"
 			country_event = russia.259
 		}
 	}
@@ -5636,7 +5633,7 @@ RUS_stavka_cat_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_court_the_military"
+			log = "[GetLogRoot]: Decision complete RUS_court_the_military"
 			set_temp_variable = {
 				RUS_anger_change = -1
 			}
@@ -5681,7 +5678,7 @@ RUS_stavka_cat_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_army_extra_funding"
+			log = "[GetLogRoot]: Decision complete RUS_army_extra_funding"
 			set_temp_variable = {
 				RUS_anger_change = -1
 			}
@@ -5689,7 +5686,7 @@ RUS_stavka_cat_decisions = {
 			set_country_flag = RUS_extra_army_funding
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_army_extra_funding"
+			log = "[GetLogRoot]: Decision remove RUS_army_extra_funding"
 			clr_country_flag = RUS_extra_army_funding
 		}
 	}
@@ -5727,7 +5724,7 @@ RUS_stavka_cat_decisions = {
 			base = 0
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_cut_army_funding"
+			log = "[GetLogRoot]: Decision complete RUS_cut_army_funding"
 			set_temp_variable = {
 				RUS_anger_change = 2
 			}
@@ -5737,7 +5734,7 @@ RUS_stavka_cat_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_cut_army_funding"
+			log = "[GetLogRoot]: Decision remove RUS_cut_army_funding"
 		}
 	}
 	RUS_recruit_minority = {
@@ -5759,7 +5756,7 @@ RUS_stavka_cat_decisions = {
 			factor = 50
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_recruit_minority target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_recruit_minority"
 			if = {
 				limit = {
 					FROM = {
@@ -6139,7 +6136,7 @@ RUS_the_great_patriotic_war_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_barrier_troops"
+			log = "[GetLogRoot]: Decision complete RUS_barrier_troops"
 			add_stability = -0.03
 		}
 	}
@@ -6160,7 +6157,7 @@ RUS_the_great_patriotic_war_decisions = {
 		is_good = yes
 		#Success
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_hold_moscow"
+			log = "[GetLogRoot]: Decision timeout RUS_hold_moscow"
 			if = {
 				limit = {
 					has_country_flag = RUS_relocated_capital_samara
@@ -6175,7 +6172,7 @@ RUS_the_great_patriotic_war_decisions = {
 		}
 		#Fail
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_hold_moscow"
+			log = "[GetLogRoot]: Decision complete RUS_hold_moscow"
 			if = {
 				limit = {
 					has_country_flag = RUS_relocated_capital_samara
@@ -6275,7 +6272,7 @@ RUS_the_great_patriotic_war_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_move_capital_samara"
+			log = "[GetLogRoot]: Decision complete RUS_move_capital_samara"
 			add_stability = -0.05
 			set_capital = {
 				state = 251
@@ -6283,7 +6280,7 @@ RUS_the_great_patriotic_war_decisions = {
 			set_country_flag = RUS_relocated_capital_samara
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_move_capital_samara"
+			log = "[GetLogRoot]: Decision cancel RUS_move_capital_samara"
 			add_stability = 0.05
 			set_capital = {
 				state = 219
@@ -6325,7 +6322,7 @@ RUS_the_great_patriotic_war_decisions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_general_winter"
+			log = "[GetLogRoot]: Decision complete RUS_general_winter"
 			every_owned_state = {
 				tooltip = RUS_every_state_north_of_kuban
 				limit = {
@@ -6373,7 +6370,7 @@ RUS_the_great_patriotic_war_decisions = {
 			factor = 50
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_fortify_the_petrograd_approaches"
+			log = "[GetLogRoot]: Decision remove RUS_fortify_the_petrograd_approaches"
 			195 = {
 				#Petrograd
 				add_building_construction = {
@@ -6497,7 +6494,7 @@ RUS_the_great_patriotic_war_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_transfer_factories_to_the_urals target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_transfer_factories_to_the_urals"
 			set_country_flag = RUS_has_evacuated_industry
 			if = {
 				limit = {
@@ -6512,7 +6509,7 @@ RUS_the_great_patriotic_war_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_transfer_factories_to_the_urals target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_transfer_factories_to_the_urals"
 			if = {
 				limit = {
 					FROM = {
@@ -6607,11 +6604,11 @@ RUS_the_great_patriotic_war_decisions = {
 			factor = 1000
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_revert_the_industrial_transfer"
+			log = "[GetLogRoot]: Decision complete RUS_revert_the_industrial_transfer"
 			clr_country_flag = RUS_industrial_transfer_unlocked
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_revert_the_industrial_transfer"
+			log = "[GetLogRoot]: Decision remove RUS_revert_the_industrial_transfer"
 			every_owned_state = {
 				limit = {
 					has_variable = RUS_added_arms_factory
@@ -6698,7 +6695,7 @@ RUS_german_influence = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_energy_autarky_act"
+			log = "[GetLogRoot]: Decision complete RUS_energy_autarky_act"
 			set_country_flag = RUS_energy_autarky_decision
 			hidden_effect = {
 				GER = {
@@ -6722,7 +6719,7 @@ RUS_german_influence = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_energy_autarky_act"
+			log = "[GetLogRoot]: Decision remove RUS_energy_autarky_act"
 			clr_country_flag = RUS_energy_autarky_decision
 			set_temp_variable = {
 				RUS_influence_change = -1
@@ -6773,7 +6770,7 @@ RUS_german_influence = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_nationalise_rusgenekorp"
+			log = "[GetLogRoot]: Decision complete RUS_nationalise_rusgenekorp"
 			set_country_flag = RUS_rusgenekorp_decision
 			hidden_effect = {
 				GER = {
@@ -6785,7 +6782,7 @@ RUS_german_influence = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_nationalise_rusgenekorp"
+			log = "[GetLogRoot]: Decision remove RUS_nationalise_rusgenekorp"
 			clr_country_flag = RUS_rusgenekorp_decision
 			set_country_flag = RUS_nationalise_oil_completed
 			set_temp_variable = {
@@ -6877,7 +6874,7 @@ RUS_german_influence = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_national_mineral_extraction_law"
+			log = "[GetLogRoot]: Decision complete RUS_national_mineral_extraction_law"
 			set_country_flag = RUS_mineral_nationalisation_decision
 			hidden_effect = {
 				GER = {
@@ -6889,7 +6886,7 @@ RUS_german_influence = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_national_mineral_extraction_law"
+			log = "[GetLogRoot]: Decision remove RUS_national_mineral_extraction_law"
 			clr_country_flag = RUS_mineral_nationalisation_decision
 			set_temp_variable = {
 				RUS_influence_change = -1
@@ -6950,7 +6947,7 @@ RUS_german_influence = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_railway_nationalisation_law"
+			log = "[GetLogRoot]: Decision complete RUS_railway_nationalisation_law"
 			set_country_flag = RUS_railway_nationalisation_decision
 			hidden_effect = {
 				GER = {
@@ -6962,7 +6959,7 @@ RUS_german_influence = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_railway_nationalisation_law"
+			log = "[GetLogRoot]: Decision remove RUS_railway_nationalisation_law"
 			clr_country_flag = RUS_railway_nationalisation_decision
 			set_country_flag = RUS_railways_nationalised
 			set_temp_variable = {
@@ -7021,7 +7018,7 @@ RUS_german_influence = {
 			consumer_goods_factor = 0.08
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_acquire_uchsudbank"
+			log = "[GetLogRoot]: Decision complete RUS_acquire_uchsudbank"
 			set_country_flag = RUS_uchsudbank_decision
 			hidden_effect = {
 				GER = {
@@ -7033,7 +7030,7 @@ RUS_german_influence = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_acquire_uchsudbank"
+			log = "[GetLogRoot]: Decision remove RUS_acquire_uchsudbank"
 			add_political_power = 50
 			clr_country_flag = RUS_uchsudbank_decision
 			set_country_flag = RUS_acquired_uchsudbank
@@ -7092,7 +7089,7 @@ RUS_german_influence = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_take_over_chemical_sector"
+			log = "[GetLogRoot]: Decision complete RUS_take_over_chemical_sector"
 			set_country_flag = RUS_basf_decision
 			hidden_effect = {
 				GER = {
@@ -7105,7 +7102,7 @@ RUS_german_influence = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_take_over_chemical_sector"
+			log = "[GetLogRoot]: Decision remove RUS_take_over_chemical_sector"
 			clr_country_flag = RUS_basf_decision
 			set_temp_variable = {
 				RUS_influence_change = -1
@@ -7171,7 +7168,7 @@ RUS_german_influence = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_nationalise_shipbuilding"
+			log = "[GetLogRoot]: Decision complete RUS_nationalise_shipbuilding"
 			set_country_flag = RUS_shipbuilding_decision
 			hidden_effect = {
 				GER = {
@@ -7183,7 +7180,7 @@ RUS_german_influence = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_nationalise_shipbuilding"
+			log = "[GetLogRoot]: Decision remove RUS_nationalise_shipbuilding"
 			clr_country_flag = RUS_shipbuilding_decision
 			set_temp_variable = {
 				RUS_influence_change = -1
@@ -7231,7 +7228,7 @@ RUS_german_influence = {
 			base = 0
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_raise_tariff_wall"
+			log = "[GetLogRoot]: Decision complete RUS_raise_tariff_wall"
 			set_country_flag = RUS_tariff_wall_decision
 			hidden_effect = {
 				GER = {
@@ -7254,7 +7251,7 @@ RUS_german_influence = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_raise_tariff_wall"
+			log = "[GetLogRoot]: Decision remove RUS_raise_tariff_wall"
 			clr_country_flag = RUS_tariff_wall_decision
 			set_temp_variable = {
 				RUS_influence_change = -1
@@ -7316,7 +7313,7 @@ RUS_german_influence = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_default_the_german_debt"
+			log = "[GetLogRoot]: Decision complete RUS_default_the_german_debt"
 			set_country_flag = RUS_debt_default_decision
 			hidden_effect = {
 				GER = {
@@ -7328,7 +7325,7 @@ RUS_german_influence = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_default_the_german_debt"
+			log = "[GetLogRoot]: Decision remove RUS_default_the_german_debt"
 			clr_country_flag = RUS_debt_default_decision
 			if = {
 				limit = {
@@ -7414,7 +7411,7 @@ RUS_german_influence = {
 			political_power_gain = 0.1
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_tax_foreign_shares"
+			log = "[GetLogRoot]: Decision complete RUS_tax_foreign_shares"
 			set_country_flag = RUS_tax_foreign_shares_decision
 			hidden_effect = {
 				GER = {
@@ -7426,7 +7423,7 @@ RUS_german_influence = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_tax_foreign_shares"
+			log = "[GetLogRoot]: Decision remove RUS_tax_foreign_shares"
 			clr_country_flag = RUS_tax_foreign_shares_decision
 			set_temp_variable = {
 				RUS_influence_change = -1
@@ -7470,7 +7467,7 @@ RUS_german_influence = {
 			factor = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_acquire_shares"
+			log = "[GetLogRoot]: Decision complete RUS_acquire_shares"
 			hidden_effect = {
 				GER = {
 					country_event = {
@@ -7481,7 +7478,7 @@ RUS_german_influence = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_acquire_shares"
+			log = "[GetLogRoot]: Decision remove RUS_acquire_shares"
 			set_temp_variable = {
 				RUS_influence_change = -1
 			}
@@ -7522,7 +7519,7 @@ RUS_GER_german_influence = {
 			factor = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_GER_business_withdrawal"
+			log = "[GetLogRoot]: Decision complete RUS_GER_business_withdrawal"
 			set_country_flag = RUS_ongoing_influence_action
 			add_to_variable = {
 				RUS_sanction_points = -1
@@ -7556,7 +7553,7 @@ RUS_GER_german_influence = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_GER_business_withdrawal"
+			log = "[GetLogRoot]: Decision remove RUS_GER_business_withdrawal"
 			clr_country_flag = RUS_ongoing_influence_action
 			RUS = {
 				event_option_tooltip = russia.413.a
@@ -7594,7 +7591,7 @@ RUS_GER_german_influence = {
 			factor = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_GER_lumber_embargo"
+			log = "[GetLogRoot]: Decision complete RUS_GER_lumber_embargo"
 			set_country_flag = RUS_ongoing_influence_action
 			add_to_variable = {
 				RUS_sanction_points = -1
@@ -7610,7 +7607,7 @@ RUS_GER_german_influence = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_GER_lumber_embargo"
+			log = "[GetLogRoot]: Decision remove RUS_GER_lumber_embargo"
 			clr_country_flag = RUS_ongoing_influence_action
 			set_country_flag = RUS_lumber_embargo
 			add_timed_idea = {
@@ -7666,7 +7663,7 @@ RUS_GER_german_influence = {
 			factor = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_GER_grain_tariff"
+			log = "[GetLogRoot]: Decision complete RUS_GER_grain_tariff"
 			set_country_flag = RUS_ongoing_influence_action
 			add_to_variable = {
 				RUS_sanction_points = -1
@@ -7681,7 +7678,7 @@ RUS_GER_german_influence = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_GER_grain_tariff"
+			log = "[GetLogRoot]: Decision remove RUS_GER_grain_tariff"
 			clr_country_flag = RUS_ongoing_influence_action
 			set_country_flag = RUS_grain_tariff
 			RUS = {
@@ -7739,7 +7736,7 @@ RUS_GER_german_influence = {
 			factor = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_GER_embargo_russian_energy"
+			log = "[GetLogRoot]: Decision complete RUS_GER_embargo_russian_energy"
 			set_country_flag = RUS_ongoing_influence_action
 			add_to_variable = {
 				RUS_sanction_points = -1
@@ -7754,7 +7751,7 @@ RUS_GER_german_influence = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_GER_embargo_russian_energy"
+			log = "[GetLogRoot]: Decision remove RUS_GER_embargo_russian_energy"
 			clr_country_flag = RUS_ongoing_influence_action
 			set_country_flag = RUS_energy_embargo
 			RUS = {
@@ -7817,7 +7814,7 @@ RUS_GER_german_influence = {
 			factor = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_GER_tariff_wall"
+			log = "[GetLogRoot]: Decision complete RUS_GER_tariff_wall"
 			set_country_flag = RUS_ongoing_influence_action
 			add_to_variable = {
 				RUS_sanction_points = -1
@@ -7849,7 +7846,7 @@ RUS_GER_german_influence = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_GER_tariff_wall"
+			log = "[GetLogRoot]: Decision remove RUS_GER_tariff_wall"
 			add_political_power = 40
 			clr_country_flag = RUS_ongoing_influence_action
 			clr_country_flag = RUS_grain_tariff
@@ -7901,7 +7898,7 @@ RUS_GER_german_influence = {
 			political_power_gain = -0.05
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_GER_buy_up_roubles"
+			log = "[GetLogRoot]: Decision complete RUS_GER_buy_up_roubles"
 			set_country_flag = RUS_ongoing_influence_action
 			add_to_variable = {
 				RUS_sanction_points = -1
@@ -7916,7 +7913,7 @@ RUS_GER_german_influence = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_GER_buy_up_roubles"
+			log = "[GetLogRoot]: Decision remove RUS_GER_buy_up_roubles"
 			clr_country_flag = RUS_ongoing_influence_action
 			custom_effect_tooltip = RUS_inflation_tt
 			effect_tooltip = {
@@ -7967,7 +7964,7 @@ RUS_GER_german_influence = {
 			political_power_gain = 0.1
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_GER_dump_state_bonds"
+			log = "[GetLogRoot]: Decision complete RUS_GER_dump_state_bonds"
 			set_country_flag = RUS_ongoing_influence_action
 			add_to_variable = {
 				RUS_sanction_points = -1
@@ -7982,7 +7979,7 @@ RUS_GER_german_influence = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_GER_dump_state_bonds"
+			log = "[GetLogRoot]: Decision remove RUS_GER_dump_state_bonds"
 			clr_country_flag = RUS_ongoing_influence_action
 			RUS = {
 				event_option_tooltip = russia.422.a
@@ -8031,7 +8028,7 @@ RUS_GER_german_influence = {
 			factor = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_GER_international_sanctions"
+			log = "[GetLogRoot]: Decision complete RUS_GER_international_sanctions"
 			set_country_flag = RUS_ongoing_influence_action
 			add_to_variable = {
 				RUS_sanction_points = -1
@@ -8047,7 +8044,7 @@ RUS_GER_german_influence = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_GER_international_sanctions"
+			log = "[GetLogRoot]: Decision remove RUS_GER_international_sanctions"
 			clr_country_flag = RUS_ongoing_influence_action
 			RUS = {
 				event_option_tooltip = russia.425.c
@@ -8076,7 +8073,7 @@ RUS_ongoing_election = {
 			has_socialist_government = yes
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_election_timer"
+			log = "[GetLogRoot]: Decision timeout RUS_election_timer"
 			if = {
 				limit = {
 					check_variable = {
@@ -8168,7 +8165,7 @@ RUS_sulimov_decisions = {
 			}
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_rightwing_obscurantism"
+			log = "[GetLogRoot]: Decision timeout RUS_rightwing_obscurantism"
 			add_popularity = {
 				ideology = social_conservative
 				popularity = 0.05
@@ -8216,7 +8213,7 @@ RUS_sulimov_decisions = {
 			}
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_looming_military_coup"
+			log = "[GetLogRoot]: Decision timeout RUS_looming_military_coup"
 			country_event = demrus.103
 		}
 	}
@@ -8241,13 +8238,13 @@ RUS_sulimov_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_socialist_state_radio"
+			log = "[GetLogRoot]: Decision complete RUS_socialist_state_radio"
 			add_to_variable = {
 				RUS_soc_propaganda_cost = 10
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_socialist_state_radio"
+			log = "[GetLogRoot]: Decision remove RUS_socialist_state_radio"
 		}
 	}
 	RUS_arrest_anti_republicans = {
@@ -8265,7 +8262,7 @@ RUS_sulimov_decisions = {
 			base = 1000
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_arrest_anti_republicans"
+			log = "[GetLogRoot]: Decision remove RUS_arrest_anti_republicans"
 			random_list = {
 				10 = {
 					set_temp_variable = {
@@ -8355,7 +8352,7 @@ RUS_sulimov_decisions = {
 			base = 1000
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_ban_monarchist_parties"
+			log = "[GetLogRoot]: Decision complete RUS_ban_monarchist_parties"
 			add_popularity = {
 				ideology = authoritarian_democrat
 				popularity = -0.9
@@ -8389,7 +8386,7 @@ RUS_sulimov_decisions = {
 			base = 1000
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_purge_monarchist_officers"
+			log = "[GetLogRoot]: Decision complete RUS_purge_monarchist_officers"
 			every_army_leader = {
 				limit = {
 					OR = {
@@ -8400,12 +8397,10 @@ RUS_sulimov_decisions = {
 						is_character = RUS_boris_shteyfon
 						AND = {
 							RUS = {
-								has_character = MON_roman_von_ungern_sternberg
+								has_character = MON_roman_ungern_sternberg
 							}
 							OR = {
-								is_character = MON_mikhail_tornovsky
-								is_character = MON_roman_von_ungern_sternberg
-								is_character = MON_boris_rezukhin
+								is_character = MON_roman_ungern_sternberg
 							}
 						}
 					}
@@ -8472,7 +8467,7 @@ RUS_titov_decisions = {
 			is_in_coalition_with_social_liberal = no
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_titov_SR_demands"
+			log = "[GetLogRoot]: Decision complete RUS_titov_SR_demands"
 			add_trait = {
 				character = RUS_vladimir_rikhter
 				slot = political_advisor
@@ -8481,7 +8476,7 @@ RUS_titov_decisions = {
 			RUS_increase_democracy = yes
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_titov_SR_demands"
+			log = "[GetLogRoot]: Decision timeout RUS_titov_SR_demands"
 			add_stability = -0.075
 			set_temp_variable = {
 				RUS_anger_change = 1
@@ -8536,7 +8531,7 @@ RUS_titov_decisions = {
 			is_in_coalition_with_market_liberal = no
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_titov_kadet_demands"
+			log = "[GetLogRoot]: Decision complete RUS_titov_kadet_demands"
 			custom_effect_tooltip = RUS_tripartite_labour_negotiation_tt
 			set_temp_variable = {
 				ideology_change_var = 5
@@ -8545,7 +8540,7 @@ RUS_titov_decisions = {
 			RUS_increase_democracy = yes
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_titov_kadet_demands"
+			log = "[GetLogRoot]: Decision timeout RUS_titov_kadet_demands"
 			add_stability = -0.075
 			set_temp_variable = {
 				RUS_anger_change = 1
@@ -8580,7 +8575,7 @@ RUS_titov_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_increase_farmer_subsidies"
+			log = "[GetLogRoot]: Decision complete RUS_increase_farmer_subsidies"
 			if = {
 				limit = {
 					has_active_mission = RUS_titov_SR_demands
@@ -8592,7 +8587,7 @@ RUS_titov_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_increase_farmer_subsidies"
+			log = "[GetLogRoot]: Decision remove RUS_increase_farmer_subsidies"
 			add_stability = 0.06
 			add_popularity = {
 				ideology = social_liberal
@@ -8626,7 +8621,7 @@ RUS_titov_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_subsidy_private_enterprise"
+			log = "[GetLogRoot]: Decision complete RUS_subsidy_private_enterprise"
 			set_temp_variable = {
 				ideology_change_var = -3
 			}
@@ -8642,7 +8637,7 @@ RUS_titov_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_subsidy_private_enterprise"
+			log = "[GetLogRoot]: Decision remove RUS_subsidy_private_enterprise"
 			add_one_random_civilian_factory = yes
 			add_one_random_civilian_factory = yes
 		}
@@ -8686,12 +8681,12 @@ RUS_titov_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_titov_demands_from_left"
+			log = "[GetLogRoot]: Decision complete RUS_titov_demands_from_left"
 			add_political_power = 50
 			add_ideas = RUS_labour_peace
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_titov_demands_from_left"
+			log = "[GetLogRoot]: Decision timeout RUS_titov_demands_from_left"
 			add_popularity = {
 				ideology = social_democrat
 				popularity = -0.03
@@ -8738,7 +8733,7 @@ RUS_titov_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_increase_wages"
+			log = "[GetLogRoot]: Decision complete RUS_increase_wages"
 			if = {
 				limit = {
 					has_active_mission = RUS_titov_demands_from_left
@@ -8750,7 +8745,7 @@ RUS_titov_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_increase_wages"
+			log = "[GetLogRoot]: Decision remove RUS_increase_wages"
 			add_stability = 0.05
 			add_popularity = {
 				ideology = social_democrat
@@ -8770,7 +8765,7 @@ RUS_titov_decisions = {
 			base = 500
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_found_socdem_union"
+			log = "[GetLogRoot]: Decision remove RUS_found_socdem_union"
 			country_event = demrus.55			#Social Democratic Central Union
 			event_option_tooltip = demrus.55.a
 		}
@@ -8799,7 +8794,7 @@ RUS_rikhter_decisions = {
 			RUS_rikhter = no
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_bold_promises"
+			log = "[GetLogRoot]: Decision complete RUS_bold_promises"
 			add_political_power = 100
 			set_temp_variable = {
 				ideology_change_var = 5
@@ -8811,7 +8806,7 @@ RUS_rikhter_decisions = {
 			RUS_change_left_anger = yes
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_bold_promises"
+			log = "[GetLogRoot]: Decision timeout RUS_bold_promises"
 			set_temp_variable = {
 				ideology_change_var = -10
 			}
@@ -8839,7 +8834,7 @@ RUS_rikhter_decisions = {
 			base = 0
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_ban_monarchist_parties_rikhter"
+			log = "[GetLogRoot]: Decision complete RUS_ban_monarchist_parties_rikhter"
 			set_temp_variable = {
 				RUS_anger_change = 3
 			}
@@ -8863,7 +8858,7 @@ RUS_rikhter_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_ban_monarchist_parties_rikhter"
+			log = "[GetLogRoot]: Decision remove RUS_ban_monarchist_parties_rikhter"
 			add_popularity = {
 				ideology = authoritarian_democrat
 				popularity = -0.25
@@ -8896,7 +8891,7 @@ RUS_rikhter_decisions = {
 			RUS_rikhter = no
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_rightwing_obscurantism_rikhter"
+			log = "[GetLogRoot]: Decision timeout RUS_rightwing_obscurantism_rikhter"
 			if = {
 				limit = {
 					OR = {
@@ -8994,11 +8989,11 @@ RUS_maklakov_decisions = {
 			}
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_political_apathy"
+			log = "[GetLogRoot]: Decision cancel RUS_political_apathy"
 			clear_variable = RUS_apathy_var
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_political_apathy"
+			log = "[GetLogRoot]: Decision complete RUS_political_apathy"
 			clear_variable = RUS_apathy_var
 			RUS_increase_democracy = yes
 			set_temp_variable = {
@@ -9018,7 +9013,7 @@ RUS_maklakov_decisions = {
 			}
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_political_apathy"
+			log = "[GetLogRoot]: Decision timeout RUS_political_apathy"
 			if = {
 				limit = {
 					check_variable = {
@@ -9079,7 +9074,7 @@ RUS_maklakov_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_pass_progressive_legislation"
+			log = "[GetLogRoot]: Decision remove RUS_pass_progressive_legislation"
 			add_stability = 0.02
 			add_to_variable = {
 				RUS_apathy_var = -2
@@ -9122,7 +9117,7 @@ RUS_maklakov_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_maklakov_resign"
+			log = "[GetLogRoot]: Decision complete RUS_maklakov_resign"
 			add_stability = -0.05
 			remove_mission = RUS_political_apathy
 			set_temp_variable = {
@@ -9183,7 +9178,7 @@ RUS_solonevich_decisions = {
 			base = 1000
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_take_over_the_party"
+			log = "[GetLogRoot]: Decision complete RUS_take_over_the_party"
 			add_political_power = 100
 			set_temp_variable = {
 				RUS_power_change = -20
@@ -9233,7 +9228,7 @@ RUS_solonevich_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_VPP_tension"
+			log = "[GetLogRoot]: Decision complete RUS_VPP_tension"
 			add_popularity = {
 				ideology = social_conservative
 				popularity = 0.05
@@ -9245,7 +9240,7 @@ RUS_solonevich_decisions = {
 			RUS_change_right_anger = yes
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_VPP_tension"
+			log = "[GetLogRoot]: Decision timeout RUS_VPP_tension"
 			if = {
 				limit = {
 					has_idea = RUS_party_versus_president
@@ -9317,7 +9312,7 @@ RUS_solonevich_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_tour_the_sports"
+			log = "[GetLogRoot]: Decision remove RUS_tour_the_sports"
 			country_event = demrus.77
 		}
 	}
@@ -9345,10 +9340,10 @@ RUS_monarchy_decisions = {
 			}
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_PSR_conference"
+			log = "[GetLogRoot]: Decision cancel RUS_PSR_conference"
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_PSR_conference"
+			log = "[GetLogRoot]: Decision timeout RUS_PSR_conference"
 			if = {
 				limit = {
 					NOT = {
@@ -9427,18 +9422,18 @@ RUS_monarchy_decisions = {
 			}
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_SVR_activity"
+			log = "[GetLogRoot]: Decision cancel RUS_SVR_activity"
 			clear_variable = RUS_SVR_var
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_SVR_activity"
+			log = "[GetLogRoot]: Decision complete RUS_SVR_activity"
 			RUS_increase_imperial_popularity = yes
 			add_political_power = 50
 			clear_variable = RUS_SVR_var
 			remove_decision = RUS_destroy_SVR
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_SVR_activity"
+			log = "[GetLogRoot]: Decision timeout RUS_SVR_activity"
 			custom_effect_tooltip = RUS_SVR_activity_tt
 			if = {
 				limit = {
@@ -9560,10 +9555,10 @@ RUS_monarchy_decisions = {
 			}
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_demands_from_unions_monarchy"
+			log = "[GetLogRoot]: Decision cancel RUS_demands_from_unions_monarchy"
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_demands_from_unions_monarchy"
+			log = "[GetLogRoot]: Decision complete RUS_demands_from_unions_monarchy"
 			RUS_increase_democracy = yes
 			add_political_power = 50
 			set_temp_variable = {
@@ -9573,7 +9568,7 @@ RUS_monarchy_decisions = {
 			set_country_flag = RUS_fulfilled_union_reforms
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_demands_from_unions_monarchy"
+			log = "[GetLogRoot]: Decision timeout RUS_demands_from_unions_monarchy"
 			add_popularity = {
 				ideology = syndicalist
 				popularity = 0.05
@@ -9612,10 +9607,10 @@ RUS_monarchy_decisions = {
 			has_capitulated = yes
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_promised_jobs"
+			log = "[GetLogRoot]: Decision cancel RUS_promised_jobs"
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_promised_jobs"
+			log = "[GetLogRoot]: Decision complete RUS_promised_jobs"
 			RUS_increase_imperial_popularity = yes
 			add_stability = 0.05
 			set_temp_variable = {
@@ -9625,7 +9620,7 @@ RUS_monarchy_decisions = {
 			set_country_flag = RUS_fulfilled_promised_jobs
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_promised_jobs"
+			log = "[GetLogRoot]: Decision timeout RUS_promised_jobs"
 			set_temp_variable = {
 				ideology_change_var = -4
 			}
@@ -9681,7 +9676,7 @@ RUS_monarchy_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_pass_state_protection_decree"
+			log = "[GetLogRoot]: Decision remove RUS_pass_state_protection_decree"
 			country_event = monrus.14			#Imperial Decree on Protection of the People and the State
 			effect_tooltip = {
 				if = {
@@ -9744,7 +9739,7 @@ RUS_monarchy_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_destroy_SVR"
+			log = "[GetLogRoot]: Decision remove RUS_destroy_SVR"
 			country_event = monrus.13			#Operation Against SVR
 			effect_tooltip = {
 				remove_mission = RUS_SVR_activity
@@ -9769,7 +9764,7 @@ RUS_monarchy_decisions = {
 			base = 5
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_patron_of_culture"
+			log = "[GetLogRoot]: Decision remove RUS_patron_of_culture"
 			set_temp_variable = {
 				ideology_change_var = 5
 			}
@@ -9809,13 +9804,13 @@ RUS_monarchy_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_NMD_rallies target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_NMD_rallies"
 			hidden_effect = {
 				add_stability = -0.03
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_NMD_rallies target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_NMD_rallies"
 			add_war_support = 0.05
 			set_temp_variable = {
 				RUS_solonevich_pp = party_popularity_100@authoritarian_democrat
@@ -9862,7 +9857,7 @@ RUS_monarchy_decisions = {
 			base = 150
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_NMD_media_empire"
+			log = "[GetLogRoot]: Decision remove RUS_NMD_media_empire"
 			add_trait = {
 				character = RUS_boris_suvorin
 				slot = political_advisor
@@ -9898,7 +9893,7 @@ RUS_monarchy_decisions = {
 			consumer_goods_factor = 0.15
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_NMD_anti_corruption"
+			log = "[GetLogRoot]: Decision remove RUS_NMD_anti_corruption"
 			add_trait = {
 				character = RUS_ivan_solonevich
 				slot = second_in_command
@@ -9930,7 +9925,7 @@ RUS_dealing_with_unrest_decisions = {
 		fire_only_once = yes
 		days_mission_timeout = 430
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_land_reform_in_progress"
+			log = "[GetLogRoot]: Decision timeout RUS_land_reform_in_progress"
 			if = {
 				limit = {
 					has_government = national_populist
@@ -9960,11 +9955,11 @@ RUS_dealing_with_unrest_decisions = {
 			has_socialist_government = yes
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_pay_back_backers"
+			log = "[GetLogRoot]: Decision complete RUS_pay_back_backers"
 			add_political_power = 25
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_pay_back_backers"
+			log = "[GetLogRoot]: Decision timeout RUS_pay_back_backers"
 			add_political_power = -25
 			set_temp_variable = {
 				ideology_change_var = -5
@@ -10008,7 +10003,7 @@ RUS_dealing_with_unrest_decisions = {
 			factor = 10000
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_destroy_VRBO"
+			log = "[GetLogRoot]: Decision complete RUS_destroy_VRBO"
 			hidden_effect = {
 				add_political_power = -50
 				add_equipment_to_stockpile = {
@@ -10018,7 +10013,7 @@ RUS_dealing_with_unrest_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_destroy_VRBO"
+			log = "[GetLogRoot]: Decision remove RUS_destroy_VRBO"
 			if = {
 				limit = {
 					has_idea = RUS_VRBO_3
@@ -10114,14 +10109,14 @@ RUS_dealing_with_unrest_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_fund_propaganda_efforts"
+			log = "[GetLogRoot]: Decision complete RUS_fund_propaganda_efforts"
 			set_temp_variable = {
 				RUS_anger_change = -1
 			}
 			RUS_change_popular_anger = yes
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_fund_propaganda_efforts"
+			log = "[GetLogRoot]: Decision remove RUS_fund_propaganda_efforts"
 			add_stability = 0.025
 		}
 	}
@@ -10204,7 +10199,7 @@ RUS_dealing_with_unrest_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_press_censorship_campaign"
+			log = "[GetLogRoot]: Decision remove RUS_press_censorship_campaign"
 			set_temp_variable = {
 				RUS_anger_change = -1
 			}
@@ -10292,7 +10287,7 @@ RUS_dealing_with_unrest_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_raid_communists"
+			log = "[GetLogRoot]: Decision remove RUS_raid_communists"
 			if = {
 				limit = {
 					syndicalist > 0.05
@@ -10398,7 +10393,7 @@ RUS_dealing_with_unrest_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_raid_fascists"
+			log = "[GetLogRoot]: Decision remove RUS_raid_fascists"
 			if = {
 				limit = {
 					national_populist > 0.05
@@ -10460,7 +10455,7 @@ RUS_dealing_with_unrest_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_pro-labour_laws"
+			log = "[GetLogRoot]: Decision remove RUS_pro-labour_laws"
 			add_stability = 0.04
 			add_popularity = {
 				ideology = social_democrat
@@ -10494,7 +10489,7 @@ RUS_dealing_with_unrest_decisions = {
 			factor = 300
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_court_jadidists"
+			log = "[GetLogRoot]: Decision remove RUS_court_jadidists"
 			add_stability = 0.05
 			set_temp_variable = {
 				ideology_change_var = 3
@@ -10543,7 +10538,7 @@ RUS_dealing_with_unrest_decisions = {
 			factor = 300
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_court_bundists"
+			log = "[GetLogRoot]: Decision remove RUS_court_bundists"
 			add_stability = 0.05
 			set_temp_variable = {
 				ideology_change_var = 5
@@ -10582,7 +10577,7 @@ RUS_dealing_with_unrest_decisions = {
 			factor = 300
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_ecumenic_reform"
+			log = "[GetLogRoot]: Decision remove RUS_ecumenic_reform"
 			add_stability = 0.05
 			set_temp_variable = {
 				ideology_change_var = 3
@@ -10626,7 +10621,6 @@ RUS_dealing_with_unrest_decisions = {
 			}
 		}
 		cost = 60
-		fire_only_once = yes
 		cancel_if_not_visible = yes
 		ai_will_do = {
 			base = 1
@@ -10638,10 +10632,10 @@ RUS_dealing_with_unrest_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_patron_churches"
+			log = "[GetLogRoot]: Decision remove RUS_patron_churches"
 			add_popularity = {
 				ideology = social_conservative
-				popularity = 0.05
+				popularity = 0.04
 			}
 			set_temp_variable = {
 				RUS_anger_change = -1
@@ -10676,7 +10670,7 @@ RUS_3rd_constitutional_assembly = {
 		fire_only_once = yes
 		days_mission_timeout = 60
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_military_pressure_mission"
+			log = "[GetLogRoot]: Decision timeout RUS_military_pressure_mission"
 			custom_effect_tooltip = RUS_military_pressure_mission_tt
 			hidden_effect = {
 				var:army_chief = {
@@ -10709,7 +10703,7 @@ RUS_3rd_constitutional_assembly = {
 		fire_only_once = yes
 		days_mission_timeout = 10
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_monarchism_mission"
+			log = "[GetLogRoot]: Decision timeout RUS_monarchism_mission"
 			custom_effect_tooltip = RUS_kadets_swayed_to_monarchism
 			hidden_effect = {
 				RUS_aleksandr_golitsyn = {
@@ -10741,7 +10735,7 @@ RUS_3rd_constitutional_assembly = {
 			base = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_russia_is_republic"
+			log = "[GetLogRoot]: Decision complete RUS_russia_is_republic"
 			if = {
 				limit = {
 					RUS_denikin = yes
@@ -10786,7 +10780,7 @@ RUS_3rd_constitutional_assembly = {
 			base = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_russia_is_monarchy"
+			log = "[GetLogRoot]: Decision complete RUS_russia_is_monarchy"
 			if = {
 				limit = {
 					RUS_wrangel = yes
@@ -10854,7 +10848,7 @@ RUS_3rd_constitutional_assembly = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_confidence_votes"
+			log = "[GetLogRoot]: Decision complete RUS_confidence_votes"
 			#can lead to governments fall more often
 			custom_effect_tooltip = RUS_confidence_votes_tt
 			custom_effect_tooltip = RUS_support_socdem
@@ -10902,7 +10896,7 @@ RUS_3rd_constitutional_assembly = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_decrees"
+			log = "[GetLogRoot]: Decision complete RUS_decrees"
 			custom_effect_tooltip = RUS_decrees_tt
 			custom_effect_tooltip = RUS_support_marlib
 			add_to_variable = {
@@ -10952,7 +10946,7 @@ RUS_3rd_constitutional_assembly = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_electoral_threshold"
+			log = "[GetLogRoot]: Decision complete RUS_electoral_threshold"
 			custom_effect_tooltip = RUS_electoral_threshold_tt
 			custom_effect_tooltip = RUS_support_marlib
 			add_to_variable = {
@@ -11000,7 +10994,7 @@ RUS_3rd_constitutional_assembly = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_proportional_system"
+			log = "[GetLogRoot]: Decision complete RUS_proportional_system"
 			custom_effect_tooltip = RUS_proportional_system_tt
 			custom_effect_tooltip = RUS_support_socdem
 			add_to_variable = {
@@ -11049,7 +11043,7 @@ RUS_3rd_constitutional_assembly = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_judicial_review"
+			log = "[GetLogRoot]: Decision complete RUS_judicial_review"
 			custom_effect_tooltip = RUS_judicial_review_tt
 			custom_effect_tooltip = RUS_support_marlib
 			add_to_variable = {
@@ -11096,7 +11090,7 @@ RUS_3rd_constitutional_assembly = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_defensive_democracy"
+			log = "[GetLogRoot]: Decision complete RUS_defensive_democracy"
 			custom_effect_tooltip = RUS_defensive_democracy_tt
 			custom_effect_tooltip = RUS_support_mil
 			add_to_variable = {
@@ -11151,7 +11145,7 @@ RUS_3rd_constitutional_assembly = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_ensure_federalism"
+			log = "[GetLogRoot]: Decision complete RUS_ensure_federalism"
 			custom_effect_tooltip = RUS_ensure_federalism_tt
 			custom_effect_tooltip = RUS_support_socdem
 			add_to_variable = {
@@ -11206,7 +11200,7 @@ RUS_3rd_constitutional_assembly = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_weakened_federalism"
+			log = "[GetLogRoot]: Decision complete RUS_weakened_federalism"
 			custom_effect_tooltip = RUS_weakened_federalism_tt
 			custom_effect_tooltip = RUS_support_marlib
 			add_to_variable = {
@@ -11261,7 +11255,7 @@ RUS_3rd_constitutional_assembly = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_no_state_religion"
+			log = "[GetLogRoot]: Decision complete RUS_no_state_religion"
 			custom_effect_tooltip = RUS_no_state_religion_tt
 			custom_effect_tooltip = RUS_support_socdem
 			add_to_variable = {
@@ -11305,7 +11299,7 @@ RUS_3rd_constitutional_assembly = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_state_religion"
+			log = "[GetLogRoot]: Decision complete RUS_state_religion"
 			custom_effect_tooltip = RUS_state_religion_tt
 			custom_effect_tooltip = RUS_support_soccon
 			add_to_variable = {
@@ -11336,7 +11330,7 @@ RUS_3rd_constitutional_assembly = {
 			base = 0
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_restricted_nationalisation"
+			log = "[GetLogRoot]: Decision complete RUS_restricted_nationalisation"
 			if = {
 				limit = {
 					has_active_mission = RUS_land_reform_in_progress
@@ -11386,7 +11380,7 @@ RUS_3rd_constitutional_assembly = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_repeal_communist_ban"
+			log = "[GetLogRoot]: Decision complete RUS_repeal_communist_ban"
 			custom_effect_tooltip = RUS_repeal_communist_ban_tt
 			custom_effect_tooltip = RUS_support_socdem
 			add_to_variable = {
@@ -11439,7 +11433,7 @@ RUS_3rd_constitutional_assembly = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_enshrine_military_role"
+			log = "[GetLogRoot]: Decision complete RUS_enshrine_military_role"
 			custom_effect_tooltip = RUS_military_role_tt
 			custom_effect_tooltip = RUS_support_mil
 			add_to_variable = {
@@ -11469,7 +11463,7 @@ RUS_3rd_constitutional_assembly = {
 			base = 0
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_start_from_scratch"
+			log = "[GetLogRoot]: Decision complete RUS_start_from_scratch"
 			set_variable = {
 				RUS_soc_var = 0
 			}
@@ -11582,7 +11576,7 @@ RUS_3rd_constitutional_assembly = {
 			base = 1000
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_pass_constitution"
+			log = "[GetLogRoot]: Decision complete RUS_pass_constitution"
 			custom_effect_tooltip = RUS_pass_constitution_3_tt
 			country_event = ruselections.4			#The Constitutional Draft is accepted!
 			custom_effect_tooltip = tooltip_white_line
@@ -11607,7 +11601,7 @@ RUS_sorokin_reforms = {
 			base = 150
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_rural_schools_program"
+			log = "[GetLogRoot]: Decision remove RUS_rural_schools_program"
 			add_stability = 0.05
 			if = {
 				limit = {
@@ -11645,7 +11639,7 @@ RUS_sorokin_reforms = {
 			base = 150
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_minority_representation"
+			log = "[GetLogRoot]: Decision remove RUS_minority_representation"
 			if = {
 				limit = {
 					NOT = {
@@ -11691,7 +11685,7 @@ RUS_sorokin_reforms = {
 			base = 150
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_secular_campaign"
+			log = "[GetLogRoot]: Decision remove RUS_secular_campaign"
 			if = {
 				limit = {
 					NOT = {
@@ -11739,7 +11733,7 @@ RUS_sorokin_reforms = {
 			base = 150
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_sociological_institute"
+			log = "[GetLogRoot]: Decision remove RUS_sociological_institute"
 			if = {
 				limit = {
 					NOT = {
@@ -11790,7 +11784,7 @@ RUS_sorokin_reforms = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_finish_sorokin_reforms"
+			log = "[GetLogRoot]: Decision complete RUS_finish_sorokin_reforms"
 			if = {
 				limit = {
 					check_variable = {
@@ -11992,7 +11986,7 @@ RUS_federal_system = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_cossack_reform target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_cossack_reform"
 			add_stability = 0.04
 			country_event = {
 				id = russia.441
@@ -12058,7 +12052,7 @@ RUS_federal_system = {
 			base = 5
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_pacify_caucasus target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_pacify_caucasus"
 			hidden_effect = {
 				add_command_power = -50
 				add_equipment_to_stockpile = {
@@ -12073,7 +12067,7 @@ RUS_federal_system = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_pacify_caucasus target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_pacify_caucasus"
 			add_stability = 0.05
 			every_owned_state = {
 				limit = {
@@ -12163,7 +12157,7 @@ RUS_federal_system = {
 			base = 5
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_reform_OSKAB target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_reform_OSKAB"
 			hidden_effect = {
 				remove_targeted_decision = {
 					decision = RUS_abolish_OSKAB
@@ -12172,7 +12166,7 @@ RUS_federal_system = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_reform_OSKAB target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_reform_OSKAB"
 			add_stability = 0.05
 			every_owned_state = {
 				limit = {
@@ -12180,11 +12174,14 @@ RUS_federal_system = {
 						modifier = RUS_oskab_modifier
 					}
 				}
-				clr_state_flag = oskab_state
+				remove_dynamic_modifier = {
+					modifier = RUS_oskab_modifier
+				}
 				force_enable_resistance = {
 					occupier = RUS
 					clear = yes
 				}
+				clr_state_flag = oskab_state
 			}
 			set_country_flag = RUS_OSKAB_reformed
 			country_event = russia.1150			#Fate of North Caucasus
@@ -12260,7 +12257,7 @@ RUS_federal_system = {
 			base = 5
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_abolish_OSKAB target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_abolish_OSKAB"
 			hidden_effect = {
 				add_command_power = -50
 				add_equipment_to_stockpile = {
@@ -12274,7 +12271,7 @@ RUS_federal_system = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_abolish_OSKAB target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_abolish_OSKAB"
 			set_temp_variable = {
 				ideology_change_var = 3
 			}
@@ -12292,11 +12289,11 @@ RUS_federal_system = {
 				remove_dynamic_modifier = {
 					modifier = RUS_oskab_modifier
 				}
-				clr_state_flag = oskab_state
 				force_enable_resistance = {
 					occupier = RUS
 					clear = yes
 				}
+				clr_state_flag = oskab_state
 			}
 			set_country_flag = RUS_OSKAB_abolished
 			if = {
@@ -12369,7 +12366,7 @@ RUS_federal_system = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_muslim_autonomies target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_muslim_autonomies"
 			custom_effect_tooltip = RUS_autonomy_will_be_formed
 			custom_effect_tooltip = bashkir_state
 			custom_effect_tooltip = tatar_state
@@ -12454,7 +12451,7 @@ RUS_federal_system = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_siberian_autonomies target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_siberian_autonomies"
 			custom_effect_tooltip = RUS_autonomy_will_be_formed
 			custom_effect_tooltip = yakut_state
 			custom_effect_tooltip = buryat_state
@@ -12541,7 +12538,7 @@ RUS_federal_system = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_form_karelia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_form_karelia"
 			custom_effect_tooltip = RUS_autonomy_will_be_formed
 			custom_effect_tooltip = karelian_state
 			custom_effect_tooltip = tooltip_white_line
@@ -12618,7 +12615,7 @@ RUS_federal_system = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_uralic_autonomies target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_uralic_autonomies"
 			custom_effect_tooltip = RUS_autonomy_will_be_formed
 			custom_effect_tooltip = mordva_state
 			custom_effect_tooltip = udmurt_state
@@ -12704,7 +12701,7 @@ RUS_federal_system = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_caspian_autonomies target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_caspian_autonomies"
 			custom_effect_tooltip = RUS_autonomy_will_be_formed
 			custom_effect_tooltip = dagestan_state
 			custom_effect_tooltip = kalmyk_state
@@ -12776,10 +12773,10 @@ RUS_USNS_decision_cat = {
 			#Kyiv
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_USNS_spreading target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision cancel RUS_USNS_spreading"
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_USNS_spreading target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision timeout RUS_USNS_spreading"
 			random_owned_state = {
 				limit = {
 					any_neighbor_state = {
@@ -12937,14 +12934,14 @@ RUS_USNS_decision_cat = {
 						modifier = RUS_generic_rebels
 					}
 				}
+				NOT = {
+					is_core_of = ROOT
+				}
 			}
 		}
 		available = {
 			FROM = {
-				OR = {
-					resistance < 50
-					compliance > 40
-				}
+				resistance > 30
 			}
 			if = {
 				limit = {
@@ -12958,13 +12955,15 @@ RUS_USNS_decision_cat = {
 		}
 		custom_cost_text = RUS_USNS_counter_cost
 		custom_cost_trigger = {
-			NOT = {
-				command_power < var:RUS_USNS_cp_cost
-			}
-			NOT = {
+			command_power > var:RUS_USNS_cp_cost
+			OR = {
 				has_equipment = {
-					infantry_equipment < 750
+					infantry_equipment > 750
 				}
+				NOT = {
+					tag = RUS
+				}
+				#Workaround for late game scenario where FER/RSA have so many guns it does stack overflow and they are unable to take these decisions
 			}
 		}
 		days_remove = 30
@@ -12975,7 +12974,7 @@ RUS_USNS_decision_cat = {
 		state_target = yes
 		on_map_mode = map_and_decisions_view
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_counter_insurgency target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_counter_insurgency"
 			hidden_effect = {
 				add_to_temp_variable = {
 					RUS_temp_CP_cost = RUS_USNS_cp_cost
@@ -12991,7 +12990,7 @@ RUS_USNS_decision_cat = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_counter_insurgency target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_counter_insurgency"
 			FROM = {
 				if = {
 					limit = {
@@ -13077,7 +13076,7 @@ RUS_USNS_decision_cat = {
 			base = 500
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_finish_resistance"
+			log = "[GetLogRoot]: Decision remove RUS_finish_resistance"
 			remove_ideas = RUS_UKR_resistance
 			remove_mission = RUS_USNS_spreading
 			every_owned_state = {
@@ -13113,7 +13112,7 @@ RUS_USNS_decision_cat = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_crimean_self_rule target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_crimean_self_rule"
 			FROM = {
 				add_compliance = 50
 			}
@@ -13140,7 +13139,7 @@ RUS_USNS_decision_cat = {
 			base = 200
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_redistribute_land_postwar"
+			log = "[GetLogRoot]: Decision remove RUS_redistribute_land_postwar"
 			add_stability = 0.05
 			UKR = {
 				if = {
@@ -13235,7 +13234,7 @@ RUS_USNS_decision_cat = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_rebuild_baltics target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_rebuild_baltics"
 			every_state = {
 				limit = {
 					OR = {
@@ -13309,7 +13308,7 @@ RUS_USNS_decision_cat = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_rebuild_belarus target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_rebuild_belarus"
 			every_state = {
 				limit = {
 					is_core_of = BLR
@@ -13367,7 +13366,7 @@ RUS_USNS_decision_cat = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_rebuild_east_ukraine target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_rebuild_east_ukraine"
 			every_state = {
 				limit = {
 					OR = {
@@ -13445,7 +13444,7 @@ RUS_USNS_decision_cat = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_rebuild_west_ukraine target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_rebuild_west_ukraine"
 			every_state = {
 				limit = {
 					OR = {
@@ -13584,7 +13583,7 @@ RUS_USNS_decision_cat = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_rebuild_south_ukraine target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_rebuild_south_ukraine"
 			every_state = {
 				limit = {
 					OR = {
@@ -13711,14 +13710,14 @@ RUS_USNS_decision_cat = {
 		state_target = yes
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_fight_separatism target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_fight_separatism"
 			hidden_effect = {
 				add_command_power = -30
 				add_political_power = -20
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_fight_separatism target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_fight_separatism"
 			add_command_power = 30
 			RUS_fight_separatism_effects = yes
 		}
@@ -13747,7 +13746,7 @@ RUS_nuclear_program = {
 			base = 100
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_operation_masuria"
+			log = "[GetLogRoot]: Decision remove RUS_operation_masuria"
 			if = {
 				limit = {
 					has_tech = atomic_research
@@ -13850,7 +13849,7 @@ RUS_nuclear_program = {
 			base = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_damocles_spy_ring"
+			log = "[GetLogRoot]: Decision complete RUS_damocles_spy_ring"
 			hidden_effect = {
 				add_political_power = -40
 				set_temp_variable = {
@@ -13860,7 +13859,7 @@ RUS_nuclear_program = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_damocles_spy_ring"
+			log = "[GetLogRoot]: Decision remove RUS_damocles_spy_ring"
 			add_threat = 2
 			if = {
 				limit = {
@@ -13896,7 +13895,7 @@ RUS_nuclear_program = {
 			base = 100
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_death_valley target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_death_valley"
 			562 = {
 				#Okhotsk
 				add_building_construction = {
@@ -13936,7 +13935,7 @@ RUS_nuclear_program = {
 			base = 100
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_taboshar_uranium target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_taboshar_uranium"
 			407 = {
 				#Tashkent
 				add_building_construction = {
@@ -13988,7 +13987,7 @@ RUS_nuclear_program = {
 			base = 100
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_nechayevsk target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_nechayevsk"
 			582 = {
 				#Orsk
 				add_building_construction = {
@@ -14037,7 +14036,7 @@ RUS_nuclear_program = {
 			base = 100
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_nuclear_test target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_nuclear_test"
 			set_country_flag = RUS_first_atomic_test
 			810 = {
 				#Alash-kala
@@ -14090,7 +14089,7 @@ RUS_conspiracy_against_klepikov = {
 		war_with_target_on_remove = yes
 		fire_only_once = yes
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_conspiracy_collapse"
+			log = "[GetLogRoot]: Decision timeout RUS_conspiracy_collapse"
 			set_country_flag = RUS_out_of_time
 			country_event = russia.303			#The Conspiracy Unravels
 		}
@@ -14105,7 +14104,7 @@ RUS_conspiracy_against_klepikov = {
 			base = 500
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_recruit_wrangel"
+			log = "[GetLogRoot]: Decision complete RUS_recruit_wrangel"
 			set_country_flag = RUS_recruiting_wrangel
 			if = {
 				limit = {
@@ -14135,7 +14134,7 @@ RUS_conspiracy_against_klepikov = {
 			base = 0
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_recruit_denikin"
+			log = "[GetLogRoot]: Decision complete RUS_recruit_denikin"
 			add_to_variable = {
 				RUS_klepikov_conspiracy = 1
 			}
@@ -14158,7 +14157,7 @@ RUS_conspiracy_against_klepikov = {
 			base = 500
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_recruit_georgievsky"
+			log = "[GetLogRoot]: Decision complete RUS_recruit_georgievsky"
 			set_country_flag = RUS_recruiting_georgievsky
 			add_to_variable = {
 				RUS_klepikov_conspiracy = 1
@@ -14176,7 +14175,7 @@ RUS_conspiracy_against_klepikov = {
 			base = 0
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_recruit_voznesensky"
+			log = "[GetLogRoot]: Decision complete RUS_recruit_voznesensky"
 			add_to_variable = {
 				RUS_klepikov_conspiracy = -1
 			}
@@ -14195,7 +14194,7 @@ RUS_conspiracy_against_klepikov = {
 		}
 		cost = 10
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_recruit_yusupov"
+			log = "[GetLogRoot]: Decision complete RUS_recruit_yusupov"
 			set_country_flag = RUS_recruiting_yusupov
 			add_to_variable = {
 				RUS_klepikov_conspiracy = 1
@@ -14217,7 +14216,7 @@ RUS_conspiracy_against_klepikov = {
 			base = 500
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_recruit_vonsyatsky"
+			log = "[GetLogRoot]: Decision complete RUS_recruit_vonsyatsky"
 			set_country_flag = RUS_recruiting_vonsyatsky
 			add_to_variable = {
 				RUS_klepikov_conspiracy = 1
@@ -14240,7 +14239,7 @@ RUS_conspiracy_against_klepikov = {
 			base = 500
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_recruit_berkova"
+			log = "[GetLogRoot]: Decision complete RUS_recruit_berkova"
 			set_country_flag = RUS_recruiting_berkova
 			add_to_variable = {
 				RUS_klepikov_conspiracy = 1
@@ -14263,7 +14262,7 @@ RUS_conspiracy_against_klepikov = {
 			base = 500
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_recruit_vysheslavtsev"
+			log = "[GetLogRoot]: Decision complete RUS_recruit_vysheslavtsev"
 			set_country_flag = RUS_recruiting_vysheslavtsev
 			add_to_variable = {
 				RUS_klepikov_conspiracy = 1
@@ -14289,7 +14288,7 @@ RUS_conspiracy_against_klepikov = {
 			base = 500
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_recruit_gopper"
+			log = "[GetLogRoot]: Decision complete RUS_recruit_gopper"
 			set_country_flag = RUS_recruiting_gopper
 			add_to_variable = {
 				RUS_klepikov_conspiracy = 1
@@ -14332,7 +14331,7 @@ RUS_russian_sphere_decisions = {
 			base = 0
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_lend_our_support"
+			log = "[GetLogRoot]: Decision complete RUS_lend_our_support"
 			set_temp_variable = {
 				RUS_power_change = -10
 			}
@@ -14369,14 +14368,14 @@ RUS_russian_sphere_decisions = {
 			base = 1
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_international_propaganda"
+			log = "[GetLogRoot]: Decision complete RUS_international_propaganda"
 			set_temp_variable = {
 				RUS_power_change = -20
 			}
 			RUS_change_projection = yes
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_international_propaganda"
+			log = "[GetLogRoot]: Decision remove RUS_international_propaganda"
 			add_political_power = num_of_factories
 			custom_effect_tooltip = RUS_international_propaganda_tt
 		}
@@ -14402,7 +14401,7 @@ RUS_russian_sphere_decisions = {
 			RUS_savinkov = no
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_FIN_clash"
+			log = "[GetLogRoot]: Decision timeout RUS_FIN_clash"
 			country_event = rusfor.22
 			hidden_effect = {
 				FIN = {
@@ -14452,14 +14451,17 @@ RUS_russian_sphere_decisions = {
 		}
 		cancel_trigger = {
 			FIN = {
-				is_valid_peace_target = no
+				NOT = {
+					is_valid_peace_target = yes
+					controls_state = 840					#Helsinki
+				}
 			}
 		}
 		is_good = no
 		fire_only_once = yes
 		days_mission_timeout = 180
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_defeat_finland"
+			log = "[GetLogRoot]: Decision timeout RUS_defeat_finland"
 			country_event = rusfor.50
 		}
 	}
@@ -14483,11 +14485,11 @@ RUS_russian_sphere_decisions = {
 		fire_only_once = yes
 		days_mission_timeout = 180
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_defeat_mongolia"
+			log = "[GetLogRoot]: Decision timeout RUS_defeat_mongolia"
 			country_event = rusfor.54
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_defeat_mongolia"
+			log = "[GetLogRoot]: Decision complete RUS_defeat_mongolia"
 			if = {
 				limit = {
 					has_war_with = TIB
@@ -14560,7 +14562,7 @@ RUS_russian_sphere_decisions = {
 		fire_only_once = no
 		days_mission_timeout = 270
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_defeat_central_asia"
+			log = "[GetLogRoot]: Decision timeout RUS_defeat_central_asia"
 			country_event = cacrisis.473
 		}
 	}
@@ -14620,7 +14622,7 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_operation_nevsky target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_operation_nevsky"
 			hidden_effect = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
@@ -14633,7 +14635,7 @@ RUS_russian_sphere_decisions = {
 			RUS_change_projection = yes
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_operation_nevsky target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_operation_nevsky"
 			add_named_threat = {
 				threat = 1
 				name = RUS_operation_nevsky
@@ -14692,7 +14694,7 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_influence_poland"
+			log = "[GetLogRoot]: Decision complete RUS_influence_poland"
 			hidden_effect = {
 				set_temp_variable = {
 					RUS_pol_cost_temp = RUS_POL_cost
@@ -14708,7 +14710,7 @@ RUS_russian_sphere_decisions = {
 			RUS_change_projection = yes
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_influence_poland"
+			log = "[GetLogRoot]: Decision remove RUS_influence_poland"
 			add_named_threat = {
 				threat = 1
 				name = RUS_fund_LAF
@@ -14765,7 +14767,7 @@ RUS_russian_sphere_decisions = {
 		}
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_fund_LAF"
+			log = "[GetLogRoot]: Decision complete RUS_fund_LAF"
 			hidden_effect = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
@@ -14778,7 +14780,7 @@ RUS_russian_sphere_decisions = {
 			RUS_change_projection = yes
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_fund_LAF"
+			log = "[GetLogRoot]: Decision remove RUS_fund_LAF"
 			add_named_threat = {
 				threat = 1
 				name = RUS_fund_LAF
@@ -14820,7 +14822,7 @@ RUS_russian_sphere_decisions = {
 			base = 1
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_organise_resistance_in_crimea"
+			log = "[GetLogRoot]: Decision complete RUS_organise_resistance_in_crimea"
 			hidden_effect = {
 				add_political_power = -20
 			}
@@ -14858,7 +14860,7 @@ RUS_russian_sphere_decisions = {
 			base = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_organise_russophile_groups"
+			log = "[GetLogRoot]: Decision complete RUS_organise_russophile_groups"
 			hidden_effect = {
 				add_political_power = -20
 			}
@@ -14895,7 +14897,7 @@ RUS_russian_sphere_decisions = {
 			base = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_incite_antigermanism"
+			log = "[GetLogRoot]: Decision complete RUS_incite_antigermanism"
 			hidden_effect = {
 				add_political_power = -20
 			}
@@ -14929,7 +14931,7 @@ RUS_russian_sphere_decisions = {
 		}
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_anti_belarus"
+			log = "[GetLogRoot]: Decision complete RUS_anti_belarus"
 			hidden_effect = {
 				add_political_power = -20
 			}
@@ -14969,7 +14971,7 @@ RUS_russian_sphere_decisions = {
 		}
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_free_baltics_free_russia"
+			log = "[GetLogRoot]: Decision complete RUS_free_baltics_free_russia"
 			hidden_effect = {
 				add_political_power = -20
 			}
@@ -15009,7 +15011,7 @@ RUS_russian_sphere_decisions = {
 		}
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_support_the_laf"
+			log = "[GetLogRoot]: Decision complete RUS_support_the_laf"
 			hidden_effect = {
 				add_political_power = -20
 			}
@@ -15050,7 +15052,7 @@ RUS_russian_sphere_decisions = {
 		}
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_national_committee"
+			log = "[GetLogRoot]: Decision complete RUS_national_committee"
 			hidden_effect = {
 				add_political_power = -40
 			}
@@ -15078,11 +15080,11 @@ RUS_russian_sphere_decisions = {
 		cost = 35
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_military_mission_china target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_military_mission_china"
 			add_threat = 1
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_military_mission_china target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_military_mission_china"
 			set_temp_variable = {
 				RUS_power_change = 5
 			}
@@ -15140,7 +15142,7 @@ RUS_russian_sphere_decisions = {
 		}
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_trade_deal_china target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_trade_deal_china"
 			hidden_effect = {
 				add_political_power = -40
 			}
@@ -15150,7 +15152,7 @@ RUS_russian_sphere_decisions = {
 			RUS_change_projection = yes
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_trade_deal_china target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_trade_deal_china"
 			effect_tooltip = {
 				add_stability = 0.05
 				if = {
@@ -15254,7 +15256,7 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_invite_china target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_invite_china"
 			FROM = {
 				country_event = {
 					id = rusfor.1309
@@ -15440,12 +15442,12 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_pressure_finland target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision cancel RUS_pressure_finland"
 			clear_decision_attack_AI = yes
 			add_political_power = 20
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_pressure_finland target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_pressure_finland"
 			setup_decision_attack_AI = yes
 			set_country_flag = {
 				flag = imminent_war
@@ -15458,7 +15460,7 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_pressure_finland target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_pressure_finland"
 			clear_decision_attack_AI = yes
 			if = {
 				limit = {
@@ -15506,12 +15508,12 @@ RUS_russian_sphere_decisions = {
 			factor = 1000
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel UKR_RUS_invade_ukraine target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision cancel UKR_RUS_invade_ukraine"
 			clear_decision_attack_AI = yes
 			clr_country_flag = UKR_invasion
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete UKR_RUS_invade_ukraine target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete UKR_RUS_invade_ukraine"
 			FROM = {
 				incoming_war_notification_effect = yes
 			}
@@ -15548,12 +15550,13 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove UKR_RUS_invade_ukraine target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove UKR_RUS_invade_ukraine"
 			clear_decision_attack_AI = yes
 			clr_country_flag = UKR_invasion
 		}
 	}
 	RUS_attack = {
+		name = invade_country
 		icon = hol_draw_up_staff_plans
 		allowed = {
 			always = no
@@ -15637,7 +15640,7 @@ RUS_russian_sphere_decisions = {
 					}
 					NOT = {
 						has_country_leader = {
-							character = MON_roman_von_ungern_sternberg
+							character = MON_roman_ungern_sternberg
 						}
 					}
 				}
@@ -15658,7 +15661,7 @@ RUS_russian_sphere_decisions = {
 				has_non_aggression_pact_with = FROM
 			}
 		}
-		cost = RUS_POL_cost
+		cost = 30
 		visible = {
 			is_subject = no
 			has_socialist_government = no
@@ -15806,21 +15809,21 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_attack target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision cancel RUS_attack"
 			clear_decision_attack_AI = yes
 			hidden_effect = {
 				add_political_power = RUS_POL_cost
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_attack target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_attack"
 			FROM = {
 				incoming_war_notification_effect = yes
 			}
 			setup_decision_attack_AI = yes
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_attack target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_attack"
 			clear_decision_attack_AI = yes
 			if = {
 				limit = {
@@ -15840,7 +15843,7 @@ RUS_russian_sphere_decisions = {
 						is_ally_with = OTT
 					}
 				}
-				log = "KR_Event_Logging;RUS INTERVENE AGAINST OTT;[GetDateText]"
+				log = "KR_Event_Logging;RUS INTERVENE AGAINST OTT"
 			}
 			declare_war_on = {
 				target = FROM
@@ -15900,44 +15903,20 @@ RUS_russian_sphere_decisions = {
 				}
 				#Vinnitsa
 			}
-			if = {
-				limit = {
-					FROM = {
-						is_subject = yes
-						NOT = {
-							is_subject_of = ROOT
-						}
-					}
-				}
-				NOT = {
-					has_non_aggression_pact_with = FROM
-				}
-				NOT = {
-					has_non_aggression_pact_with = FROM.overlord
-				}
-				NOT = {
-					has_guaranteed = FROM
-				}
-				NOT = {
-					has_guaranteed = FROM.overlord
+			FROM = {
+				OR = {
+					is_subject_of = ROOT
+					is_subject = no
 				}
 			}
-			else_if = {
-				limit = {
-					NOT = {
-						is_ally_with = FROM
-					}
-				}
-				NOT = {
-					has_non_aggression_pact_with = FROM
-				}
-				NOT = {
-					has_guaranteed = FROM
-				}
+			NOT = {
+				has_guaranteed = FROM
+			}
+			NOT = {
+				has_non_aggression_pact_with = FROM
 			}
 		}
 		visible = {
-			RUS_is_expansionist = yes
 			FROM = {
 				owns_state = 78
 			}
@@ -16041,14 +16020,14 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_Demand_Bessarabia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision cancel RUS_Demand_Bessarabia"
 			clear_decision_attack_AI = yes
 			hidden_effect = {
 				add_political_power = 50
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Demand_Bessarabia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Demand_Bessarabia"
 			setup_decision_attack_AI = yes
 			if = {
 				limit = {
@@ -16080,7 +16059,7 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_Demand_Bessarabia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_Demand_Bessarabia"
 			clear_decision_attack_AI = yes
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
@@ -16200,14 +16179,14 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_Demand_Galicia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision cancel RUS_Demand_Galicia"
 			clear_decision_attack_AI = yes
 			hidden_effect = {
 				add_political_power = 10
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Demand_Galicia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Demand_Galicia"
 			setup_decision_attack_AI = yes
 			if = {
 				limit = {
@@ -16236,7 +16215,7 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_Demand_Galicia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_Demand_Galicia"
 			clear_decision_attack_AI = yes
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
@@ -16360,7 +16339,7 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_Demand_Armenia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision cancel RUS_Demand_Armenia"
 			clear_decision_attack_AI = yes
 			hidden_effect = {
 				add_political_power = 10
@@ -16368,7 +16347,7 @@ RUS_russian_sphere_decisions = {
 			clr_country_flag = RUS_demanding_armenia
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Demand_Armenia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Demand_Armenia"
 			FROM = {
 				country_event = {
 					id = rusfor.90
@@ -16380,14 +16359,14 @@ RUS_russian_sphere_decisions = {
 			set_country_flag = RUS_demanding_armenia
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_Demand_Armenia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_Demand_Armenia"
 			if = {
 				limit = {
 					OTT = {
 						exists = yes
 					}
 				}
-				log = "KR_Event_Logging;RUS INTERVENE AGAINST OTT;[GetDateText]"
+				log = "KR_Event_Logging;RUS INTERVENE AGAINST OTT"
 			}
 			clear_decision_attack_AI = yes
 			custom_effect_tooltip = if_they_accept_tt
@@ -16515,7 +16494,7 @@ RUS_russian_sphere_decisions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_iranian_aid target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_iranian_aid"
 			set_temp_variable = {
 				RUS_power_change = -5
 			}
@@ -16618,12 +16597,12 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_subjugate_eastern_europe target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision cancel RUS_subjugate_eastern_europe"
 			clr_country_flag = imminent_war
 			add_political_power = 25
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_subjugate_eastern_europe target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_subjugate_eastern_europe"
 			set_country_flag = {
 				flag = imminent_war
 				days = 32
@@ -16645,7 +16624,7 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_subjugate_eastern_europe target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_subjugate_eastern_europe"
 			clear_decision_attack_AI = yes
 			declare_war_on = {
 				target = FROM
@@ -16654,14 +16633,20 @@ RUS_russian_sphere_decisions = {
 		}
 	}
 	RUS_Invite_Serbia = {
-		name = RUS_Invite_Country
+		name = invite_country
 		icon = GFX_decision_generic_agreement
 		allowed = {
 			always = no
 		}
 		available = {
 			OR = {
-				has_completed_focus = RUS_preemptive_war
+				AND = {
+					has_completed_focus = RUS_preemptive_war
+					FROM = {
+						owns_state = 767
+					}
+					#Nish
+				}
 				FROM = {
 					owns_state = 106
 				}
@@ -16683,6 +16668,30 @@ RUS_russian_sphere_decisions = {
 			}
 			FROM = {
 				at_peace_or_same_enemies_as_ROOT = yes
+			}
+			if = {
+				limit = {
+					FROM = {
+						owns_state = 109
+					}
+					#Central Croatia
+					NOT = {
+						FROM = {
+							has_war_with = AUS
+						}
+					}
+				}
+				OR = {
+					UKR = {
+						has_capitulated = yes
+					}
+					NOT = {
+						country_exists = UKR
+					}
+					UKR = {
+						is_in_faction_with = RUS
+					}
+				}
 			}
 		}
 		visible = {
@@ -16747,7 +16756,7 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Invite_Serbia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Invite_Serbia"
 			FROM = {
 				country_event = {
 					id = rusfor.70
@@ -16758,22 +16767,24 @@ RUS_russian_sphere_decisions = {
 		}
 	}
 	RUS_Invite_Romania = {
-		name = RUS_Invite_Country
+		name = invite_country
 		icon = GFX_decision_generic_agreement
 		allowed = {
 			always = no
 		}
 		available = {
 			OR = {
-				has_completed_focus = RUS_preemptive_war
-				FROM = {
-					owns_state = 772
+				AND = {
+					has_completed_focus = RUS_preemptive_war
+					FROM = {
+						owns_state = 772
+					}
+					#Constanta
 				}
-				#Constanta
 				FROM = {
 					owns_state = 84
 				}
-				#Transylvania
+				#Brasov
 			}
 			OR = {
 				has_global_flag = AUS_treaty_of_budapest
@@ -16787,6 +16798,30 @@ RUS_russian_sphere_decisions = {
 			}
 			FROM = {
 				at_peace_or_same_enemies_as_ROOT = yes
+			}
+			if = {
+				limit = {
+					FROM = {
+						owns_state = 84
+					}
+					#Brasov
+					NOT = {
+						FROM = {
+							has_war_with = AUS
+						}
+					}
+				}
+				OR = {
+					UKR = {
+						has_capitulated = yes
+					}
+					NOT = {
+						country_exists = UKR
+					}
+					UKR = {
+						is_in_faction_with = RUS
+					}
+				}
 			}
 		}
 		visible = {
@@ -16804,7 +16839,7 @@ RUS_russian_sphere_decisions = {
 			factor = 1000
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Invite_Romania target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Invite_Romania"
 			FROM = {
 				country_event = {
 					id = rusfor.70
@@ -16815,7 +16850,7 @@ RUS_russian_sphere_decisions = {
 		}
 	}
 	RUS_Invite_Greece = {
-		name = RUS_Invite_Country
+		name = invite_country
 		icon = GFX_decision_generic_agreement
 		allowed = {
 			always = no
@@ -16876,7 +16911,7 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Invite_Greece target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Invite_Greece"
 			FROM = {
 				country_event = {
 					id = rusfor.70
@@ -16887,7 +16922,7 @@ RUS_russian_sphere_decisions = {
 		}
 	}
 	RUS_Invite_Finland = {
-		name = RUS_Invite_Country
+		name = invite_country
 		icon = GFX_decision_generic_agreement
 		allowed = {
 			always = no
@@ -16963,7 +16998,7 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Invite_Finland target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Invite_Finland"
 			FROM = {
 				country_event = {
 					id = rusfor.51
@@ -16974,7 +17009,7 @@ RUS_russian_sphere_decisions = {
 		}
 	}
 	RUS_Invite_Baltics = {
-		name = RUS_Invite_Country
+		name = invite_country
 		icon = GFX_decision_generic_agreement
 		allowed = {
 			always = no
@@ -17019,7 +17054,7 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Invite_Baltics target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Invite_Baltics"
 			FROM = {
 				country_event = {
 					id = rusfor.70
@@ -17030,7 +17065,7 @@ RUS_russian_sphere_decisions = {
 		}
 	}
 	RUS_Invite_Georgia = {
-		name = RUS_Invite_Country
+		name = invite_country
 		icon = GFX_decision_generic_agreement
 		allowed = {
 			always = no
@@ -17071,7 +17106,7 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Invite_Georgia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Invite_Georgia"
 			FROM = {
 				country_event = {
 					id = rusfor.70
@@ -17082,7 +17117,7 @@ RUS_russian_sphere_decisions = {
 		}
 	}
 	RUS_Invite_Mongolia = {
-		name = RUS_Invite_Country
+		name = invite_country
 		icon = GFX_decision_generic_agreement
 		allowed = {
 			always = no
@@ -17123,7 +17158,7 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Invite_Mongolia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Invite_Mongolia"
 			FROM = {
 				country_event = {
 					id = rusfor.70
@@ -17134,7 +17169,7 @@ RUS_russian_sphere_decisions = {
 		}
 	}
 	RUS_Invite_East_Turkestan = {
-		name = RUS_Invite_Country
+		name = invite_country
 		icon = GFX_decision_generic_agreement
 		allowed = {
 			always = no
@@ -17177,7 +17212,7 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Invite_East_Turkestan target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Invite_East_Turkestan"
 			FROM = {
 				country_event = {
 					id = rusfor.70
@@ -17188,7 +17223,7 @@ RUS_russian_sphere_decisions = {
 		}
 	}
 	RUS_invite_alliance = {
-		name = RUS_Invite_Country
+		name = invite_country
 		icon = GFX_decision_generic_agreement
 		allowed = {
 			always = no
@@ -17243,6 +17278,18 @@ RUS_russian_sphere_decisions = {
 				}
 				NOT = {
 					has_global_flag = RUS_CHN_postwar_agreement
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = PRF
+					}
+				}
+				FROM = {
+					NOT = {
+						has_idea = PRF_splendid_isolation
+					}
 				}
 			}
 		}
@@ -17313,7 +17360,7 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_invite_alliance target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_invite_alliance"
 			FROM = {
 				country_event = {
 					id = rusfor.70
@@ -17384,7 +17431,7 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_rally_entente target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_rally_entente"
 			FROM = {
 				country_event = {
 					id = rusfor.64
@@ -17484,7 +17531,7 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_invite_to_economic_council target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_invite_to_economic_council"
 			FROM = {
 				country_event = rusfor.76
 			}
@@ -17526,7 +17573,7 @@ RUS_russian_sphere_decisions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_industrial_reparations target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_industrial_reparations"
 			FROM = {
 				random_core_state = {
 					limit = {
@@ -17585,7 +17632,7 @@ RUS_russian_sphere_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_industrial_reparations target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_industrial_reparations"
 			random_core_state = {
 				limit = {
 					free_building_slots = {
@@ -17662,7 +17709,7 @@ RUS_russian_sphere_decisions = {
 			base = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete FER_join_entente"
+			log = "[GetLogRoot]: Decision complete FER_join_entente"
 			ENT = {
 				country_event = fer.205
 			}
@@ -17702,7 +17749,7 @@ RUS_Spreading_the_Revolution_decisions = {
 		cost = 20
 		days_remove = 30
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_annex_into_soviet_union target: [From.GetName]"
+			log = "[GetLogRoot]: Decision complete RUS_annex_into_soviet_union"
 			FROM = {
 				every_owned_state = {
 					limit = {
@@ -17767,7 +17814,7 @@ RUS_Spreading_the_Revolution_decisions = {
 		fire_only_once = yes
 		cost = 20
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_add_to_soviet_republic target: [From.GetName]"
+			log = "[GetLogRoot]: Decision complete RUS_add_to_soviet_republic"
 			set_autonomy = {
 				target = FROM
 				autonomy_state = soviet_socialist_republic
@@ -17875,7 +17922,7 @@ RUS_Spreading_the_Revolution_decisions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_add_to_union target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_add_to_union"
 			FROM = {
 				get_current_government_type = yes
 			}
@@ -17964,11 +18011,11 @@ RUS_Spreading_the_Revolution_decisions = {
 		fire_only_once = yes
 		days_mission_timeout = 180
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_Socialist_defeat_mongolia"
+			log = "[GetLogRoot]: Decision timeout RUS_Socialist_defeat_mongolia"
 			country_event = rusfor.54
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Socialist_defeat_mongolia"
+			log = "[GetLogRoot]: Decision complete RUS_Socialist_defeat_mongolia"
 			if = {
 				limit = {
 					has_war_with = TIB
@@ -18041,7 +18088,7 @@ RUS_Spreading_the_Revolution_decisions = {
 		fire_only_once = no
 		days_mission_timeout = 210
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_Socialist_liberate_central_asia"
+			log = "[GetLogRoot]: Decision timeout RUS_Socialist_liberate_central_asia"
 			country_event = cacrisis.519
 		}
 	}
@@ -18081,7 +18128,7 @@ RUS_Spreading_the_Revolution_decisions = {
 			factor = 1000
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_secret_deal_with_belarus target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_secret_deal_with_belarus"
 			FROM = {
 				country_event = whrpol.50
 			}
@@ -18120,7 +18167,7 @@ RUS_Spreading_the_Revolution_decisions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_control_ally_politics target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_control_ally_politics"
 			FROM = {
 				get_current_government_type = yes
 			}
@@ -18184,7 +18231,7 @@ RUS_Spreading_the_Revolution_decisions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_control_ally_politics_2 target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_control_ally_politics_2"
 			FROM = {
 				get_current_government_type = yes
 			}
@@ -18221,6 +18268,7 @@ RUS_Spreading_the_Revolution_decisions = {
 	}
 	### Spreading the Revolution ###
 	RUS_invite_rival_country = {
+		name = invite_country
 		icon = GFX_decision_generic_agreement
 		available = {
 			has_completed_focus = RUS_rival_west
@@ -18278,14 +18326,14 @@ RUS_Spreading_the_Revolution_decisions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_invite_rival_country target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_invite_rival_country"
 			FROM = {
 				country_event = rusfor.250
 			}
 		}
 	}
 	RUS_invite_country_soc = {
-		name = RUS_Invite_Country
+		name = invite_country
 		icon = generic_agreement
 		allowed = {
 			always = no
@@ -18321,7 +18369,7 @@ RUS_Spreading_the_Revolution_decisions = {
 			factor = 1000
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_invite_country_soc target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_invite_country_soc"
 			FROM = {
 				country_event = {
 					id = rusfor.70
@@ -18341,9 +18389,10 @@ RUS_Spreading_the_Revolution_decisions = {
 		}
 	}
 	RUS_Socialist_Attack_Isolated_Europe = {
-		name = RUS_Attack_Region
+		name = invade_country
 		icon = hol_draw_up_staff_plans
 		available = {
+			threat > 0.35
 			OR = {
 				is_neighbor_of = FROM
 				FROM = {
@@ -18428,19 +18477,19 @@ RUS_Spreading_the_Revolution_decisions = {
 			}
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_Socialist_Attack_Isolated_Europe target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision cancel RUS_Socialist_Attack_Isolated_Europe"
 			clear_decision_attack_AI = yes
 			add_political_power = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Socialist_Attack_Isolated_Europe target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Socialist_Attack_Isolated_Europe"
 			FROM = {
 				incoming_war_notification_effect = yes
 			}
 			setup_decision_attack_AI = yes
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_Socialist_Attack_Isolated_Europe target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_Socialist_Attack_Isolated_Europe"
 			clear_decision_attack_AI = yes
 			if = {
 				limit = {
@@ -18460,6 +18509,7 @@ RUS_Spreading_the_Revolution_decisions = {
 		}
 	}
 	RUS_Socialist_Protect_Baltics = {
+		name = liberate_country
 		icon = GFX_decision_generic_protection
 		allowed = {
 			always = no
@@ -18511,7 +18561,7 @@ RUS_Spreading_the_Revolution_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Socialist_Protect_Baltics target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Socialist_Protect_Baltics"
 			set_country_flag = {
 				flag = RUS_invited_country
 				days = 20
@@ -18570,7 +18620,7 @@ RUS_Spreading_the_Revolution_decisions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Socialist_Protect_Ukraine target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Socialist_Protect_Ukraine"
 			set_country_flag = {
 				flag = RUS_invited_country
 				days = 20
@@ -18586,7 +18636,7 @@ RUS_Spreading_the_Revolution_decisions = {
 	}
 	### Anti-Capitalistt Warfare ###
 	RUS_Socialist_Attack_Europe = {
-		name = RUS_Attack_Region
+		name = invade_country
 		icon = hol_draw_up_staff_plans
 		available = {
 			OR = {
@@ -18684,19 +18734,19 @@ RUS_Spreading_the_Revolution_decisions = {
 			}
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_Socialist_Attack_Europe target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision cancel RUS_Socialist_Attack_Europe"
 			clear_decision_attack_AI = yes
 			add_political_power = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Socialist_Attack_Europe target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Socialist_Attack_Europe"
 			FROM = {
 				incoming_war_notification_effect = yes
 			}
 			setup_decision_attack_AI = yes
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_Socialist_Attack_Europe target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_Socialist_Attack_Europe"
 			clear_decision_attack_AI = yes
 			declare_war_on = {
 				target = FROM
@@ -18705,7 +18755,7 @@ RUS_Spreading_the_Revolution_decisions = {
 		}
 	}
 	RUS_Socialist_Attack_Middle_East = {
-		name = RUS_Attack_Region
+		name = invade_country
 		icon = hol_draw_up_staff_plans
 		available = {
 			OR = {
@@ -18784,19 +18834,19 @@ RUS_Spreading_the_Revolution_decisions = {
 			}
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_Socialist_Attack_Middle_East target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision cancel RUS_Socialist_Attack_Middle_East"
 			clear_decision_attack_AI = yes
 			add_political_power = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Socialist_Attack_Middle_East target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Socialist_Attack_Middle_East"
 			FROM = {
 				incoming_war_notification_effect = yes
 			}
 			setup_decision_attack_AI = yes
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_Socialist_Attack_Middle_East target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_Socialist_Attack_Middle_East"
 			clear_decision_attack_AI = yes
 			declare_war_on = {
 				target = FROM
@@ -18805,7 +18855,7 @@ RUS_Spreading_the_Revolution_decisions = {
 		}
 	}
 	RUS_Socialist_Attack_Far_East = {
-		name = RUS_Attack_Region
+		name = invade_country
 		icon = hol_draw_up_staff_plans
 		available = {
 			OR = {
@@ -18898,19 +18948,19 @@ RUS_Spreading_the_Revolution_decisions = {
 			}
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_Socialist_Attack_Far_East target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision cancel RUS_Socialist_Attack_Far_East"
 			clear_decision_attack_AI = yes
 			add_political_power = 10
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Socialist_Attack_Far_East target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Socialist_Attack_Far_East"
 			FROM = {
 				incoming_war_notification_effect = yes
 			}
 			setup_decision_attack_AI = yes
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_Socialist_Attack_Far_East target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_Socialist_Attack_Far_East"
 			clear_decision_attack_AI = yes
 			declare_war_on = {
 				target = FROM
@@ -18919,6 +18969,7 @@ RUS_Spreading_the_Revolution_decisions = {
 		}
 	}
 	RUS_attack_soc = {
+		name = attack_country
 		icon = hol_draw_up_staff_plans
 		cost = 20
 		allowed = {
@@ -19062,7 +19113,7 @@ RUS_Spreading_the_Revolution_decisions = {
 			}
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_attack_soc target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision cancel RUS_attack_soc"
 			clear_decision_attack_AI = yes
 			hidden_effect = {
 				add_political_power = 10
@@ -19077,7 +19128,7 @@ RUS_Spreading_the_Revolution_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_attack_soc target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_attack_soc"
 			FROM = {
 				incoming_war_notification_effect = yes
 			}
@@ -19092,14 +19143,14 @@ RUS_Spreading_the_Revolution_decisions = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_attack_soc target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_attack_soc"
 			if = {
 				limit = {
 					OTT = {
 						exists = yes
 					}
 				}
-				log = "KR_Event_Logging;RUS INTERVENE AGAINST OTT;[GetDateText]"
+				log = "KR_Event_Logging;RUS INTERVENE AGAINST OTT"
 				clr_country_flag = RUS_attacking_ottomans
 				clr_country_flag = RUS_demanding_armenia
 			}
@@ -19185,7 +19236,7 @@ RUS_Spreading_the_Revolution_decisions = {
 		}
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_cooperate_with_borotbysts"
+			log = "[GetLogRoot]: Decision complete RUS_cooperate_with_borotbysts"
 			hidden_effect = {
 				add_political_power = -20
 			}
@@ -19220,7 +19271,7 @@ RUS_Spreading_the_Revolution_decisions = {
 		}
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_cooperate_with_rds"
+			log = "[GetLogRoot]: Decision complete RUS_cooperate_with_rds"
 			hidden_effect = {
 				add_political_power = -20
 			}
@@ -19254,7 +19305,7 @@ RUS_Spreading_the_Revolution_decisions = {
 		cost = 30
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_invite_revolutionary_committee"
+			log = "[GetLogRoot]: Decision complete RUS_invite_revolutionary_committee"
 			effect_tooltip = {
 				FRA = {
 					POL_konstanty_rokossowski = {
@@ -19315,11 +19366,11 @@ RUS_Spreading_the_Revolution_decisions = {
 		cost = 30
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_military_mission_china_red target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_military_mission_china_red"
 			add_threat = 1
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_military_mission_china_red target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_military_mission_china_red"
 			add_war_support = 0.035
 			FROM = {
 				effect_tooltip = {
@@ -19359,10 +19410,10 @@ RUS_Spreading_the_Revolution_decisions = {
 		cost = 50
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_trade_deal_china_red target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_trade_deal_china_red"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_trade_deal_china_red target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_trade_deal_china_red"
 			add_stability = 0.05
 			add_ideas = RUS_china_trade_deal
 			hidden_effect = {
@@ -19423,15 +19474,15 @@ RUS_socrus_coalition_mechanic_decisions = {
 		is_good = no
 		days_mission_timeout = 90
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_left_ultimatum"
+			log = "[GetLogRoot]: Decision cancel RUS_left_ultimatum"
 			RUS_clear_zinovyev_minigame = yes
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_left_ultimatum"
+			log = "[GetLogRoot]: Decision complete RUS_left_ultimatum"
 			country_event = socrus.354			#An Agreement to Save Workers' Coalition
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_left_ultimatum"
+			log = "[GetLogRoot]: Decision timeout RUS_left_ultimatum"
 			set_country_flag = RUS_VST_collapse
 			if = {
 				limit = {
@@ -19472,21 +19523,21 @@ RUS_socrus_coalition_mechanic_decisions = {
 			}
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_right_ultimatum"
+			log = "[GetLogRoot]: Decision cancel RUS_right_ultimatum"
 			RUS_clear_zinovyev_minigame = yes
 		}
 		selectable_mission = no
 		is_good = no
 		days_mission_timeout = 60
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_right_ultimatum"
+			log = "[GetLogRoot]: Decision complete RUS_right_ultimatum"
 			set_temp_variable = {
 				RUS_relation_change = 1
 			}
 			RUS_VST_right_relation = yes
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_right_ultimatum"
+			log = "[GetLogRoot]: Decision timeout RUS_right_ultimatum"
 			set_country_flag = RUS_VST_collapse
 			if = {
 				limit = {
@@ -19511,10 +19562,10 @@ RUS_socrus_coalition_mechanic_decisions = {
 			}
 			RUS_vst_right_check = yes
 		}
-		cost = 40
+		cost = 60
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_expel_zinovietes"
+			log = "[GetLogRoot]: Decision complete RUS_expel_zinovietes"
 			set_country_flag = RUS_expelled_left
 			country_event = socrus.352			#Rebellion of the Left
 			remove_mission = RUS_left_ultimatum
@@ -19522,6 +19573,7 @@ RUS_socrus_coalition_mechanic_decisions = {
 				ideology = syndicalist
 				popularity = -0.05
 			}
+			RUS_clear_zinovyev_minigame = yes
 		}
 	}
 	RUS_expel_sds = {
@@ -19540,7 +19592,7 @@ RUS_socrus_coalition_mechanic_decisions = {
 		days_remove = 7
 		fire_only_once = yes
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_expel_sds"
+			log = "[GetLogRoot]: Decision remove RUS_expel_sds"
 			set_country_flag = RUS_purged_social_democrats
 			country_event = socrus.357			#SDS out
 			event_option_tooltip = socrus.357.a
@@ -19580,7 +19632,7 @@ RUS_socrus_coalition_mechanic_decisions = {
 		days_remove = 7
 		fire_only_once = yes
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_ideological_restriction"
+			log = "[GetLogRoot]: Decision remove RUS_ideological_restriction"
 			add_popularity = {
 				ideology = social_democrat
 				popularity = -0.05
@@ -19631,7 +19683,7 @@ RUS_socrus_coalition_mechanic_decisions = {
 		days_remove = 7
 		fire_only_once = yes
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_appoint_bolsheviks"
+			log = "[GetLogRoot]: Decision remove RUS_appoint_bolsheviks"
 			if = {
 				limit = {
 					RUS_mikhail_frunze = {
@@ -19755,7 +19807,7 @@ RUS_socrus_coalition_mechanic_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_favor_left"
+			log = "[GetLogRoot]: Decision complete RUS_favor_left"
 			set_temp_variable = {
 				RUS_relation_change = 2
 			}
@@ -19862,7 +19914,7 @@ RUS_socrus_coalition_mechanic_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_favor_right"
+			log = "[GetLogRoot]: Decision complete RUS_favor_right"
 			set_temp_variable = {
 				RUS_relation_change = 2
 			}
@@ -19939,7 +19991,7 @@ RUS_socrus_coalition_mechanic_decisions = {
 			radical_socialist_drift = 0.05
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_favor_esers"
+			log = "[GetLogRoot]: Decision complete RUS_favor_esers"
 			set_temp_variable = {
 				RUS_relation_change = 1
 			}
@@ -19961,7 +20013,7 @@ RUS_socrus_coalition_mechanic_decisions = {
 		days_remove = 5
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_backing_from_esers"
+			log = "[GetLogRoot]: Decision complete RUS_backing_from_esers"
 			add_political_power = 80
 			set_temp_variable = {
 				RUS_relation_change = 1
@@ -19992,7 +20044,7 @@ RUS_socrus_coalition_mechanic_decisions = {
 		days_remove = 5
 		fire_only_once = yes
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_bolshevik_operation"
+			log = "[GetLogRoot]: Decision remove RUS_bolshevik_operation"
 			add_political_power = 60
 			country_event = socrus.351			#Sulimov's Strike
 			event_option_tooltip = socrus.351.a
@@ -20055,12 +20107,12 @@ RUS_socrus_coalition_mechanic_decisions = {
 		is_good = no
 		days_mission_timeout = 120
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_metalworkers_strike_mission"
+			log = "[GetLogRoot]: Decision complete RUS_metalworkers_strike_mission"
 			add_stability = 0.05
 			RUS_increase_VST_centre_unity = yes
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_metalworkers_strike_mission"
+			log = "[GetLogRoot]: Decision timeout RUS_metalworkers_strike_mission"
 			add_political_power = -50
 			RUS_decrease_VST_centre_unity = yes
 			set_temp_variable = {
@@ -20098,10 +20150,10 @@ RUS_socrus_coalition_mechanic_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_agricultural_industry_siberia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_agricultural_industry_siberia"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_agricultural_industry_siberia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_agricultural_industry_siberia"
 			add_to_variable = {
 				RUS_agricultural_industry_var = 1
 			}
@@ -20167,10 +20219,10 @@ RUS_socrus_coalition_mechanic_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_agricultural_industry_volga target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_agricultural_industry_volga"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_agricultural_industry_volga target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_agricultural_industry_volga"
 			add_to_variable = {
 				RUS_agricultural_industry_var = 1
 			}
@@ -20232,10 +20284,10 @@ RUS_socrus_coalition_mechanic_decisions = {
 			}
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_agricultural_industry_don target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_agricultural_industry_don"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_agricultural_industry_don target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_agricultural_industry_don"
 			add_to_variable = {
 				RUS_agricultural_industry_var = 1
 			}
@@ -20286,10 +20338,10 @@ RUS_socrus_coalition_mechanic_decisions = {
 			political_power_factor = 0.15
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_support_proletarian_realism"
+			log = "[GetLogRoot]: Decision complete RUS_support_proletarian_realism"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_support_proletarian_realism"
+			log = "[GetLogRoot]: Decision remove RUS_support_proletarian_realism"
 			add_war_support = 0.05
 			if = {
 				limit = {
@@ -20334,10 +20386,10 @@ RUS_socrus_coalition_mechanic_decisions = {
 			stability_factor = -0.1
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_anti_superstition_campaign"
+			log = "[GetLogRoot]: Decision complete RUS_anti_superstition_campaign"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_anti_superstition_campaign"
+			log = "[GetLogRoot]: Decision remove RUS_anti_superstition_campaign"
 			add_war_support = 0.05
 			RUS_decrease_antisoc_resistance = yes
 			set_temp_variable = {
@@ -20380,10 +20432,10 @@ RUS_socrus_coalition_mechanic_decisions = {
 			production_speed_buildings_factor = 0.05
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_propagate_emulation_of_west"
+			log = "[GetLogRoot]: Decision complete RUS_propagate_emulation_of_west"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_propagate_emulation_of_west"
+			log = "[GetLogRoot]: Decision remove RUS_propagate_emulation_of_west"
 			add_war_support = 0.05
 			set_temp_variable = {
 				ideology_change_var = 5
@@ -20412,10 +20464,10 @@ RUS_socrus_coalition_mechanic_decisions = {
 			stability_factor = -0.1
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_expel_moderates"
+			log = "[GetLogRoot]: Decision complete RUS_expel_moderates"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_expel_moderates"
+			log = "[GetLogRoot]: Decision remove RUS_expel_moderates"
 			RUS_decrease_antisoc_resistance = yes
 			add_popularity = {
 				ideology = totalist
@@ -20449,10 +20501,10 @@ RUS_socrus_coalition_mechanic_decisions = {
 			political_power_gain = -0.05
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_ban_SDS"
+			log = "[GetLogRoot]: Decision complete RUS_ban_SDS"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_ban_SDS"
+			log = "[GetLogRoot]: Decision remove RUS_ban_SDS"
 			add_popularity = {
 				ideology = totalist
 				popularity = 0.05
@@ -20478,18 +20530,21 @@ RUS_socrus_coalition_mechanic_decisions = {
 		visible = {
 			has_socialist_government = yes
 			RUS_has_antisoc_resistance = yes
+			NOT = {
+				has_idea = RUS_anti_socialist_resistance_1
+			}
 		}
 		ai_will_do = {
 			base = 200
 		}
-		cost = 50
+		cost = 60
 		days_remove = 120
 		modifier = {
 			weekly_manpower = -150
 			stability_factor = -0.05
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_destroy_antisoc_resistance"
+			log = "[GetLogRoot]: Decision remove RUS_destroy_antisoc_resistance"
 			RUS_decrease_antisoc_resistance = yes
 		}
 	}
@@ -20523,10 +20578,10 @@ RUS_socrus_coalition_mechanic_decisions = {
 		cost = 20
 		days_remove = 90
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_capital_to_petrograd"
+			log = "[GetLogRoot]: Decision complete RUS_capital_to_petrograd"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_capital_to_petrograd"
+			log = "[GetLogRoot]: Decision remove RUS_capital_to_petrograd"
 			set_capital = {
 				state = 195
 				remember_old_capital = no
@@ -20554,11 +20609,11 @@ RUS_socrus_coalition_mechanic_decisions = {
 		selectable_mission = no
 		days_mission_timeout = 365
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_soc_prepare_army"
+			log = "[GetLogRoot]: Decision complete RUS_soc_prepare_army"
 			add_war_support = 0.1
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_soc_prepare_army"
+			log = "[GetLogRoot]: Decision timeout RUS_soc_prepare_army"
 			add_popularity = {
 				ideology = syndicalist
 				popularity = -0.075
@@ -20580,11 +20635,11 @@ RUS_socrus_coalition_mechanic_decisions = {
 		selectable_mission = no
 		days_mission_timeout = 365
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_soc_prepare_industry"
+			log = "[GetLogRoot]: Decision complete RUS_soc_prepare_industry"
 			add_stability = 0.1
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_soc_prepare_industry"
+			log = "[GetLogRoot]: Decision timeout RUS_soc_prepare_industry"
 			add_popularity = {
 				ideology = syndicalist
 				popularity = -0.075
@@ -20605,7 +20660,7 @@ RUS_socrus_coalition_mechanic_decisions = {
 		selectable_mission = no
 		days_mission_timeout = 365
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_soc_prepare_minds"
+			log = "[GetLogRoot]: Decision complete RUS_soc_prepare_minds"
 			increase_conscription = yes
 			swap_ruler_traits = {
 				remove = RUS_protector_of_revolution
@@ -20613,7 +20668,7 @@ RUS_socrus_coalition_mechanic_decisions = {
 			}
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_soc_prepare_minds"
+			log = "[GetLogRoot]: Decision timeout RUS_soc_prepare_minds"
 			add_popularity = {
 				ideology = syndicalist
 				popularity = -0.075
@@ -20635,7 +20690,7 @@ RUS_socrus_coalition_mechanic_decisions = {
 		selectable_mission = no
 		days_mission_timeout = 720
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_soc_industrialisation_plan"
+			log = "[GetLogRoot]: Decision complete RUS_soc_industrialisation_plan"
 			add_stability = 0.1
 			set_temp_variable = {
 				ideology_change_var = 5
@@ -20643,7 +20698,7 @@ RUS_socrus_coalition_mechanic_decisions = {
 			change_ruling_party_popularity = yes
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_soc_industrialisation_plan"
+			log = "[GetLogRoot]: Decision timeout RUS_soc_industrialisation_plan"
 			RUS_decrease_VST_centre_unity = yes
 			add_political_power = -50
 			set_temp_variable = {
@@ -20698,7 +20753,7 @@ RUS_sr_parliamentarian_decision_cat = {
 		selectable_mission = no
 		days_mission_timeout = 365
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_siberian_direction"
+			log = "[GetLogRoot]: Decision complete RUS_siberian_direction"
 			if = {
 				limit = {
 					is_ai = no
@@ -20724,7 +20779,7 @@ RUS_sr_parliamentarian_decision_cat = {
 			}
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_siberian_direction"
+			log = "[GetLogRoot]: Decision timeout RUS_siberian_direction"
 			add_political_power = -30
 		}
 	}
@@ -20755,10 +20810,10 @@ RUS_sr_parliamentarian_decision_cat = {
 			factor = 500
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_siberian_timber_industries target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_siberian_timber_industries"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_siberian_timber_industries target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_siberian_timber_industries"
 			578 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -20814,7 +20869,7 @@ RUS_sr_parliamentarian_decision_cat = {
 			factor = 10
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_complete_the_tambov_experiment"
+			log = "[GetLogRoot]: Decision timeout RUS_complete_the_tambov_experiment"
 			hidden_effect = {
 				country_event = socrus.193
 			}
@@ -21054,7 +21109,7 @@ RUS_sr_parliamentarian_decision_cat = {
 		days_remove = 150
 		fire_only_once = yes
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_devolution_of_authority"
+			log = "[GetLogRoot]: Decision complete RUS_devolution_of_authority"
 			set_country_flag = RUS_completed_devolution_of_authority
 			add_to_variable = {
 				RUS_tambov_experiment_cost_var = -15
@@ -21062,7 +21117,7 @@ RUS_sr_parliamentarian_decision_cat = {
 			custom_effect_tooltip = RUS_devolution_of_authority_effect_tt
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_devolution_of_authority"
+			log = "[GetLogRoot]: Decision remove RUS_devolution_of_authority"
 		}
 	}
 	RUS_incentivise_creation_of_rural_enterprises = {
@@ -21081,7 +21136,7 @@ RUS_sr_parliamentarian_decision_cat = {
 		}
 		fire_only_once = yes
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_incentivise_creation_of_rural_enterprises"
+			log = "[GetLogRoot]: Decision remove RUS_incentivise_creation_of_rural_enterprises"
 			custom_effect_tooltip = RUS_once_tambov_completes_effect_tt
 			set_country_flag = RUS_completed_incentivise_creation_of_rural_enterprises
 			effect_tooltip = {
@@ -21118,7 +21173,7 @@ RUS_sr_parliamentarian_decision_cat = {
 		fire_only_once = yes
 		days_remove = 90
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_modernisation_of_agricultural_communes"
+			log = "[GetLogRoot]: Decision remove RUS_modernisation_of_agricultural_communes"
 			custom_effect_tooltip = RUS_once_tambov_completes_effect_tt
 			set_country_flag = RUS_completed_modernisation_of_agricultural_communes
 			effect_tooltip = {
@@ -21160,7 +21215,7 @@ RUS_sr_parliamentarian_decision_cat = {
 		fire_only_once = yes
 		days_remove = 90
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_mordva_autonomies"
+			log = "[GetLogRoot]: Decision remove RUS_mordva_autonomies"
 			custom_effect_tooltip = RUS_once_tambov_completes_effect_tt
 			set_country_flag = RUS_completed_mordva_autonomies
 			effect_tooltip = {
@@ -21195,7 +21250,7 @@ RUS_sr_parliamentarian_decision_cat = {
 		}
 		days_remove = 90
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_peoples_militia_reform"
+			log = "[GetLogRoot]: Decision remove RUS_peoples_militia_reform"
 			custom_effect_tooltip = RUS_once_tambov_completes_effect_tt
 			set_country_flag = RUS_completed_peoples_militia_reform
 			effect_tooltip = {
@@ -21287,7 +21342,7 @@ RUS_sr_parliamentarian_decision_cat = {
 		fire_only_once = yes
 		days_mission_timeout = 200
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_allegiance_of_the_romanticists"
+			log = "[GetLogRoot]: Decision complete RUS_allegiance_of_the_romanticists"
 			if = {
 				limit = {
 					is_ai = no
@@ -21333,7 +21388,7 @@ RUS_sr_parliamentarian_decision_cat = {
 			custom_effect_tooltip = RUS_kamkov_requirements
 		}
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_allegiance_of_the_romanticists"
+			log = "[GetLogRoot]: Decision timeout RUS_allegiance_of_the_romanticists"
 			add_stability = -0.1
 			add_popularity = {
 				ideology = totalist
@@ -21357,7 +21412,7 @@ RUS_sr_maximalist_decision_cat = {
 		fire_only_once = no
 		cost = 30
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_pro_coalition_rhetoric"
+			log = "[GetLogRoot]: Decision remove RUS_pro_coalition_rhetoric"
 			set_temp_variable = {
 				RUS_maximalist_suspicion_change = -2
 			}
@@ -21382,7 +21437,7 @@ RUS_sr_maximalist_decision_cat = {
 			totalist_drift = 0.05
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_promote_maximalist_news_outlets"
+			log = "[GetLogRoot]: Decision complete RUS_promote_maximalist_news_outlets"
 			custom_effect_tooltip = RUS_1_influence_every_60_days
 			set_country_flag = RUS_promote_maximalist_news_outlets_flag
 			hidden_effect = {
@@ -21390,7 +21445,7 @@ RUS_sr_maximalist_decision_cat = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_promote_maximalist_news_outlets"
+			log = "[GetLogRoot]: Decision remove RUS_promote_maximalist_news_outlets"
 			clr_country_flag = RUS_promote_maximalist_news_outlets_flag
 		}
 	}
@@ -21416,7 +21471,7 @@ RUS_sr_maximalist_decision_cat = {
 			war_support_weekly = 0.003
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_sway_peoples_militia"
+			log = "[GetLogRoot]: Decision complete RUS_sway_peoples_militia"
 			custom_effect_tooltip = RUS_1_influence_every_60_days
 			set_country_flag = RUS_sway_peoples_militia_flag
 			hidden_effect = {
@@ -21424,7 +21479,7 @@ RUS_sr_maximalist_decision_cat = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_sway_peoples_militia"
+			log = "[GetLogRoot]: Decision remove RUS_sway_peoples_militia"
 			clr_country_flag = RUS_sway_peoples_militia_flag
 		}
 	}
@@ -21454,10 +21509,10 @@ RUS_sr_maximalist_decision_cat = {
 		}
 		days_remove = 20
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_disappear_political_opponents"
+			log = "[GetLogRoot]: Decision complete RUS_disappear_political_opponents"
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_disappear_political_opponents"
+			log = "[GetLogRoot]: Decision remove RUS_disappear_political_opponents"
 			if = {
 				limit = {
 					check_variable = {
@@ -21542,7 +21597,7 @@ RUS_sr_maximalist_decision_cat = {
 			base = 1000
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_vote_of_no_confidence"
+			log = "[GetLogRoot]: Decision remove RUS_vote_of_no_confidence"
 			country_event = socrus.135
 			effect_tooltip = {
 				activate_advisor = RUS_aleksey_ustinov_sic
@@ -21562,7 +21617,7 @@ RUS_sr_maximalist_decision_cat = {
 		selectable_mission = no
 		days_mission_timeout = 90
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout RUS_appointment_of_interior_ministry"
+			log = "[GetLogRoot]: Decision timeout RUS_appointment_of_interior_ministry"
 			country_event = socrus.130
 			if = {
 				limit = {
@@ -21723,7 +21778,7 @@ RUS_sr_maximalist_decision_cat = {
 		}
 		days_remove = 3
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_fearmonger_in_congress"
+			log = "[GetLogRoot]: Decision remove RUS_fearmonger_in_congress"
 			add_to_variable = {
 				var = RUS_interior_var
 				value = 2
@@ -21742,7 +21797,7 @@ RUS_sr_maximalist_decision_cat = {
 		}
 		days_remove = 3
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_pressure_kamkov"
+			log = "[GetLogRoot]: Decision remove RUS_pressure_kamkov"
 			add_to_variable = {
 				var = RUS_interior_var
 				value = 4
@@ -21761,7 +21816,7 @@ RUS_sr_maximalist_decision_cat = {
 		}
 		days_remove = 3
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_reach_out_to_blyumkin"
+			log = "[GetLogRoot]: Decision remove RUS_reach_out_to_blyumkin"
 			add_to_variable = {
 				var = RUS_interior_var
 				value = 6
@@ -21780,7 +21835,7 @@ RUS_sr_maximalist_decision_cat = {
 		}
 		days_remove = 3
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_convince_the_vst"
+			log = "[GetLogRoot]: Decision remove RUS_convince_the_vst"
 			add_to_variable = {
 				var = RUS_interior_var
 				value = 8
@@ -21832,18 +21887,18 @@ political_actions = {
 			factor = 1000
 		}
 		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancel RUS_restart_war_against_germany target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision cancel RUS_restart_war_against_germany"
 			clear_decision_attack_AI = yes
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_restart_war_against_germany target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_restart_war_against_germany"
 			FROM = {
 				incoming_war_notification_effect = yes
 			}
 			setup_decision_attack_AI = yes
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_restart_war_against_germany target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision remove RUS_restart_war_against_germany"
 			news_event = {
 				id = rusnews.14
 				days = 1
@@ -21925,7 +21980,7 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_Join_The_Academy_of_Sciences target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_Join_The_Academy_of_Sciences"
 			add_to_tech_sharing_group = russian_research
 		}
 	}
@@ -21987,7 +22042,7 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_expand_ambition_poland target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_expand_ambition_poland"
 			set_country_flag = RUS_expanded_ambition_poland
 			every_state = {
 				limit = {
@@ -22028,7 +22083,7 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_end_ambition_poland"
+			log = "[GetLogRoot]: Decision complete RUS_end_ambition_poland"
 			clr_country_flag = RUS_expanded_ambition_poland
 			every_state = {
 				limit = {
@@ -22104,7 +22159,7 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_expand_ambition_hungary target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_expand_ambition_hungary"
 			set_country_flag = RUS_expanded_ambition_hungary
 			every_state = {
 				limit = {
@@ -22142,7 +22197,7 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_end_ambition_hungary"
+			log = "[GetLogRoot]: Decision complete RUS_end_ambition_hungary"
 			clr_country_flag = RUS_expanded_ambition_hungary
 			every_state = {
 				limit = {
@@ -22212,7 +22267,7 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_expand_ambition_eastgermany target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_expand_ambition_eastgermany"
 			set_country_flag = RUS_expanded_ambition_eastgermany
 			every_state = {
 				limit = {
@@ -22271,7 +22326,7 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_end_ambition_eastgermany"
+			log = "[GetLogRoot]: Decision complete RUS_end_ambition_eastgermany"
 			clr_country_flag = RUS_expanded_ambition_eastgermany
 			every_state = {
 				limit = {
@@ -22354,7 +22409,7 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_expand_ambition_czech target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_expand_ambition_czech"
 			set_country_flag = RUS_expanded_ambition_czech
 			every_state = {
 				limit = {
@@ -22404,7 +22459,7 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_end_ambition_czech"
+			log = "[GetLogRoot]: Decision complete RUS_end_ambition_czech"
 			clr_country_flag = RUS_expanded_ambition_czech
 			every_state = {
 				limit = {
@@ -22478,7 +22533,7 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_expand_ambition_eastbalk target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_expand_ambition_eastbalk"
 			set_country_flag = RUS_expanded_ambition_eastbalk
 			every_state = {
 				limit = {
@@ -22520,7 +22575,7 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_end_ambition_eastbalk"
+			log = "[GetLogRoot]: Decision complete RUS_end_ambition_eastbalk"
 			clr_country_flag = RUS_expanded_ambition_eastbalk
 			every_state = {
 				limit = {
@@ -22595,13 +22650,13 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_expand_ambition_westbalk target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_expand_ambition_westbalk"
 			set_country_flag = RUS_expanded_ambition_westbalk
 			every_state = {
 				limit = {
 					OR = {
-						region = 24						#Southern Balkans
-						region = 143						#Northern Balkans
+						region = 24						#Central Balkans
+						region = 143						#Illyria
 					}
 					owner = {
 						has_war_with = ROOT
@@ -22636,13 +22691,13 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_end_ambition_westbalk"
+			log = "[GetLogRoot]: Decision complete RUS_end_ambition_westbalk"
 			clr_country_flag = RUS_expanded_ambition_westbalk
 			every_state = {
 				limit = {
 					OR = {
-						region = 24						#Southern Balkans
-						region = 143						#Northern Balkans
+						region = 24						#Central Balkans
+						region = 143						#Illyria
 					}
 					has_variable = ambition_area_@ROOT
 				}
@@ -22710,7 +22765,7 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_expand_ambition_greece target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_expand_ambition_greece"
 			set_country_flag = RUS_expanded_ambition_greece
 			every_state = {
 				limit = {
@@ -22751,7 +22806,7 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_end_ambition_greece"
+			log = "[GetLogRoot]: Decision complete RUS_end_ambition_greece"
 			clr_country_flag = RUS_expanded_ambition_greece
 			every_state = {
 				limit = {
@@ -22824,7 +22879,7 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_expand_ambition_asiaminor target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_expand_ambition_asiaminor"
 			set_country_flag = RUS_expanded_ambition_asiaminor
 			every_state = {
 				limit = {
@@ -22862,7 +22917,7 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_end_ambition_asiaminor"
+			log = "[GetLogRoot]: Decision complete RUS_end_ambition_asiaminor"
 			clr_country_flag = RUS_expanded_ambition_asiaminor
 			every_state = {
 				limit = {
@@ -22930,7 +22985,7 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_expand_ambition_persia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_expand_ambition_persia"
 			set_country_flag = RUS_expanded_ambition_persia
 			every_state = {
 				limit = {
@@ -22968,7 +23023,7 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_end_ambition_persia"
+			log = "[GetLogRoot]: Decision complete RUS_end_ambition_persia"
 			clr_country_flag = RUS_expanded_ambition_persia
 			every_state = {
 				limit = {
@@ -23037,7 +23092,7 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_expand_ambition_scandinavia target: [From.GetName]"
+			log = "[GetLogRoot][GetLogFrom]: Decision complete RUS_expand_ambition_scandinavia"
 			set_country_flag = RUS_expanded_ambition_scandinavia
 			every_state = {
 				limit = {
@@ -23080,7 +23135,7 @@ political_actions = {
 			factor = 100
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_end_ambition_scandinavia"
+			log = "[GetLogRoot]: Decision complete RUS_end_ambition_scandinavia"
 			clr_country_flag = RUS_expanded_ambition_scandinavia
 			every_state = {
 				limit = {
@@ -23125,7 +23180,7 @@ RUS_MIO_decisions = {
 			base = 5
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_dalzavod_mining_baltic_sea"
+			log = "[GetLogRoot]: Decision complete RUS_dalzavod_mining_baltic_sea"
 			hidden_effect = {
 				add_command_power = -25
 			}
@@ -23203,7 +23258,7 @@ RUS_MIO_decisions = {
 			base = 5
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_dalzavod_mining_black_sea"
+			log = "[GetLogRoot]: Decision complete RUS_dalzavod_mining_black_sea"
 			hidden_effect = {
 				add_command_power = -25
 			}
@@ -23251,7 +23306,7 @@ RUS_MIO_decisions = {
 			base = 5
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_dalzavod_mining_far_east"
+			log = "[GetLogRoot]: Decision complete RUS_dalzavod_mining_far_east"
 			hidden_effect = {
 				add_command_power = -25
 			}
@@ -23315,7 +23370,7 @@ RUS_MIO_decisions = {
 			base = 5
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_dalzavod_mining_barents"
+			log = "[GetLogRoot]: Decision complete RUS_dalzavod_mining_barents"
 			hidden_effect = {
 				add_command_power = -25
 			}
@@ -23366,7 +23421,7 @@ RUS_MIO_decisions = {
 			base = 5
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_TOZ_Medals"
+			log = "[GetLogRoot]: Decision complete RUS_TOZ_Medals"
 			hidden_effect = {
 				set_temp_variable = {
 					funds_change = TOZ_Required_Funds?500
@@ -23402,13 +23457,10 @@ RUS_MIO_decisions = {
 			base = 1000
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete RUS_AV_Repeatable_Random_Funds"
+			log = "[GetLogRoot]: Decision complete RUS_AV_Repeatable_Random_Funds"
 			mio:RUS_av_organisation = {
 				RUS_AV_set_random_decaying_funds_bonus = yes
 			}
 		}
 	}
-}
-
-RUS_stay_strong_decisions = {
 }
