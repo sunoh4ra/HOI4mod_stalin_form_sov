@@ -17648,7 +17648,6 @@ focus_tree = {
 						character = RUS_grigory_zinovyev
 					}
 				}
-				has_political_power > 50
 			}
 		}
 		continue_if_invalid = no
@@ -20012,7 +20011,14 @@ focus_tree = {
 				add_one_random_infrastructure = yes
 				add_one_random_civilian_factory = yes
 			}
-			RUS_decrease_antisoc_resistance = yes
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = RUS_stalin_has_defeated_zinoviev
+					}
+				}
+				RUS_decrease_antisoc_resistance = yes
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -20052,7 +20058,14 @@ focus_tree = {
 					days = 365
 				}
 			}
-			RUS_decrease_antisoc_resistance = yes
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = RUS_stalin_has_defeated_zinoviev
+					}
+				}
+				RUS_decrease_antisoc_resistance = yes
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -34326,6 +34339,18 @@ focus_tree = {
 			has_country_flag = RUS_stalin_has_defeated_zinoviev
 		}
 		completion_reward = {
+			hidden_effect = {
+				country_event = {
+					id = stalin_form_sov.13
+					days = 90
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					id = stalin_form_sov.14
+					days = 30
+				}
+			}
 		}
 	}
 	focus = {
@@ -34369,6 +34394,8 @@ focus_tree = {
 			focus = RUS_Fate_of_the_Radsocs
 		}
 		completion_reward = {
+			custom_effect_tooltip = RUS_remove_dust_and_filth_tt
+			custom_effect_tooltip = tooltip_white_line
 			add_timed_idea = {
 				idea = RUS_remove_dust_and_filth_idea
 				days = 60
@@ -34407,6 +34434,25 @@ focus_tree = {
 					long_name = RUS_syndicalist_party_sov_long
 					name = RUS_syndicalist_party_sov
 				}
+			}
+		}
+	}
+	focus = {
+		id = RUS_mobilize_before_the_storm
+		icon = GFX_focus_RUS_mobilize_before_the_storm
+		cost = 4
+		relative_position_id = RUS_Fate_of_the_syndicalists
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = RUS_Fate_of_the_syndicalists
+		}
+		completion_reward = {
+			custom_effect_tooltip = RUS_mobilize_before_the_storm_tt
+			custom_effect_tooltip = tooltip_white_line
+			add_timed_idea = {
+				idea = RUS_mobilize_before_the_storm_idea
+				days = 365
 			}
 		}
 	}
@@ -34482,6 +34528,14 @@ focus_tree = {
 			has_country_flag = RUS_stalin_has_defeated_zinoviev
 		}
 		completion_reward = {
+			custom_effect_tooltip = RUS_red_october_never_fade_tt
+			custom_effect_tooltip = tooltip_white_line
+			if = {
+				limit = {
+					has_idea = RUS_anti_socialist_resistance_1
+				}
+				remove_ideas = RUS_anti_socialist_resistance_1
+			}
 			add_political_power = 100
 			add_popularity = {
 				ideology = totalist
@@ -34500,7 +34554,10 @@ focus_tree = {
 			focus = RUS_red_october_never_fade
 		}
 		select_effect = {
-			country_event = stalin_form_sov.7
+			country_event = {
+				id = stalin_form_sov.7
+				days = 7
+			}
 		}
 		completion_reward = {
 			custom_effect_tooltip = RUS_soviets_future_tt_1
@@ -34536,19 +34593,40 @@ focus_tree = {
 				}
 				promote_leader = yes
 			}
-			add_advisor_role = {
-				character = RUS_iosif_stalin
-				advisor = {
-					slot = second_in_command
-					idea_token = RUS_iosif_stalin_advisor
-					desc = RUS_iosif_stalin_leader_desc
-					traits = {
-						RUS_hearts_of_iron_2
-					}
-					cost = 150
-					can_be_fired = no
+			if = {
+				limit = {
+					has_completed_focus = RUS_stay_strong
 				}
-				activate = yes
+				add_advisor_role = {
+					character = RUS_iosif_stalin
+					advisor = {
+						slot = second_in_command
+						idea_token = RUS_iosif_stalin_advisor
+						desc = RUS_iosif_stalin_leader_desc
+						traits = {
+							RUS_hearts_of_iron_2
+						}
+						cost = 150
+						can_be_fired = no
+					}
+					activate = yes
+				}
+			}
+			else = {
+				add_advisor_role = {
+					character = RUS_iosif_stalin
+					advisor = {
+						slot = second_in_command
+						idea_token = RUS_iosif_stalin_advisor
+						desc = RUS_iosif_stalin_leader_desc
+						traits = {
+							RUS_hearts_of_iron
+						}
+						cost = 150
+						can_be_fired = no
+					}
+					activate = yes
+				}
 			}
 		}
 	}
@@ -34614,7 +34692,25 @@ focus_tree = {
 			focus = RUS_unite_under_stalin
 		}
 		completion_reward = {
-			custom_effect_tooltip = RUS_socialist_big_family_tt
+			custom_effect_tooltip = RUS_socialist_big_family_tt_1
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = RUS_socialist_big_family_tt_2
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = RUS_socialist_big_family_tt_3
+			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = {
+							tag = RUS
+							is_ally_with = RUS
+						}
+					}
+					add_ideas = RUS_socialist_big_family_all_idea
+				}
+				every_subject_country = {
+					add_ideas = RUS_socialist_big_family_subject_idea
+				}
+			}
 		}
 	}
 	focus = {
@@ -34800,6 +34896,10 @@ focus_tree = {
 							transfer_troops = yes
 						}
 					}
+				}
+				news_event = {
+					id = news_stalin_form_sov.2
+					days = 5
 				}
 			}
 		}

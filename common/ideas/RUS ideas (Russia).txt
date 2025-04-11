@@ -6302,15 +6302,6 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 			}
 		}
-		RUS_plan_ahead_idea = {
-			on_add = {
-				log = "[GetLogRoot]: add idea RUS_plan_ahead_idea"
-			}
-			modifier = {
-				training_time_army_factor = -0.1
-				production_speed_arms_factory_factor = 0.15
-			}
-		}
 		RUS_remove_dust_and_filth_idea = {
 			on_add = {
 				log = "[GetLogRoot]: add idea RUS_remove_dust_and_filth_idea"
@@ -6322,6 +6313,24 @@ ideas = {
 				social_conservative_drift = -0.05
 			}
 		}
+		RUS_mobilize_before_the_storm_idea = {
+			on_add = {
+				log = "[GetLogRoot]: add idea RUS_mobilize_before_the_storm_idea"
+			}
+			modifier = {
+				production_speed_anti_air_building_factor = 0.25
+				industry_air_damage_factor = -0.25
+			}
+		}
+		RUS_plan_ahead_idea = {
+			on_add = {
+				log = "[GetLogRoot]: add idea RUS_plan_ahead_idea"
+			}
+			modifier = {
+				training_time_army_factor = -0.1
+				production_speed_arms_factory_factor = 0.15
+			}
+		}
 		RUS_soviet_republic_industry_idea = {
 			on_add = {
 				log = "[GetLogRoot]: add idea RUS_soviet_republic_industry_idea"
@@ -6329,6 +6338,24 @@ ideas = {
 			modifier = {
 				production_speed_industrial_complex_factor = 0.25
 				production_speed_infrastructure_factor = 0.25
+			}
+		}
+		RUS_socialist_big_family_subject_idea = {
+			on_add = {
+				log = "[GetLogRoot]: add idea RUS_socialist_big_family_subject_idea"
+			}
+			modifier = {
+				cic_to_overlord_factor = 0.5
+				mic_to_overlord_factor = 0.5
+			}
+		}
+		RUS_socialist_big_family_all_idea = {
+			on_add = {
+				log = "[GetLogRoot]: add idea RUS_socialist_big_family_all_idea"
+			}
+			modifier = {
+				consumer_goods_factor = -0.2
+				production_speed_buildings_factor = 0.15
 			}
 		}
 	}

@@ -12,6 +12,10 @@ spriteTypes = {
 		texturefile = "gfx/GFX_report_event_RUS_country_flag_decide.png"
 	}
 	spriteType = {
+		name = "GFX_report_event_RUS_lenin"
+		texturefile = "gfx/GFX_report_event_RUS_lenin.png"
+	}
+	spriteType = {
 		name = "GFX_portrait_RUS_iosif_stalin_civilian_large"
 		texturefile = "gfx/GFX_portrait_RUS_iosif_stalin_civilian_large.png"
 	}
@@ -46,6 +50,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_RUS_remove_dust_and_filth"
 		texturefile = "gfx/GFX_focus_RUS_remove_dust_and_filth.png"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_mobilize_before_the_storm"
+		texturefile = "gfx/GFX_focus_RUS_mobilize_before_the_storm.png"
 	}
 	spriteType = {
 		name = "GFX_focus_RUS_red_october_never_fade"

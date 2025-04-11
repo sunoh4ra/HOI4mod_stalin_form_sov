@@ -127,6 +127,97 @@ country_event = {
 				name = RUS_totalist_party_sov
 			}
 			set_country_flag = RUS_stalin_has_defeated_zinoviev
+			news_event = {
+				id = news_stalin_form_sov.1
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = stalin_form_sov.13
+	title = stalin_form_sov.13.t
+	desc = stalin_form_sov.13.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_RUS_kremlin3
+	option = {
+		name = stalin_form_sov.13.a
+		every_subject_country = {
+			limit = {
+				OR = {
+					has_autonomy_state = union_republic
+					has_autonomy_state = union_republic_autonomous
+				}
+			}
+			ROOT = {
+				if = {
+					limit = {
+						PREV = {
+							has_cosmetic_tag = TRK_turkestan
+						}
+					}
+					PREV = {
+						set_cosmetic_tag = TRK_soviet
+					}
+				}
+				else = {
+					meta_effect = {
+						text = {
+							PREV = {
+								set_cosmetic_tag = [soviet_socialist_republic_tag]
+							}
+						}
+						soviet_socialist_republic_tag = "[PREV.GetTag]_soviet"
+					}
+				}
+				set_autonomy = {
+					target = PREV
+					autonomy_state = soviet_socialist_republic
+				}
+			}
+		}
+	}
+	option = {
+		name = stalin_form_sov.13.b
+		custom_effect_tooltip = stalin_form_sov.13.b_tt
+	}
+}
+
+country_event = {
+	id = stalin_form_sov.14
+	title = stalin_form_sov.14.t
+	desc = stalin_form_sov.14.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_RUS_lenin
+	option = {
+		name = stalin_form_sov.14.a
+		195 = {
+			set_global_flag = petrograd_renamed_soviet
+			set_state_name = STATE_195_LENINGRAD
+			set_province_name = {
+				id = 6174
+				name = VICTORY_POINTS_6174_LENINGRAD
+			}
+		}
+	}
+	option = {
+		name = stalin_form_sov.14.b
+		195 = {
+			set_global_flag = petrograd_renamed_soviet
+			set_state_name = STATE_195_LENINGRAD
+			set_province_name = {
+				id = 6174
+				name = VICTORY_POINTS_6174_LENINGRAD
+			}
+		}
+		217 = {
+			set_global_flag = tsaritsyn_renamed_soviet
+			set_state_name = STATE_217_STALINGRAD
+			set_province_name = {
+				id = 3529
+				name = VICTORY_POINTS_3529_STALINGRAD
+			}
 		}
 	}
 }
@@ -182,7 +273,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = stalin_form_sov.8
-				days = 3
+				days = 7
 			}
 		}
 	}
@@ -194,7 +285,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = stalin_form_sov.8
-				days = 3
+				days = 7
 			}
 		}
 	}
@@ -214,7 +305,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = stalin_form_sov.9
-				days = 3
+				days = 7
 			}
 		}
 	}
@@ -226,7 +317,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = stalin_form_sov.9
-				days = 3
+				days = 7
 			}
 		}
 	}
@@ -246,7 +337,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = stalin_form_sov.10
-				days = 3
+				days = 7
 			}
 		}
 	}
@@ -258,7 +349,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = stalin_form_sov.10
-				days = 3
+				days = 7
 			}
 		}
 	}
@@ -283,11 +374,14 @@ country_event = {
 			}
 			country_event = {
 				id = stalin_form_sov.11
+				`
+				days = 3
 			}
 		}
 		else = {
 			country_event = {
 				id = stalin_form_sov.12
+				days = 3
 			}
 		}
 	}
@@ -304,11 +398,13 @@ country_event = {
 			}
 			country_event = {
 				id = stalin_form_sov.12
+				days = 3
 			}
 		}
 		else = {
 			country_event = {
 				id = stalin_form_sov.11
+				days = 3
 			}
 		}
 	}

@@ -10,8 +10,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/RUS_soviet_republic_industry_idea.png"
 	}
 	spriteType = {
+		name = "GFX_idea_RUS_socialist_big_family_subject_idea"
+		texturefile = "gfx/interface/ideas/RUS_soviet_republic_industry_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_socialist_big_family_all_idea"
+		texturefile = "gfx/interface/ideas/RUS_socialist_big_family_all_idea.png"
+	}
+	spriteType = {
 		name = "GFX_idea_RUS_remove_dust_and_filth_idea"
 		texturefile = "gfx/interface/ideas/RUS_remove_dust_and_filth_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_mobilize_before_the_storm_idea"
+		texturefile = "gfx/interface/ideas/RUS_mobilize_before_the_storm_idea.png"
 	}
 	spriteType = {
 		name = "GFX_idea_RUS_plan_ahead_idea"

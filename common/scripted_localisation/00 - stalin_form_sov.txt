@@ -1,0 +1,203 @@
+defined_text = {
+	name = GetStateName_195
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = allowrenaming_flag
+			}
+			has_global_flag = petrograd_renamed_soviet
+		}
+		localization_key = STATE_195_LENINGRAD
+	}
+	text = {
+		trigger = {
+			has_global_flag = petrograd_renamed_soviet
+		}
+		localization_key = STATE_195_LENINGRAD
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = allowrenaming_flag
+			}
+		}
+		localization_key = STATE_195		#Petrograd
+	}
+	text = {
+		trigger = {
+			original_tag = FIN
+		}
+		localization_key = STATE_195_FINNISH		#Inkerinmaa
+	}
+	text = {
+		trigger = {
+			is_scandinavian_tag = yes
+		}
+		localization_key = STATE_195_SWEDISH		#Ingermanland
+	}
+	text = {
+		localization_key = STATE_195		#Petrograd
+	}
+}
+
+defined_text = {
+	name = GetVictoryPointName_6174
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = allowrenaming_flag
+			}
+			has_global_flag = petrograd_renamed_soviet
+		}
+		localization_key = VICTORY_POINTS_6174_LENINGRAD
+	}
+	text = {
+		trigger = {
+			has_global_flag = petrograd_renamed_soviet
+		}
+		localization_key = VICTORY_POINTS_6174_LENINGRAD
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = allowrenaming_flag
+			}
+		}
+		localization_key = VICTORY_POINTS_6174
+	}
+	text = {
+		trigger = {
+			original_tag = FIN
+		}
+		localization_key = VICTORY_POINTS_6174_FINNISH
+	}
+	text = {
+		trigger = {
+			is_scandinavian_tag = yes
+		}
+		localization_key = VICTORY_POINTS_6174_SWEDISH
+	}
+	text = {
+		localization_key = VICTORY_POINTS_6174
+	}
+}
+
+defined_text = {
+	name = GetStateName_217
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = allowrenaming_flag
+			}
+			has_global_flag = tsaritsyn_renamed_soviet
+		}
+		localization_key = STATE_217_STALINGRAD
+	}
+	text = {
+		trigger = {
+			has_global_flag = tsaritsyn_renamed_soviet
+		}
+		localization_key = STATE_217_STALINGRAD
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = allowrenaming_flag
+			}
+			has_global_flag = tsaritsyn_renamed_vst
+		}
+		localization_key = STATE_217_MININGRAD		#Miningrad
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = allowrenaming_flag
+			}
+			has_global_flag = tsaritsyn_renamed
+		}
+		localization_key = STATE_217_VOLGOGRAD		#Volgograd
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = allowrenaming_flag
+			}
+		}
+		localization_key = STATE_217		#Tsaritsyn
+	}
+	text = {
+		trigger = {
+			has_global_flag = tsaritsyn_renamed_vst
+		}
+		localization_key = STATE_217_MININGRAD		#Miningrad
+	}
+	text = {
+		trigger = {
+			has_global_flag = tsaritsyn_renamed
+		}
+		localization_key = STATE_217_VOLGOGRAD		#Volgograd
+	}
+	text = {
+		localization_key = STATE_217		#Tsaritsyn
+	}
+}
+
+defined_text = {
+	name = GetVictoryPointName_3529
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = allowrenaming_flag
+			}
+			has_global_flag = tsaritsyn_renamed_soviet
+		}
+		localization_key = VICTORY_POINTS_3529_STALINGRAD
+	}
+	text = {
+		trigger = {
+			has_global_flag = tsaritsyn_renamed_soviet
+		}
+		localization_key = VICTORY_POINTS_3529_STALINGRAD
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = allowrenaming_flag
+			}
+			has_global_flag = tsaritsyn_renamed_vst
+		}
+		localization_key = VICTORY_POINTS_3529_MININGRAD		#Miningrad
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = allowrenaming_flag
+			}
+			has_global_flag = tsaritsyn_renamed
+		}
+		localization_key = VICTORY_POINTS_3529_VOLGOGRAD		#Volgograd
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = allowrenaming_flag
+			}
+		}
+		localization_key = VICTORY_POINTS_3529		#Tsaritsyn
+	}
+	text = {
+		trigger = {
+			has_global_flag = tsaritsyn_renamed_vst
+		}
+		localization_key = VICTORY_POINTS_3529_MININGRAD		#Miningrad
+	}
+	text = {
+		trigger = {
+			has_global_flag = tsaritsyn_renamed
+		}
+		localization_key = VICTORY_POINTS_3529_VOLGOGRAD		#Volgograd
+	}
+	text = {
+		localization_key = VICTORY_POINTS_3529		#Tsaritsyn
+	}
+}
