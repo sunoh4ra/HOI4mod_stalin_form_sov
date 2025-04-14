@@ -19911,9 +19911,16 @@ focus_tree = {
 		icon = GFX_goal_Fight_for_Freedom
 		cost = 6
 		available = {
-			num_subjects > 4
-			any_subject_country = {
-				has_autonomy_state = union_republic
+			if = {
+				limit = {
+					has_country_flag = RUS_stalin_has_defeated_zinoviev
+				}
+			}
+			else = {
+				num_subjects > 4
+				any_subject_country = {
+					has_autonomy_state = union_republic
+				}
 			}
 			NOT = {
 				country_exists = GER

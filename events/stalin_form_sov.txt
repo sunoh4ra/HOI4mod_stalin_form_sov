@@ -113,10 +113,26 @@ country_event = {
 			}
 			promote_leader = yes
 		}
+		add_advisor_role = {
+			character = RUS_yakov_sverdlov
+			advisor = {
+				slot = second_in_command
+				idea_token = RUS_yakov_sverdlov_advisor
+				desc = RUS_yakov_sverdlov_leader_desc
+				traits = {
+					KR_red_eminence
+				}
+				cost = 150
+				can_be_fired = no
+			}
+			activate = yes
+		}
+		custom_effect_tooltip = tooltip_white_line
 		set_politics = {
 			ruling_party = totalist
 			elections_allowed = no
 		}
+		custom_effect_tooltip = tooltip_white_line
 		complete_national_focus = RUS_Reverse_the_October_Revolution
 		set_cosmetic_tag = RUS_sov
 		hidden_effect = {
@@ -374,7 +390,6 @@ country_event = {
 			}
 			country_event = {
 				id = stalin_form_sov.11
-				`
 				days = 3
 			}
 		}
