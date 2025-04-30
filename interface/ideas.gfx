@@ -4604,6 +4604,30 @@ spriteTypes = {
 		name = "GFX_idea_BRA_air_force"
 		texturefile = "gfx/interface/ideas/idea_BRA_air_force.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_PAR_army"
+		texturefile = "gfx/interface/ideas/idea_PAR_army_modifier.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PAR_navy"
+		texturefile = "gfx/interface/ideas/idea_PAR_navy_modifier.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PAR_airforce"
+		texturefile = "gfx/interface/ideas/idea_PAR_airforce_modifier.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_URG_army"
+		texturefile = "gfx/interface/ideas/idea_URG_army_modifier.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_URG_navy"
+		texturefile = "gfx/interface/ideas/idea_URG_navy_modifier.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_URG_airforce"
+		texturefile = "gfx/interface/ideas/idea_URG_airforce_modifier.dds"
+	}
 	####          ####  ####          ####
 	##            ##    ##            ##
 	##            ##    ##            ##
@@ -5390,6 +5414,10 @@ spriteTypes = {
 		name = "GFX_idea_PER_stand_with_giants_modifier"
 		texturefile = "gfx/interface/ideas/idea_PER_stand_with_giants_modifier.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_PER_saadabad_pact"
+		texturefile = "gfx/interface/ideas/idea_PER_saadabad_pact.dds"
+	}
 	## Designers ##
 	spriteType = {
 		name = "GFX_idea_PER_national_bank_iran"
@@ -5532,6 +5560,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_RAJ_widespread_turmoil"
 		texturefile = "gfx/interface/ideas/idea_RAJ_widespread_turmoil.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RAJ_loyal_government"
+		texturefile = "gfx/interface/ideas/idea_RAJ_loyal_government.dds"
 	}
 	## Designers ##
 	spriteType = {
@@ -5706,6 +5738,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_AFG_adopt_nufus"
 		texturefile = "gfx/interface/ideas/idea_AFG_adopt_nufus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_parliament_building_damaged"
+		texturefile = "gfx/interface/ideas/idea_AFG_parliament_building_damaged.dds"
 	}
 	## Designers ##
 	spriteType = {

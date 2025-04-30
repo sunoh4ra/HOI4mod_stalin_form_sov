@@ -14,6 +14,10 @@ RUS_sov_4 = {
 	color = rgb { 125 13 24 }
 	color_ui = rgb { 125 13 24 }
 }
+RUS_sov_afterwar = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 125 13 24 }
+}
 RUS_sov_union = {
 	color = rgb { 125 13 24 }
 	color_ui = rgb { 125 13 24 }

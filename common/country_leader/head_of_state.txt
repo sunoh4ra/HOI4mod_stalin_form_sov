@@ -248,6 +248,12 @@ leader_traits = {
 		stability_factor = 0.15
 		army_morale_factor = 0.1
 	}
+	BUL_illegitimate_tsar = {
+		#Kyril, puppeted by Serbia
+		random = no
+		political_power_factor = -0.1
+		stability_factor = -0.1
+	}
 	### Belgium
 	BEL_soldier_king = {
 		#Albert I
@@ -368,6 +374,7 @@ leader_traits = {
 	### Fengtian
 	FNG_mukden_tiger = {
 		#Zhang Zuolin
+		custom_modifier_tooltip = FNG_mukden_tiger_desc
 		random = no
 		max_planning = 0.05
 		stability_factor = 0.05
@@ -735,18 +742,21 @@ leader_traits = {
 	### Japan ###
 	JAP_hirohito_defeat_trait = {
 		#Trait for Hirohito in Puppet JAP content
+		custom_modifier_tooltip = JAP_hirohito_symbol_trait_desc
 		random = no
 		war_support_factor = -0.2
 		political_power_factor = -0.1
 	}
 	JAP_hirohito_symbol_trait = {
 		#Trait for Hirohito in Puppet JAP content
+		custom_modifier_tooltip = JAP_hirohito_symbol_trait_desc
 		random = no
 		political_power_gain = 0.05
 		stability_factor = 0.15
 	}
 	JAP_regent_trait = {
 		#Trait for regent in Puppet JAP content
+		custom_modifier_tooltip = JAP_regent_trait_desc
 		random = no
 		war_support_factor = -0.1
 		stability_factor = -0.05
@@ -899,6 +909,7 @@ leader_traits = {
 	}
 	LEP_the_smiling_tiger = {
 		#Sun Chuanfang
+		custom_modifier_tooltip = LEP_the_smiling_tiger_desc
 		random = no
 		political_power_factor = 0.1
 		war_support_factor = 0.05
@@ -925,6 +936,7 @@ leader_traits = {
 	### Mongolia
 	MON_the_mad_baron = {
 		#Roman von Ungern-Sternberg
+		custom_modifier_tooltip = MON_the_mad_baron_desc
 		random = no
 		war_support_factor = 0.05
 		skill_bonus_factor = 0.1
@@ -1105,6 +1117,7 @@ leader_traits = {
 	### Poland
 	POL_effeminate_king = {
 		#August IV
+		custom_modifier_tooltip = POL_effeminate_king_trait_desc
 		random = no
 		stability_factor = -0.05
 	}
@@ -1115,11 +1128,13 @@ leader_traits = {
 	}
 	POL_geheimrat = {
 		#August IV
+		custom_modifier_tooltip = POL_geheimrat_desc
 		random = no
 		political_power_factor = 0.1
 	}
 	POL_geheimrat1 = {
 		#August or Alexander
+		custom_modifier_tooltip = POL_geheimrat1_desc
 		random = no
 		political_power_factor = 0.1
 		max_command_power = 10
@@ -1128,11 +1143,13 @@ leader_traits = {
 		license_production_speed = 0.5
 	}
 	POL_geheimrat2 = {
+		custom_modifier_tooltip = POL_geheimrat2_desc
 		random = no
 		political_power_factor = 0.12
 		production_speed_buildings_factor = 0.05
 	}
 	POL_geheimrat3 = {
+		custom_modifier_tooltip = POL_geheimrat3_desc
 		random = no
 		political_power_factor = 0.15
 		stability_factor = 0.05
@@ -1236,6 +1253,7 @@ leader_traits = {
 	}
 	QIE_son_of_heaven = {
 		#Puyi, Anti-Concessionist
+		custom_modifier_tooltip = QIE_son_of_heaven_desc
 		random = no
 		stability_factor = 0.15
 		political_power_factor = 0.05
@@ -1264,6 +1282,7 @@ leader_traits = {
 	}
 	QIE_the_diplomatic_offensive = {
 		#Wellington Koo
+		custom_modifier_tooltip = QIE_the_diplomatic_offensive_desc
 		random = no
 		opinion_gain_monthly_factor = 0.25
 		political_power_factor = 0.05
@@ -1271,6 +1290,7 @@ leader_traits = {
 	}
 	QIE_idealist_against_the_storm = {
 		#Hu Shih
+		custom_modifier_tooltip = QIE_idealist_against_the_storm_desc
 		random = no
 		stability_factor = 0.1
 		research_speed_factor = 0.05
@@ -1278,6 +1298,7 @@ leader_traits = {
 	}
 	QIE_marshal_of_tianjin = {
 		#Wang Chengbin
+		custom_modifier_tooltip = QIE_marshal_of_tianjin_desc
 		random = no
 		ai_focus_aggressive_factor = 0.25
 		war_support_factor = 0.1
@@ -1285,6 +1306,7 @@ leader_traits = {
 	}
 	QIE_marshal_of_tianjin_2 = {
 		#Wang Chengbin
+		custom_modifier_tooltip = QIE_marshal_of_tianjin_desc
 		random = no
 		ai_focus_aggressive_factor = 0.25
 		war_support_factor = 0.15
@@ -1292,12 +1314,14 @@ leader_traits = {
 	}
 	QIE_the_diplomat = {
 		#Yan Huiqing
+		custom_modifier_tooltip = QIE_the_diplomat_desc
 		random = no
 		political_power_gain = 0.1
 		required_garrison_factor = -0.1
 	}
 	QIE_the_diplomat_2 = {
 		#Yan Huiqing
+		custom_modifier_tooltip = QIE_the_diplomat_desc
 		random = no
 		stability_factor = 0.05
 		political_power_gain = 0.1
@@ -1305,10 +1329,12 @@ leader_traits = {
 	}
 	QIE_squire_of_tianjin = {
 		consumer_goods_factor = -0.15
+		custom_modifier_tooltip = QIE_squire_of_tianjin_desc
 		political_advisor_cost_factor = -0.33
 	}
 	QIE_mediator_of_moderation = {
 		industry_repair_factor = 0.15
+		custom_modifier_tooltip = QIE_mediator_of_moderation_desc
 		compliance_growth = 0.1
 		opinion_gain_monthly_factor = 0.1
 	}
@@ -1498,7 +1524,7 @@ leader_traits = {
 	}
 	RUS_imperial_life_guard = {
 		random = no
-		modifier_army_sub_unit_marines_max_org_factor = 0.1
+		modifier_army_sub_unit_marine_max_org_factor = 0.1
 		grant_medal_cost_factor = -0.5
 	}
 	RUS_high_imperial_council_trait = {
@@ -1834,12 +1860,14 @@ leader_traits = {
 	### Siam
 	SIA_iron_marshal_trait = {
 		# Phibun
+		custom_modifier_tooltip = SIA_iron_marshal_trait_desc
 		random = no
 		political_power_factor = 0.1
 		army_morale_factor = 0.1
 	}
 	SIA_pho_khun_trait = {
 		# Sarit
+		custom_modifier_tooltip = SIA_pho_khun_trait_desc
 		random = no
 		conscription_factor = 0.05
 		army_core_defence_factor = 0.1
@@ -1847,6 +1875,7 @@ leader_traits = {
 	}
 	SIA_under_pho_khun_trait = {
 		# Sarit's puppet
+		custom_modifier_tooltip = SIA_under_pho_khun_trait_desc
 		random = no
 		conscription_factor = 0.05
 		army_core_defence_factor = 0.1
@@ -1854,6 +1883,7 @@ leader_traits = {
 	}
 	SIA_prancing_knight_trait = {
 		# Phao
+		custom_modifier_tooltip = SIA_prancing_knight_trait_desc
 		random = no
 		foreign_subversive_activites = -0.3
 		non_core_manpower = 0.02
@@ -2083,13 +2113,13 @@ leader_traits = {
 		political_power_factor = 0.1
 		war_support_factor = 0.1
 	}
-	KR_big_kurbashi_leader = {
+	TRK_big_kurbashi_leader = {
 		random = no
 		foreign_subversive_activites = -0.1
 		resistance_growth_on_our_occupied_states = 0.1
 		drift_defence_factor = 0.5
 	}
-	KR_big_kurbashi_2_leader = {
+	TRK_big_kurbashi_2_leader = {
 		random = no
 		foreign_subversive_activites = -0.1
 		resistance_growth_on_our_occupied_states = 0.1

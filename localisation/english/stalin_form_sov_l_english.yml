@@ -1,4 +1,16 @@
 ﻿l_english:
+  RULE_OPTION_RUS_PATH_STALIN_TOTALIST: "£KR_game_rule_flag_RUS_Bolshevik  Bolshevik - Stalin"
+  RULE_OPTION_RUS_PATH_STALIN_TOTALIST_DESC: "$RULE_OPTION_RUS_PATH_SOCIALIST_START_DESC$ This becomes dominated by the VST, and Vladimir Levitsky is elected Premier.\n$RULE_OPTION_RUS_PATH_ZINOVIEV_MID_DESC$ Either through growing radicalism in the party or through clever scheming, Grigory Zinovyev successfully becomes the leader of the party.\nHowever, due to failed political maneuvers, Stalin allied with Sverdlov to overthrow Zinoviev and the VST, putting the §oBolshevik Party§! back to Russia.\n\n§RRequirement:§!\nIn §Y$RUS_AFTERMATH$§!, choose §CSocialist Republic§!"
+  russia.10005.j: "Stalin"
+
+  RUS_you_looks_angry_achievement_NAME: "Look, Angry Again"
+  RUS_you_looks_angry_achievement_DESC: "As a socialist Russia, foil Zinoviev's plan."
+  you_looks_angry: "The Bolshevik Gamble Failed"
+
+  RUS_sov_world_revolution_succeed_achievement_NAME: "Achieve World Revolution"
+  RUS_sov_world_revolution_succeed_achievement_DESC: "As a socialist Russia, achieve world revolution."
+  sov_world_revolution_succeed: "No country has a Non-Socialist government"
+
   soviet_socialist_republic: "Soviet Socialist Republic"
   UKR_soviet: "Ukrainian Soviet Socialist Republic"
   UKR_soviet_DEF: "The Ukrainian Soviet Socialist Republic"
@@ -149,6 +161,8 @@
   RUS_what_a_childish_fantasy: "What a Childish Fantasy!"
   RUS_what_a_childish_fantasy_desc: "Some once said it was a childish fantasy, but we have accomplished the impossible: we have once again realized socialism in Russia, we have emerged victorious in a series of struggles against the PSR speculators and various factions of the VST, we have reversed the October Revolution, we have withstood the Teutonic threat and crushed German imperialism. Now that the situation is settled, it's time to realize the ideals from twenty years ago!"
   RUS_what_a_childish_fantasy_tt: "We will be able to establish Soviet Socialist Republics in occupied areas, ultimately forming the §oUnion of Soviet Socialist Republics§!.\nEnables Decision: £GFX_decision_icon_small §YInvite to become a Soviet Socialist Republic§!."
+  RUS_sov_afterwar: "Russian Soviet Federative Socialist Republic"
+  RUS_sov_afterwar_DEF: "The Russian Soviet Federative Socialist Republic"
 
   RUS_found_communist_international: "Establish the Communist International"
   RUS_found_communist_international_desc: "Our Western friends differ greatly from us in both political and industrial models. While friendly exchange with them is necessary, it would be foolish to entrust ourselves entirely to them. We need to establish our own leading bloc where all allies can benefit."
@@ -235,14 +249,6 @@
   RUS_sov_to_the_world_revolution: "Towards World Revolution"
   RUS_sov_to_the_world_revolution_desc: "The cause of socialism should not be limited to one country but must become a common path for all humanity. Capitalist and imperialist forces still rampage worldwide, oppressing the working class, plundering global resources, and hindering social progress. We can no longer tolerate this situation; the red flag will fly over the five continents and four oceans. We will mobilize the entire socialist camp to launch the final strike against global reactionary forces!"
   RUS_sov_to_the_world_revolution_tt: "§CWe will declare war on all non-socialist countries of the world!§!"
-
-  RUS_you_looks_angry_achievement_NAME: "Look, Angry Again"
-  RUS_you_looks_angry_achievement_DESC: "As a socialist Russia, foil Zinoviev's plan."
-  you_looks_angry: "The Bolshevik Gamble Failed"
-
-  RUS_sov_world_revolution_succeed_achievement_NAME: "Achieve World Revolution"
-  RUS_sov_world_revolution_succeed_achievement_DESC: "As a socialist Russia, achieve world revolution."
-  sov_world_revolution_succeed: "No country has a Non-Socialist government"
 
   news_stalin_form_sov.1.t: "The Return of Soviet Russia"
   news_stalin_form_sov.1.desc: "Since the VST took control of Socialist Russia, intense political strife led to the downfall of Zinoviev, the VST’s far-left leader. Under the efforts of Sverdlov and Stalin, he was forced to resign and placed under house arrest. The Bolshevik Party has now reclaimed leadership, and Russia enters a critical transition.\n\nAs the Bolsheviks return to power after nearly twenty years, their stance toward the Western syndicalist nations remains uncertain. But one thing is clear—Soviet Russia is back, and like before, it sees German imperialism as its greatest enemy. A decisive conflict between the two powers seems inevitable."

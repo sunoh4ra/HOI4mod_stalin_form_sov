@@ -1,4 +1,41 @@
+add_namespace = news_stalin_form_sov
 add_namespace = stalin_form_sov
+news_event = {
+	id = news_stalin_form_sov.1
+	immediate = {
+		log = "[GetLogInfo]: event news_stalin_form_sov.1"
+	}
+	title = news_stalin_form_sov.1.t
+	desc = news_stalin_form_sov.1.desc
+	picture = GFX_news_event_RUS_socialist_takeover
+	major = yes
+	is_triggered_only = yes
+	trigger = {
+		wants_world_news = yes
+	}
+	option = {
+		name = news_stalin_form_sov.1.a
+	}
+}
+
+news_event = {
+	id = news_stalin_form_sov.2
+	immediate = {
+		log = "[GetLogInfo]: event news_stalin_form_sov.2"
+	}
+	title = news_stalin_form_sov.2.t
+	desc = news_stalin_form_sov.2.desc
+	picture = GFX_news_event_RUS_socialist_takeover
+	major = yes
+	is_triggered_only = yes
+	trigger = {
+		wants_world_news = yes
+	}
+	option = {
+		name = news_stalin_form_sov.2.a
+	}
+}
+
 country_event = {
 	id = stalin_form_sov.1
 	title = stalin_form_sov.1.t
@@ -10,10 +47,14 @@ country_event = {
 		has_character = RUS_iosif_stalin
 	}
 	option = {
+		name = stalin_form_sov.1.a
 		ai_chance = {
 			base = 0
+			modifier = {
+				add = 1000
+				has_country_flag = RUS_stalin_ai
+			}
 		}
-		name = stalin_form_sov.1.a
 		custom_effect_tooltip = stalin_form_sov.1.a_tt
 		hidden_effect = {
 			country_event = {
@@ -23,10 +64,14 @@ country_event = {
 		}
 	}
 	option = {
-		ai_chance = {
-			base = 100
-		}
 		name = stalin_form_sov.1.b
+		ai_chance = {
+			base = 1000
+			modifier = {
+				factor = 0
+				has_country_flag = RUS_stalin_ai
+			}
+		}
 		custom_effect_tooltip = stalin_form_sov.1.b_tt
 	}
 }
@@ -39,6 +84,13 @@ country_event = {
 	picture = GFX_report_event_RUS_zinovyev
 	option = {
 		name = stalin_form_sov.2.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1000
+				has_country_flag = RUS_stalin_ai
+			}
+		}
 		custom_effect_tooltip = stalin_form_sov.2.a_tt
 		hidden_effect = {
 			country_event = {
@@ -49,6 +101,13 @@ country_event = {
 	}
 	option = {
 		name = stalin_form_sov.2.b
+		ai_chance = {
+			base = 1000
+			modifier = {
+				factor = 0
+				has_country_flag = RUS_stalin_ai
+			}
+		}
 		custom_effect_tooltip = stalin_form_sov.2.b_tt
 	}
 }
@@ -94,6 +153,13 @@ country_event = {
 	picture = GFX_report_event_RUS_stalin_and_sverdlov
 	option = {
 		name = stalin_form_sov.5.a
+		ai_chance = {
+			base = 1000
+			modifier = {
+				factor = 0
+				has_country_flag = RUS_stalin_ai
+			}
+		}
 		custom_effect_tooltip = stalin_form_sov.5.a_tt
 		hidden_effect = {
 			set_politics = {
@@ -105,6 +171,13 @@ country_event = {
 	}
 	option = {
 		name = stalin_form_sov.5.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1000
+				has_country_flag = RUS_stalin_ai
+			}
+		}
 		add_country_leader_role = {
 			character = RUS_iosif_stalin
 			country_leader = {
@@ -145,7 +218,7 @@ country_event = {
 			set_country_flag = RUS_stalin_has_defeated_zinoviev
 			news_event = {
 				id = news_stalin_form_sov.1
-				days = 5
+				days = 1
 			}
 		}
 	}
@@ -456,5 +529,27 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = RUS_future_is_determined_2
 		}
+	}
+}
+
+# 极少数非正常流程情况下，在邀请中亚地区国家成为苏维埃加盟共和国后，其又整合中亚成立突厥斯坦共和国的处理方法
+country_event = {
+	id = stalin_form_sov.10086
+	title = stalin_form_sov.10086.t
+	desc = stalin_form_sov.10086.desc
+	picture = GFX_report_event_generic_diplomacy1
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = soviet_socialist_republic
+				has_cosmetic_tag = TRK_turkestan
+			}
+			set_cosmetic_tag = TRK_soviet
+		}
+	}
+	option = {
+		name = stalin_form_sov.10086.a
 	}
 }

@@ -1824,7 +1824,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			desc = RUS_aleksey_antonov_commander_desc
+			desc = RUS_aleksey_antonov_high_command_desc
 			traits = {
 				trait_cautious
 				skilled_staffer
@@ -1834,6 +1834,15 @@ characters = {
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 2
+		}
+		advisor = {
+			slot = high_command
+			idea_token = RUS_aleksey_antonov_high_command
+			ledger = army
+			traits = {
+				KR_MHC_army_staffer_1
+			}
+			cost = 50
 		}
 	}
 	RUS_yevgeny_miller = {
@@ -3501,12 +3510,6 @@ characters = {
 				KR_MHC_artillery_2
 			}
 			cost = 100
-			on_add = {
-				add_power_balance_value = {
-					id = FER_power_balance
-					value = -0.1
-				}
-			}
 		}
 		corps_commander = {
 			desc = RUS_leonid_skipetrov_high_command_desc
@@ -4971,7 +4974,10 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_mikhail_georgiyevsky_advisor
 			available = {
-				has_completed_focus = RUS_national_solidarism
+				OR = {
+					has_completed_focus = RUS_national_solidarism
+					tag = RSA
+				}
 			}
 			visible = {
 				OR = {
@@ -7718,7 +7724,8 @@ characters = {
 					ROOT = {
 						country_event = {
 							id = russia.447
-							random_days = 600
+							days = 100
+							random_days = 500
 						}
 						##Sikorsky's Helicopter
 					}

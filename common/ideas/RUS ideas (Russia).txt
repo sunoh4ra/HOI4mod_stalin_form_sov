@@ -68,7 +68,6 @@ ideas = {
 			targeted_modifier = {
 				tag = GER
 				trade_cost_for_target_factor = -0.1
-				cic_to_target_factor = 0.03
 			}
 		}
 		RUS_german_economic_influence_2 = {
@@ -91,7 +90,7 @@ ideas = {
 			targeted_modifier = {
 				tag = GER
 				trade_cost_for_target_factor = -0.2
-				cic_to_target_factor = 0.06
+				cic_to_target_factor = 0.03
 			}
 		}
 		RUS_german_economic_influence_3 = {
@@ -114,7 +113,7 @@ ideas = {
 			targeted_modifier = {
 				tag = GER
 				trade_cost_for_target_factor = -0.3
-				cic_to_target_factor = 0.09
+				cic_to_target_factor = 0.06
 			}
 		}
 		RUS_german_economic_influence_4 = {
@@ -137,7 +136,7 @@ ideas = {
 			targeted_modifier = {
 				tag = GER
 				trade_cost_for_target_factor = -0.4
-				cic_to_target_factor = 0.12
+				cic_to_target_factor = 0.09
 			}
 		}
 		RUS_german_economic_influence_5 = {
@@ -161,7 +160,7 @@ ideas = {
 			targeted_modifier = {
 				tag = GER
 				trade_cost_for_target_factor = -0.5
-				cic_to_target_factor = 0.15
+				cic_to_target_factor = 0.12
 			}
 		}
 		RUS_german_economic_influence_6 = {
@@ -185,7 +184,7 @@ ideas = {
 			targeted_modifier = {
 				tag = GER
 				trade_cost_for_target_factor = -0.6
-				cic_to_target_factor = 0.18
+				cic_to_target_factor = 0.15
 			}
 		}
 		RUS_german_economic_influence_7 = {
@@ -209,7 +208,7 @@ ideas = {
 			targeted_modifier = {
 				tag = GER
 				trade_cost_for_target_factor = -0.7
-				cic_to_target_factor = 0.21
+				cic_to_target_factor = 0.18
 			}
 		}
 		RUS_german_economic_influence_8 = {
@@ -233,7 +232,7 @@ ideas = {
 			targeted_modifier = {
 				tag = GER
 				trade_cost_for_target_factor = -0.8
-				cic_to_target_factor = 0.24
+				cic_to_target_factor = 0.21
 			}
 		}
 		RUS_german_economic_influence_9 = {
@@ -257,7 +256,7 @@ ideas = {
 			targeted_modifier = {
 				tag = GER
 				trade_cost_for_target_factor = -0.9
-				cic_to_target_factor = 0.27
+				cic_to_target_factor = 0.25
 			}
 		}
 		RUS_german_economic_influence_10 = {
@@ -1950,7 +1949,7 @@ ideas = {
 				political_power_gain = 0.15
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
-				state_production_speed_industrial_complex_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
 			}
 			research_bonus = {
 				industry = 0.05
@@ -1966,7 +1965,7 @@ ideas = {
 				political_power_gain = 0.15
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
-				state_production_speed_industrial_complex_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
 			}
 			research_bonus = {
 				industry = 0.05
@@ -2903,7 +2902,6 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				industrial_capacity_factory = -0.1
-				production_factory_max_efficiency_factor = -0.1
 			}
 		}
 		RUS_workers_control_2 = {
@@ -5752,16 +5750,14 @@ ideas = {
 			#initial
 			on_add = {
 				log = "[GetLogRoot]: add idea RUS_military_restrictions"
-				set_country_flag = cannot_have_conscription
 				set_country_flag = cannot_build_armor
 			}
 			on_remove = {
-				clr_country_flag = cannot_have_conscription
 				clr_country_flag = cannot_build_armor
 			}
 			picture = HUN_treaty_of_triannon
 			modifier = {
-				custom_modifier_tooltip = RUS_military_restrictions_tooltip
+				mobilization_laws_cost_factor = 20
 			}
 			rule = {
 				can_not_declare_war = yes
@@ -6918,7 +6914,7 @@ ideas = {
 				custom_modifier_tooltip = RUS_rbz_designer_tooltip
 			}
 			ai_will_do = {
-				base = 100
+				base = 50
 			}
 		}
 		ppi = {
@@ -7172,14 +7168,14 @@ ideas = {
 				is_russian_tag = yes
 			}
 			available = {
-				OR = {
-					owns_state = 253					#Vladimir
-					owns_state = 195					#Petrograd
+				owns_any_state_of = {
+					253					#Vladimir
+					195					#Petrograd
 				}
 			}
 			visible = {
 				NOT = {
-					has_country_flag = improve_imz
+					has_country_flag = improve_soz
 				}
 			}
 			traits = {
@@ -7197,9 +7193,9 @@ ideas = {
 				is_russian_tag = yes
 			}
 			available = {
-				OR = {
-					owns_state = 253					#Vladimir
-					owns_state = 195					#Petrograd
+				owns_any_state_of = {
+					253					#Vladimir
+					195					#Petrograd
 				}
 			}
 			visible = {
@@ -7987,9 +7983,9 @@ ideas = {
 				is_russian_tag = yes
 			}
 			available = {
-				OR = {
-					owns_state = 219					#Moscow
-					owns_state = 566					#Irkutsk
+				owns_any_state_of = {
+					219					#Moscow
+					566					#Irkutsk
 				}
 			}
 			visible = {
@@ -8015,9 +8011,9 @@ ideas = {
 				is_russian_tag = yes
 			}
 			available = {
-				OR = {
-					owns_state = 219					#Moscow
-					owns_state = 566					#Irkutsk
+				owns_any_state_of = {
+					219					#Moscow
+					566					#Irkutsk
 				}
 			}
 			visible = {

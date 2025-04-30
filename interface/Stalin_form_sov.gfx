@@ -1,5 +1,10 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_KR_game_rule_flag_RUS_Bolshevik"
+		texturefile = "gfx/flags/small/RUS_sov.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_report_event_RUS_stalin_and_zinovyev"
 		texturefile = "gfx/GFX_report_event_RUS_stalin_and_zinovyev.png"
 	}
