@@ -58,6 +58,8 @@ RUS_mobilize_before_the_storm_decisions = {
 	RUS_transfer_baltic_industries = {
 		icon = GFX_decision_factories
 		allowed = {
+		}
+		available = {
 			NOT = {
 				has_war_with = GER
 			}
@@ -267,6 +269,8 @@ RUS_mobilize_before_the_storm_decisions = {
 	RUS_transfer_belarus_industries = {
 		icon = GFX_decision_factories
 		allowed = {
+		}
+		available = {
 			NOT = {
 				has_war_with = GER
 			}
@@ -447,6 +451,8 @@ RUS_mobilize_before_the_storm_decisions = {
 	RUS_transfer_ukraine_industries = {
 		icon = GFX_decision_factories
 		allowed = {
+		}
+		available = {
 			NOT = {
 				has_war_with = GER
 			}
@@ -18462,6 +18468,7 @@ RUS_Spreading_the_Revolution_decisions = {
 		}
 		visible = {
 			has_completed_focus = RUS_remove_dust_and_filth
+			RUS_has_antisoc_resistance = yes
 			NOT = {
 				has_idea = RUS_anti_socialist_resistance_1
 			}
@@ -18586,6 +18593,9 @@ RUS_Spreading_the_Revolution_decisions = {
 		highlight_states = {
 			highlight_states_trigger = {
 				is_owned_by = FROM
+				NOT = {
+					is_owned_by = RUS
+				}
 			}
 		}
 		complete_effect = {
@@ -20146,7 +20156,27 @@ RUS_Spreading_the_Revolution_decisions = {
 			}
 			custom_effect_tooltip = tooltip_white_line
 			custom_effect_tooltip = RUS_invite_revolutionary_committee_tt
+			if = {
+				limit = {
+					has_country_flag = RUS_stalin_has_defeated_zinoviev
+				}
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = RUS_invite_revolutionary_committee_tt_2
+			}
 			set_country_flag = RUS_invite_revolutionary_committee
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = second_weltkrieg_has_started
+						}
+						has_country_flag = RUS_stalin_has_defeated_zinoviev
+					}
+					add_to_array = {
+						ROOT.RUS_SSTR_tags = POL
+					}
+				}
+			}
 		}
 	}
 	RUS_military_mission_china_red = {

@@ -19496,6 +19496,12 @@ focus_tree = {
 			NOT = {
 				country_exists = GER
 			}
+			custom_trigger_tooltip = {
+				tooltip = RUS_abolish_war_focus_tt
+				NOT = {
+					tag = TCI
+				}
+			}
 			NOT = {
 				is_in_faction_with = INT
 				has_war_with = INT
@@ -19897,6 +19903,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = RUS_peoples_union
+			focus = RUS_what_a_childish_fantasy
 		}
 		prerequisite = {
 			focus = RUS_rebuilding_liberated_lands
@@ -20227,6 +20234,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = RUS_union_of_peoples
+			focus = RUS_what_a_childish_fantasy
 		}
 		prerequisite = {
 			focus = RUS_rebuilding_liberated_lands
@@ -34750,6 +34758,17 @@ focus_tree = {
 			if = {
 				limit = {
 					is_in_faction = yes
+					is_faction_leader = no
+				}
+				leave_faction = yes
+				create_faction = communist_international
+				uncomplete_national_focus = {
+					focus = RUS_abolish_war
+				}
+			}
+			else_if = {
+				limit = {
+					is_in_faction = yes
 					is_faction_leader = yes
 				}
 				set_faction_name = communist_international
@@ -34757,6 +34776,7 @@ focus_tree = {
 			else = {
 				create_faction = communist_international
 			}
+			save_global_event_target_as = TCI_leader
 			add_political_power = 100
 		}
 	}

@@ -257,3 +257,6 @@
   news_stalin_form_sov.2.t: "Formation of the Union of Soviet Socialist Republics"
   news_stalin_form_sov.2.desc: "This is an outcome no one could have predicted: Socialist Russia not only continues to stand proud after experiencing the Second World War but has also successfully established the most massive union of socialist republics to date under Stalin's leadership.\n\nAccording to Soviet officials, with the Russian Communist Party (Bolsheviks) now part of history, the All-Union Communist Party will continue to struggle tirelessly for world revolution. They will continue to march forward together with the rest of the socialist countries in the world, taking great strides toward the ultimate world revolution."
   news_stalin_form_sov.2.a: "Perhaps they really can achieve it."
+
+  RUS_invite_revolutionary_committee_tt_2: "If our current goal is to establish an union composed of multiple soviet countries, as long as we can complete this resolution before the World War II, §Y[POL.GetNameDef]§! Will become our potential partner!"
+  RUS_abolish_war_focus_tt: "The §YCommunist International§! does not exist"

@@ -1,0 +1,199 @@
+### 共产国际
+TCI = {
+	global_event_target = TCI_leader
+}
+
+### National Protection Alliance (GXC/SZC/HNN/YUN)
+NPA = {
+	global_event_target = npa_leader
+}
+
+### The Northern Zhili Clique (QIE/ANQ/HNN/SZC/KUM)
+NZH = {
+	global_event_target = NZH_leader
+}
+
+### The Southern Zhili Clique (LEP/GXC/YUN)
+SZH = {
+	global_event_target = SZH_leader
+}
+
+### The Manchu Loyalists (QIE/SHD/KUM)
+MCU = {
+	global_event_target = MCU_leader
+}
+
+### The Anguojun/Fengtian People (FNG/SHD/ANQ/GXC)
+AGJ = {
+	global_event_target = AGJ_leader
+}
+
+### United Provinces of China (GXC/YUN/SZC/HNN)
+UPC = {
+	global_event_target = UPC_leader
+}
+
+### Left Kuomintang Leader (CHI by default - can be inherited by GXC/YUN/HNN)
+LKT = {
+	global_event_target = LKT_leader
+}
+
+### Right Kuomintang Leader (GXC/YUN/HNN)
+RKT = {
+	global_event_target = RKT_leader
+}
+
+### The GEACPS People (FNG)
+RGC = {
+	global_event_target = RGC_leader
+}
+
+### South Africa
+ZAR = {
+	original_tag = SAF
+	NOT = {
+		has_country_flag = SAF_is_natal
+	}
+}
+
+NAT = {
+	original_tag = SAF
+	has_country_flag = SAF_is_natal
+}
+
+### Spain
+SPK = {
+	original_tag = SPA
+	has_country_flag = SPA_is_alfonsist_spain
+}
+
+SPR = {
+	original_tag = SPA
+	has_country_flag = SPA_is_carlist_spain
+}
+
+SWF = {
+	original_tag = SPA
+	has_country_flag = SPA_is_socialist_spain
+}
+
+### "China" target
+CHN = {
+	variable = global.china_target_tag
+}
+
+### Chinese United Front leader
+CUF = {
+	global_event_target = china_united_front_leader
+}
+
+### Entente Leader
+ENT = {
+	global_event_target = KR_entente_leader
+	fallback = GBR
+}
+
+### Internationale Leader
+INT = {
+	global_event_target = KR_internationale_leader
+	fallback = FRA
+}
+
+### Belgrade Pact Leader
+BPL = {
+	targets = {
+		SER
+		GRE
+		ROM
+	}
+	is_faction_leader = yes
+}
+
+### Belgium target
+BLG = {
+	targets = {
+		FLA
+		WAL
+	}
+	OR = {
+		has_cosmetic_tag = BEL
+		has_cosmetic_tag = BEL_flanders_wallonia
+	}
+	fallback = BEL
+}
+
+### Entente Brits
+CAN = {
+	original_tag = IMP
+	has_country_flag = IMP_is_canada
+}
+
+GBR = {
+	original_tag = IMP
+	has_country_flag = IMP_is_britain
+}
+
+### Germany in Exile
+GEX = {
+	global_event_target = KR_german_government_in_exile
+}
+
+### German South-West Africa
+SWA = {
+	global_event_target = KR_suedwest
+}
+
+### Ottomans
+OTT = {
+	original_tag = TUR
+	has_country_flag = TUR_is_ottomans
+}
+
+### Riga
+RIG = {
+	original_tag = BAT
+	has_cosmetic_tag = BAT_Riga
+}
+
+### Leader of the Intermarium
+MIE = {
+	global_event_target = MIE_leader
+}
+
+### Leader of Mitteleuropa
+MIT = {
+	variable = GER.economic_sphere:members^0
+}
+
+### Leader of Moscow Economic Council
+MEC = {
+	global_event_target = KR_MEC_leader
+}
+
+### Minor treaty territory holder
+GTM = {
+	#Guantanamo Bay
+	global_event_target = GTM_holder
+}
+
+MSN = {
+	#Môle Saint-Nicolas
+	global_event_target = MSN_holder
+}
+
+SAM = {
+	#Samana
+	global_event_target = SAM_holder
+}
+
+# operative operation target
+# only set for majors who has agency
+# set on on_weekly
+MOT = {
+	variable = generic_operation_target
+}
+
+### temporary: old tag for BLR
+WHR = {
+	original_tag = BLR
+}
