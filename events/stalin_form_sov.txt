@@ -206,7 +206,7 @@ country_event = {
 			elections_allowed = no
 		}
 		custom_effect_tooltip = tooltip_white_line
-		complete_national_focus = RUS_Reverse_the_October_Revolution
+		complete_national_focus = RUS_reverse_the_october_revolution
 		set_cosmetic_tag = RUS_sov
 		hidden_effect = {
 			retire_character = RUS_grigory_zinovyev
@@ -219,93 +219,6 @@ country_event = {
 			news_event = {
 				id = news_stalin_form_sov.1
 				days = 1
-			}
-		}
-	}
-}
-
-country_event = {
-	id = stalin_form_sov.13
-	title = stalin_form_sov.13.t
-	desc = stalin_form_sov.13.desc
-	is_triggered_only = yes
-	picture = GFX_report_event_RUS_kremlin3
-	option = {
-		name = stalin_form_sov.13.a
-		every_subject_country = {
-			limit = {
-				OR = {
-					has_autonomy_state = union_republic
-					has_autonomy_state = union_republic_autonomous
-				}
-			}
-			ROOT = {
-				if = {
-					limit = {
-						PREV = {
-							has_cosmetic_tag = TRK_turkestan
-						}
-					}
-					PREV = {
-						set_cosmetic_tag = TRK_soviet
-					}
-				}
-				else = {
-					meta_effect = {
-						text = {
-							PREV = {
-								set_cosmetic_tag = [soviet_socialist_republic_tag]
-							}
-						}
-						soviet_socialist_republic_tag = "[PREV.GetTag]_soviet"
-					}
-				}
-				set_autonomy = {
-					target = PREV
-					autonomy_state = soviet_socialist_republic
-				}
-			}
-		}
-	}
-	option = {
-		name = stalin_form_sov.13.b
-		custom_effect_tooltip = stalin_form_sov.13.b_tt
-	}
-}
-
-country_event = {
-	id = stalin_form_sov.14
-	title = stalin_form_sov.14.t
-	desc = stalin_form_sov.14.desc
-	is_triggered_only = yes
-	picture = GFX_report_event_RUS_lenin
-	option = {
-		name = stalin_form_sov.14.a
-		195 = {
-			set_global_flag = petrograd_renamed_soviet
-			set_state_name = STATE_195_LENINGRAD
-			set_province_name = {
-				id = 6174
-				name = VICTORY_POINTS_6174_LENINGRAD
-			}
-		}
-	}
-	option = {
-		name = stalin_form_sov.14.b
-		195 = {
-			set_global_flag = petrograd_renamed_soviet
-			set_state_name = STATE_195_LENINGRAD
-			set_province_name = {
-				id = 6174
-				name = VICTORY_POINTS_6174_LENINGRAD
-			}
-		}
-		217 = {
-			set_global_flag = tsaritsyn_renamed_soviet
-			set_state_name = STATE_217_STALINGRAD
-			set_province_name = {
-				id = 3529
-				name = VICTORY_POINTS_3529_STALINGRAD
 			}
 		}
 	}
@@ -529,6 +442,440 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = RUS_future_is_determined_2
 		}
+	}
+}
+
+country_event = {
+	id = stalin_form_sov.13
+	title = stalin_form_sov.13.t
+	desc = stalin_form_sov.13.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_RUS_kremlin3
+	option = {
+		name = stalin_form_sov.13.a
+		every_subject_country = {
+			limit = {
+				OR = {
+					has_autonomy_state = union_republic
+					has_autonomy_state = union_republic_autonomous
+				}
+			}
+			ROOT = {
+				if = {
+					limit = {
+						PREV = {
+							has_cosmetic_tag = TRK_turkestan
+						}
+					}
+					PREV = {
+						set_cosmetic_tag = TRK_soviet
+					}
+				}
+				else = {
+					meta_effect = {
+						text = {
+							PREV = {
+								set_cosmetic_tag = [soviet_socialist_republic_tag]
+							}
+						}
+						soviet_socialist_republic_tag = "[PREV.GetTag]_soviet"
+					}
+				}
+				set_autonomy = {
+					target = PREV
+					autonomy_state = soviet_socialist_republic
+				}
+			}
+		}
+	}
+	option = {
+		name = stalin_form_sov.13.b
+		custom_effect_tooltip = stalin_form_sov.13.b_tt
+	}
+}
+
+country_event = {
+	id = stalin_form_sov.14
+	title = stalin_form_sov.14.t
+	desc = stalin_form_sov.14.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_RUS_lenin
+	option = {
+		name = stalin_form_sov.14.a
+		195 = {
+			set_global_flag = petrograd_renamed_soviet
+			set_state_name = STATE_195_LENINGRAD
+			set_province_name = {
+				id = 6174
+				name = VICTORY_POINTS_6174_LENINGRAD
+			}
+		}
+	}
+	option = {
+		name = stalin_form_sov.14.b
+		195 = {
+			set_global_flag = petrograd_renamed_soviet
+			set_state_name = STATE_195_LENINGRAD
+			set_province_name = {
+				id = 6174
+				name = VICTORY_POINTS_6174_LENINGRAD
+			}
+		}
+		217 = {
+			set_global_flag = tsaritsyn_renamed_soviet
+			set_state_name = STATE_217_STALINGRAD
+			set_province_name = {
+				id = 3529
+				name = VICTORY_POINTS_3529_STALINGRAD
+			}
+		}
+	}
+}
+
+country_event = {
+	id = stalin_form_sov.15
+	title = stalin_form_sov.15.t
+	desc = stalin_form_sov.15.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_RUS_comintern
+	option = {
+		name = stalin_form_sov.15.a
+		add_political_power = -50
+		custom_effect_tooltip = stalin_form_sov.15.a_tt
+		hidden_effect = {
+			set_country_flag = RUS_radsocs_advisor
+		}
+	}
+	option = {
+		name = stalin_form_sov.15.b
+		add_political_power = -75
+		add_stability = 0.05
+		custom_effect_tooltip = stalin_form_sov.15.b_tt
+		hidden_effect = {
+			set_country_flag = RUS_radsocs_spiridonist_advisor
+		}
+	}
+	option = {
+		name = stalin_form_sov.15.c
+		add_political_power = -75
+		add_war_support = 0.05
+		custom_effect_tooltip = stalin_form_sov.15.c_tt
+		hidden_effect = {
+			set_country_flag = RUS_radsocs_maximalist_advisor
+		}
+	}
+}
+
+country_event = {
+	id = stalin_form_sov.16
+	title = stalin_form_sov.16.t
+	desc = stalin_form_sov.16.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_RUS_comintern
+	option = {
+		name = stalin_form_sov.16.a
+		add_political_power = -75
+		add_stability = 0.05
+		custom_effect_tooltip = stalin_form_sov.16.a_tt
+		hidden_effect = {
+			set_country_flag = RUS_vst_central_advisor
+		}
+	}
+	option = {
+		name = stalin_form_sov.16.b
+		add_political_power = -150
+		add_stability = 0.1
+		custom_effect_tooltip = stalin_form_sov.16.b_tt
+		hidden_effect = {
+			set_country_flag = RUS_vst_central_advisor
+			set_country_flag = RUS_vst_right_advisor
+		}
+	}
+}
+
+# 三次政变移交领土
+country_event = {
+	id = stalin_form_sov.10000
+	title = stalin_form_sov.10000.t
+	desc = stalin_form_sov.10000.desc
+	picture = GFX_report_event_generic_diplomacy1
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		# 波罗的海地区
+		195 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		208 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		209 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		880 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		263 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		# 白罗斯地区
+		755 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		210 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		243 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		242 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		246 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		205 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		# 乌克兰及高加索
+		224 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		220 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		240 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		260 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		245 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		218 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		234 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		1006 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		233 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		961 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		232 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		722 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		213 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		215 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		216 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		238 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		235 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		787 = {
+			add_to_array = {
+				RUS.triple_flip_peace_array = THIS
+			}
+		}
+		for_each_scope_loop = {
+			array = RUS.triple_flip_peace_array
+			transfer_state_to = GER
+			set_state_flag = RUS_triple_flip_marked_state
+		}
+		every_allied_country = {
+			GER = {
+				annex_country = {
+					target = PREV
+				}
+			}
+		}
+		country_event = {
+			id = stalin_form_sov.10001
+			days = 1
+		}
+	}
+	option = {
+		name = stalin_form_sov.10000.a
+	}
+}
+
+country_event = {
+	id = stalin_form_sov.10001
+	title = stalin_form_sov.10001.t
+	desc = stalin_form_sov.10001.desc
+	picture = GFX_report_event_generic_diplomacy1
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = RUS_triple_flip_happened
+		set_cosmetic_tag = RUS_soc
+		complete_national_focus = RUS_radsocs
+		meta_effect = {
+			text = {
+				set_politics = {
+					ruling_party = radical_socialist
+					last_election = "[CURRENT_DATE]"
+					election_frequency = 48
+					elections_allowed = yes
+				}
+			}
+			CURRENT_DATE = "[?global.date.GetDateStringNoHour]"
+		}
+		set_party_name = {
+			ideology = totalist
+			long_name = RUS_totalist3_party_long
+			name = RUS_totalist3_party
+		}
+		RUS_maria_spiridonova = {
+			promote_character = {
+				ideology = radical_socialist
+			}
+		}
+		RUS_aleksey_ustinov = {
+			promote_character = {
+				ideology = totalist_subtype
+			}
+		}
+		set_temp_variable = {
+			coalition_partner_var = token:syndicalist
+		}
+		add_to_coalition = yes
+		RUS_yakov_sverdlov = {
+			remove_second_in_command_role = yes
+		}
+		activate_advisor = RUS_aleksey_ustinov_sic
+		hidden_effect = {
+			complete_national_focus = RUS_triple_flip_copy
+		}
+	}
+	option = {
+		name = stalin_form_sov.10001.a
+	}
+}
+
+country_event = {
+	id = stalin_form_sov.10002
+	title = stalin_form_sov.10002.t
+	desc = stalin_form_sov.10002.desc
+	picture = GFX_report_event_RUS_germanconference
+	is_triggered_only = yes
+	option = {
+		name = stalin_form_sov.10002.a
+		custom_effect_tooltip = stalin_form_sov.10002.a_tt
+		custom_effect_tooltip = tooltip_white_line
+		every_enemy_country = {
+			limit = {
+				OR = {
+					tag = GER
+					is_ally_with = GER
+				}
+			}
+			set_truce = {
+				target = RUS
+				days = 720
+			}
+			RUS = {
+				white_peace = PREV
+			}
+		}
+		hidden_effect = {
+			for_each_scope_loop = {
+				array = RUS.triple_flip_peace_array
+				transfer_state_to = RUS
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = KAZ
+						tag = KHI
+						tag = BUK
+						tag = TRK
+					}
+					is_ally_with = GER
+				}
+				RUS = {
+					annex_country = {
+						target = PREV
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = stalin_form_sov.10002.b
 	}
 }
 

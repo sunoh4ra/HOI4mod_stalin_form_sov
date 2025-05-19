@@ -6275,13 +6275,13 @@ ideas = {
 			}
 		}
 		# stalin form sov
-		RUS_Fate_of_the_syndicalists_idea = {
+		RUS_fate_of_the_syndicalists_idea = {
 			on_add = {
-				log = "[GetLogRoot]: add idea RUS_Fate_of_the_syndicalists_idea"
+				log = "[GetLogRoot]: add idea RUS_fate_of_the_syndicalists_idea"
 			}
 			picture = FRA_communard_spirit
 			modifier = {
-				political_power_factor = -0.05
+				political_power_factor = -0.1
 				totalist_drift = 0.1
 			}
 			on_remove = {
@@ -6307,6 +6307,17 @@ ideas = {
 				social_liberal_drift = -0.05
 				market_liberal_drift = -0.05
 				social_conservative_drift = -0.05
+			}
+		}
+		RUS_shelter_dust_and_filth_idea = {
+			on_add = {
+				log = "[GetLogRoot]: add idea RUS_shelter_dust_and_filth_idea"
+			}
+			modifier = {
+				social_democrat_drift = 0.05
+				social_liberal_drift = 0.05
+				market_liberal_drift = 0.05
+				social_conservative_drift = 0.05
 			}
 		}
 		RUS_mobilize_before_the_storm_idea = {
@@ -6352,6 +6363,22 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.2
 				production_speed_buildings_factor = 0.15
+			}
+		}
+		RUS_turn_the_tide_idea = {
+			on_add = {
+				log = "[GetLogRoot]: add idea RUS_turn_the_tide_idea"
+			}
+			picture = generic_syndicalist_manpower
+			modifier = {
+				conscription_factor = 0.15
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				industrial_capacity_factory = 0.15
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.05
 			}
 		}
 	}

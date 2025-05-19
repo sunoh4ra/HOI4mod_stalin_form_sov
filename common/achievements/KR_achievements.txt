@@ -4152,3 +4152,41 @@ RUS_sov_world_revolution_succeed_achievement = {
 		}
 	}
 }
+
+RUS_darkest_time_achievement = {
+	possible = {
+		tag = RUS
+	}
+	happened = {
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = disallow_achievements_flag
+				}
+			}
+			has_completed_focus = RUS_triple_flip
+			custom_trigger_tooltip = {
+				tooltip = darkest_time_passed
+				has_country_flag = RUS_triple_flip_happened
+				all_of_scopes = {
+					array = RUS.triple_flip_peace_array
+					is_controlled_by_ROOT_or_ally = yes
+				}
+				OR = {
+					NOT = {
+						has_war_with = GER
+					}
+					GER = {
+						exists = no
+					}
+				}
+			}
+		}
+		else = {
+			custom_trigger_tooltip = {
+				tooltip = achievements_disabled
+				always = no
+			}
+		}
+	}
+}

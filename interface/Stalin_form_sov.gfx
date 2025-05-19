@@ -45,8 +45,16 @@ spriteTypes = {
 		texturefile = "gfx/GFX_focus_RUS_found_sov_union.png"
 	}
 	spriteType = {
-		name = "GFX_focus_RUS_stalin_hearts_of_iron"
-		texturefile = "gfx/GFX_focus_RUS_stalin_hearts_of_iron.png"
+		name = "GFX_focus_RUS_hearts_of_iron"
+		texturefile = "gfx/GFX_focus_RUS_hearts_of_iron.png"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_a_compromise_choice"
+		texturefile = "gfx/GFX_focus_RUS_a_compromise_choice.png"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_political_figurehead"
+		texturefile = "gfx/GFX_focus_RUS_political_figurehead.png"
 	}
 	spriteType = {
 		name = "GFX_focus_RUS_stay_strong"
@@ -91,5 +99,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_RUS_sov_to_the_world_revolution"
 		textureFile = "gfx/GFX_focus_RUS_sov_to_the_world_revolution.png"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_turn_the_tide"
+		textureFile = "gfx/GFX_focus_RUS_turn_the_tide.png"
 	}
 }

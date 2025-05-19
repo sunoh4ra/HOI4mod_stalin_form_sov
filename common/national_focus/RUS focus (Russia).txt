@@ -34278,7 +34278,7 @@ focus_tree = {
 	}
 	# stalin form sov
 	focus = {
-		id = RUS_Reverse_the_October_Revolution
+		id = RUS_reverse_the_october_revolution
 		icon = GFX_focus_SOV_the_path_of_marxism_leninism
 		cost = 6
 		relative_position_id = RUS_russian_congress
@@ -34289,6 +34289,9 @@ focus_tree = {
 		}
 		allow_branch = {
 			has_country_flag = RUS_stalin_has_defeated_zinoviev
+			NOT = {
+				has_completed_focus = RUS_triple_flip
+			}
 		}
 		completion_reward = {
 			hidden_effect = {
@@ -34306,17 +34309,20 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RUS_Fate_of_the_Radsocs
+		id = RUS_fate_of_the_radsocs
 		icon = GFX_goal_RUS_radsocs
 		cost = 4
-		relative_position_id = RUS_Reverse_the_October_Revolution
+		relative_position_id = RUS_reverse_the_october_revolution
 		x = -1
 		y = 1
+		mutually_exclusive = {
+			focus = RUS_leniency_granted
+		}
 		prerequisite = {
-			focus = RUS_Reverse_the_October_Revolution
+			focus = RUS_reverse_the_october_revolution
 		}
 		completion_reward = {
-			custom_effect_tooltip = RUS_Fate_of_the_Radsocs_tt
+			custom_effect_tooltip = RUS_fate_of_the_radsocs_tt
 			custom_effect_tooltip = tooltip_white_line
 			set_temp_variable = {
 				current_radical_socialist = party_popularity@radical_socialist
@@ -34336,14 +34342,45 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = RUS_leniency_granted
+		icon = GFX_goal_RUS_socialist_democracy
+		cost = 4
+		relative_position_id = RUS_reverse_the_october_revolution
+		x = -3
+		y = 1
+		mutually_exclusive = {
+			focus = RUS_fate_of_the_radsocs
+		}
+		prerequisite = {
+			focus = RUS_reverse_the_october_revolution
+		}
+		completion_reward = {
+			custom_effect_tooltip = RUS_leniency_granted_tt
+			custom_effect_tooltip = tooltip_white_line
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.1
+			}
+			set_temp_variable = {
+				coalition_partner_var = token:radical_socialist
+			}
+			add_to_coalition = yes
+			country_event = stalin_form_sov.15
+		}
+	}
+	focus = {
 		id = RUS_remove_dust_and_filth
 		icon = GFX_focus_RUS_remove_dust_and_filth
 		cost = 4
-		relative_position_id = RUS_Fate_of_the_Radsocs
+		relative_position_id = RUS_fate_of_the_radsocs
 		x = -1
 		y = 1
+		mutually_exclusive = {
+			focus = RUS_shelter_dust_and_filth
+		}
 		prerequisite = {
-			focus = RUS_Fate_of_the_Radsocs
+			focus = RUS_fate_of_the_radsocs
+			focus = RUS_leniency_granted
 		}
 		completion_reward = {
 			custom_effect_tooltip = RUS_remove_dust_and_filth_tt
@@ -34355,20 +34392,120 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RUS_Fate_of_the_syndicalists
-		icon = GFX_goal_RUS_VST
+		id = RUS_shelter_dust_and_filth
+		icon = GFX_goal_PAL_Russian_Refugees
 		cost = 4
-		relative_position_id = RUS_Reverse_the_October_Revolution
-		x = 1
+		relative_position_id = RUS_fate_of_the_radsocs
+		x = -3
 		y = 1
+		mutually_exclusive = {
+			focus = RUS_remove_dust_and_filth
+		}
 		prerequisite = {
-			focus = RUS_Reverse_the_October_Revolution
+			focus = RUS_fate_of_the_radsocs
+			focus = RUS_leniency_granted
 		}
 		completion_reward = {
-			custom_effect_tooltip = RUS_Fate_of_the_syndicalists_tt
+			custom_effect_tooltip = RUS_shelter_dust_and_filth_tt
 			custom_effect_tooltip = tooltip_white_line
 			add_timed_idea = {
-				idea = RUS_Fate_of_the_syndicalists_idea
+				idea = RUS_shelter_dust_and_filth_idea
+				days = 60
+			}
+		}
+	}
+	focus = {
+		id = RUS_one_nation_one_purpose
+		icon = GFX_goal_RUS_extinguish_flame
+		cost = 4
+		relative_position_id = RUS_leniency_granted
+		x = 0
+		y = 2
+		available = {
+			has_war_with = GER
+		}
+		prerequisite = {
+			focus = RUS_shelter_dust_and_filth
+		}
+		completion_reward = {
+			custom_effect_tooltip = RUS_one_nation_one_purpose_tt
+			custom_effect_tooltip = tooltip_white_line
+			set_temp_variable = {
+				coalition_partner_var = token:social_democrat
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var = token:social_liberal
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var = token:market_liberal
+			}
+			add_to_coalition = yes
+		}
+	}
+	focus = {
+		id = RUS_triple_flip
+		icon = GFX_goal_RUS_maximalist
+		cost = 5
+		relative_position_id = RUS_political_figurehead
+		x = -1
+		y = 1
+		available = {
+			has_war_with = GER
+			surrender_progress > 0.15
+		}
+		prerequisite = {
+			focus = RUS_one_nation_one_purpose
+		}
+		prerequisite = {
+			focus = RUS_political_figurehead
+		}
+		continue_if_invalid = yes
+		cancelable = no
+		completion_reward = {
+			custom_effect_tooltip = RUS_triple_flip_tt
+			custom_effect_tooltip = tooltip_white_line
+			hidden_effect = {
+				annex_country = {
+					target = RSA
+				}
+				every_enemy_country = {
+					limit = {
+						OR = {
+							tag = GER
+							is_ally_with = GER
+						}
+					}
+					RUS = {
+						white_peace = PREV
+					}
+				}
+				country_event = {
+					id = stalin_form_sov.10000
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = RUS_fate_of_the_syndicalists
+		icon = GFX_goal_RUS_VST
+		cost = 4
+		relative_position_id = RUS_reverse_the_october_revolution
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = RUS_ensure_the_syndicalists_independence
+		}
+		prerequisite = {
+			focus = RUS_reverse_the_october_revolution
+		}
+		completion_reward = {
+			custom_effect_tooltip = RUS_fate_of_the_syndicalists_tt
+			custom_effect_tooltip = tooltip_white_line
+			add_timed_idea = {
+				idea = RUS_fate_of_the_syndicalists_idea
 				days = 100
 			}
 			set_temp_variable = {
@@ -34386,6 +34523,39 @@ focus_tree = {
 					long_name = RUS_syndicalist_party_sov_long
 					name = RUS_syndicalist_party_sov
 				}
+				hidden_effect = {
+					set_country_flag = RUS_vst_left_advisor
+				}
+			}
+		}
+	}
+	focus = {
+		id = RUS_ensure_the_syndicalists_independence
+		icon = GFX_goal_RUS_syndies
+		cost = 4
+		relative_position_id = RUS_reverse_the_october_revolution
+		x = 3
+		y = 1
+		mutually_exclusive = {
+			focus = RUS_fate_of_the_syndicalists
+		}
+		prerequisite = {
+			focus = RUS_reverse_the_october_revolution
+		}
+		completion_reward = {
+			custom_effect_tooltip = RUS_ensure_the_syndicalists_independence_tt
+			custom_effect_tooltip = tooltip_white_line
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.1
+			}
+			set_temp_variable = {
+				coalition_partner_var = token:syndicalist
+			}
+			add_to_coalition = yes
+			country_event = stalin_form_sov.16
+			hidden_effect = {
+				set_country_flag = RUS_vst_left_advisor
 			}
 		}
 	}
@@ -34393,11 +34563,12 @@ focus_tree = {
 		id = RUS_mobilize_before_the_storm
 		icon = GFX_focus_RUS_mobilize_before_the_storm
 		cost = 4
-		relative_position_id = RUS_Fate_of_the_syndicalists
+		relative_position_id = RUS_fate_of_the_syndicalists
 		x = 1
 		y = 1
 		prerequisite = {
-			focus = RUS_Fate_of_the_syndicalists
+			focus = RUS_fate_of_the_syndicalists
+			focus = RUS_ensure_the_syndicalists_independence
 		}
 		completion_reward = {
 			custom_effect_tooltip = RUS_mobilize_before_the_storm_tt
@@ -34409,30 +34580,72 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RUS_stalin_hearts_of_iron
-		icon = GFX_focus_RUS_stalin_hearts_of_iron
+		id = RUS_hearts_of_iron
+		icon = GFX_focus_RUS_hearts_of_iron
 		cost = 5
-		relative_position_id = RUS_Reverse_the_October_Revolution
+		relative_position_id = RUS_reverse_the_october_revolution
 		x = 0
 		y = 2
 		prerequisite = {
-			focus = RUS_Fate_of_the_Radsocs
-			focus = RUS_Fate_of_the_syndicalists
+			focus = RUS_fate_of_the_radsocs
+		}
+		prerequisite = {
+			focus = RUS_fate_of_the_syndicalists
 		}
 		completion_reward = {
 			country_event = stalin_form_sov.6
-			add_country_leader_trait = RUS_hearts_of_iron
+			add_country_leader_trait = RUS_stalin_hearts_of_iron
+		}
+	}
+	focus = {
+		id = RUS_a_compromise_choice
+		icon = GFX_focus_RUS_a_compromise_choice
+		cost = 5
+		relative_position_id = RUS_reverse_the_october_revolution
+		x = 1
+		y = 3
+		prerequisite = {
+			focus = RUS_fate_of_the_radsocs
+			focus = RUS_fate_of_the_syndicalists
+		}
+		prerequisite = {
+			focus = RUS_leniency_granted
+			focus = RUS_ensure_the_syndicalists_independence
+		}
+		prerequisite = {
+		}
+		completion_reward = {
+			add_country_leader_trait = RUS_stalin_compromise_choice
+		}
+	}
+	focus = {
+		id = RUS_political_figurehead
+		icon = GFX_focus_RUS_political_figurehead
+		cost = 5
+		relative_position_id = RUS_reverse_the_october_revolution
+		x = -1
+		y = 3
+		prerequisite = {
+			focus = RUS_leniency_granted
+		}
+		prerequisite = {
+			focus = RUS_ensure_the_syndicalists_independence
+		}
+		completion_reward = {
+			add_country_leader_trait = RUS_stalin_political_figurehead
 		}
 	}
 	focus = {
 		id = RUS_plan_ahead
 		icon = GFX_focus_GER_subdue_the_wehrmacht
 		cost = 5
-		relative_position_id = RUS_stalin_hearts_of_iron
+		relative_position_id = RUS_hearts_of_iron
 		x = 0
-		y = 1
+		y = 2
 		prerequisite = {
-			focus = RUS_stalin_hearts_of_iron
+			focus = RUS_hearts_of_iron
+			focus = RUS_a_compromise_choice
+			focus = RUS_political_figurehead
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -34455,10 +34668,40 @@ focus_tree = {
 			focus = RUS_plan_ahead
 		}
 		completion_reward = {
-			activate_decision = RUS_stay_strong_decisions
-			swap_ruler_traits = {
-				remove = RUS_hearts_of_iron
-				add = RUS_hearts_of_iron_2
+			custom_effect_tooltip = RUS_stay_strong_tt
+			custom_effect_tooltip = tooltip_white_line
+			if = {
+				limit = {
+					RUS_iosif_stalin = {
+						has_trait = RUS_stalin_hearts_of_iron
+					}
+				}
+				swap_ruler_traits = {
+					remove = RUS_stalin_hearts_of_iron
+					add = RUS_stalin_hearts_of_iron_2
+				}
+			}
+			else_if = {
+				limit = {
+					RUS_iosif_stalin = {
+						has_trait = RUS_stalin_compromise_choice
+					}
+				}
+				swap_ruler_traits = {
+					remove = RUS_stalin_compromise_choice
+					add = RUS_stalin_compromise_choice_2
+				}
+			}
+			else_if = {
+				limit = {
+					RUS_iosif_stalin = {
+						has_trait = RUS_stalin_political_figurehead
+					}
+				}
+				swap_ruler_traits = {
+					remove = RUS_stalin_political_figurehead
+					add = RUS_stalin_political_figurehead_2
+				}
 			}
 		}
 	}
@@ -34466,8 +34709,8 @@ focus_tree = {
 		id = RUS_red_october_never_fade
 		icon = GFX_focus_RUS_red_october_never_fade
 		cost = 6
-		relative_position_id = RUS_Reverse_the_October_Revolution
-		x = 5
+		relative_position_id = RUS_reverse_the_october_revolution
+		x = 7
 		y = 0
 		available = {
 			NOT = {
@@ -34478,6 +34721,9 @@ focus_tree = {
 		}
 		allow_branch = {
 			has_country_flag = RUS_stalin_has_defeated_zinoviev
+			NOT = {
+				has_completed_focus = RUS_triple_flip
+			}
 		}
 		completion_reward = {
 			custom_effect_tooltip = RUS_red_october_never_fade_tt
@@ -34556,7 +34802,7 @@ focus_tree = {
 						idea_token = RUS_iosif_stalin_advisor
 						desc = RUS_iosif_stalin_leader_desc
 						traits = {
-							RUS_hearts_of_iron_2
+							RUS_stalin_hearts_of_iron_2
 						}
 						cost = 150
 						can_be_fired = no
@@ -34572,7 +34818,7 @@ focus_tree = {
 						idea_token = RUS_iosif_stalin_advisor
 						desc = RUS_iosif_stalin_leader_desc
 						traits = {
-							RUS_hearts_of_iron
+							RUS_stalin_hearts_of_iron
 						}
 						cost = 150
 						can_be_fired = no
@@ -34591,6 +34837,10 @@ focus_tree = {
 		y = 1
 		available = {
 			has_country_flag = RUS_future_is_determined_1
+			OR = {
+				has_completed_focus = RUS_hearts_of_iron
+				has_completed_focus = RUS_a_compromise_choice
+			}
 		}
 		mutually_exclusive = {
 			focus = RUS_the_supreme_soviet
@@ -34679,7 +34929,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = RUS_sov_to_the_world_revolution_tt
 			custom_effect_tooltip = tooltip_white_line
-			every_country = {
+			every_other_country = {
 				limit = {
 					NOT = {
 						has_socialist_government = yes
@@ -34688,6 +34938,7 @@ focus_tree = {
 				RUS = {
 					declare_war_on = {
 						target = PREV
+						type = annex_everything
 					}
 				}
 			}
@@ -34717,6 +34968,9 @@ focus_tree = {
 		}
 		allow_branch = {
 			has_country_flag = RUS_stalin_has_defeated_zinoviev
+			NOT = {
+				has_completed_focus = RUS_triple_flip
+			}
 		}
 		completion_reward = {
 			custom_effect_tooltip = RUS_what_a_childish_fantasy_tt
@@ -34864,6 +35118,56 @@ focus_tree = {
 				news_event = {
 					id = news_stalin_form_sov.2
 					days = 1
+				}
+			}
+		}
+	}
+	# 三次政变
+	focus = {
+		id = RUS_triple_flip_copy
+		icon = GFX_goal_RUS_maximalist
+		cost = 5
+		relative_position_id = RUS_radsocs
+		x = 0
+		y = 4
+		allow_branch = {
+			has_completed_focus = RUS_triple_flip
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_turn_the_tide
+		icon = GFX_focus_RUS_turn_the_tide
+		cost = 5
+		relative_position_id = RUS_radsocs
+		x = 0
+		y = 5
+		available = {
+			NOT = {
+				has_truce_with = GER
+			}
+		}
+		prerequisite = {
+			focus = RUS_triple_flip_copy
+		}
+		completion_reward = {
+			custom_effect_tooltip = RUS_turn_the_tide_tt
+			custom_effect_tooltip = tooltip_white_line
+			activate_mission = RUS_turn_the_tide_mission
+			add_ideas = RUS_turn_the_tide_idea
+			every_other_country = {
+				limit = {
+					OR = {
+						tag = GER
+						is_ally_with = GER
+					}
+				}
+				RUS = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
 				}
 			}
 		}

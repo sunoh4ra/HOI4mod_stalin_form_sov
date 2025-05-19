@@ -22,6 +22,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/RUS_remove_dust_and_filth_idea.png"
 	}
 	spriteType = {
+		name = "GFX_idea_RUS_shelter_dust_and_filth_idea"
+		texturefile = "gfx/interface/ideas/RUS_shelter_dust_and_filth_idea.png"
+	}
+	spriteType = {
 		name = "GFX_idea_RUS_mobilize_before_the_storm_idea"
 		texturefile = "gfx/interface/ideas/RUS_mobilize_before_the_storm_idea.png"
 	}

@@ -5,11 +5,15 @@
 
   RUS_you_looks_angry_achievement_NAME: "Look, Angry Again"
   RUS_you_looks_angry_achievement_DESC: "As a socialist Russia, foil Zinoviev's plan."
-  you_looks_angry: "The Bolshevik Gamble Failed"
+  you_looks_angry: "The Bolshevik Gamble Failed."
 
   RUS_sov_world_revolution_succeed_achievement_NAME: "Achieve World Revolution"
   RUS_sov_world_revolution_succeed_achievement_DESC: "As a socialist Russia, achieve world revolution."
-  sov_world_revolution_succeed: "No country has a Non-Socialist government"
+  sov_world_revolution_succeed: "No country has a Non-Socialist government."
+
+  RUS_darkest_time_achievement_NAME: "Darkest Time"
+  RUS_darkest_time_achievement_DESC: "As a socialist Russia, survive three coups and emerge from the darkest time."
+  darkest_time_passed: "The darkest time has passed."
 
   soviet_socialist_republic: "Soviet Socialist Republic"
   UKR_soviet: "Ukrainian Soviet Socialist Republic"
@@ -83,8 +87,8 @@
 
   RUS_stalin_has_defeated_zinoviev: "Something §Runexpected§! happened to Grigory Zinoviev."
 
-  RUS_Reverse_the_October_Revolution: "Reverse the October Revolution"
-  RUS_Reverse_the_October_Revolution_desc: "Now that Zinoviev's conspiracy has been thwarted, but also thanks to his concentration of power in the VST, we finally have the opportunity to put Russia back on track and continue the unfinished work from twenty years ago!"
+  RUS_reverse_the_october_revolution: "Reverse the October Revolution"
+  RUS_reverse_the_october_revolution_desc: "Now that Zinoviev's conspiracy has been thwarted, but also thanks to his concentration of power in the VST, we finally have the opportunity to put Russia back on track and continue the unfinished work from twenty years ago!"
 
   stalin_form_sov.13.t: "On the Status of the Union Republics"
   stalin_form_sov.13.desc: "When socialist Russia was just returning, we decided to respect the principle of national self-determination for some regions within our country, reclassifying them as Union Republics or Autonomous Union Republics, with government departments largely modeled after Western syndicalist countries.\n\nNow, with the return of the Bolsheviks, the status of these Union Republics needs to be reconsidered. Blindly copying our syndicalist friends' policies is likely impractical. According to Lenin's vision, we should establish a union of republics composed of various socialist countries in the near future. Perhaps the administrative status of these Union Republics should also follow this vision, reorganizing them as Soviet Socialist Republics. Although the number of union member states is currently few, we can set a precedent for the future. It's time to take action."
@@ -102,24 +106,70 @@
   STATE_217_STALINGRAD: "Stalingrad"
   VICTORY_POINTS_3529_STALINGRAD: "Stalingrad"
 
-  RUS_Fate_of_the_Radsocs: "The Fate of the PSR"
-  RUS_Fate_of_the_Radsocs_desc: "In reality, the PSR has already been extremely marginalized under the suppression of Kamenev and Zinoviev. What we need to do now is simply deliver the final blow, completely depriving them of their voice."
-  RUS_Fate_of_the_Radsocs_tt: "We will take over all remaining influence of the §tPSR§!, but this will also cause us to lose some stability.\nCurrent effects:"
+  RUS_fate_of_the_radsocs: "The Fate of the PSR"
+  RUS_fate_of_the_radsocs_desc: "In reality, the PSR has already been extremely marginalized under the suppression of Kamenev and Zinoviev. What we need to do now is simply deliver the final blow, completely depriving them of their voice."
+  RUS_fate_of_the_radsocs_tt: "We will take over all remaining influence of the §tPSR§!, but this will also cause us to lose some stability.\nCurrent effects:"
+
+  RUS_leniency_granted: "Leniency Granted"
+  RUS_leniency_granted_desc: "Given that the Radsocs is now barely surviving, if we grant them leniency, they will surely be grateful. This will bring great benefits and no harm to our future governance."
+  RUS_leniency_granted_tt: "§tPSR§! will join us, and we will have the opportunity to activate political advisors from its various factions."
+
+  stalin_form_sov.15.t: "On the Radsocs"
+  stalin_form_sov.15.desc: "Since we have decided to grant leniency to the Radsocs, the task of reintegrating some of their members into national reconstruction has now come to the forefront. After all, each of them has their own areas of expertise and can contribute to our cause.\n\nBut can we truly trust their promise to ‘never seek rehabilitation’?"
+  stalin_form_sov.15.a: "Unite the non-factional."
+  stalin_form_sov.15.a_tt: "We will be able to activate the non-factional $KR_sr_trait$ political advisors!"
+  stalin_form_sov.15.b: "Unite the Spiridonovist."
+  stalin_form_sov.15.b_tt: "We will be able to activate the $KR_spiridonist_trait$ political advisors!"
+  stalin_form_sov.15.c: "Unite the Maximalist."
+  stalin_form_sov.15.c_tt: "We will be able to activate the $KR_maximalist_trait$ political advisors!"
+
+  RUS_radsocs_advisor: "United the Non-Factional $KR_sr_trait$"
+  RUS_radsocs_spiridonist_advisor: "United the $KR_spiridonist_trait$"
+  RUS_radsocs_maximalist_advisor: "United the $KR_maximalist_trait$"
 
   RUS_remove_dust_and_filth: "Remove Dust and Filth"
   RUS_remove_dust_and_filth_desc: "In the previous VST, conservatives and the right wing still held a considerable share of influence. We must reverse this situation and firmly grasp power in our hands."
-  RUS_remove_dust_and_filth_tt: "We can gradually reduce the influence of the national spirit §YAnti-Socialist Resistance§! through decisions, but only by completing post-war focus can we completely eliminate it.\nEnables Decision: £GFX_decision_icon_small §YPurge Counter-Revolutionary Activities§!."
+  RUS_remove_dust_and_filth_tt: "We can gradually reduce the influence of the national spirit §YAnti-Socialist Resistance§! through decisions at a §Rhigher cost§!, but only by completing post-war focus can we completely eliminate it.\nEnables Decision: £GFX_decision_icon_small §YPurge Counter-Revolutionary Activities§!."
   RUS_destroy_antisoc_resistance_soviet: "Purge Counter-Revolutionary Activities"
   RUS_remove_dust_and_filth_idea: "Remove Dust and Filth"
 
-  RUS_Fate_of_the_syndicalists: "Integrate the VST"
-  RUS_Fate_of_the_syndicalists_desc: "Zinoviev made a grave mistake when he tried to abolish the Bolshevik Party and integrate it into the VST. However, he gave us an idea - we can do the reverse and integrate the VST. After all, the Bolsheviks' ability to make a comeback is due to the persistent efforts of communists within the VST, who now form its largest faction."
-  RUS_Fate_of_the_syndicalists_tt: "The §tVST§! will be completely under our control. You will gain a temporary national spirit, which will be upgraded once integration is complete."
-  RUS_Fate_of_the_syndicalists_idea: "Integrate the VST"
+  RUS_shelter_dust_and_filth: "Shelter Dust and Filth"
+  RUS_shelter_dust_and_filth_desc: "With great enemies at our doorstep, a complete purge of conservatives and rightists would only intensify anti-socialist resistance. Perhaps temporary tolerance is a necessary evil."
+  RUS_shelter_dust_and_filth_tt: "We can gradually reduce the influence of the national spirit §YAnti-Socialist Resistance§! through decisions at a §Glower cost§!, but only by completing post-war focus can we completely eliminate it.\nEnables Decision: £GFX_decision_icon_small §YPurge Counter-Revolutionary Activities§!."
+  RUS_decrease_antisoc_resistance_soviet: "Suppress Counter-Revolutionary Activities"
+  RUS_shelter_dust_and_filth_idea: "Shelter Dust and Filth"
+
+  RUS_one_nation_one_purpose: "One Nation, One Purpose"
+  RUS_one_nation_one_purpose_desc: "This war against Germany is far more difficult than we imagined. It may be time to set aside our prejudices and unite against the enemy. If the war effort does not improve, we may lose control of the situation."
+  RUS_one_nation_one_purpose_tt: "While our intent may be unity, this decision may bring §oextremely serious consequences§! along with its benefits!"
+
+  RUS_triple_flip: "Triple Flip"
+  RUS_triple_flip_desc: "The Bolshevik Party failed to seize their last chance and collapsed completely. This time, we are plunging into the abyss. Russia’s survival now hangs by a thread."
+  RUS_triple_flip_tt: "§RWe have failed to resist Germany as expected. The nation has experienced multiple political upheavals in just a few short years, and the future is more uncertain than ever...§!\n\nWe will be forced to sue for peace with §YGerman Empire§! and cede large amounts of territory.\n§CIf Germany is still at war, they will not refuse us.§!"
+  RUS_triple_flip_happened: "Triple Coup Has Occurred."
+
+  RUS_fate_of_the_syndicalists: "Integrate the VST"
+  RUS_fate_of_the_syndicalists_desc: "Zinoviev made a grave mistake when he tried to abolish the Bolshevik Party and integrate it into the VST. However, he gave us an idea - we can do the reverse and integrate the VST. After all, the Bolsheviks' ability to make a comeback is due to the persistent efforts of communists within the VST, who now form its largest faction."
+  RUS_fate_of_the_syndicalists_tt: "The §tVST§! will be completely under our control. You will gain a temporary national spirit, which will be upgraded once integration is complete.\nWe will be able to activate the $KR_vst_left_trait$ political advisors."
+  RUS_fate_of_the_syndicalists_idea: "Integrate the VST"
   RUS_syndicalists_has_been_integrated_idea: "VST Has Been Integrated"
   RUS_syndicalist_party_sov: "RKP(b) affiliated VST"
   RUS_syndicalist_party_sov_long: "$RUS_syndicalist_party_sov_long_tt$\n§gAfter the failure of Zinoviev's merger plan, the Bolshevik Party led by Stalin and the communists in the VST decided to set aside party disputes and unite in pursuit of world revolution. Although some members of other factions tried to prevent this, they had to give up due to their loss of influence. The merger was ultimately organized by former exiled Bolsheviks, communist factions within the VST, and some willing members of other factions. With the RKP(b)'s absorption of the VST, communists have unified into a single organization, ending decades of division. The followers of Lenin are united once again.§!\n"
   RUS_syndicalist_party_sov_long_tt: "VST (Bolsheviks) (Vserossiysky Soyuz Truda (bolshevikov))"
+
+  RUS_ensure_the_syndicalists_independence: "Respect the Independence of the VST"
+  RUS_ensure_the_syndicalists_independence_desc: "We must not repeat Zinoviev's mistake. Arbitrarily absorbing the VST may lead us down the same path. Instead, by respecting their independent status, they can serve as our friendly 'official opposition'—a win-win arrangement for all."
+  RUS_ensure_the_syndicalists_independence_tt: "We will be able to activate the $KR_vst_left_trait$ political advisors, and potentially also $KR_vst_centre_trait$ and $KR_vst_right_trait$."
+  stalin_form_sov.16.t: "On the VST"
+  stalin_form_sov.16.desc: "As we have chosen to respect the independence of the VST, some former members who once claimed to draw a line between us are now reconsidering cooperation. The task of reintegrating them into national reconstruction has now been placed on the agenda, as they each possess specialized skills that can contribute to our development.\n\nHowever, we must carefully consider whether to bring in only the centrists or include the rightists as well."
+  stalin_form_sov.16.a: "Unite the VST (Centrist)."
+  stalin_form_sov.16.a_tt: "We will be able to activate the $KR_vst_centre_trait$ political advisors!"
+  stalin_form_sov.16.b: "Unite the VST (Centrist) and VST (Rightist)."
+  stalin_form_sov.16.b_tt: "We will be able to activate the $KR_vst_centre_trait$ and $KR_vst_right_trait$ political advisors!"
+
+  RUS_vst_left_advisor: "United the $KR_vst_left_trait$"
+  RUS_vst_central_advisor: "United the $KR_vst_centre_trait$"
+  RUS_vst_right_advisor: "United the $KR_vst_right_trait$"
 
   RUS_mobilize_before_the_storm: "Mobilize Before the Storm"
   RUS_mobilize_before_the_storm_desc: "In the foreseeable war against German imperialism, our front-line industries will certainly suffer heavy blows. We must take all measures to protect our production lines from being affected."
@@ -130,10 +180,10 @@
   RUS_transfer_belarus_industries: "Relocate Belarusian Front-line Industries"
   RUS_transfer_ukraine_industries: "Relocate Ukrainian Front-line Industries"
 
-  RUS_stalin_hearts_of_iron: "Hearts of Iron"
-  RUS_stalin_hearts_of_iron_desc: "As the political situation stabilizes, it is time to establish Comrade Stalin's leadership. The Bolshevik Party under his guidance has retaken the helm of socialist Russia. As long as we stand united, we will surely be able to repel future threats and realize our revolutionary ideals."
   RUS_hearts_of_iron: "Hearts of Iron"
-  RUS_hearts_of_iron_2: "Hearts of Iron"
+  RUS_hearts_of_iron_desc: "As the political situation stabilizes, it is time to establish Comrade Stalin's leadership. The Bolshevik Party under his guidance has retaken the helm of socialist Russia. As long as we stand united, we will surely be able to repel future threats and realize our revolutionary ideals."
+  RUS_stalin_hearts_of_iron: "Hearts of Iron"
+  RUS_stalin_hearts_of_iron_2: "Hearts of Iron"
 
   stalin_form_sov.6.t: "The Flag Issue"
   stalin_form_sov.6.desc: "Since Stalin took power, he has been considering how to shape the future and symbolic representation of socialist Russia. As power struggles within the party gradually subside, Stalin has begun to reconsider the symbolic significance of the red flag. The red flag used after the October Revolution had become a symbol of glory for all Russians in the early stages of the revolution. Stalin believes that restoring this flag would not only demonstrate the continuity of the revolution but also convey his firm commitment to the revolutionary achievements to all people.\n\nHowever, some party leaders around Stalin believe: we could adopt red flags of other styles to demonstrate that we are in a new stage of revolution. Those who oppose this say the current flag is already perfect and it's best not to make any changes. Of course, regardless of whether the existing red flag stays or not, this represents a new contemplation of our revolutionary and national symbols.\n\nAfter extensive discussions within the government and broad consultations with the masses, the following flag designs have been submitted to Stalin for his final decision:"
@@ -150,13 +200,22 @@
   RUS_sov_4: "Russian Soviet Federative Socialist Republic"
   RUS_sov_4_DEF: "The Russian Soviet Federative Socialist Republic"
 
+  RUS_a_compromise_choice: "A Compromise Choice"
+  RUS_a_compromise_choice_desc: "We have overcome various instabilities during the transition of power. Although compromises were made along the way, there is no doubt that Stalin has become the compromise choice for all of Soviet Russia at this time."
+  RUS_stalin_compromise_choice: "A Compromise Choice"
+
+  RUS_political_figurehead: "Political Figurehead"
+  RUS_political_figurehead_desc: "Every great beginning is accompanied by lofty rhetoric, but matching words with actions is never easy. We may have made too many sacrifices and mistakes while stabilizing the political environment—now, it's time to pay the price."
+  RUS_stalin_political_figurehead: "Political Figurehead"
+
+
   RUS_plan_ahead: "Storm Approaching"
   RUS_plan_ahead_desc: "The situation in Europe and around the globe is about to explode. At this critical juncture, we have experienced several government and leadership changes. Time is of the essence, and we must immediately begin preparations, clearing the path for the upcoming war against German imperialism."
   RUS_plan_ahead_idea: "Plan Ahead"
 
   RUS_stay_strong: "Weathering the Storm"
   RUS_stay_strong_desc: "The final battle against German imperialism has arrived. We cannot retreat a single step. This is not just for ourselves, but also the ultimate test of whether Europe and the world can successfully achieve revolution."
-  RUS_stay_strong_decisions: "Weathering the Storm"
+  RUS_stay_strong_tt: "Depending on §YIosif Stalin§!'s current leader trait, we will receive a upgrade."
 
   RUS_what_a_childish_fantasy: "What a Childish Fantasy!"
   RUS_what_a_childish_fantasy_desc: "Some once said it was a childish fantasy, but we have accomplished the impossible: we have once again realized socialism in Russia, we have emerged victorious in a series of struggles against the PSR speculators and various factions of the VST, we have reversed the October Revolution, we have withstood the Teutonic threat and crushed German imperialism. Now that the situation is settled, it's time to realize the ideals from twenty years ago!"
@@ -259,4 +318,21 @@
   news_stalin_form_sov.2.a: "Perhaps they really can achieve it."
 
   RUS_invite_revolutionary_committee_tt_2: "If our current goal is to establish an union composed of multiple soviet countries, as long as we can complete this resolution before the World War II, §Y[POL.GetNameDef]§! Will become our potential partner!"
-  RUS_abolish_war_focus_tt: "The §YCommunist International§! does not exist"
+  RUS_abolish_war_focus_tt: "The §YCommunist International§! does not exist."
+
+  RUS_triple_flip_copy: "$RUS_triple_flip$"
+  RUS_triple_flip_copy_desc: "$RUS_triple_flip_desc$"
+
+  RUS_turn_the_tide: "Turn the Tide"
+  RUS_turn_the_tide_desc: "This is our final chance. The Germans want to enjoy the spoils of our land under the guise of false peace—but they are mistaken. We are not afraid to go down in flames together!"
+  RUS_turn_the_tide_tt: "We will declare war on §YGerman Empire§!, but this will be our last chance. If we fail to regain control all §Yforcibly ceded§! territories within six months, we will §ocollapse instantly§!!"
+  US_turn_the_tide_idea: "No Turning Back"
+  RUS_turn_the_tide_mission: "The Final Battle"
+  RUS_turn_the_tide_mission_tt: "All §Yforcibly ceded§! territories have been regain control."
+  RUS_turn_the_tide_mission_timeout_tt: "§oCollapse is imminent...§!"
+  stalin_form_sov.10002.t: "Germany Seeks Peace!"
+  stalin_form_sov.10002.desc: "Our war effort has gone far better than expected. We have successfully reclaimed the territories lost in the previous unequal treaty. Now, overwhelmed by continuous warfare, the German Empire has extended an olive branch, claiming it is willing to restore the pre-war European borders and cease interference in Central Asia.\n\nHow should we respond?"
+  stalin_form_sov.10002.a: "Enough."
+  stalin_form_sov.10002.a_tt: "§YWe will be able to restore the pre-war European borders!§!"
+  stalin_form_sov.10002.b: "To hell with them!"
+

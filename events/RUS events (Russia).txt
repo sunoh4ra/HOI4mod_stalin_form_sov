@@ -44837,6 +44837,11 @@ country_event = {
 	desc = freerus.4.d
 	picture = GFX_report_event_RUS_boldyrev
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_completed_focus = RUS_triple_flip
+		}
+	}
 	option = {
 		log = "[GetLogInfo]: event freerus.4 option freerus.4.a"
 		name = freerus.4.a

@@ -73,6 +73,14 @@ characters = {
 			idea_token = RUS_mikhail_tomsky_advisor
 			desc = RUS_mikhail_tomsky_leader_desc
 			available = {
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_vst_central_advisor
+				}
 				is_country_leader = no
 			}
 			visible = {
@@ -115,10 +123,20 @@ characters = {
 			idea_token = RUS_lev_kamenev_advisor
 			desc = RUS_lev_kamenev_leader_desc
 			available = {
-				set_temp_variable = {
-					RUS_relation_check = 1
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_vst_left_advisor
 				}
-				RUS_vst_left_check = yes
+				else = {
+					set_temp_variable = {
+						RUS_relation_check = 1
+					}
+					RUS_vst_left_check = yes
+				}
 				not_already_hired_except_as = political_advisor
 				is_country_leader = no
 			}
@@ -237,6 +255,14 @@ characters = {
 			available = {
 				if = {
 					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_vst_right_advisor
+				}
+				else_if = {
+					limit = {
 						RUS_VST = yes
 					}
 					set_temp_variable = {
@@ -320,9 +346,19 @@ characters = {
 			idea_token = RUS_vladimir_levitsky_advisor
 			desc = RUS_vladimir_levitsky_leader_desc
 			available = {
-				OR = {
-					has_government = social_democrat
-					RUS_rikhter = yes
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_vst_central_advisor
+				}
+				else = {
+					OR = {
+						has_government = social_democrat
+						RUS_rikhter = yes
+					}
 				}
 				not_already_hired_except_as = political_advisor
 			}
@@ -2545,9 +2581,19 @@ characters = {
 			idea_token = RUS_mikhail_frunze_advisor
 			desc = RUS_mikhail_frunze_army_chief_desc
 			available = {
-				OR = {
-					has_completed_focus = RUS_invite_sverdlov
-					has_country_flag = RUS_maximalist_bolshevik_alliance
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_vst_left_advisor
+				}
+				else = {
+					OR = {
+						has_completed_focus = RUS_invite_sverdlov
+						has_country_flag = RUS_maximalist_bolshevik_alliance
+					}
 				}
 			}
 			visible = {
@@ -5313,6 +5359,14 @@ characters = {
 			idea_token = RUS_pavel_gronsky_advisor
 			desc = RUS_pavel_gronsky_sic_desc
 			available = {
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_radsocs_maximalist_advisor
+				}
 				not_already_hired_except_as = political_advisor
 			}
 			visible = {
@@ -5606,14 +5660,24 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_gergard_zeller_advisor
 			available = {
-				NOT = {
-					has_government = totalist
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					is_in_coalition_with_social_democrat = yes
 				}
-				OR = {
-					has_completed_focus = RUS_invite_zeller
-					has_completed_focus = RUS_democratisation_of_artels
-					has_completed_focus = RSA_enemies_of_vozhd
-					has_country_flag = RUS_sds_agree
+				else = {
+					NOT = {
+						has_government = totalist
+					}
+					OR = {
+						has_completed_focus = RUS_invite_zeller
+						has_completed_focus = RUS_democratisation_of_artels
+						has_completed_focus = RSA_enemies_of_vozhd
+						has_country_flag = RUS_sds_agree
+					}
 				}
 			}
 			visible = {
@@ -6013,9 +6077,19 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_ilya_mayorov_advisor
 			available = {
-				OR = {
-					has_government = radical_socialist
-					has_completed_focus = RUS_worker_and_peasant
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_radsocs_spiridonist_advisor
+				}
+				else = {
+					OR = {
+						has_government = radical_socialist
+						has_completed_focus = RUS_worker_and_peasant
+					}
 				}
 			}
 			visible = {
@@ -6114,6 +6188,14 @@ characters = {
 			idea_token = RUS_nikolay_zdobnov_advisor
 			desc = RUS_nikolay_zdobnov_leader_desc
 			available = {
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_radsocs_spiridonist_advisor
+				}
 				is_country_leader = no
 			}
 			visible = {
@@ -6171,9 +6253,19 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_sergey_medvedev_advisor
 			available = {
-				OR = {
-					has_completed_focus = RUS_law_on_unions
-					has_country_flag = RUS_maximalist_bolshevik_alliance
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_vst_left_advisor
+				}
+				else = {
+					OR = {
+						has_completed_focus = RUS_law_on_unions
+						has_country_flag = RUS_maximalist_bolshevik_alliance
+					}
 				}
 			}
 			visible = {
@@ -6207,6 +6299,16 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = RUS_aleksandra_kollontay_advisor
+			available = {
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_vst_central_advisor
+				}
+			}
 			visible = {
 				has_socialist_government = yes
 			}
@@ -6248,18 +6350,28 @@ characters = {
 			idea_token = RUS_boris_kamkov_advisor
 			desc = RUS_boris_kamkov_leader_desc
 			available = {
-				not_already_hired_except_as = political_advisor
-				OR = {
-					has_government = radical_socialist
-					has_completed_focus = RUS_eser_deal
-					has_completed_focus = RUS_woo_spiridonova
-				}
 				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_radsocs_spiridonist_advisor
+				}
+				else_if = {
 					limit = {
 						RUS_VST = yes
 					}
 					is_in_coalition_with_radical_socialist = yes
 				}
+				else = {
+					OR = {
+						has_government = radical_socialist
+						has_completed_focus = RUS_eser_deal
+						has_completed_focus = RUS_woo_spiridonova
+					}
+				}
+				not_already_hired_except_as = political_advisor
 			}
 			visible = {
 				has_socialist_government = yes
@@ -6317,14 +6429,24 @@ characters = {
 			idea_token = RUS_sergey_kirov_advisor
 			desc = RUS_sergey_kirov_sic_desc
 			available = {
-				OR = {
-					AND = {
-						has_government = syndicalist
-						has_completed_focus = RUS_4_year_plan
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
 					}
-					AND = {
-						has_government = radical_socialist
-						has_country_flag = RUS_hired_kirov
+					has_country_flag = RUS_vst_right_advisor
+				}
+				else = {
+					OR = {
+						AND = {
+							has_government = syndicalist
+							has_completed_focus = RUS_4_year_plan
+						}
+						AND = {
+							has_government = radical_socialist
+							has_country_flag = RUS_hired_kirov
+						}
 					}
 				}
 			}
@@ -6389,9 +6511,19 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_sergey_syrtsov_advisor
 			available = {
-				OR = {
-					has_completed_focus = RUS_labour_and_defence
-					has_country_flag = RUS_maximalist_bolshevik_alliance
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_vst_left_advisor
+				}
+				else = {
+					OR = {
+						has_completed_focus = RUS_labour_and_defence
+						has_country_flag = RUS_maximalist_bolshevik_alliance
+					}
 				}
 			}
 			visible = {
@@ -6426,6 +6558,14 @@ characters = {
 			idea_token = RUS_ivan_gronsky_advisor
 			available = {
 				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_vst_left_advisor
+				}
+				else_if = {
 					limit = {
 						RUS_VST = yes
 					}
@@ -6463,7 +6603,17 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_vladimir_shatov_advisor
 			available = {
-				has_completed_focus = RUS_encourage_innovation
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_vst_central_advisor
+				}
+				else = {
+					has_completed_focus = RUS_encourage_innovation
+				}
 				not_already_hired_except_as = political_advisor
 			}
 			visible = {
@@ -6497,11 +6647,21 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_stanislav_strumilin_advisor
 			available = {
-				OR = {
-					has_completed_focus = RUS_science_of_marxism
-					AND = {
-						has_government = radical_socialist
-						has_country_flag = RUS_hired_strumilin
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_vst_central_advisor
+				}
+				else = {
+					OR = {
+						has_completed_focus = RUS_science_of_marxism
+						AND = {
+							has_government = radical_socialist
+							has_country_flag = RUS_hired_strumilin
+						}
 					}
 				}
 			}
@@ -6537,7 +6697,17 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_aleksandr_shlyapnikov_advisor
 			available = {
-				has_completed_focus = RUS_chamber_of_unions
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_vst_central_advisor
+				}
+				else = {
+					has_completed_focus = RUS_chamber_of_unions
+				}
 			}
 			visible = {
 				has_socialist_government = yes
@@ -6597,31 +6767,41 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_aleksandr_finn_yenotayevsky_advisor
 			available = {
-				OR = {
-					AND = {
-						custom_trigger_tooltip = {
-							tooltip = RUS_VST_left_NOT
-							NOT = {
-								has_country_leader = {
-									character = RUS_lev_kamenev
-								}
-								has_country_leader = {
-									character = RUS_grigory_zinovyev
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_vst_right_advisor
+				}
+				else = {
+					OR = {
+						AND = {
+							custom_trigger_tooltip = {
+								tooltip = RUS_VST_left_NOT
+								NOT = {
+									has_country_leader = {
+										character = RUS_lev_kamenev
+									}
+									has_country_leader = {
+										character = RUS_grigory_zinovyev
+									}
 								}
 							}
+							has_completed_focus = RUS_new_russian_socialism
 						}
-						has_completed_focus = RUS_new_russian_socialism
-					}
-					AND = {
-						has_government = radical_socialist
-						has_country_flag = RUS_hired_yenotayevsky
-					}
-					AND = {
-						has_government = social_democrat
-						custom_trigger_tooltip = {
-							tooltip = RUS_RDP_split_NOT
-							NOT = {
-								has_country_flag = RUS_RDP_split
+						AND = {
+							has_government = radical_socialist
+							has_country_flag = RUS_hired_yenotayevsky
+						}
+						AND = {
+							has_government = social_democrat
+							custom_trigger_tooltip = {
+								tooltip = RUS_RDP_split_NOT
+								NOT = {
+									has_country_flag = RUS_RDP_split
+								}
 							}
 						}
 					}
@@ -6692,8 +6872,15 @@ characters = {
 			idea_token = RUS_vladimir_karelin_advisor
 			desc = RUS_vladimir_karelin_sic_desc
 			available = {
-				not_already_hired_except_as = political_advisor
 				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_radsocs_spiridonist_advisor
+				}
+				else_if = {
 					limit = {
 						RUS_PLSR = yes
 					}
@@ -6724,6 +6911,7 @@ characters = {
 						}
 					}
 				}
+				not_already_hired_except_as = political_advisor
 			}
 			visible = {
 				OR = {
@@ -6784,14 +6972,24 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_aleksandr_elyashevich_advisor
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = RUS_VST_left_NOT
-					NOT = {
-						has_country_leader = {
-							character = RUS_lev_kamenev
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
 						}
-						has_country_leader = {
-							character = RUS_grigory_zinovyev
+					}
+					has_country_flag = RUS_radsocs_spiridonist_advisor
+				}
+				else = {
+					custom_trigger_tooltip = {
+						tooltip = RUS_VST_left_NOT
+						NOT = {
+							has_country_leader = {
+								character = RUS_lev_kamenev
+							}
+							has_country_leader = {
+								character = RUS_grigory_zinovyev
+							}
 						}
 					}
 				}
@@ -6864,7 +7062,17 @@ characters = {
 			idea_token = RUS_isaak_steinberg_advisor
 			desc = RUS_isaak_steinberg_sic_desc
 			available = {
-				RUS_PLSR = yes
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_radsocs_advisor
+				}
+				else = {
+					RUS_PLSR = yes
+				}
 				not_already_hired_except_as = political_advisor
 			}
 			visible = {
@@ -6885,6 +7093,16 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = RUS_yevgeny_sattel_advisor
+			available = {
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_radsocs_advisor
+				}
+			}
 			visible = {
 				has_socialist_government = yes
 			}
@@ -6917,8 +7135,15 @@ characters = {
 			idea_token = RUS_andrey_kolegayev_advisor
 			desc = RUS_andrey_kolegayev_sic_desc
 			available = {
-				not_already_hired_except_as = political_advisor
 				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_radsocs_maximalist_advisor
+				}
+				else_if = {
 					limit = {
 						RUS_PLSR = yes
 					}
@@ -6927,6 +7152,7 @@ characters = {
 				else = {
 					has_country_flag = RUS_VST_MAX_deal
 				}
+				not_already_hired_except_as = political_advisor
 			}
 			visible = {
 				has_socialist_government = yes
@@ -6985,6 +7211,14 @@ characters = {
 			slot = political_advisor
 			idea_token = RUS_irina_kakhovskaya_advisor
 			available = {
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_radsocs_maximalist_advisor
+				}
 				has_socialist_government = yes
 			}
 			visible = {
@@ -7045,6 +7279,14 @@ characters = {
 				has_dlc_lar = yes				#TODO: make non_lar version sicne he is needed for content
 			}
 			available = {
+				if = {
+					limit = {
+						RUS_iosif_stalin = {
+							is_country_leader = yes
+						}
+					}
+					has_country_flag = RUS_radsocs_advisor
+				}
 				has_intelligence_agency = yes
 			}
 			visible = {
